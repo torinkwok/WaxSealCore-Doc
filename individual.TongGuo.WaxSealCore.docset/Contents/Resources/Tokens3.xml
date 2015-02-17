@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/WSCKeychainItem.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/WSCKeychainItem</TokenIdentifier>
+			<Abstract type="html">The WSCKeychainItem defines the basic property of an keychain item.</Abstract>
+			<DeclaredIn>WSCKeychainItem.h</DeclaredIn>
+            
+			
+			<NodeRef refid="3"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCKeychainItem/setLabel:</TokenIdentifier>
+			<Abstract type="html">The NSString object that identifies the label of keychain item represented by receiver.
+  </Abstract>
+			<DeclaredIn>WSCKeychainItem.h</DeclaredIn>
+			
+			<Declaration>@property (copy, readwrite) NSString *label</Declaration>
+			
+			
+			<Anchor>//api/name/label</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCKeychainItem/label</TokenIdentifier>
+			<Abstract type="html">The NSString object that identifies the label of keychain item represented by receiver.
+  </Abstract>
+			<DeclaredIn>WSCKeychainItem.h</DeclaredIn>
+			
+			<Declaration>@property (copy, readwrite) NSString *label</Declaration>
+			
+			
+			<Anchor>//api/name/label</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WSCKeychainItem/label</TokenIdentifier>
+			<Abstract type="html">The NSString object that identifies the label of keychain item represented by receiver.
+  </Abstract>
+			<DeclaredIn>WSCKeychainItem.h</DeclaredIn>
+			
+			<Declaration>@property (copy, readwrite) NSString *label</Declaration>
+			
+			
+			<Anchor>//api/name/label</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCKeychainItem/setItemClass:</TokenIdentifier>
+			<Abstract type="html">The value that indicates which type of keychain item the receiver is. (read-only)</Abstract>
+			<DeclaredIn>WSCKeychainItem.h</DeclaredIn>
+			
+			<Declaration>@property (assign, readonly) WSCKeychainItemClass itemClass</Declaration>
+			
+			
+			<Anchor>//api/name/itemClass</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCKeychainItem/itemClass</TokenIdentifier>
+			<Abstract type="html">The value that indicates which type of keychain item the receiver is. (read-only)</Abstract>
+			<DeclaredIn>WSCKeychainItem.h</DeclaredIn>
+			
+			<Declaration>@property (assign, readonly) WSCKeychainItemClass itemClass</Declaration>
+			
+			
+			<Anchor>//api/name/itemClass</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WSCKeychainItem/itemClass</TokenIdentifier>
+			<Abstract type="html">The value that indicates which type of keychain item the receiver is. (read-only)</Abstract>
+			<DeclaredIn>WSCKeychainItem.h</DeclaredIn>
+			
+			<Declaration>@property (assign, readonly) WSCKeychainItemClass itemClass</Declaration>
+			
+			
+			<Anchor>//api/name/itemClass</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCKeychainItem/setCreationDate:</TokenIdentifier>
+			<Abstract type="html">The NSDate object that identifies the creation date of the keychain item represented by receiver.</Abstract>
+			<DeclaredIn>WSCKeychainItem.h</DeclaredIn>
+			
+			<Declaration>@property (retain, readwrite) NSDate *creationDate</Declaration>
+			
+			
+			<Anchor>//api/name/creationDate</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCKeychainItem/creationDate</TokenIdentifier>
+			<Abstract type="html">The NSDate object that identifies the creation date of the keychain item represented by receiver.</Abstract>
+			<DeclaredIn>WSCKeychainItem.h</DeclaredIn>
+			
+			<Declaration>@property (retain, readwrite) NSDate *creationDate</Declaration>
+			
+			
+			<Anchor>//api/name/creationDate</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WSCKeychainItem/creationDate</TokenIdentifier>
+			<Abstract type="html">The NSDate object that identifies the creation date of the keychain item represented by receiver.</Abstract>
+			<DeclaredIn>WSCKeychainItem.h</DeclaredIn>
+			
+			<Declaration>@property (retain, readwrite) NSDate *creationDate</Declaration>
+			
+			
+			<Anchor>//api/name/creationDate</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCKeychainItem/setModificationDate:</TokenIdentifier>
+			<Abstract type="html">The NSDate object that identifies the modification date of the keychain item represented by receiver. (read-only)</Abstract>
+			<DeclaredIn>WSCKeychainItem.h</DeclaredIn>
+			
+			<Declaration>@property (retain, readonly) NSDate *modificationDate</Declaration>
+			
+			
+			<Anchor>//api/name/modificationDate</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCKeychainItem/modificationDate</TokenIdentifier>
+			<Abstract type="html">The NSDate object that identifies the modification date of the keychain item represented by receiver. (read-only)</Abstract>
+			<DeclaredIn>WSCKeychainItem.h</DeclaredIn>
+			
+			<Declaration>@property (retain, readonly) NSDate *modificationDate</Declaration>
+			
+			
+			<Anchor>//api/name/modificationDate</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WSCKeychainItem/modificationDate</TokenIdentifier>
+			<Abstract type="html">The NSDate object that identifies the modification date of the keychain item represented by receiver. (read-only)</Abstract>
+			<DeclaredIn>WSCKeychainItem.h</DeclaredIn>
+			
+			<Declaration>@property (retain, readonly) NSDate *modificationDate</Declaration>
+			
+			
+			<Anchor>//api/name/modificationDate</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCKeychainItem/setIsValid:</TokenIdentifier>
+			<Abstract type="html">Boolean value that indicates whether the receiver is currently valid. (read-only)</Abstract>
+			<DeclaredIn>WSCKeychainItem.h</DeclaredIn>
+			
+			<Declaration>@property (assign, readonly) BOOL isValid</Declaration>
+			
+			
+			<Anchor>//api/name/isValid</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCKeychainItem/isValid</TokenIdentifier>
+			<Abstract type="html">Boolean value that indicates whether the receiver is currently valid. (read-only)</Abstract>
+			<DeclaredIn>WSCKeychainItem.h</DeclaredIn>
+			
+			<Declaration>@property (assign, readonly) BOOL isValid</Declaration>
+			
+			
+			<Anchor>//api/name/isValid</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WSCKeychainItem/isValid</TokenIdentifier>
+			<Abstract type="html">Boolean value that indicates whether the receiver is currently valid. (read-only)</Abstract>
+			<DeclaredIn>WSCKeychainItem.h</DeclaredIn>
+			
+			<Declaration>@property (assign, readonly) BOOL isValid</Declaration>
+			
+			
+			<Anchor>//api/name/isValid</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCKeychainItem/setKeychain:</TokenIdentifier>
+			<Abstract type="html">The keychain in which the keychain item represented by receiver residing. (read-only)
+  </Abstract>
+			<DeclaredIn>WSCKeychainItem.h</DeclaredIn>
+			
+			<Declaration>@property (unsafe_unretained, readonly) WSCKeychain *keychain</Declaration>
+			
+			
+			<Anchor>//api/name/keychain</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCKeychainItem/keychain</TokenIdentifier>
+			<Abstract type="html">The keychain in which the keychain item represented by receiver residing. (read-only)
+  </Abstract>
+			<DeclaredIn>WSCKeychainItem.h</DeclaredIn>
+			
+			<Declaration>@property (unsafe_unretained, readonly) WSCKeychain *keychain</Declaration>
+			
+			
+			<Anchor>//api/name/keychain</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WSCKeychainItem/keychain</TokenIdentifier>
+			<Abstract type="html">The keychain in which the keychain item represented by receiver residing. (read-only)
+  </Abstract>
+			<DeclaredIn>WSCKeychainItem.h</DeclaredIn>
+			
+			<Declaration>@property (unsafe_unretained, readonly) WSCKeychain *keychain</Declaration>
+			
+			
+			<Anchor>//api/name/keychain</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCKeychainItem/setSecKeychainItem:</TokenIdentifier>
+			<Abstract type="html">The reference of the SecKeychainItem opaque object, which wrapped by WSCKeychainItem object. (read-only)
+  </Abstract>
+			<DeclaredIn>WSCKeychainItem.h</DeclaredIn>
+			
+			<Declaration>@property (unsafe_unretained, readonly) SecKeychainItemRef secKeychainItem</Declaration>
+			
+			
+			<Anchor>//api/name/secKeychainItem</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCKeychainItem/secKeychainItem</TokenIdentifier>
+			<Abstract type="html">The reference of the SecKeychainItem opaque object, which wrapped by WSCKeychainItem object. (read-only)
+  </Abstract>
+			<DeclaredIn>WSCKeychainItem.h</DeclaredIn>
+			
+			<Declaration>@property (unsafe_unretained, readonly) SecKeychainItemRef secKeychainItem</Declaration>
+			
+			
+			<Anchor>//api/name/secKeychainItem</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WSCKeychainItem/secKeychainItem</TokenIdentifier>
+			<Abstract type="html">The reference of the SecKeychainItem opaque object, which wrapped by WSCKeychainItem object. (read-only)
+  </Abstract>
+			<DeclaredIn>WSCKeychainItem.h</DeclaredIn>
+			
+			<Declaration>@property (unsafe_unretained, readonly) SecKeychainItemRef secKeychainItem</Declaration>
+			
+			
+			<Anchor>//api/name/secKeychainItem</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/WSCKeychainItem/keychainItemWithSecKeychainItemRef:</TokenIdentifier>
+			<Abstract type="html">Creates and returns a WSCKeychainItem object using the given reference to the instance of SecKeychainItem opaque type.</Abstract>
+			<DeclaredIn>WSCKeychainItem.h</DeclaredIn>
+			
+			<Declaration>+ (instancetype)keychainItemWithSecKeychainItemRef:(SecKeychainItemRef)_SecKeychainItemRef</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>_SecKeychainItemRef</Name>
+					<Abstract type="html">A reference to the instance of SecKeychainItem opaque type.
+  </Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A WSCKeychainItem object initialized with the given reference to the instance of SecKeychainItem opaque type.
+          Return nil if _SecKeychainItemRef is nil or an error occured.
+  </Abstract></ReturnValue>
+			<Anchor>//api/name/keychainItemWithSecKeychainItemRef:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

@@ -1,0 +1,655 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>WSCTrustedApplication Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2 (build 963)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">WaxSealCore </a></h1>
+				<a id="developerHome" href="../index.html"> Tong Guo</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">WSCTrustedApplication Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/secTrustedApplication">&nbsp;&nbsp;&nbsp;&nbsp;secTrustedApplication</option>
+	
+	<option value="//api/name/uniqueIdentification">&nbsp;&nbsp;&nbsp;&nbsp;uniqueIdentification</option>
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/trustedApplicationWithContentsOfURL:error:">&nbsp;&nbsp;&nbsp;&nbsp;+ trustedApplicationWithContentsOfURL:error:</option>
+	
+	<option value="//api/name/trustedApplicationWithSecTrustedApplicationRef:">&nbsp;&nbsp;&nbsp;&nbsp;+ trustedApplicationWithSecTrustedApplicationRef:</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/isEqualToTrustedApplication:">&nbsp;&nbsp;&nbsp;&nbsp;- isEqualToTrustedApplication:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Properties">Properties</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Creating Trusted Application">Creating Trusted Application</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Comparing Trusted Application">Comparing Trusted Application</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Keychain Services Bridge">Keychain Services Bridge</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/secTrustedApplication">secTrustedApplication</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/uniqueIdentification">uniqueIdentification</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/trustedApplicationWithContentsOfURL:error:">trustedApplicationWithContentsOfURL:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/trustedApplicationWithSecTrustedApplicationRef:">trustedApplicationWithSecTrustedApplicationRef:</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isEqualToTrustedApplication:">isEqualToTrustedApplication:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="WSCTrustedApplication Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">WSCTrustedApplication Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">WSCTrustedApplication.h<br />WSCTrustedApplication.m</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Identifies the trusted application in an access permission.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Properties" name="task_Properties"></a>
+						<h3 class="subsubtitle task-title">Properties</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/uniqueIdentification">&nbsp;&nbsp;uniqueIdentification</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Creating Trusted Application" name="task_Creating Trusted Application"></a>
+						<h3 class="subsubtitle task-title">Creating Trusted Application</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/trustedApplicationWithContentsOfURL:error:">+&nbsp;trustedApplicationWithContentsOfURL:error:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Comparing Trusted Application" name="task_Comparing Trusted Application"></a>
+						<h3 class="subsubtitle task-title">Comparing Trusted Application</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isEqualToTrustedApplication:">&ndash;&nbsp;isEqualToTrustedApplication:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Keychain Services Bridge" name="task_Keychain Services Bridge"></a>
+						<h3 class="subsubtitle task-title">Keychain Services Bridge</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/secTrustedApplication">&nbsp;&nbsp;secTrustedApplication</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/trustedApplicationWithSecTrustedApplicationRef:">+&nbsp;trustedApplicationWithSecTrustedApplicationRef:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/secTrustedApplication" title="secTrustedApplication"></a>
+	<h3 class="subsubtitle method-title">secTrustedApplication</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The reference of the <code>secTrustedApplication</code> opaque object, which wrapped by <code>WSCTrustedApplication</code> object.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (unsafe_unretained, readonly) SecTrustedApplicationRef secTrustedApplication</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>If you are familiar with the underlying <em>Keychain Services</em> API,
+              you can move freely back and forth between <em>WaxSealCore</em> framework and <em>Keychain Services</em> API with this property.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WSCTrustedApplication.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/uniqueIdentification" title="uniqueIdentification"></a>
+	<h3 class="subsubtitle method-title">uniqueIdentification</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Retrieves and sets the unique identification of the trusted application represented by receiver.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (retain, readwrite) NSData *uniqueIdentification</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The trusted application represented by receiver includes data
+              that uniquely identifies the application (aka. <strong>unique identification</strong>),
+              such as a cryptographic hash of the application.
+              The operating system can use this data to verify that the application has not been altered since the trusted application object was created.
+              When an application requests access to an item in the keychain for which it is designated as a trusted application,
+              for example, the operating system checks this data before granting access.
+              You can use the read property to extract this data from the trusted application object
+              for storage or for transmittal to another location (such as over a network).
+              Use the write property to insert the data back into a trusted application object.</p><div class="warning"><p><strong>Warning:</strong> Note that this data is in a private format; there is no supported way to read or interpret it.</p></div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WSCTrustedApplication.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/trustedApplicationWithContentsOfURL:error:" title="trustedApplicationWithContentsOfURL:error:"></a>
+	<h3 class="subsubtitle method-title">trustedApplicationWithContentsOfURL:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates a trusted application object based on the application specified by an URL.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (instancetype)trustedApplicationWithContentsOfURL:(NSURL *)<em>_ApplicationURL</em> error:(NSError **)<em>_Error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>_ApplicationURL</em></dt>
+			<dd><p>The URL to the application or tool to trust.
+                         For application bundles, use the URL to the bundle directory.
+                         Pass <code>nil</code> to refer to the application or tool making this call.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>_Error</em></dt>
+			<dd><p>On input, a pointer to an error object.
+                If an error occurs, this pointer is set to an actual error object containing the error information.
+                You may specify <code>nil</code> for this parameter if you don&rsquo;t want the error information.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Newly created trusted application object. Returns <code>nil</code> if an error occurs.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>  This method creates a trusted application object,
+  which both identifies an application and provides data that can be used to ensure
+  that the application has not been altered since the object was created.
+  The trusted application object is used as input to the <code>SecAccessCreate</code> function, which creates an access object.
+  The access object, in turn, is used as input to the <code>SecKeychainItemSetAccess</code> function
+  to specify the set of applications that are trusted to access a specific keychain item.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WSCTrustedApplication.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/trustedApplicationWithSecTrustedApplicationRef:" title="trustedApplicationWithSecTrustedApplicationRef:"></a>
+	<h3 class="subsubtitle method-title">trustedApplicationWithSecTrustedApplicationRef:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates and returns a <code>WSCTrustedApplication</code> object using the given reference to the instance of <code>SecTrustedApplication</code> opaque type.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (instancetype)trustedApplicationWithSecTrustedApplicationRef:(SecTrustedApplicationRef)<em>_SecTrustedAppRef</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>_SecTrustedAppRef</em></dt>
+			<dd><p>A reference to the instance of <code>SecTrustedApplication</code> opaque type.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A <code>WSCTrustedApplication</code> object initialized with the givent reference to the instance of <code>SecTrustedApplication</code> opaque type.
+          Return <code>nil</code> if <em>_SecTrustedAppRef</em> is <code>nil</code>.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>  This method creates a trusted application object with the specified underlying <code>SecTrustedApplicationRef</code>.
+  which both identifies an application and provides data that can be used to ensure
+  that the application has not been altered since the object was created.
+  The trusted application object is used as input to the <code>SecAccessCreate</code> function, which creates an access object.
+  The access object, in turn, is used as input to the <code>SecKeychainItemSetAccess</code> function
+  to specify the set of applications that are trusted to access a specific keychain item.</p>
+
+<p>  If you are familiar with the underlying <em>Keychain Services</em> API,
+  you can move freely back and forth between <em>WaxSealCore</em> framework and <em>Keychain Services</em> API with this class method.</p><div class="warning"><p><strong>Warning:</strong> This method is just used for bridge between <em>WaxSealCore</em> framework and <em>Keychain Services</em> API.</p>
+
+<p>  Instead of invoking this method, you should construct a <code>WSCTrustedApplication</code> object by invoking:</p>
+
+<ul>
+<li><a href="#//api/name/trustedApplicationWithContentsOfURL:error:">+ trustedApplicationWithContentsOfURL:error:</a></li>
+</ul>
+</div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WSCTrustedApplication.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/isEqualToTrustedApplication:" title="isEqualToTrustedApplication:"></a>
+	<h3 class="subsubtitle method-title">isEqualToTrustedApplication:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a Boolean value that indicates whether a given trusted application is equal to receiver.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)isEqualToTrustedApplication:(WSCTrustedApplication *)<em>_AnotherTrustedApplication</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>_AnotherTrustedApplication</em></dt>
+			<dd><p>The trusted application with which to compare the receiver.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p><code>YES</code> if <em>_AnotherTrustedApplication</em> is equivalent to receiver (if they have the same unique identification);
+          otherwise <em>NO</em>.</p>
+
+<p>  <strong>One more thing</strong>
+   When you know both objects are keychains, this method is a faster way to check equality than method <a href="#//api/name/isEqual:"><code>isEqual:</code></a>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WSCTrustedApplication.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+                    
+                    
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2015  Tong Guo. All rights reserved. (Last updated: 2015-02-17)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

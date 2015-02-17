@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/NSURL+WSCKeychainURL.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/NSURL(WSCKeychainURL)</TokenIdentifier>
+			<Abstract type="html">A collection of useful and convenient additions for NSURL to deal with keychains.
+  </Abstract>
+			<DeclaredIn>NSURL+WSCKeychainURL.h</DeclaredIn>
+            
+			
+			<NodeRef refid="9"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSURL/sharedURLForCurrentUserKeychainsDirectory</TokenIdentifier>
+			<Abstract type="html">Returns the URL of the current user&apos;s keychain directory: ~/Library/Keychains.</Abstract>
+			<DeclaredIn>NSURL+WSCKeychainURL.h</DeclaredIn>
+			
+			<Declaration>+ (NSURL *)sharedURLForCurrentUserKeychainsDirectory</Declaration>
+			
+			<ReturnValue><Abstract type="html">An URL of the current user&apos;s keychain directory: ~/Library/Keychains.
+  </Abstract></ReturnValue>
+			<Anchor>//api/name/sharedURLForCurrentUserKeychainsDirectory</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSURL/sharedURLForSystemKeychainsDirectory</TokenIdentifier>
+			<Abstract type="html">Returns the URL of the system directory: /Library/Keychains.</Abstract>
+			<DeclaredIn>NSURL+WSCKeychainURL.h</DeclaredIn>
+			
+			<Declaration>+ (NSURL *)sharedURLForSystemKeychainsDirectory</Declaration>
+			
+			<ReturnValue><Abstract type="html">An URL of the system keychain directory: /Library/Keychains.
+  </Abstract></ReturnValue>
+			<Anchor>//api/name/sharedURLForSystemKeychainsDirectory</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSURL/sharedURLForLoginKeychain</TokenIdentifier>
+			<Abstract type="html">Returns an NSURL object specifying the location of login.keychain for current user.</Abstract>
+			<DeclaredIn>NSURL+WSCKeychainURL.h</DeclaredIn>
+			
+			<Declaration>+ (NSURL *)sharedURLForLoginKeychain</Declaration>
+			
+			<ReturnValue><Abstract type="html">An NSURL object specifying the location of login.keychain for current user.
+  </Abstract></ReturnValue>
+			<Anchor>//api/name/sharedURLForLoginKeychain</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSURL/sharedURLForSystemKeychain</TokenIdentifier>
+			<Abstract type="html">Returns an NSURL object specifying the location of System.keychain.</Abstract>
+			<DeclaredIn>NSURL+WSCKeychainURL.h</DeclaredIn>
+			
+			<Declaration>+ (NSURL *)sharedURLForSystemKeychain</Declaration>
+			
+			<ReturnValue><Abstract type="html">An NSURL object specifying the location of System.keychain.
+  </Abstract></ReturnValue>
+			<Anchor>//api/name/sharedURLForSystemKeychain</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSURL/URLForTemporaryDirectory</TokenIdentifier>
+			<Abstract type="html">Returns the URL of the temporary directory for current user.</Abstract>
+			<DeclaredIn>NSURL+WSCKeychainURL.h</DeclaredIn>
+			
+			<Declaration>+ (NSURL *)URLForTemporaryDirectory</Declaration>
+			
+			<ReturnValue><Abstract type="html">An URL specifing the location of temporary directory for current user. 
+          If no such directory is currently available, returns nil.
+  </Abstract></ReturnValue>
+			<Anchor>//api/name/URLForTemporaryDirectory</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSURL/URLForHomeDirectory</TokenIdentifier>
+			<Abstract type="html">Returns the URL of the current user&apos;s or application&apos;s home directory, depending on the platform.</Abstract>
+			<DeclaredIn>NSURL+WSCKeychainURL.h</DeclaredIn>
+			
+			<Declaration>+ (NSURL *)URLForHomeDirectory</Declaration>
+			
+			<ReturnValue><Abstract type="html">An URL specifing the location of home directory for current user.
+  </Abstract></ReturnValue>
+			<Anchor>//api/name/URLForHomeDirectory</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

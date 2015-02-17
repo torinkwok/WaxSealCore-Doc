@@ -1,0 +1,1946 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>WSCKeychain Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2 (build 963)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">WaxSealCore </a></h1>
+				<a id="developerHome" href="../index.html"> Tong Guo</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">WSCKeychain Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/URL">&nbsp;&nbsp;&nbsp;&nbsp;URL</option>
+	
+	<option value="//api/name/isDefault">&nbsp;&nbsp;&nbsp;&nbsp;isDefault</option>
+	
+	<option value="//api/name/isLocked">&nbsp;&nbsp;&nbsp;&nbsp;isLocked</option>
+	
+	<option value="//api/name/isReadable">&nbsp;&nbsp;&nbsp;&nbsp;isReadable</option>
+	
+	<option value="//api/name/isValid">&nbsp;&nbsp;&nbsp;&nbsp;isValid</option>
+	
+	<option value="//api/name/isWritable">&nbsp;&nbsp;&nbsp;&nbsp;isWritable</option>
+	
+	<option value="//api/name/secKeychain">&nbsp;&nbsp;&nbsp;&nbsp;secKeychain</option>
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/keychainWhosePassphraseWillBeObtainedFromUserWithURL:initialAccess:becomesDefault:error:">&nbsp;&nbsp;&nbsp;&nbsp;+ keychainWhosePassphraseWillBeObtainedFromUserWithURL:initialAccess:becomesDefault:error:</option>
+	
+	<option value="//api/name/keychainWithContentsOfURL:error:">&nbsp;&nbsp;&nbsp;&nbsp;+ keychainWithContentsOfURL:error:</option>
+	
+	<option value="//api/name/keychainWithSecKeychainRef:">&nbsp;&nbsp;&nbsp;&nbsp;+ keychainWithSecKeychainRef:</option>
+	
+	<option value="//api/name/keychainWithURL:passphrase:initialAccess:becomesDefault:error:">&nbsp;&nbsp;&nbsp;&nbsp;+ keychainWithURL:passphrase:initialAccess:becomesDefault:error:</option>
+	
+	<option value="//api/name/login">&nbsp;&nbsp;&nbsp;&nbsp;+ login</option>
+	
+	<option value="//api/name/system">&nbsp;&nbsp;&nbsp;&nbsp;+ system</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/addApplicationPassphraseWithServiceName:accountName:passphrase:error:">&nbsp;&nbsp;&nbsp;&nbsp;- addApplicationPassphraseWithServiceName:accountName:passphrase:error:</option>
+	
+	<option value="//api/name/addInternetPassphraseWithServerName:URLRelativePath:accountName:protocol:passphrase:error:">&nbsp;&nbsp;&nbsp;&nbsp;- addInternetPassphraseWithServerName:URLRelativePath:accountName:protocol:passphrase:error:</option>
+	
+	<option value="//api/name/allApplicationPassphraseItems">&nbsp;&nbsp;&nbsp;&nbsp;- allApplicationPassphraseItems</option>
+	
+	<option value="//api/name/allInternetPassphraseItems">&nbsp;&nbsp;&nbsp;&nbsp;- allInternetPassphraseItems</option>
+	
+	<option value="//api/name/deleteKeychainItem:error:">&nbsp;&nbsp;&nbsp;&nbsp;- deleteKeychainItem:error:</option>
+	
+	<option value="//api/name/findAllKeychainItemsSatisfyingSearchCriteria:itemClass:error:">&nbsp;&nbsp;&nbsp;&nbsp;- findAllKeychainItemsSatisfyingSearchCriteria:itemClass:error:</option>
+	
+	<option value="//api/name/findFirstKeychainItemSatisfyingSearchCriteria:itemClass:error:">&nbsp;&nbsp;&nbsp;&nbsp;- findFirstKeychainItemSatisfyingSearchCriteria:itemClass:error:</option>
+	
+	<option value="//api/name/isEqualToKeychain:">&nbsp;&nbsp;&nbsp;&nbsp;- isEqualToKeychain:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Properties">Properties</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Creating Keychains">Creating Keychains</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Comparing Keychains">Comparing Keychains</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Creating and Managing Keychain Items">Creating and Managing Keychain Items</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Keychain Services Bridge">Keychain Services Bridge</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/URL">URL</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isDefault">isDefault</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isLocked">isLocked</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isReadable">isReadable</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isValid">isValid</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isWritable">isWritable</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/secKeychain">secKeychain</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/keychainWhosePassphraseWillBeObtainedFromUserWithURL:initialAccess:becomesDefault:error:">keychainWhosePassphraseWillBeObtainedFromUserWithURL:initialAccess:becomesDefault:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/keychainWithContentsOfURL:error:">keychainWithContentsOfURL:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/keychainWithSecKeychainRef:">keychainWithSecKeychainRef:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/keychainWithURL:passphrase:initialAccess:becomesDefault:error:">keychainWithURL:passphrase:initialAccess:becomesDefault:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/login">login</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/system">system</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addApplicationPassphraseWithServiceName:accountName:passphrase:error:">addApplicationPassphraseWithServiceName:accountName:passphrase:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addInternetPassphraseWithServerName:URLRelativePath:accountName:protocol:passphrase:error:">addInternetPassphraseWithServerName:URLRelativePath:accountName:protocol:passphrase:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/allApplicationPassphraseItems">allApplicationPassphraseItems</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/allInternetPassphraseItems">allInternetPassphraseItems</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/deleteKeychainItem:error:">deleteKeychainItem:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/findAllKeychainItemsSatisfyingSearchCriteria:itemClass:error:">findAllKeychainItemsSatisfyingSearchCriteria:itemClass:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/findFirstKeychainItemSatisfyingSearchCriteria:itemClass:error:">findFirstKeychainItemSatisfyingSearchCriteria:itemClass:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isEqualToKeychain:">isEqualToKeychain:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="WSCKeychain Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">WSCKeychain Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">WSCKeychain.h<br />WSCKeychain.m</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>A keychain is an encrypted container that holds passphrases for multiple applications and secure services.</p>
+
+<p>  Keychains are secure storage containers, which means that when the keychain is locked, no one can access its protected contents.
+  In OS X, users can unlock a keychain—thus providing trusted applications access to the contents—by entering a single master passphrase.</p>
+
+<p>  The above encrypted container which is called &ldquo;keychain&rdquo; is represented by <code>WSCKeychain</code> object in <em>WaxSealCore</em> framework
+  and <code>SecKeychainRef</code> in <em>Keychain Services</em> API.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Properties" name="task_Properties"></a>
+						<h3 class="subsubtitle task-title">Properties</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/URL">&nbsp;&nbsp;URL</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isDefault">&nbsp;&nbsp;isDefault</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isValid">&nbsp;&nbsp;isValid</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isLocked">&nbsp;&nbsp;isLocked</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isReadable">&nbsp;&nbsp;isReadable</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isWritable">&nbsp;&nbsp;isWritable</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Creating Keychains" name="task_Creating Keychains"></a>
+						<h3 class="subsubtitle task-title">Creating Keychains</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/keychainWithURL:passphrase:initialAccess:becomesDefault:error:">+&nbsp;keychainWithURL:passphrase:initialAccess:becomesDefault:error:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/keychainWhosePassphraseWillBeObtainedFromUserWithURL:initialAccess:becomesDefault:error:">+&nbsp;keychainWhosePassphraseWillBeObtainedFromUserWithURL:initialAccess:becomesDefault:error:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/keychainWithContentsOfURL:error:">+&nbsp;keychainWithContentsOfURL:error:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/login">+&nbsp;login</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/system">+&nbsp;system</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Comparing Keychains" name="task_Comparing Keychains"></a>
+						<h3 class="subsubtitle task-title">Comparing Keychains</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isEqualToKeychain:">&ndash;&nbsp;isEqualToKeychain:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Creating and Managing Keychain Items" name="task_Creating and Managing Keychain Items"></a>
+						<h3 class="subsubtitle task-title">Creating and Managing Keychain Items</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addApplicationPassphraseWithServiceName:accountName:passphrase:error:">&ndash;&nbsp;addApplicationPassphraseWithServiceName:accountName:passphrase:error:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addInternetPassphraseWithServerName:URLRelativePath:accountName:protocol:passphrase:error:">&ndash;&nbsp;addInternetPassphraseWithServerName:URLRelativePath:accountName:protocol:passphrase:error:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/allApplicationPassphraseItems">&ndash;&nbsp;allApplicationPassphraseItems</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/allInternetPassphraseItems">&ndash;&nbsp;allInternetPassphraseItems</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/findFirstKeychainItemSatisfyingSearchCriteria:itemClass:error:">&ndash;&nbsp;findFirstKeychainItemSatisfyingSearchCriteria:itemClass:error:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/findAllKeychainItemsSatisfyingSearchCriteria:itemClass:error:">&ndash;&nbsp;findAllKeychainItemsSatisfyingSearchCriteria:itemClass:error:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/deleteKeychainItem:error:">&ndash;&nbsp;deleteKeychainItem:error:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Keychain Services Bridge" name="task_Keychain Services Bridge"></a>
+						<h3 class="subsubtitle task-title">Keychain Services Bridge</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/secKeychain">&nbsp;&nbsp;secKeychain</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/keychainWithSecKeychainRef:">+&nbsp;keychainWithSecKeychainRef:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/URL" title="URL"></a>
+	<h3 class="subsubtitle method-title">URL</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The URL for the receiver. (read-only)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (retain, readonly) NSURL *URL</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The URL for the receiver.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WSCKeychain.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isDefault" title="isDefault"></a>
+	<h3 class="subsubtitle method-title">isDefault</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Default state of receiver. (read-only)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (assign, readonly) BOOL isDefault</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>  In most cases, your application should not need to set the default keychain,
+  because this is a choice normally made by the user. You may call this method to change where a
+  passphrase or other keychain items are added, but since this is a user choice,
+  you should set the default keychain back to the user specified keychain when you are done.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WSCKeychain.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isLocked" title="isLocked"></a>
+	<h3 class="subsubtitle method-title">isLocked</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Boolean value that indicates whether the receiver is currently locked. (read-only)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (assign, readonly) BOOL isLocked</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>  <code>YES</code> if the receiver is currently locked, otherwise, <code>NO</code>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WSCKeychain.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isReadable" title="isReadable"></a>
+	<h3 class="subsubtitle method-title">isReadable</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Boolean value that indicates whether the receiver is readable. (read-only)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (assign, readonly) BOOL isReadable</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>  <code>YES</code> if the receiver is readable, otherwise, <code>NO</code>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WSCKeychain.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isValid" title="isValid"></a>
+	<h3 class="subsubtitle method-title">isValid</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Boolean value that indicates whether the receiver is currently valid. (read-only)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (assign, readonly) BOOL isValid</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>  <code>YES</code> if the receiver is still capable of referring to a valid keychain file; otherwise, <em>NO</em>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WSCKeychain.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isWritable" title="isWritable"></a>
+	<h3 class="subsubtitle method-title">isWritable</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Boolean value that indicates whether the receiver is writable. (read-only)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (assign, readonly) BOOL isWritable</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>  <code>YES</code> if the receiver is writable, otherwise, <code>NO</code>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WSCKeychain.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/secKeychain" title="secKeychain"></a>
+	<h3 class="subsubtitle method-title">secKeychain</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The reference of the <code>SecKeychain</code> opaque object, which wrapped by <code>WSCKeychain</code> object.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (unsafe_unretained, readonly) SecKeychainRef secKeychain</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>If you are familiar with the underlying <em>Keychain Services</em> API,
+              you can move freely back and forth between <em>WaxSealCore</em> framework and <em>Keychain Services</em> API with this property.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WSCKeychain.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/keychainWhosePassphraseWillBeObtainedFromUserWithURL:initialAccess:becomesDefault:error:" title="keychainWhosePassphraseWillBeObtainedFromUserWithURL:initialAccess:becomesDefault:error:"></a>
+	<h3 class="subsubtitle method-title">keychainWhosePassphraseWillBeObtainedFromUserWithURL:initialAccess:becomesDefault:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates and returns a <code>WSCKeychain</code> object using the given <a href="#//api/name/URL">URL</a>, interaction prompt and inital access rights.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (instancetype)keychainWhosePassphraseWillBeObtainedFromUserWithURL:(NSURL *)<em>_URL</em> initialAccess:(WSCAccessPermission *)<em>_InitalAccess</em> becomesDefault:(BOOL)<em>_WillBecomeDefault</em> error:(NSError **)<em>_Error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>_URL</em></dt>
+			<dd><p>Specify the <a href="#//api/name/URL">URL</a> in which the new keychain should be sotred.
+              The <a href="#//api/name/URL">URL</a> in this parameter must not be a file reference <a href="#//api/name/URL">URL</a> or an <a href="#//api/name/URL">URL</a> other than file scheme
+              This parameter must not be <code>nil</code>.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>_InitalAccess</em></dt>
+			<dd><p>An WSCAccessPermission object indicating the initial access rights for the new keychain,
+                       A keychain&rsquo;s access rights determine which application have permission to user the keychain.
+                       You may pass <code>nil</code> for the standard access rights.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>_WillBecomeDefault</em></dt>
+			<dd><p>A <code>BOOL</code> value representing whether to set the new keychain as default keychain.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>_Error</em></dt>
+			<dd><p>On input, a pointer to an error object.
+                If an error occurs, this pointer is set to an actual error object containing the error information.
+                You may specify <code>nil</code> for this parameter if you don&rsquo;t want the error information.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A <code>WSCKeychain</code> object initialized with above parameters as well as a passphrase,
+          which is obtained from the passphrase dialog.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>  This class method creates an empty keychain. The and <code>_InitialAccess</code> parameter is optional.
+  And this method will display a passphrase dialog to user.
+  If user interaction to create a keychain is posted, the newly-created keychain is automatically unlocked after creation.</p>
+
+<p>  The <a href="#//api/name/system">system</a> ensures that a default keychain is created for the user at <a href="#//api/name/login">login</a>, thus, in most cases,
+  you do not need to call this method yourself. Users can create additional keychains, or change the default,
+  by using the Keychain Access application. However, a missing default keychain is not recreated automatically,
+  and you may receive an error from other methods if a default keychain does not exist.
+  In that case, you can use this class method with a <code>YES</code> value for <code>_WillBecomeDefault</code> parameter, to create a new default keychain.
+  You can also call this method to create a private temporary keychain for your application’s use,
+  in cases where no user interaction can occur.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/keychainWithURL:passphrase:initialAccess:becomesDefault:error:">+ keychainWithURL:passphrase:initialAccess:becomesDefault:error:</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/keychainWithSecKeychainRef:">+ keychainWithSecKeychainRef:</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/keychainWithContentsOfURL:error:">+ keychainWithContentsOfURL:error:</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WSCKeychain.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/keychainWithContentsOfURL:error:" title="keychainWithContentsOfURL:error:"></a>
+	<h3 class="subsubtitle method-title">keychainWithContentsOfURL:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Opens a keychain from the location specified by a given <a href="#//api/name/URL">URL</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (instancetype)keychainWithContentsOfURL:(NSURL *)<em>_URLOfKeychain</em> error:(NSError **)<em>_Error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>_URLOfKeychain</em></dt>
+			<dd><p>The file <a href="#//api/name/URL">URL</a> that identifies the keychain file you want to open.
+                         The <a href="#//api/name/URL">URL</a> in this parameter must not be a file reference <a href="#//api/name/URL">URL</a>.
+                         This parameter must not be <code>nil</code>.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>_Error</em></dt>
+			<dd><p>On input, a pointer to an error object.
+                If an error occurs, this pointer is set to an actual error object containing the error information.
+                You may specify <code>nil</code> for this parameter if you don&rsquo;t want the error information.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A <code>WSCKeychain</code> object represented a keychain located at the given <a href="#//api/name/URL">URL</a>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/keychainWithURL:passphrase:initialAccess:becomesDefault:error:">+ keychainWithURL:passphrase:initialAccess:becomesDefault:error:</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/keychainWhosePassphraseWillBeObtainedFromUserWithURL:initialAccess:becomesDefault:error:">+ keychainWhosePassphraseWillBeObtainedFromUserWithURL:initialAccess:becomesDefault:error:</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/keychainWithSecKeychainRef:">+ keychainWithSecKeychainRef:</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WSCKeychain.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/keychainWithSecKeychainRef:" title="keychainWithSecKeychainRef:"></a>
+	<h3 class="subsubtitle method-title">keychainWithSecKeychainRef:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates and returns a <code>WSCKeychain</code> object using the given reference to the instance of <code>SecKeychain</code> opaque type.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (instancetype)keychainWithSecKeychainRef:(SecKeychainRef)<em>_SecKeychainRef</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>_SecKeychainRef</em></dt>
+			<dd><p>A reference to the instance of <code>SecKeychain</code> opaque type.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A <code>WSCKeychain</code> object initialized with the given reference to the instance of <code>SecKeychain</code> opaque type.
+          Return <code>nil</code> if <em>_SecKeychainRef</em> is <code>nil</code> or an error occured.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>  If you are familiar with the underlying <em>Keychain Services</em> API,
+  you can move freely back and forth between <em>WaxSealCore</em> framework and <em>Keychain Services</em> API with this class method.</p><div class="warning"><p><strong>Warning:</strong> This method is just used for bridge between <em>WaxSealCore</em> framework and <em>Keychain Services</em> API.</p>
+
+<p>  Instead of invoking this method, you should construct a <code>WSCKeychain</code> object by invoking:</p>
+
+<ul>
+<li><a href="#//api/name/keychainWithURL:passphrase:initialAccess:becomesDefault:error:">+ keychainWithURL:passphrase:initialAccess:becomesDefault:error:</a></li>
+<li><a href="#//api/name/keychainWhosePassphraseWillBeObtainedFromUserWithURL:initialAccess:becomesDefault:error:">+ keychainWhosePassphraseWillBeObtainedFromUserWithURL:initialAccess:becomesDefault:error:</a></li>
+<li><a href="#//api/name/keychainWithContentsOfURL:error:">+ keychainWithContentsOfURL:error:</a></li>
+</ul>
+</div>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/keychainWithURL:passphrase:initialAccess:becomesDefault:error:">+ keychainWithURL:passphrase:initialAccess:becomesDefault:error:</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/keychainWhosePassphraseWillBeObtainedFromUserWithURL:initialAccess:becomesDefault:error:">+ keychainWhosePassphraseWillBeObtainedFromUserWithURL:initialAccess:becomesDefault:error:</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/keychainWithContentsOfURL:error:">+ keychainWithContentsOfURL:error:</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WSCKeychain.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/keychainWithURL:passphrase:initialAccess:becomesDefault:error:" title="keychainWithURL:passphrase:initialAccess:becomesDefault:error:"></a>
+	<h3 class="subsubtitle method-title">keychainWithURL:passphrase:initialAccess:becomesDefault:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates and returns a <code>WSCKeychain</code> object using the given <a href="#//api/name/URL">URL</a>, passphrase, and inital access rights.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (instancetype)keychainWithURL:(NSURL *)<em>_URL</em> passphrase:(NSString *)<em>_Passphrase</em> initialAccess:(WSCAccessPermission *)<em>_InitalAccess</em> becomesDefault:(BOOL)<em>_WillBecomeDefault</em> error:(NSError **)<em>_Error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>_URL</em></dt>
+			<dd><p>Specify the <a href="#//api/name/URL">URL</a> in which the new keychain should be sotred.
+              The <a href="#//api/name/URL">URL</a> in this parameter must not be a file reference <a href="#//api/name/URL">URL</a> or an <a href="#//api/name/URL">URL</a> other than file scheme
+              This parameter must not be <code>nil</code>.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>_Passphrase</em></dt>
+			<dd><p>A NSString object containing the passphrase which is used to protect the new keychain.
+                     This parameter must not be <code>nil</code>.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>_InitalAccess</em></dt>
+			<dd><p>An WSCAccessPermission object indicating the initial access rights for the new keychain,
+                       A keychain&rsquo;s access rights determine which application have permission to user the keychain.
+                       You may pass <code>nil</code> for the standard access rights.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>_WillBecomeDefault</em></dt>
+			<dd><p>A <code>BOOL</code> value representing whether to set the new keychain as default keychain.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>_Error</em></dt>
+			<dd><p>On input, a pointer to an error object.
+                If an error occurs, this pointer is set to an actual error object containing the error information.
+                You may specify <code>nil</code> for this parameter if you don&rsquo;t want the error information.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A <code>WSCKeychain</code> object initialized with above parameters.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>  This class method creates an empty keychain. The <code>_Passphrase</code> parameter is required, and <code>_InitialAccess</code> parameter is optional.
+  If user interaction to create a keychain is posted, the newly-created keychain is automatically unlocked after creation.</p>
+
+<p>  The <a href="#//api/name/system">system</a> ensures that a default keychain is created for the user at <a href="#//api/name/login">login</a>, thus, in most cases,
+  you do not need to call this method yourself. Users can create additional keychains, or change the default,
+  by using the Keychain Access application. However, a missing default keychain is not recreated automatically,
+  and you may receive an error from other methods if a default keychain does not exist.
+  In that case, you can use this class method with a <code>YES</code> value for <code>_WillBecomeDefault</code> parameter, to create a new default keychain.
+  You can also call this method to create a private temporary keychain for your application’s use,
+  in cases where no user interaction can occur.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/keychainWhosePassphraseWillBeObtainedFromUserWithURL:initialAccess:becomesDefault:error:">+ keychainWhosePassphraseWillBeObtainedFromUserWithURL:initialAccess:becomesDefault:error:</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/keychainWithSecKeychainRef:">+ keychainWithSecKeychainRef:</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/keychainWithContentsOfURL:error:">+ keychainWithContentsOfURL:error:</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WSCKeychain.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/login" title="login"></a>
+	<h3 class="subsubtitle method-title">login</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Opens and returns a <code>WSCKeychain</code> object representing the <code>login.keychain</code> for current user.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (instancetype)login</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A <code>WSCKeychain</code> object representing the <code>login.keychain</code> for current user</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>  This method will search for the <code>login.keychain</code> at <code>~/Library/Keychains</code>,
+  if there is not a <code>login.keychain</code>, <code>nil</code> returned.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/system">+ system</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WSCKeychain.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/system" title="system"></a>
+	<h3 class="subsubtitle method-title">system</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Opens and returns a <code>WSCKeychain</code> object representing the <code>System.keychain</code> for current user.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (instancetype)system</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A <code>WSCKeychain</code> object representing the <code>System.keychain</code>.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>  This method will search for the <code>System.keychain</code> at <code>/Library/Keychains</code>,
+  if there is not a <code>System.keychain</code>, <code>nil</code> returned.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/login">+ login</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WSCKeychain.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/addApplicationPassphraseWithServiceName:accountName:passphrase:error:" title="addApplicationPassphraseWithServiceName:accountName:passphrase:error:"></a>
+	<h3 class="subsubtitle method-title">addApplicationPassphraseWithServiceName:accountName:passphrase:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Adds a new application passphrase to the keychain represented by receiver.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (WSCPassphraseItem *)addApplicationPassphraseWithServiceName:(NSString *)<em>_ServiceName</em> accountName:(NSString *)<em>_AccountName</em> passphrase:(NSString *)<em>_Passphrase</em> error:(NSError **)<em>_Error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>_ServiceName</em></dt>
+			<dd><p>An <code>NSString</code> object representing the service name.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>_AccountName</em></dt>
+			<dd><p>An <code>NSString</code> object representing the account name.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>_Passphrase</em></dt>
+			<dd><p>An <code>NSString</code> object representing the passphrase.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>_Error</em></dt>
+			<dd><p>On input, a pointer to an error object.
+                If an error occurs, this pointer is set to an actual error object containing the error information.
+                You may specify <code>nil</code> for this parameter if you don&rsquo;t want the error information.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A <a href="../Classes/WSCPassphraseItem.html"><code>WSCPassphraseItem</code></a> object representing the new keychain item.
+          Returns <code>nil</code> if an error occurs.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>  This method adds a new application passphrase to the keychain represented by receiver.
+  Required parameters to identify the passphrase are <em>_ServiceName</em> and <em>_AccountName</em>, which are application-defined strings.
+  This method returns a newly added item represented by a <a href="../Classes/WSCKeychainItem.html"><code>WSCKeychainItem</code></a> object.</p>
+
+<p>  You can use this method to add passphrases for accounts other than the Internet.
+  For example, you might add Evernote or IRC Client passphrases, or passphrases for your database or scheduling programs.</p>
+
+<p>  This method sets the initial access rights for the new keychain item so that the application creating the item is given trusted access.</p>
+
+<p>  This method automatically calls the <a href="../Classes/WSCKeychainManager.html#//api/name/unlockKeychainWithUserInteraction:error:">unlockKeychainWithUserInteraction:error:</a>
+   method to display the Unlock Keychain dialog box if the keychain is currently locked.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WSCKeychain.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/addInternetPassphraseWithServerName:URLRelativePath:accountName:protocol:passphrase:error:" title="addInternetPassphraseWithServerName:URLRelativePath:accountName:protocol:passphrase:error:"></a>
+	<h3 class="subsubtitle method-title">addInternetPassphraseWithServerName:URLRelativePath:accountName:protocol:passphrase:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Adds a new Internet passphrase to the keychain represented by receiver.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (WSCPassphraseItem *)addInternetPassphraseWithServerName:(NSString *)<em>_ServerName</em> URLRelativePath:(NSString *)<em>_URLRelativePath</em> accountName:(NSString *)<em>_AccountName</em> protocol:(WSCInternetProtocolType)<em>_Protocol</em> passphrase:(NSString *)<em>_Passphrase</em> error:(NSError **)<em>_Error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>_ServerName</em></dt>
+			<dd><p>An <code>NSString</code> object representing the server name.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>_URLRelativePath</em></dt>
+			<dd><p>An <code>NSString</code> object representing the the path.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>_AccountName</em></dt>
+			<dd><p>An <code>NSString</code> object representing the account name.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>_Protocol</em></dt>
+			<dd><p>The protocol associated with this passphrase.
+                   See <a href="../Constants/WSCInternetProtocolType.html">&ldquo;WaxSealCore Internet Protocol Type Constants&rdquo;</a> for a <a href="#//api/name/description">description</a> of possible values.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>_Passphrase</em></dt>
+			<dd><p>An <code>NSString</code> object containing the passphrase.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>_Error</em></dt>
+			<dd><p>On input, a pointer to an error object.
+                If an error occurs, this pointer is set to an actual error object containing the error information.
+                You may specify <code>nil</code> for this parameter if you don&rsquo;t want the error information.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A <a href="../Classes/WSCPassphraseItem.html"><code>WSCPassphraseItem</code></a> object representing the new keychain item.
+          Returns <code>nil</code> if an error occurs.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>  This method adds a new Internet server passphrase to the specified keychain.
+  Required parameters to identify the passphrase are <em>_ServerName</em> and <em>_AccountName</em> (you cannot pass <code>nil</code> for both parameters).
+  In addition, some protocols may require an optional <em>_SecurityDomain</em> when authentication is requested.
+  This method returns a newly added item represented by a <a href="../Classes/WSCKeychainItem.html"><code>WSCKeychainItem</code></a> object.</p>
+
+<p>  This method sets the initial access rights for the new keychain item
+  so that the application creating the item is given trusted access.</p>
+
+<p>  This method automatically calls the <a href="../Classes/WSCKeychainManager.html#//api/name/unlockKeychainWithUserInteraction:error:">unlockKeychainWithUserInteraction:error:</a>
+   method to display the Unlock Keychain dialog box if the keychain is currently locked.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WSCKeychain.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/allApplicationPassphraseItems" title="allApplicationPassphraseItems"></a>
+	<h3 class="subsubtitle method-title">allApplicationPassphraseItems</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Retrieve all the application passphrase items stored in the keychain represented by receiver.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSArray *)allApplicationPassphraseItems</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>An <code>NSArray</code> object containing all the application passphrase items stored in the keychain represented by receiver.
+          Returns an empty array if there is not any application passphrase item in the keychain.
+          Returns <code>nil</code> if an error occured.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<div class="warning"><p><strong>Warning:</strong> After invoking this method, the passphrase item stored in the returned array may become invalid
+          (perhaps it has been deleted or modified by user or by other applications),
+           you should check the validity of each passphrase item before using it.</p></div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WSCKeychain.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/allInternetPassphraseItems" title="allInternetPassphraseItems"></a>
+	<h3 class="subsubtitle method-title">allInternetPassphraseItems</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Retrieve all the Internet passphrase items stored in the keychain represented by receiver.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSArray *)allInternetPassphraseItems</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>An <code>NSArray</code> object containing all the Internet passphrase items stored in the keychain represented by receiver.
+          Returns an empty array if there is not any Internet passphrase item in the keychain.
+          Returns <code>nil</code> if an error occured.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<div class="warning"><p><strong>Warning:</strong> After invoking this method, the passphrase item stored in the returned array may become invalid
+          (perhaps it has been deleted or modified by user or by other applications),
+           you should check the validity of each passphrase item before using it.</p></div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WSCKeychain.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/deleteKeychainItem:error:" title="deleteKeychainItem:error:"></a>
+	<h3 class="subsubtitle method-title">deleteKeychainItem:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Deletes a keychain item from the permanent data store of the keychain represented by receiver.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)deleteKeychainItem:(WSCKeychainItem *)<em>_KeychainItem</em> error:(NSError **)<em>_Error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>_KeychainItem</em></dt>
+			<dd><p>The keychain item to be deleted.
+                       After the delete operation, this keychain item will become invalid.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>_Error</em></dt>
+			<dd><p>On input, a pointer to an error object.
+                If an error occurs, this pointer is set to an actual error object containing the error information.
+                You may specify <code>nil</code> for this parameter if you don&rsquo;t want the error information.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p><code>YES</code> if the delete operation is successful; otherwise, <code>NO</code>.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>  If the keychain item has not previously been added to the keychain, this method does nothing and returns <code>YES</code>.</p>
+
+<p>  Do not delete a keychain item and recreate it in order to modify it;
+  instead, use the read-write properties to modify an existing keychain item.
+  When you delete a keychain item, you lose any access controls and trust settings
+  added by the user or by other applications.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WSCKeychain.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/findAllKeychainItemsSatisfyingSearchCriteria:itemClass:error:" title="findAllKeychainItemsSatisfyingSearchCriteria:itemClass:error:"></a>
+	<h3 class="subsubtitle method-title">findAllKeychainItemsSatisfyingSearchCriteria:itemClass:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Find all the keychain items satisfying the given search criteria contained in <em>_SearchCriteriaDict</em> dictionary.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSArray *)findAllKeychainItemsSatisfyingSearchCriteria:(NSDictionary *)<em>_SearchCriteriaDict</em> itemClass:(WSCKeychainItemClass)<em>_ItemClass</em> error:(NSError **)<em>_Error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>_SearchCriteriaDict</em></dt>
+			<dd><p>The <code>NSDictionary</code> object containing the search criteria.
+                             For the valid search keys, please see the discussion section of <a href="#//api/name/findFirstKeychainItemSatisfyingSearchCriteria:itemClass:error:">findFirstKeychainItemSatisfyingSearchCriteria:itemClass:error:</a> method.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>_ItemClass</em></dt>
+			<dd><p>The value of type <a href="../Constants/WSCKeychainItemClass.html">WSCKeychainItemClass</a>,
+                    it identifies the type of keychain item we want to find.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>_Error</em></dt>
+			<dd><p>On input, a pointer to an error object.
+                If an error occurs, this pointer is set to an actual error object containing the error information.
+                You may specify <code>nil</code> for this parameter if you don&rsquo;t want the error information.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>An <code>NSArray</code> object containing the keychain items satisfying the given search criteria.
+          Returns an empty array if there is not any keychan item satisfying the given search criteria.
+          Returns <code>nil</code> if an error occurs.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<div class="warning"><p><strong>Warning:</strong> After invoking this method, the passphrase item stored in the returned array may become invalid
+          (perhaps it has been deleted or modified by user or by other applications),
+           you should check the validity of each passphrase item before using it.</p></div>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/findFirstKeychainItemSatisfyingSearchCriteria:itemClass:error:">- findFirstKeychainItemSatisfyingSearchCriteria:itemClass:error:</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WSCKeychain.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/findFirstKeychainItemSatisfyingSearchCriteria:itemClass:error:" title="findFirstKeychainItemSatisfyingSearchCriteria:itemClass:error:"></a>
+	<h3 class="subsubtitle method-title">findFirstKeychainItemSatisfyingSearchCriteria:itemClass:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Find the first keychain item which satisfies the given search criteria contained in <em>_SearchCriteriaDict</em> dictionary.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (WSCKeychainItem *)findFirstKeychainItemSatisfyingSearchCriteria:(NSDictionary *)<em>_SearchCriteriaDict</em> itemClass:(WSCKeychainItemClass)<em>_ItemClass</em> error:(NSError **)<em>_Error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>_SearchCriteriaDict</em></dt>
+			<dd><p>The <code>NSDictionary</code> object containing the search criteria.
+                             For the valid search keys, see the discussion section.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>_ItemClass</em></dt>
+			<dd><p>The value of type <a href="../Constants/WSCKeychainItemClass.html">WSCKeychainItemClass</a>,
+         it identifies the type of keychain item we want to find.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>_Error</em></dt>
+			<dd><p>On input, a pointer to an error object.
+                If an error occurs, this pointer is set to an actual error object containing the error information.
+                You may specify <code>nil</code> for this parameter if you don&rsquo;t want the error information.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A <a href="../Classes/WSCKeychainItem.html"><code>WSCKeychainItem</code></a> object representing the keychain item satisfying the given search criteria.
+          Returns <code>nil</code> if an error occurs or there is not any keychan item satisfying the given search criteria.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>  The valid search keys:</p>
+
+<p>  <em>Common Attributes:</em></p>
+
+<ul>
+<li><p><code>WSCKeychainItemAttributeCreationDate</code>
+The corresponding value is an <code>NSDate</code> object that identifies the creation date of a keychain item.</p></li>
+<li><p><code>WSCKeychainItemAttributeModificationDate</code>
+The corresponding value is an <code>NSDate</code> object that identifies the modification date of a keychain item.</p></li>
+<li><p><code>WSCKeychainItemAttributeKindDescription</code>
+The corresponding value is an <code>NSString</code> object that identifies the comment of a keychain item.</p></li>
+<li><p><code>WSCKeychainItemAttributeComment</code>
+The corresponding value is an <code>NSString</code> object that identifies the kind <a href="#//api/name/description">description</a> of a keychain item.</p></li>
+<li><p><code>WSCKeychainItemAttributeLabel</code>
+The corresponding value is an <code>NSString</code> object that identifies the label of a keychain item.</p></li>
+<li><p><code>WSCKeychainItemAttributeInvisible</code>
+The corresponding value is an Boolean value that indicates whether the item is invisible.</p></li>
+<li><p><code>WSCKeychainItemAttributeNegative</code>
+The corresponding value is an Boolean value that indicates whether there is a valid passphrase associated with this keychain item.</p></li>
+<li><p><code>WSCKeychainItemAttributeAccount</code>
+The corresponding value is an <code>NSString</code> object that identifies the user account of a passphrase item.
+It also applies to application, Internet passphrase items.</p></li>
+</ul>
+
+
+<p>  <em>Unique to the Internet Passphrase Items:</em></p>
+
+<ul>
+<li><p><code>WSCKeychainItemAttributeHostName</code>
+The corresponding value is an <code>NSString</code> object that identifies the Internet server’s domain name or IP address of an Internet passphrase.
+This search key is unique to the Internet passphrase item.</p></li>
+<li><p><code>WSCKeychainItemAttributeAuthenticationType</code>
+The corresponding value is an <code>NSValue</code> object that encapsulates a value of type <a href="../Constants/WSCInternetAuthenticationType.html"><code>WSCInternetAuthenticationType</code></a>
+that identifies the authentication type of an Internet passphrase.
+You can get the correct <code>NSValue</code> object that encapsulates the given value of type <a href="../Constants/WSCInternetAuthenticationType.html"><code>WSCInternetAuthenticationType</code></a>
+by invoking <code>WSCAuthenticationTypeCocoaValue()</code>.
+This search key is unique to the Internet passphrase item.</p></li>
+<li><p><code>WSCKeychainItemAttributePort</code>
+The corresponding value is an <code>NSNumber</code> object that identifies the port number of an Internet passphrase item.
+This search key is unique to the Internet passphrase item.</p></li>
+<li><p><code>WSCKeychainItemAttributeRelativePath</code>
+The corresponding value is an <code>NSString</code> object that identifies the relative path of a URL conforming to RFC 1808 of an Internet passphrase.
+For example: in the URL &ldquo;<a href="https://github.com/TongG/WaxSealCore">https://github.com/TongG/WaxSealCore</a>&rdquo;, the relative <a href="#//api/name/URL">URL</a> path is &ldquo;/TongG/WaxSealCore&rdquo;.
+This search key is unique to the Internet passphrase item.</p></li>
+<li><p><code>WSCKeychainItemAttributeProtocol</code>
+The corresponding value is an <code>NSValue</code> object that encapsulates a value of type <a href="../Constants/WSCInternetProtocolType.html"><code>WSCInternetProtocolType</code></a>
+that identifies the Internet protocol of an Internet passphrase.
+You can get the correct <code>NSValue</code> object that encapsulates the given value of type <a href="../Constants/WSCInternetProtocolType.html"><code>WSCInternetProtocolType</code></a>
+by invoking <code>WSCInternetProtocolCocoaValue()</code>.
+This search key is unique to the Internet passphrase item.</p></li>
+</ul>
+
+
+<p>  <em>Unique to the Application Passphrase Items:</em></p>
+
+<ul>
+<li><p><code>WSCKeychainItemAttributeServiceName</code>
+The corresponding value is an <code>NSString</code> object that identifies the value of untyped bytes that represents a user-defined data.
+This search key is unique to the application passphrase item.</p></li>
+<li><p><code>WSCKeychainItemAttributeUserDefinedDataAttribute</code>
+The corresponding value is an <code>NSData</code> object that identifies the service name of an application passphrase item.
+For example, &ldquo;WaxSeal&rdquo;. This search key is unique to the application passphrase item.</p></li>
+</ul>
+
+
+<p>  <em>Unique to the Certificate Items:</em></p>
+
+<ul>
+<li><p><code>WSCKeychainItemAttributeCertificateType</code></p></li>
+<li><p><code>WSCKeychainItemAttributeCertificateEncoding</code></p></li>
+<li><p><code>WSCKeychainItemAttributeCRLType</code></p></li>
+<li><p><code>WSCKeychainItemAttributeCRLEncoding</code></p></li>
+<li><p><code>WSCKeychainItemAttributeAlias</code></p></li>
+</ul>
+<div class="warning"><p><strong>Warning:</strong> After invoking this method, the passphrase item returned by this method may become invalid
+           (perhaps it has been deleted or modified by user or by other applications),
+           you should check the validity of it before using it.</p></div>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/findAllKeychainItemsSatisfyingSearchCriteria:itemClass:error:">- findAllKeychainItemsSatisfyingSearchCriteria:itemClass:error:</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WSCKeychain.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isEqualToKeychain:" title="isEqualToKeychain:"></a>
+	<h3 class="subsubtitle method-title">isEqualToKeychain:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a Boolean value that indicates whether a given keychain is equal to receiver using an <a href="#//api/name/URL">URL</a> comparision.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)isEqualToKeychain:(WSCKeychain *)<em>_AnotherKeychain</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>_AnotherKeychain</em></dt>
+			<dd><p>The keychain with which to compare the receiver.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p><code>YES</code> if <em>_AnotherKeychain</em> is equivalent to receiver (if they have the same <a href="#//api/name/URL">URL</a>);
+          otherwise <em>NO</em>.</p>
+
+<p>  <strong>One more thing</strong>
+   When you know both objects are keychains, this method is a faster way to check equality than method <a href="#//api/name/isEqual:"><code>isEqual:</code></a>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WSCKeychain.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+                    
+                    
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2015  Tong Guo. All rights reserved. (Last updated: 2015-02-17)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

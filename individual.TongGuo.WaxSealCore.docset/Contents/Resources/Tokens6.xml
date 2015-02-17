@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/WSCPermittedOperation.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/WSCPermittedOperation</TokenIdentifier>
+			<Abstract type="html">The WSCPermittedOperation represents information about an permitted operation of a protected keychain item.</Abstract>
+			<DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
+            
+			
+			<NodeRef refid="6"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCPermittedOperation/setDescriptor:</TokenIdentifier>
+			<Abstract type="html">The descriptor of the permitted operation represented by receiver.</Abstract>
+			<DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
+			
+			<Declaration>@property (copy, readwrite) NSString *descriptor</Declaration>
+			
+			
+			<Anchor>//api/name/descriptor</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCPermittedOperation/descriptor</TokenIdentifier>
+			<Abstract type="html">The descriptor of the permitted operation represented by receiver.</Abstract>
+			<DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
+			
+			<Declaration>@property (copy, readwrite) NSString *descriptor</Declaration>
+			
+			
+			<Anchor>//api/name/descriptor</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WSCPermittedOperation/descriptor</TokenIdentifier>
+			<Abstract type="html">The descriptor of the permitted operation represented by receiver.</Abstract>
+			<DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
+			
+			<Declaration>@property (copy, readwrite) NSString *descriptor</Declaration>
+			
+			
+			<Anchor>//api/name/descriptor</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCPermittedOperation/setTrustedApplications:</TokenIdentifier>
+			<Abstract type="html">An array of trusted application objects (that is, WSCTrustedApplication instances)
+    identifying applications that are allowed access to the keychain item without user confirmation. </Abstract>
+			<DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
+			
+			<Declaration>@property (retain, readwrite) NSArray *trustedApplications</Declaration>
+			
+			
+			<Anchor>//api/name/trustedApplications</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCPermittedOperation/trustedApplications</TokenIdentifier>
+			<Abstract type="html">An array of trusted application objects (that is, WSCTrustedApplication instances)
+    identifying applications that are allowed access to the keychain item without user confirmation. </Abstract>
+			<DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
+			
+			<Declaration>@property (retain, readwrite) NSArray *trustedApplications</Declaration>
+			
+			
+			<Anchor>//api/name/trustedApplications</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WSCPermittedOperation/trustedApplications</TokenIdentifier>
+			<Abstract type="html">An array of trusted application objects (that is, WSCTrustedApplication instances)
+    identifying applications that are allowed access to the keychain item without user confirmation. </Abstract>
+			<DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
+			
+			<Declaration>@property (retain, readwrite) NSArray *trustedApplications</Declaration>
+			
+			
+			<Anchor>//api/name/trustedApplications</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCPermittedOperation/setPromptContext:</TokenIdentifier>
+			<Abstract type="html">Masks that define when using a keychain or a protected keychain item should require a passphrase.</Abstract>
+			<DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
+			
+			<Declaration>@property (assign, readwrite) WSCPermittedOperationPromptContext promptContext</Declaration>
+			
+			
+			<Anchor>//api/name/promptContext</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCPermittedOperation/promptContext</TokenIdentifier>
+			<Abstract type="html">Masks that define when using a keychain or a protected keychain item should require a passphrase.</Abstract>
+			<DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
+			
+			<Declaration>@property (assign, readwrite) WSCPermittedOperationPromptContext promptContext</Declaration>
+			
+			
+			<Anchor>//api/name/promptContext</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WSCPermittedOperation/promptContext</TokenIdentifier>
+			<Abstract type="html">Masks that define when using a keychain or a protected keychain item should require a passphrase.</Abstract>
+			<DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
+			
+			<Declaration>@property (assign, readwrite) WSCPermittedOperationPromptContext promptContext</Declaration>
+			
+			
+			<Anchor>//api/name/promptContext</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCPermittedOperation/setHostProtectedKeychainItem:</TokenIdentifier>
+			<Abstract type="html">The protected keychain item that the permitted operation represented by receiver applying to.
+  </Abstract>
+			<DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
+			
+			<Declaration>@property (unsafe_unretained, readonly) WSCProtectedKeychainItem *hostProtectedKeychainItem</Declaration>
+			
+			
+			<Anchor>//api/name/hostProtectedKeychainItem</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCPermittedOperation/hostProtectedKeychainItem</TokenIdentifier>
+			<Abstract type="html">The protected keychain item that the permitted operation represented by receiver applying to.
+  </Abstract>
+			<DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
+			
+			<Declaration>@property (unsafe_unretained, readonly) WSCProtectedKeychainItem *hostProtectedKeychainItem</Declaration>
+			
+			
+			<Anchor>//api/name/hostProtectedKeychainItem</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WSCPermittedOperation/hostProtectedKeychainItem</TokenIdentifier>
+			<Abstract type="html">The protected keychain item that the permitted operation represented by receiver applying to.
+  </Abstract>
+			<DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
+			
+			<Declaration>@property (unsafe_unretained, readonly) WSCProtectedKeychainItem *hostProtectedKeychainItem</Declaration>
+			
+			
+			<Anchor>//api/name/hostProtectedKeychainItem</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCPermittedOperation/setSecACL:</TokenIdentifier>
+			<Abstract type="html">The reference of the SecACL opaque object, which wrapped by WSCPermittedOperation object. (read-only)
+  </Abstract>
+			<DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
+			
+			<Declaration>@property (unsafe_unretained, readonly) SecACLRef secACL</Declaration>
+			
+			
+			<Anchor>//api/name/secACL</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCPermittedOperation/secACL</TokenIdentifier>
+			<Abstract type="html">The reference of the SecACL opaque object, which wrapped by WSCPermittedOperation object. (read-only)
+  </Abstract>
+			<DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
+			
+			<Declaration>@property (unsafe_unretained, readonly) SecACLRef secACL</Declaration>
+			
+			
+			<Anchor>//api/name/secACL</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WSCPermittedOperation/secACL</TokenIdentifier>
+			<Abstract type="html">The reference of the SecACL opaque object, which wrapped by WSCPermittedOperation object. (read-only)
+  </Abstract>
+			<DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
+			
+			<Declaration>@property (unsafe_unretained, readonly) SecACLRef secACL</Declaration>
+			
+			
+			<Anchor>//api/name/secACL</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/WSCPermittedOperation/permittedOperationWithSecACLRef:appliesTo:error:</TokenIdentifier>
+			<Abstract type="html">Creates and returns a WSCPermittedOperation object using the given reference to the instance of SecACL opaque type.</Abstract>
+			<DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
+			
+			<Declaration>+ (instancetype)permittedOperationWithSecACLRef:(SecACLRef)_SecACLRef appliesTo:(WSCProtectedKeychainItem *)_ProtectedKeychainItem error:(NSError **)_Error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>_SecACLRef</Name>
+					<Abstract type="html">A reference to the instance of SecACL opaque type.
+  </Abstract>
+				</Parameter><Parameter>
+					<Name>_ProtectedKeychainItem</Name>
+					<Abstract type="html">The protected keychain item that the permitted operation represented by receiver applying to.
+                                You can get it with hostProtectedKeychainItem read-only property.
+                                </Abstract>
+				</Parameter><Parameter>
+					<Name>_Error</Name>
+					<Abstract type="html">On input, a pointer to an error object.
+                If an error occurs, this pointer is set to an actual error object containing the error information.
+                You may specify nil for this parameter if you don&apos;t want the error information.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A WSCPermittedOperation object initialized with the givent reference to the instance of SecACL opaque type.
+          Return nil if _SecACLRef is nil.
+  </Abstract></ReturnValue>
+			<Anchor>//api/name/permittedOperationWithSecACLRef:appliesTo:error:</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

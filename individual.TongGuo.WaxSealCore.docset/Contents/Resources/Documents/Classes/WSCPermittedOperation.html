@@ -1,0 +1,723 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>WSCPermittedOperation Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2 (build 963)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">WaxSealCore </a></h1>
+				<a id="developerHome" href="../index.html"> Tong Guo</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">WSCPermittedOperation Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/descriptor">&nbsp;&nbsp;&nbsp;&nbsp;descriptor</option>
+	
+	<option value="//api/name/hostProtectedKeychainItem">&nbsp;&nbsp;&nbsp;&nbsp;hostProtectedKeychainItem</option>
+	
+	<option value="//api/name/promptContext">&nbsp;&nbsp;&nbsp;&nbsp;promptContext</option>
+	
+	<option value="//api/name/secACL">&nbsp;&nbsp;&nbsp;&nbsp;secACL</option>
+	
+	<option value="//api/name/trustedApplications">&nbsp;&nbsp;&nbsp;&nbsp;trustedApplications</option>
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/permittedOperationWithSecACLRef:appliesTo:error:">&nbsp;&nbsp;&nbsp;&nbsp;+ permittedOperationWithSecACLRef:appliesTo:error:</option>
+	
+	
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Attributes of Permitted Operations">Attributes of Permitted Operations</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Keychain Services Bridge">Keychain Services Bridge</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/descriptor">descriptor</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/hostProtectedKeychainItem">hostProtectedKeychainItem</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/promptContext">promptContext</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/secACL">secACL</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/trustedApplications">trustedApplications</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/permittedOperationWithSecACLRef:appliesTo:error:">permittedOperationWithSecACLRef:appliesTo:error:</a></span></li>
+	
+</ul></li>
+
+
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="WSCPermittedOperation Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">WSCPermittedOperation Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">WSCPermittedOperation.h<br />WSCPermittedOperation.m</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>The <code>WSCPermittedOperation</code> represents information about an permitted operation of a protected keychain item.</p>
+
+<p>  In <em>WaxSealCore</em>, each protected keychain item (and the keychain itself) contains a list of <strong>permitted operation</strong>s
+  in the form of a <code>WSCPermittedOperation</code> object.
+  Each permitted operation has a list of one or more <strong>permitted operation tag</strong>s specifying operations
+  that can be done with that protected item, such as decrypting, encrypting, sign or authenticating.
+  In addition, each permitted operation has a list of <strong>trusted application</strong>s (represented by <a href="../Classes/WSCTrustedApplication.html">WSCTrustedApplication</a>)
+  that can perform the operations specified by the permitted operation tags without authorization from the user.</p>
+
+<p>  When an OS X application attempts to access a keychain item for a particular purpose (such as to sign a document),
+  the system looks at each permitted operation entry in the permitted operaton list (represented by <a href="../Classes/WSCProtectedKeychainItem.html#//api/name/permittedOperations">permittedOperations</a> )
+  for that item to determine whether the application should be allowed access.
+  If there is no corresponded permitted operation entry for that operation, then access is denied and it is up to the calling application
+  to try something else or to notify the user.
+  If there are any permitted operation entry for the operation, then the system looks at the list of trusted applications
+  of each permitted operation entry to see if the calling application is in the list.
+  If it is—or if the permitted operation specifies that all applications are allowed access—then access is permitted
+  without confirmation from the user (as long as the keychain is unlocked).
+  If there is an permitted operation entry for the operation but the calling application is not in the list of
+  trusted applications, then the system prompts the user for the keychain passphrase before permitting the application
+  to access the item.</p>
+
+<p>  The <em>WaxSealCore</em> frameword provides API to create, delete, read, and modify permitted operation entries.
+  There can be any number of permitted operation entries in the list of permitted operatons of an protected keychain item.
+  If two or more of the permitted operation entries are for the same operation, there is no way to predict the order in which they will be evaluated.</p>
+
+<p>  <code>WSCPermittedOperation</code> is abstract of <code>SecACLRef</code>, <code>SecAccessRef</code> and their correspoding functions in <em>Keychain Services</em> API.
+  Although the <a href="../Classes/WSCProtectedKeychainItem.html"><code>WSCProtectedKeychainItem</code></a> and its subclasses and <code>WSCPermittedOperation</code> lets you create permitted operation entries
+  and add them to a protected keychain item, it is limited in the ways you can configure the authorizations and lists of trusted applications.
+  If you want to implement access controls that go beyond the complexity supported by <em>WaxSealCore</em>,
+  you can use the bridge API: <a href="#//api/name/secACL">secACL</a> property to retrieve the underlying <code>SecACLRef</code>, then work with the <em>Keychain Services</em> API
+  or you can use the CSSM API to create a set of CSSM data structures and then call the <code>SecAccessCreateFromOwnerAndACL</code> function.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Attributes of Permitted Operations" name="task_Attributes of Permitted Operations"></a>
+						<h3 class="subsubtitle task-title">Attributes of Permitted Operations</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/descriptor">&nbsp;&nbsp;descriptor</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/trustedApplications">&nbsp;&nbsp;trustedApplications</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/promptContext">&nbsp;&nbsp;promptContext</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/hostProtectedKeychainItem">&nbsp;&nbsp;hostProtectedKeychainItem</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Keychain Services Bridge" name="task_Keychain Services Bridge"></a>
+						<h3 class="subsubtitle task-title">Keychain Services Bridge</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/secACL">&nbsp;&nbsp;secACL</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/permittedOperationWithSecACLRef:appliesTo:error:">+&nbsp;permittedOperationWithSecACLRef:appliesTo:error:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/descriptor" title="descriptor"></a>
+	<h3 class="subsubtitle method-title">descriptor</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The descriptor of the permitted operation represented by receiver.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (copy, readwrite) NSString *descriptor</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>You can use this read-write property to set/get the name of the protected keychain item
+              that appears in the dialog box when the user is prompted for permission to use the item.
+              Note that this descriptor is not necessarily the same as the one displayed for the item
+              by the <strong>Keychain Access</strong> application.</p><div class="warning"><p><strong>Warning:</strong> Because an permitted operation entry is always associated with an protected keychain item,
+           when you modify an permitted operation entry, you are modifying its host protected keychain item as well.
+           Therefore, there is no need for a separate API to write a modified permitted operation entry
+           back into the host protected keychain item. For ease of understanding, see the below code segment:</p>
+
+<pre><code>NSError* error = nil;
+WSCPermittedOperation* firstPermittedOperation_demo0 = nil;
+
+NSString* hostName = @"secure.imdb.com";
+NSString* relativePath = @"/register-imdb/changepassword/demo";
+NSString* accountName = @"waxsealcore@whatever.org";
+
+WSCPassphraseItem* IMDbPassphrase = [ [ WSCKeychain login ]
+    addInternetPassphraseWithServerName: hostName
+                        URLRelativePath: relativePath
+                            accountName: accountName
+                               protocol: WSCInternetProtocolTypeHTTPS
+                             passphrase: @"waxsealcore"
+                                  error: &amp;error ];
+
+if ( !error )
+    {
+    firstPermittedOperation_demo0 = [ IMDbPassphrase permittedOperations ].firstObject;
+
+    // The descriptor of the first permitted operation of IMDbPassphrase is "secure.imdb.com" by default.
+    NSLog( @"Before Modifying: %@", firstPermittedOperation_demo0.descriptor );
+
+    // Modify the descriptor
+    firstPermittedOperation_demo0.descriptor = @"Demo for Documentation";
+
+    // When we modify an permitted operation entry, we are modifying its host protected keychain item as well.
+    // Therefore, there is no need for a separate API such as "setPermittedOperations:", 
+    // "updatePermittedOperations:" bla bla bla... whatever, to write a modified permitted operation entry 
+    // back into the host protected keychain item.
+
+    // The descriptor of the first permitted operation entry of IMDbPassphrase is now "Demo for Documentation"
+    WSCPermittedOperation* firstPermittedOperation_demo1 = [ IMDbPassphrase.permittedOperations firstObject ];
+    NSLog ( @"After Modifying: %@", firstPermittedOperation_demo1.descriptor );
+
+    // Done. Kill it.
+    [ [ IMDbPassphrase keychain ] deleteKeychainItem: IMDbPassphrase error: nil ];
+    }
+</code></pre></div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WSCPermittedOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/hostProtectedKeychainItem" title="hostProtectedKeychainItem"></a>
+	<h3 class="subsubtitle method-title">hostProtectedKeychainItem</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The protected keychain item that the permitted operation represented by receiver applying to.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (unsafe_unretained, readonly) WSCProtectedKeychainItem *hostProtectedKeychainItem</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WSCPermittedOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/promptContext" title="promptContext"></a>
+	<h3 class="subsubtitle method-title">promptContext</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Masks that define when using a keychain or a protected keychain item should require a passphrase.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (assign, readwrite) WSCPermittedOperationPromptContext promptContext</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>If you set the prompt context bit,
+              the user is prompted for the keychain passphrase each time a nontrusted application attempts to access the item,
+              even if the keychain is already unlocked.</p>
+
+<p>  If the user clicks <code>Always Allow</code> in response to prompt dialog, the application is added to the
+  trusted applications of the protected keychain item as a trusted application and the dialog does not appear again.
+  This bit is clear by default—you must set it explicitly for any permitted operation entry for which you want this extra protection.
+  There is one exception to this rule: the <strong>Keychain Access</strong> application always requires a passphrase to display the
+  secret data (e.g. passphrase) of a keychain item unless the <strong>Keychain Access</strong> application itself is included in the trusted application list.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WSCPermittedOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/secACL" title="secACL"></a>
+	<h3 class="subsubtitle method-title">secACL</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The reference of the <code>SecACL</code> opaque object, which wrapped by <code>WSCPermittedOperation</code> object. (read-only)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (unsafe_unretained, readonly) SecACLRef secACL</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>If you are familiar with the underlying <em>Keychain Services</em> API,
+              you can move freely back and forth between <em>WaxSealCore</em> framework and <em>Keychain Services</em> API with this property.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WSCPermittedOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/trustedApplications" title="trustedApplications"></a>
+	<h3 class="subsubtitle method-title">trustedApplications</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>An array of trusted application objects (that is, <a href="../Classes/WSCTrustedApplication.html"><code>WSCTrustedApplication</code></a> instances)
+    identifying applications that are allowed access to the keychain item without user confirmation.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (retain, readwrite) NSArray *trustedApplications</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Use the <a href="../Classes/WSCTrustedApplication.html#//api/name/trustedApplicationWithContentsOfURL:error:">trustedApplicationWithContentsOfURL:error:</a>
+              class method to create trusted application objects.</p>
+
+<p>  When you use the part of write property (or the form of <a href="#//api/name/trustedApplications">setTrustedApplications:</a>),
+  if you pass to <code>nil</code>, then any application can use the protected keychain
+  with which the permitted operation represented by receiver associated.
+  If you pass an empty array, then all applications are treated as untrusted.</p><div class="warning"><p><strong>Warning:</strong> Because an permitted operation entry is always associated with an protected keychain item,
+           when you modify an permitted operation entry, you are modifying its host protected keychain item as well.
+           Therefore, there is no need for a separate API to write a modified permitted operation entry
+           back into the host protected keychain item. For ease of understanding, see the <strong>Warning</strong> section
+           of the description of <a href="#//api/name/descriptor">descriptor</a> property.</p></div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WSCPermittedOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/permittedOperationWithSecACLRef:appliesTo:error:" title="permittedOperationWithSecACLRef:appliesTo:error:"></a>
+	<h3 class="subsubtitle method-title">permittedOperationWithSecACLRef:appliesTo:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates and returns a <code>WSCPermittedOperation</code> object using the given reference to the instance of <code>SecACL</code> opaque type.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (instancetype)permittedOperationWithSecACLRef:(SecACLRef)<em>_SecACLRef</em> appliesTo:(WSCProtectedKeychainItem *)<em>_ProtectedKeychainItem</em> error:(NSError **)<em>_Error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>_SecACLRef</em></dt>
+			<dd><p>A reference to the instance of <code>SecACL</code> opaque type.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>_ProtectedKeychainItem</em></dt>
+			<dd><p>The protected keychain item that the permitted operation represented by receiver applying to.
+                                You can get it with <a href="#//api/name/hostProtectedKeychainItem">hostProtectedKeychainItem</a> read-only property.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>_Error</em></dt>
+			<dd><p>On input, a pointer to an error object.
+                If an error occurs, this pointer is set to an actual error object containing the error information.
+                You may specify <code>nil</code> for this parameter if you don&rsquo;t want the error information.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A <code>WSCPermittedOperation</code> object initialized with the givent reference to the instance of <code>SecACL</code> opaque type.
+          Return <code>nil</code> if <em>_SecACLRef</em> is <code>nil</code>.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>  This method creates a permitted operation object which represents information about an permitted operation of a protected keychain item
+  with the specified underlying <code>SecACLRef</code>.
+  The permitted operation object can be inserted into the permittedOperations of a protected keychain item
+  which represented by <a href="../Classes/WSCProtectedKeychainItem.html">WSCProtectedKeychainItem</a> and its subclass.</p>
+
+<p>  If you are familiar with the underlying <em>Keychain Services</em> API,
+  you can move freely back and forth between <em>WaxSealCore</em> framework and <em>Keychain Services</em> API with this class method.</p><div class="warning"><p><strong>Warning:</strong> This method is just used for bridge between <em>WaxSealCore</em> framework and <em>Keychain Services</em> API.</p>
+
+<p>  Instead of invoking this method, you should construct a <code>WSCPermittedOperation</code> object by invoking:</p>
+
+<ul>
+<li><a href="../Classes/WSCProtectedKeychainItem.html#//api/name/addPermittedOperationWithDescription:trustedApplications:forOperations:promptContext:error:">- addPermittedOperationWithDescription:trustedApplications:forOperations:promptContext:error:</a></li>
+</ul>
+</div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WSCPermittedOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+                    
+                    
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2015  Tong Guo. All rights reserved. (Last updated: 2015-02-17)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>
