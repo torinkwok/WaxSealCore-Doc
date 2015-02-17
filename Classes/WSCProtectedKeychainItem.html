@@ -1,0 +1,505 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>WSCProtectedKeychainItem Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2 (build 963)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">WaxSealCore </a></h1>
+				<a id="developerHome" href="../index.html"> Tong Guo</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">WSCProtectedKeychainItem Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/secAccess">&nbsp;&nbsp;&nbsp;&nbsp;secAccess</option>
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/addPermittedOperationWithDescription:trustedApplications:forOperations:promptContext:error:">&nbsp;&nbsp;&nbsp;&nbsp;- addPermittedOperationWithDescription:trustedApplications:forOperations:promptContext:error:</option>
+	
+	<option value="//api/name/permittedOperations">&nbsp;&nbsp;&nbsp;&nbsp;- permittedOperations</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Managing Permitted Operations">Managing Permitted Operations</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Keychain Services Bridge">Keychain Services Bridge</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/secAccess">secAccess</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addPermittedOperationWithDescription:trustedApplications:forOperations:promptContext:error:">addPermittedOperationWithDescription:trustedApplications:forOperations:promptContext:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/permittedOperations">permittedOperations</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="WSCProtectedKeychainItem Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">WSCProtectedKeychainItem Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value"><a href="../Classes/WSCKeychainItem.html">WSCKeychainItem</a> : NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">WSCProtectedKeychainItem.h<br />WSCProtectedKeychainItem.m</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>The <code>WSCProtectedKeychainItem</code> class is a subclass of <a href="../Classes/WSCKeychainItem.html"><code>WSCKeychainItem</code></a>
+    representing the keychain item that involves the secret data (keys, passphrase, etc.)</p>
+
+<p>  You typically do not use <code>WSCProtectedKeychainItem</code> object directly,
+  you use objects whose classes descend from this class or its superclass:</p>
+
+<ul>
+<li><a href="../Classes/WSCPassphraseItem.html">WSCPassphraseItem</a></li>
+<li>WSCCertificate</li>
+<li>WSCKey</li>
+<li>WSCIdentity</li>
+</ul>
+
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Managing Permitted Operations" name="task_Managing Permitted Operations"></a>
+						<h3 class="subsubtitle task-title">Managing Permitted Operations</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addPermittedOperationWithDescription:trustedApplications:forOperations:promptContext:error:">&ndash;&nbsp;addPermittedOperationWithDescription:trustedApplications:forOperations:promptContext:error:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/permittedOperations">&ndash;&nbsp;permittedOperations</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Keychain Services Bridge" name="task_Keychain Services Bridge"></a>
+						<h3 class="subsubtitle task-title">Keychain Services Bridge</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/secAccess">&nbsp;&nbsp;secAccess</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/secAccess" title="secAccess"></a>
+	<h3 class="subsubtitle method-title">secAccess</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The reference of the <code>SecAccess</code> opaque object, which wrapped by <code>WSCProtectedKeychainItem</code> object. (read-only)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (unsafe_unretained, readonly) SecAccessRef secAccess</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>If you are familiar with the underlying <em>Keychain Services</em> API,
+              you can move freely back and forth between <em>WaxSealCore</em> framework and <em>Keychain Services</em> API with this property.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WSCProtectedKeychainItem.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/addPermittedOperationWithDescription:trustedApplications:forOperations:promptContext:error:" title="addPermittedOperationWithDescription:trustedApplications:forOperations:promptContext:error:"></a>
+	<h3 class="subsubtitle method-title">addPermittedOperationWithDescription:trustedApplications:forOperations:promptContext:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates a new permitted operation entry from the description, trusted application list, and prompt context provided
+    and adds it to the protected keychain item represented by receiver.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (WSCPermittedOperation *)addPermittedOperationWithDescription:(NSString *)<em>_Description</em> trustedApplications:(NSArray *)<em>_TrustedApplications</em> forOperations:(WSCPermittedOperationTag)<em>_Operations</em> promptContext:(WSCPermittedOperationPromptContext)<em>_PromptContext</em> error:(NSError **)<em>_Error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>_Description</em></dt>
+			<dd><p>The human readable name to be used to refer to this item when the user is prompted.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>_TrustedApplications</em></dt>
+			<dd><p>An array of trusted application objects (that is, <a href="../Classes/WSCTrustedApplication.html"><code>WSCTrustedApplication</code></a> instances)
+                              identifying applications that are allowed access to the protected keychain item without user confirmation.
+                              If you set this parameter to <code>nil</code>, then any application can use this item.
+                              If you pass an empty array, then there are no trusted applications.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>_Operations</em></dt>
+			<dd><p>An unsigned integer bit field containing any of the operation tag masks described in <a href="../Constants/WSCPermittedOperationTag.html">&ldquo;WSCPermittedOperationTag Constants Reference&rdquo;</a>.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>_PromptContext</em></dt>
+			<dd><p>A set of prompt context masks. See <a href="../Constants/WSCPermittedOperationPromptContext.html"><code>WSCPermittedOperationPromptContext</code></a> for possible values.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>_Error</em></dt>
+			<dd><p>On input, a pointer to an error object.
+                If an error occurs, this pointer is set to an actual error object containing the error information.
+                You may specify <code>nil</code> for this parameter if you don&rsquo;t want the error information.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A <a href="../Classes/WSCPermittedOperation.html"><code>WSCPermittedOperation</code></a> object that has been added to the list of permitted operations of an protected keychain item.
+          Returns <code>nil</code> if an error occurs.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The permitted operation returned by this method is a reference to an <strong>permitted operation entry</strong>.
+              The permitted operation entry includes the name of the protected keychain item as it appears in user prompts,
+              a list of trusted applications (represented by <a href="../Classes/WSCTrustedApplication.html"><code>WSCTrustedApplication</code></a>),
+              the prompt context masks, and a list of one or more operations tags to which this permitted operation entry applies.
+              By default, a new permitted operation entry applies to all operations.
+              Use the operationTags read-write property to set the list of operations for an permitted operation object.</p><div class="warning"><p><strong>Warning:</strong> The system allows exactly one owner permitted operation entry in each protected keychain item.
+           This method fails if you attempt to add a second owner permitted operaton entry.</p></div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WSCProtectedKeychainItem.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/permittedOperations" title="permittedOperations"></a>
+	<h3 class="subsubtitle method-title">permittedOperations</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Retrieves all the permitted operation entries of the protected keychain item represented by receiver.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSArray *)permittedOperations</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>An array representing the list of permitted operation entries.
+          Returns <code>nil</code> if an error occurs.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>A protected keychain item can have any number of <strong>permitted operation</strong> entries
+              for specific operations or sets of operations.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WSCProtectedKeychainItem.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+                    
+                    
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2015  Tong Guo. All rights reserved. (Last updated: 2015-02-17)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

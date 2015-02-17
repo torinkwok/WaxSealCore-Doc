@@ -1,0 +1,1641 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>WSCKeychainManagerDelegate Protocol Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2 (build 963)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">WaxSealCore </a></h1>
+				<a id="developerHome" href="../index.html"> Tong Guo</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">WSCKeychainManagerDelegate Protocol Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/keychainManager:shouldAddKeychain:toSearchList:">&nbsp;&nbsp;&nbsp;&nbsp;- keychainManager:shouldAddKeychain:toSearchList:</option>
+	
+	<option value="//api/name/keychainManager:shouldDeleteKeychain:">&nbsp;&nbsp;&nbsp;&nbsp;- keychainManager:shouldDeleteKeychain:</option>
+	
+	<option value="//api/name/keychainManager:shouldLockKeychain:">&nbsp;&nbsp;&nbsp;&nbsp;- keychainManager:shouldLockKeychain:</option>
+	
+	<option value="//api/name/keychainManager:shouldProceedAfterError:addingKeychain:toSearchList:">&nbsp;&nbsp;&nbsp;&nbsp;- keychainManager:shouldProceedAfterError:addingKeychain:toSearchList:</option>
+	
+	<option value="//api/name/keychainManager:shouldProceedAfterError:deletingKeychain:">&nbsp;&nbsp;&nbsp;&nbsp;- keychainManager:shouldProceedAfterError:deletingKeychain:</option>
+	
+	<option value="//api/name/keychainManager:shouldProceedAfterError:lockingKeychain:">&nbsp;&nbsp;&nbsp;&nbsp;- keychainManager:shouldProceedAfterError:lockingKeychain:</option>
+	
+	<option value="//api/name/keychainManager:shouldProceedAfterError:removingKeychain:fromSearchList:">&nbsp;&nbsp;&nbsp;&nbsp;- keychainManager:shouldProceedAfterError:removingKeychain:fromSearchList:</option>
+	
+	<option value="//api/name/keychainManager:shouldProceedAfterError:settingKeychainAsDefault:">&nbsp;&nbsp;&nbsp;&nbsp;- keychainManager:shouldProceedAfterError:settingKeychainAsDefault:</option>
+	
+	<option value="//api/name/keychainManager:shouldProceedAfterError:unlockingKeychain:withPassphrase:">&nbsp;&nbsp;&nbsp;&nbsp;- keychainManager:shouldProceedAfterError:unlockingKeychain:withPassphrase:</option>
+	
+	<option value="//api/name/keychainManager:shouldProceedAfterError:unlockingKeychainWithUserInteraction:">&nbsp;&nbsp;&nbsp;&nbsp;- keychainManager:shouldProceedAfterError:unlockingKeychainWithUserInteraction:</option>
+	
+	<option value="//api/name/keychainManager:shouldProceedAfterError:updatingKeychainSearchList:">&nbsp;&nbsp;&nbsp;&nbsp;- keychainManager:shouldProceedAfterError:updatingKeychainSearchList:</option>
+	
+	<option value="//api/name/keychainManager:shouldRemoveKeychain:fromSearchList:">&nbsp;&nbsp;&nbsp;&nbsp;- keychainManager:shouldRemoveKeychain:fromSearchList:</option>
+	
+	<option value="//api/name/keychainManager:shouldSetKeychainAsDefault:">&nbsp;&nbsp;&nbsp;&nbsp;- keychainManager:shouldSetKeychainAsDefault:</option>
+	
+	<option value="//api/name/keychainManager:shouldUnlockKeychain:withPassphrase:">&nbsp;&nbsp;&nbsp;&nbsp;- keychainManager:shouldUnlockKeychain:withPassphrase:</option>
+	
+	<option value="//api/name/keychainManager:shouldUnlockKeychainWithUserInteraction:">&nbsp;&nbsp;&nbsp;&nbsp;- keychainManager:shouldUnlockKeychainWithUserInteraction:</option>
+	
+	<option value="//api/name/keychainManager:shouldUpdateKeychainSearchList:">&nbsp;&nbsp;&nbsp;&nbsp;- keychainManager:shouldUpdateKeychainSearchList:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Deleting a Keychain">Deleting a Keychain</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Making a Keychain Default">Making a Keychain Default</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Locking Keychains">Locking Keychains</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Unlocking Keychains">Unlocking Keychains</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Searching for Keychains Items">Searching for Keychains Items</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/keychainManager:shouldAddKeychain:toSearchList:">keychainManager:shouldAddKeychain:toSearchList:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/keychainManager:shouldDeleteKeychain:">keychainManager:shouldDeleteKeychain:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/keychainManager:shouldLockKeychain:">keychainManager:shouldLockKeychain:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/keychainManager:shouldProceedAfterError:addingKeychain:toSearchList:">keychainManager:shouldProceedAfterError:addingKeychain:toSearchList:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/keychainManager:shouldProceedAfterError:deletingKeychain:">keychainManager:shouldProceedAfterError:deletingKeychain:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/keychainManager:shouldProceedAfterError:lockingKeychain:">keychainManager:shouldProceedAfterError:lockingKeychain:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/keychainManager:shouldProceedAfterError:removingKeychain:fromSearchList:">keychainManager:shouldProceedAfterError:removingKeychain:fromSearchList:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/keychainManager:shouldProceedAfterError:settingKeychainAsDefault:">keychainManager:shouldProceedAfterError:settingKeychainAsDefault:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/keychainManager:shouldProceedAfterError:unlockingKeychain:withPassphrase:">keychainManager:shouldProceedAfterError:unlockingKeychain:withPassphrase:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/keychainManager:shouldProceedAfterError:unlockingKeychainWithUserInteraction:">keychainManager:shouldProceedAfterError:unlockingKeychainWithUserInteraction:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/keychainManager:shouldProceedAfterError:updatingKeychainSearchList:">keychainManager:shouldProceedAfterError:updatingKeychainSearchList:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/keychainManager:shouldRemoveKeychain:fromSearchList:">keychainManager:shouldRemoveKeychain:fromSearchList:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/keychainManager:shouldSetKeychainAsDefault:">keychainManager:shouldSetKeychainAsDefault:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/keychainManager:shouldUnlockKeychain:withPassphrase:">keychainManager:shouldUnlockKeychain:withPassphrase:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/keychainManager:shouldUnlockKeychainWithUserInteraction:">keychainManager:shouldUnlockKeychainWithUserInteraction:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/keychainManager:shouldUpdateKeychainSearchList:">keychainManager:shouldUpdateKeychainSearchList:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="WSCKeychainManagerDelegate Protocol Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">WSCKeychainManagerDelegate Protocol Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">WSCKeychainManager.h</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>The <code>WSCKeychainManagerDelegate</code> protocol defines optional methods for managing
+    operations involving the deleting, setting, searching, etc. of keychains.
+    When you use an <a href="../Classes/WSCKeychainManager.html">WSCKeychainManager</a> object to initiate a delete, set, search operations,
+    the keychain manager asks its delegate whether the operation should begin at all
+    and whether it should proceed when an error occurs.</p><div class="warning"><p><strong>Warning:</strong> You should associate your delegate with a unique instance of <a href="../Classes/WSCKeychainManager.html"><code>WSCKeychainManager</code></a> class,
+             as opposed to the shared instance.</p></div>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Deleting a Keychain" name="task_Deleting a Keychain"></a>
+						<h3 class="subsubtitle task-title">Deleting a Keychain</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/keychainManager:shouldDeleteKeychain:">&ndash;&nbsp;keychainManager:shouldDeleteKeychain:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/keychainManager:shouldProceedAfterError:deletingKeychain:">&ndash;&nbsp;keychainManager:shouldProceedAfterError:deletingKeychain:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Making a Keychain Default" name="task_Making a Keychain Default"></a>
+						<h3 class="subsubtitle task-title">Making a Keychain Default</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/keychainManager:shouldSetKeychainAsDefault:">&ndash;&nbsp;keychainManager:shouldSetKeychainAsDefault:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/keychainManager:shouldProceedAfterError:settingKeychainAsDefault:">&ndash;&nbsp;keychainManager:shouldProceedAfterError:settingKeychainAsDefault:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Locking Keychains" name="task_Locking Keychains"></a>
+						<h3 class="subsubtitle task-title">Locking Keychains</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/keychainManager:shouldLockKeychain:">&ndash;&nbsp;keychainManager:shouldLockKeychain:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/keychainManager:shouldProceedAfterError:lockingKeychain:">&ndash;&nbsp;keychainManager:shouldProceedAfterError:lockingKeychain:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Unlocking Keychains" name="task_Unlocking Keychains"></a>
+						<h3 class="subsubtitle task-title">Unlocking Keychains</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/keychainManager:shouldUnlockKeychain:withPassphrase:">&ndash;&nbsp;keychainManager:shouldUnlockKeychain:withPassphrase:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/keychainManager:shouldProceedAfterError:unlockingKeychain:withPassphrase:">&ndash;&nbsp;keychainManager:shouldProceedAfterError:unlockingKeychain:withPassphrase:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/keychainManager:shouldUnlockKeychainWithUserInteraction:">&ndash;&nbsp;keychainManager:shouldUnlockKeychainWithUserInteraction:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/keychainManager:shouldProceedAfterError:unlockingKeychainWithUserInteraction:">&ndash;&nbsp;keychainManager:shouldProceedAfterError:unlockingKeychainWithUserInteraction:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Searching for Keychains Items" name="task_Searching for Keychains Items"></a>
+						<h3 class="subsubtitle task-title">Searching for Keychains Items</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/keychainManager:shouldUpdateKeychainSearchList:">&ndash;&nbsp;keychainManager:shouldUpdateKeychainSearchList:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/keychainManager:shouldProceedAfterError:updatingKeychainSearchList:">&ndash;&nbsp;keychainManager:shouldProceedAfterError:updatingKeychainSearchList:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/keychainManager:shouldAddKeychain:toSearchList:">&ndash;&nbsp;keychainManager:shouldAddKeychain:toSearchList:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/keychainManager:shouldProceedAfterError:addingKeychain:toSearchList:">&ndash;&nbsp;keychainManager:shouldProceedAfterError:addingKeychain:toSearchList:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/keychainManager:shouldRemoveKeychain:fromSearchList:">&ndash;&nbsp;keychainManager:shouldRemoveKeychain:fromSearchList:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/keychainManager:shouldProceedAfterError:removingKeychain:fromSearchList:">&ndash;&nbsp;keychainManager:shouldProceedAfterError:removingKeychain:fromSearchList:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/keychainManager:shouldAddKeychain:toSearchList:" title="keychainManager:shouldAddKeychain:toSearchList:"></a>
+	<h3 class="subsubtitle method-title">keychainManager:shouldAddKeychain:toSearchList:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Asks the delegate whether the specified keychain should be added to the current default search list.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)keychainManager:(WSCKeychainManager *)<em>_KeychainManager</em> shouldAddKeychain:(WSCKeychain *)<em>_Keychain</em> toSearchList:(NSArray *)<em>_SearchList</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>_KeychainManager</em></dt>
+			<dd><p>The keychain manager that attempted to add the specified keychain to default search lsit.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>_Keychain</em></dt>
+			<dd><p>The keychain that the keychain manager tried to add.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>_SearchList</em></dt>
+			<dd><p>An array of keychain objects (of class <a href="../Classes/WSCKeychain.html">WSCKeychain</a>)
+                     specifying the list of keychains to which you want to add the specified keychain.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p><code>YES</code> if the current specified keychain should be added or <code>NO</code> if it should not be added.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>  If you do not implement this method, the keychain manager assumes a repsonse of <code>YES</code>.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/keychainManager:shouldProceedAfterError:addingKeychain:toSearchList:">- keychainManager:shouldProceedAfterError:addingKeychain:toSearchList:</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WSCKeychainManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/keychainManager:shouldDeleteKeychain:" title="keychainManager:shouldDeleteKeychain:"></a>
+	<h3 class="subsubtitle method-title">keychainManager:shouldDeleteKeychain:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Asks the delegate whether the specified keychain should be deleted.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)keychainManager:(WSCKeychainManager *)<em>_KeychainManager</em> shouldDeleteKeychain:(WSCKeychain *)<em>_Keychain</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>_KeychainManager</em></dt>
+			<dd><p>The keychain manager that attempted to delete the specified keychain.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>_Keychain</em></dt>
+			<dd><p>The keychain that the keychain manager tried to delete.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p><code>YES</code> if the specified keychain should be deleted or <code>NO</code> if it should not be deleted.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>  Deleted keychains are deleted immediately and not placed in the Trash.
+  If you do not implement this method, the keychain manager assumes a repsonse of <code>YES</code>.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Classes/WSCKeychainManager.html#//api/name/deleteKeychain:error:">– deleteKeychain:error:</a></p></code></li>
+			
+			<li><code><p><a href="../Classes/WSCKeychainManager.html#//api/name/deleteKeychains:error:">– deleteKeychains:error:</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WSCKeychainManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/keychainManager:shouldLockKeychain:" title="keychainManager:shouldLockKeychain:"></a>
+	<h3 class="subsubtitle method-title">keychainManager:shouldLockKeychain:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Asks the delegate whether the specified keychain should be locked.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)keychainManager:(WSCKeychainManager *)<em>_KeychainManager</em> shouldLockKeychain:(WSCKeychain *)<em>_Keychain</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>_KeychainManager</em></dt>
+			<dd><p>The keychain manager that attempted to lock the specified keychain.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>_Keychain</em></dt>
+			<dd><p>The keychain that the keychain manager tried to lock.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p><code>YES</code> if the specified keychain should be locked or <code>NO</code> if it should not be locked.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>  If you do not implement this method, the keychain manager assumes a repsonse of <code>YES</code>.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Classes/WSCKeychainManager.html#//api/name/lockKeychain:error:">- lockKeychain:error:</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WSCKeychainManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/keychainManager:shouldProceedAfterError:addingKeychain:toSearchList:" title="keychainManager:shouldProceedAfterError:addingKeychain:toSearchList:"></a>
+	<h3 class="subsubtitle method-title">keychainManager:shouldProceedAfterError:addingKeychain:toSearchList:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Asks the delegate if the operation should continue after an error occurs while adding the specified keychain to default keychain search list.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)keychainManager:(WSCKeychainManager *)<em>_KeychainManager</em> shouldProceedAfterError:(NSError *)<em>_Error</em> addingKeychain:(WSCKeychain *)<em>_Keychain</em> toSearchList:(NSArray *)<em>_SearchList</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>_KeychainManager</em></dt>
+			<dd><p>The keychain manager that attempted to add the specified keychain to default search lsit.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>_Error</em></dt>
+			<dd><p>The error that occurred while attempting to add the specified keychain to the default keychain search list.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>_Keychain</em></dt>
+			<dd><p>The keychain that the keychain manager tried to add.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>_SearchList</em></dt>
+			<dd><p>An array of keychain objects (of class <a href="../Classes/WSCKeychain.html">WSCKeychain</a>)
+                     specifying the list of keychains to which you want to add the specified keychain.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p><code>YES</code> if the operation should proceed or <code>NO</code> if it should be aborted.
+          If you do not implement this method, the keychain manager assumes a response of <code>NO</code>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/keychainManager:shouldAddKeychain:toSearchList:">- keychainManager:shouldAddKeychain:toSearchList:</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WSCKeychainManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/keychainManager:shouldProceedAfterError:deletingKeychain:" title="keychainManager:shouldProceedAfterError:deletingKeychain:"></a>
+	<h3 class="subsubtitle method-title">keychainManager:shouldProceedAfterError:deletingKeychain:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Asks the delegate if the operation should continue after an error occurs while deleting the specified keychain.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)keychainManager:(WSCKeychainManager *)<em>_KeychainManager</em> shouldProceedAfterError:(NSError *)<em>_Error</em> deletingKeychain:(WSCKeychain *)<em>_Keychain</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>_KeychainManager</em></dt>
+			<dd><p>The keychain manager that attempted to delete the specified keychain.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>_Error</em></dt>
+			<dd><p>The error that occurred while attempting to delete the specified keychain.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>_Keychain</em></dt>
+			<dd><p>The keychain that the keychain manager tried to delete.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p><code>YES</code> if the operation should proceed or <code>NO</code> if it should be aborted.
+          If you do not implement this method, the keychain manager assumes a response of <code>NO</code>.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>  The keychain manager calls this method when there is a problem deleting the keychain.
+  If you return <code>YES</code>, the keychain manager continues deleting any remaining keychains and ignores the error.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Classes/WSCKeychainManager.html#//api/name/deleteKeychain:error:">– deleteKeychain:error:</a></p></code></li>
+			
+			<li><code><p><a href="../Classes/WSCKeychainManager.html#//api/name/deleteKeychains:error:">– deleteKeychains:error:</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WSCKeychainManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/keychainManager:shouldProceedAfterError:lockingKeychain:" title="keychainManager:shouldProceedAfterError:lockingKeychain:"></a>
+	<h3 class="subsubtitle method-title">keychainManager:shouldProceedAfterError:lockingKeychain:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Asks the delegate if the operation should continue after an error occurs while locking the specified keychain.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)keychainManager:(WSCKeychainManager *)<em>_KeychainManager</em> shouldProceedAfterError:(NSError *)<em>_Error</em> lockingKeychain:(WSCKeychain *)<em>_Keychain</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>_KeychainManager</em></dt>
+			<dd><p>The keychain manager that attempted to lock the specified keychain.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>_Error</em></dt>
+			<dd><p>The error that occurred while attempting to lock the specified keychain.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>_Keychain</em></dt>
+			<dd><p>The keychain that the keychain manager tried to lock.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p><code>YES</code> if the operation should proceed or <code>NO</code> if it should be aborted.
+          If you do not implement this method, the keychain manager assumes a response of <code>NO</code>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Classes/WSCKeychainManager.html#//api/name/lockKeychain:error:">- lockKeychain:error:</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WSCKeychainManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/keychainManager:shouldProceedAfterError:removingKeychain:fromSearchList:" title="keychainManager:shouldProceedAfterError:removingKeychain:fromSearchList:"></a>
+	<h3 class="subsubtitle method-title">keychainManager:shouldProceedAfterError:removingKeychain:fromSearchList:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Asks the delegate if the operation should continue after an error occurs while removing the specified keychain from default keychain search list.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)keychainManager:(WSCKeychainManager *)<em>_KeychainManager</em> shouldProceedAfterError:(NSError *)<em>_Error</em> removingKeychain:(WSCKeychain *)<em>_Keychain</em> fromSearchList:(NSArray *)<em>_SearchList</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>_KeychainManager</em></dt>
+			<dd><p>The keychain manager that attempted to remove the specified keychain from default search lsit.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>_Error</em></dt>
+			<dd><p>The error that occurred while attempting to remove the specified keychain from the default keychain search list.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>_Keychain</em></dt>
+			<dd><p>The keychain that the keychain manager tried to remove.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>_SearchList</em></dt>
+			<dd><p>An array of keychain objects (of class <a href="../Classes/WSCKeychain.html">WSCKeychain</a>)
+                     specifying the list of keychains from which you want to remove the specified keychain.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p><code>YES</code> if the operation should proceed or <code>NO</code> if it should be aborted.
+          If you do not implement this method, the keychain manager assumes a response of <code>NO</code>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/keychainManager:shouldRemoveKeychain:fromSearchList:">- keychainManager:shouldRemoveKeychain:fromSearchList:</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WSCKeychainManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/keychainManager:shouldProceedAfterError:settingKeychainAsDefault:" title="keychainManager:shouldProceedAfterError:settingKeychainAsDefault:"></a>
+	<h3 class="subsubtitle method-title">keychainManager:shouldProceedAfterError:settingKeychainAsDefault:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Asks the delegate if the operation should continue after an error occurs while setting the specified keychain as default.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)keychainManager:(WSCKeychainManager *)<em>_KeychainManager</em> shouldProceedAfterError:(NSError *)<em>_Error</em> settingKeychainAsDefault:(WSCKeychain *)<em>_Keychain</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>_KeychainManager</em></dt>
+			<dd><p>The keychain manager that attempted to set the specified keychain as default.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>_Error</em></dt>
+			<dd><p>The error that occured while attempting to set the specified keychain as default.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>_Keychain</em></dt>
+			<dd><p>The keychain that the keychain manager tried to make the default.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p><code>YES</code> if the operation should proceed or <code>NO</code> if it should be aborted.
+          If you do not implement this method, the keychain manager assumes a response of <code>NO</code>.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>  The keychan manager calls this method when there is a problem setting the specified keychain as default.
+  If you return <code>YES</code>, the keychain manager continues returning the older default keychain regardless of what happens.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Classes/WSCKeychainManager.html#//api/name/setDefaultKeychain:error:">– setDefaultKeychain:error:</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WSCKeychainManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/keychainManager:shouldProceedAfterError:unlockingKeychain:withPassphrase:" title="keychainManager:shouldProceedAfterError:unlockingKeychain:withPassphrase:"></a>
+	<h3 class="subsubtitle method-title">keychainManager:shouldProceedAfterError:unlockingKeychain:withPassphrase:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Asks the delegate if the operation should continue after an error occurs while unlocking the specified keychain with the specified passphrase.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)keychainManager:(WSCKeychainManager *)<em>_KeychainManager</em> shouldProceedAfterError:(NSError *)<em>_Error</em> unlockingKeychain:(WSCKeychain *)<em>_Keychain</em> withPassphrase:(NSString *)<em>_Passphrase</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>_KeychainManager</em></dt>
+			<dd><p>The keychain manager that attempted to unlock the specified keychain with the specified passphrase.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>_Error</em></dt>
+			<dd><p>The error that occurred while attempting to unlock the specified keychain with the specified passphrase.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>_Keychain</em></dt>
+			<dd><p>The keychain that the keychain manager tried to unlock.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>_Passphrase</em></dt>
+			<dd><p>A string containing the passphrase for the keychain that the keychain manager tried to unlock.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p><code>YES</code> if the operation should proceed or <code>NO</code> if it should be aborted.
+          If you do not implement this method, the keychain manager assumes a response of <code>NO</code>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Classes/WSCKeychainManager.html#//api/name/unlockKeychain:withPassphrase:error:">- unlockKeychain:withPassphrase:error:</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WSCKeychainManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/keychainManager:shouldProceedAfterError:unlockingKeychainWithUserInteraction:" title="keychainManager:shouldProceedAfterError:unlockingKeychainWithUserInteraction:"></a>
+	<h3 class="subsubtitle method-title">keychainManager:shouldProceedAfterError:unlockingKeychainWithUserInteraction:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Asks the delegate if the operation should continue after an error occurs while unlocking the specified keychain with user interaction.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)keychainManager:(WSCKeychainManager *)<em>_KeychainManager</em> shouldProceedAfterError:(NSError *)<em>_Error</em> unlockingKeychainWithUserInteraction:(WSCKeychain *)<em>_Keychain</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>_KeychainManager</em></dt>
+			<dd><p>The keychain manager that attempted to unlock the specified keychain with user interaction.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>_Error</em></dt>
+			<dd><p>The error that occurred while attempting to unlock the specified keychain with user interaction.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>_Keychain</em></dt>
+			<dd><p>The keychain that the keychain manager tried to unlock.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p><code>YES</code> if the operation should proceed or <code>NO</code> if it should be aborted.
+          If you do not implement this method, the keychain manager assumes a response of <code>NO</code>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Classes/WSCKeychainManager.html#//api/name/unlockKeychainWithUserInteraction:error:">- unlockKeychainWithUserInteraction:error:</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WSCKeychainManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/keychainManager:shouldProceedAfterError:updatingKeychainSearchList:" title="keychainManager:shouldProceedAfterError:updatingKeychainSearchList:"></a>
+	<h3 class="subsubtitle method-title">keychainManager:shouldProceedAfterError:updatingKeychainSearchList:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Asks the delegate if the operation should continue after an error occurs while updating the current default keychain search list.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)keychainManager:(WSCKeychainManager *)<em>_KeychainManager</em> shouldProceedAfterError:(NSError *)<em>_Error</em> updatingKeychainSearchList:(NSArray *)<em>_SearchList</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>_KeychainManager</em></dt>
+			<dd><p>The keychain manager that attempted to change the current default keychain search list.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>_Error</em></dt>
+			<dd><p>The error that occurred while attempting to update the current default keychain search list.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>_SearchList</em></dt>
+			<dd><p>An array of keychain objects (of class <a href="../Classes/WSCKeychain.html">WSCKeychain</a>) specifying the list of keychains to use in the new default keychain search list.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p><code>YES</code> if the operation should proceed or <code>NO</code> if it should be aborted.
+          If you do not implement this method, the keychain manager assumes a response of <code>NO</code>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/keychainManager:shouldUpdateKeychainSearchList:">- keychainManager:shouldUpdateKeychainSearchList:</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WSCKeychainManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/keychainManager:shouldRemoveKeychain:fromSearchList:" title="keychainManager:shouldRemoveKeychain:fromSearchList:"></a>
+	<h3 class="subsubtitle method-title">keychainManager:shouldRemoveKeychain:fromSearchList:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Asks the delegate whether the specified keychain should be removed from the current default search list.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)keychainManager:(WSCKeychainManager *)<em>_KeychainManager</em> shouldRemoveKeychain:(WSCKeychain *)<em>_Keychain</em> fromSearchList:(NSArray *)<em>_SearchList</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>_KeychainManager</em></dt>
+			<dd><p>The keychain manager that attempted to remove the specified keychain from default search lsit.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>_Keychain</em></dt>
+			<dd><p>The keychain that the keychain manager tried to remove.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>_SearchList</em></dt>
+			<dd><p>An array of keychain objects (of class <a href="../Classes/WSCKeychain.html">WSCKeychain</a>)
+                     specifying the list of keychains from which you want to remove the specified keychain.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p><code>YES</code> if the current specified keychain should be removed or <code>NO</code> if it should not be removed.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>  If you do not implement this method, the keychain manager assumes a repsonse of <code>YES</code>.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/keychainManager:shouldProceedAfterError:removingKeychain:fromSearchList:">- keychainManager:shouldProceedAfterError:removingKeychain:fromSearchList:</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WSCKeychainManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/keychainManager:shouldSetKeychainAsDefault:" title="keychainManager:shouldSetKeychainAsDefault:"></a>
+	<h3 class="subsubtitle method-title">keychainManager:shouldSetKeychainAsDefault:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Asks the delegate whether the specified keychain should be made default.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)keychainManager:(WSCKeychainManager *)<em>_KeychainManager</em> shouldSetKeychainAsDefault:(WSCKeychain *)<em>_Keychain</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>_KeychainManager</em></dt>
+			<dd><p>The keychain manager that attempted to make the specified keychain default.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>_Keychain</em></dt>
+			<dd><p>The keychain that the keychain manager tried to make default.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p><code>YES</code> if the specified keychain should be made the default; otherwise, <code>NO</code>.
+          If you do not implement this method, the keychain manager assumes a response of <code>YES</code>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Classes/WSCKeychainManager.html#//api/name/setDefaultKeychain:error:">– setDefaultKeychain:error:</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WSCKeychainManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/keychainManager:shouldUnlockKeychain:withPassphrase:" title="keychainManager:shouldUnlockKeychain:withPassphrase:"></a>
+	<h3 class="subsubtitle method-title">keychainManager:shouldUnlockKeychain:withPassphrase:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Asks the delegate whether the specified keychain should be unlocked with the specified passphrase.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)keychainManager:(WSCKeychainManager *)<em>_KeychainManager</em> shouldUnlockKeychain:(WSCKeychain *)<em>_Keychain</em> withPassphrase:(NSString *)<em>_Passphrase</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>_KeychainManager</em></dt>
+			<dd><p>The keychain manager that attempted to unlock the specified keychain with the specified passphrase.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>_Keychain</em></dt>
+			<dd><p>The keychain that the keychain manager tried to unlock.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>_Passphrase</em></dt>
+			<dd><p>A string containing the passphrase for the keychain that the keychain manager tried to unlock.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p><code>YES</code> if the specified keychain should be unlocked or <code>NO</code> if it should not be unlocked.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>  If you do not implement this method, the keychain manager assumes a repsonse of <code>YES</code>.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Classes/WSCKeychainManager.html#//api/name/unlockKeychain:withPassphrase:error:">- unlockKeychain:withPassphrase:error:</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WSCKeychainManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/keychainManager:shouldUnlockKeychainWithUserInteraction:" title="keychainManager:shouldUnlockKeychainWithUserInteraction:"></a>
+	<h3 class="subsubtitle method-title">keychainManager:shouldUnlockKeychainWithUserInteraction:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Asks the delegate whether the specified keychain should be unlocked with user interaction.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)keychainManager:(WSCKeychainManager *)<em>_KeychainManager</em> shouldUnlockKeychainWithUserInteraction:(WSCKeychain *)<em>_Keychain</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>_KeychainManager</em></dt>
+			<dd><p>The keychain manager that attempted to unlock the specified keychain with user interaction.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>_Keychain</em></dt>
+			<dd><p>The keychain that the keychain manager tried to unlock.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p><code>YES</code> if the specified keychain should be unlocked or <code>NO</code> if it should not be unlocked.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>  If you do not implement this method, the keychain manager assumes a repsonse of <code>YES</code>.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Classes/WSCKeychainManager.html#//api/name/unlockKeychainWithUserInteraction:error:">- unlockKeychainWithUserInteraction:error:</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WSCKeychainManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/keychainManager:shouldUpdateKeychainSearchList:" title="keychainManager:shouldUpdateKeychainSearchList:"></a>
+	<h3 class="subsubtitle method-title">keychainManager:shouldUpdateKeychainSearchList:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Asks the delegate whether the current default keychain search list should be changed.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)keychainManager:(WSCKeychainManager *)<em>_KeychainManager</em> shouldUpdateKeychainSearchList:(NSArray *)<em>_SearchList</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>_KeychainManager</em></dt>
+			<dd><p>The keychain manager that attempted to change the current default keychain search list.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>_SearchList</em></dt>
+			<dd><p>An array of keychain objects (of class <a href="../Classes/WSCKeychain.html">WSCKeychain</a>) specifying the list of keychains to use in the new default keychain search list.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p><code>YES</code> if the current default keychain search list should be updated or <code>NO</code> if it should not be updated.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>  If you do not implement this method, the keychain manager assumes a repsonse of <code>YES</code>.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/keychainManager:shouldProceedAfterError:updatingKeychainSearchList:">- keychainManager:shouldProceedAfterError:updatingKeychainSearchList:</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WSCKeychainManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+                    
+                    
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2015  Tong Guo. All rights reserved. (Last updated: 2015-02-17)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>
