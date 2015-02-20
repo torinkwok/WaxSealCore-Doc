@@ -50,11 +50,11 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/WSCPermittedOperation/setTrustedApplications:</TokenIdentifier>
-			<Abstract type="html">An array of trusted application objects (that is, WSCTrustedApplication instances)
+			<Abstract type="html">A set of trusted application objects (that is, WSCTrustedApplication instances)
     identifying applications that are allowed access to the keychain item without user confirmation. </Abstract>
 			<DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
 			
-			<Declaration>@property (retain, readwrite) NSArray *trustedApplications</Declaration>
+			<Declaration>@property (retain, readwrite) NSSet *trustedApplications</Declaration>
 			
 			
 			<Anchor>//api/name/trustedApplications</Anchor>
@@ -63,11 +63,11 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/WSCPermittedOperation/trustedApplications</TokenIdentifier>
-			<Abstract type="html">An array of trusted application objects (that is, WSCTrustedApplication instances)
+			<Abstract type="html">A set of trusted application objects (that is, WSCTrustedApplication instances)
     identifying applications that are allowed access to the keychain item without user confirmation. </Abstract>
 			<DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
 			
-			<Declaration>@property (retain, readwrite) NSArray *trustedApplications</Declaration>
+			<Declaration>@property (retain, readwrite) NSSet *trustedApplications</Declaration>
 			
 			
 			<Anchor>//api/name/trustedApplications</Anchor>
@@ -76,11 +76,11 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/WSCPermittedOperation/trustedApplications</TokenIdentifier>
-			<Abstract type="html">An array of trusted application objects (that is, WSCTrustedApplication instances)
+			<Abstract type="html">A set of trusted application objects (that is, WSCTrustedApplication instances)
     identifying applications that are allowed access to the keychain item without user confirmation. </Abstract>
 			<DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
 			
-			<Declaration>@property (retain, readwrite) NSArray *trustedApplications</Declaration>
+			<Declaration>@property (retain, readwrite) NSSet *trustedApplications</Declaration>
 			
 			
 			<Anchor>//api/name/trustedApplications</Anchor>
@@ -120,6 +120,45 @@
 			
 			
 			<Anchor>//api/name/promptContext</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCPermittedOperation/setOperations:</TokenIdentifier>
+			<Abstract type="html">An unsigned integer bit field containing any of the operation tag masks .
+    </Abstract>
+			<DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
+			
+			<Declaration>@property (assign, readwrite) WSCPermittedOperationTag operations</Declaration>
+			
+			
+			<Anchor>//api/name/operations</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCPermittedOperation/operations</TokenIdentifier>
+			<Abstract type="html">An unsigned integer bit field containing any of the operation tag masks .
+    </Abstract>
+			<DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
+			
+			<Declaration>@property (assign, readwrite) WSCPermittedOperationTag operations</Declaration>
+			
+			
+			<Anchor>//api/name/operations</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WSCPermittedOperation/operations</TokenIdentifier>
+			<Abstract type="html">An unsigned integer bit field containing any of the operation tag masks .
+    </Abstract>
+			<DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
+			
+			<Declaration>@property (assign, readwrite) WSCPermittedOperationTag operations</Declaration>
+			
+			
+			<Anchor>//api/name/operations</Anchor>
             <NodeRef refid="6"/>
 		</Token>
 		

@@ -113,5 +113,16 @@
             <NodeRef refid="16"/>
         </Token>
         
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCPermittedOperationFailedToChangeTheOwnerOfPermittedOperationError</TokenIdentifier>
+            <Abstract type="html">An invalid attempt to change the owner of a permitted operation entry.
+      </Abstract>
+            <Declaration>WSCPermittedOperationFailedToChangeTheOwnerOfPermittedOperationError</Declaration>
+            
+            <DeclaredIn>WSCKeychainError.h</DeclaredIn>
+            
+            <NodeRef refid="16"/>
+        </Token>
+        
 	</File>
 </Tokens>

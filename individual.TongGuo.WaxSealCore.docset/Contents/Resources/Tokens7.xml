@@ -44,11 +44,14 @@
                               </Abstract>
 				</Parameter><Parameter>
 					<Name>_Operations</Name>
-					<Abstract type="html">An unsigned integer bit field containing any of the operation tag masks described in &quot;WSCPermittedOperationTag Constants Reference&quot;.
+					<Abstract type="html">An unsigned integer bit field containing any of the operation tag masks described in 
+                     &quot;WSCPermittedOperationTag Constants Reference&quot;,
+                     combined using the C bitwise OR operator.
                               </Abstract>
 				</Parameter><Parameter>
 					<Name>_PromptContext</Name>
 					<Abstract type="html">A set of prompt context masks. See WSCPermittedOperationPromptContext for possible values.
+                        By default, the value of this parameter is 0.
   </Abstract>
 				</Parameter><Parameter>
 					<Name>_Error</Name>
