@@ -125,7 +125,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/WSCPermittedOperation/setOperations:</TokenIdentifier>
-			<Abstract type="html">An unsigned integer bit field containing any of the operation tag masks .
+			<Abstract type="html">An unsigned integer bit field containing any of the operation tag masks.
     </Abstract>
 			<DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
 			
@@ -138,7 +138,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/WSCPermittedOperation/operations</TokenIdentifier>
-			<Abstract type="html">An unsigned integer bit field containing any of the operation tag masks .
+			<Abstract type="html">An unsigned integer bit field containing any of the operation tag masks.
     </Abstract>
 			<DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
 			
@@ -151,7 +151,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/WSCPermittedOperation/operations</TokenIdentifier>
-			<Abstract type="html">An unsigned integer bit field containing any of the operation tag masks .
+			<Abstract type="html">An unsigned integer bit field containing any of the operation tag masks.
     </Abstract>
 			<DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
 			
