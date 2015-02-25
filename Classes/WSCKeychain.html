@@ -58,13 +58,7 @@
 	
 	<option value="class_methods">Class Methods</option>
 	
-	<option value="//api/name/keychainWhosePassphraseWillBeObtainedFromUserWithURL:initialAccess:becomesDefault:error:">&nbsp;&nbsp;&nbsp;&nbsp;+ keychainWhosePassphraseWillBeObtainedFromUserWithURL:initialAccess:becomesDefault:error:</option>
-	
-	<option value="//api/name/keychainWithContentsOfURL:error:">&nbsp;&nbsp;&nbsp;&nbsp;+ keychainWithContentsOfURL:error:</option>
-	
 	<option value="//api/name/keychainWithSecKeychainRef:">&nbsp;&nbsp;&nbsp;&nbsp;+ keychainWithSecKeychainRef:</option>
-	
-	<option value="//api/name/keychainWithURL:passphrase:initialAccess:becomesDefault:error:">&nbsp;&nbsp;&nbsp;&nbsp;+ keychainWithURL:passphrase:initialAccess:becomesDefault:error:</option>
 	
 	<option value="//api/name/login">&nbsp;&nbsp;&nbsp;&nbsp;+ login</option>
 	
@@ -145,13 +139,7 @@
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/keychainWhosePassphraseWillBeObtainedFromUserWithURL:initialAccess:becomesDefault:error:">keychainWhosePassphraseWillBeObtainedFromUserWithURL:initialAccess:becomesDefault:error:</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/keychainWithContentsOfURL:error:">keychainWithContentsOfURL:error:</a></span></li>
-	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/keychainWithSecKeychainRef:">keychainWithSecKeychainRef:</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/keychainWithURL:passphrase:initialAccess:becomesDefault:error:">keychainWithURL:passphrase:initialAccess:becomesDefault:error:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/login">login</a></span></li>
 	
@@ -283,24 +271,6 @@
 
 						<ul class="task-list">
 							<li>
-	<span class="tooltip">
-		<code><a href="#//api/name/keychainWithURL:passphrase:initialAccess:becomesDefault:error:">+&nbsp;keychainWithURL:passphrase:initialAccess:becomesDefault:error:</a></code>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/keychainWhosePassphraseWillBeObtainedFromUserWithURL:initialAccess:becomesDefault:error:">+&nbsp;keychainWhosePassphraseWillBeObtainedFromUserWithURL:initialAccess:becomesDefault:error:</a></code>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/keychainWithContentsOfURL:error:">+&nbsp;keychainWithContentsOfURL:error:</a></code>
-	</span>
-	
-	
-</li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/login">+&nbsp;login</a></code>
 	</span>
@@ -709,180 +679,6 @@
 						<h2 class="subtitle subtitle-methods">Class Methods</h2>
 						
 						<div class="section-method">
-	<a name="//api/name/keychainWhosePassphraseWillBeObtainedFromUserWithURL:initialAccess:becomesDefault:error:" title="keychainWhosePassphraseWillBeObtainedFromUserWithURL:initialAccess:becomesDefault:error:"></a>
-	<h3 class="subsubtitle method-title">keychainWhosePassphraseWillBeObtainedFromUserWithURL:initialAccess:becomesDefault:error:</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Creates and returns a <code>WSCKeychain</code> object using the given <a href="#//api/name/URL">URL</a>, interaction prompt and inital access rights.</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>+ (instancetype)keychainWhosePassphraseWillBeObtainedFromUserWithURL:(NSURL *)<em>_URL</em> initialAccess:(WSCAccessPermission *)<em>_InitalAccess</em> becomesDefault:(BOOL)<em>_WillBecomeDefault</em> error:(NSError **)<em>_Error</em></code></div>
-
-    
-	
-	<div class="method-subsection arguments-section parameters">
-		<h4 class="method-subtitle parameter-title">Parameters</h4>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>_URL</em></dt>
-			<dd><p>Specify the <a href="#//api/name/URL">URL</a> in which the new keychain should be sotred.
-              The <a href="#//api/name/URL">URL</a> in this parameter must not be a file reference <a href="#//api/name/URL">URL</a> or an <a href="#//api/name/URL">URL</a> other than file scheme
-              This parameter must not be <code>nil</code>.</p></dd>
-		</dl>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>_InitalAccess</em></dt>
-			<dd><p>An WSCAccessPermission object indicating the initial access rights for the new keychain,
-                       A keychain&rsquo;s access rights determine which application have permission to user the keychain.
-                       You may pass <code>nil</code> for the standard access rights.</p></dd>
-		</dl>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>_WillBecomeDefault</em></dt>
-			<dd><p>A <code>BOOL</code> value representing whether to set the new keychain as default keychain.</p></dd>
-		</dl>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>_Error</em></dt>
-			<dd><p>On input, a pointer to an error object.
-                If an error occurs, this pointer is set to an actual error object containing the error information.
-                You may specify <code>nil</code> for this parameter if you don&rsquo;t want the error information.</p></dd>
-		</dl>
-		
-	</div>
-	
-	
-	
-	<div class="method-subsection return">
-		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>A <code>WSCKeychain</code> object initialized with above parameters as well as a passphrase,
-          which is obtained from the passphrase dialog.</p>
-	</div>
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>  This class method creates an empty keychain. The and <code>_InitialAccess</code> parameter is optional.
-  And this method will display a passphrase dialog to user.
-  If user interaction to create a keychain is posted, the newly-created keychain is automatically unlocked after creation.</p>
-
-<p>  The <a href="#//api/name/system">system</a> ensures that a default keychain is created for the user at <a href="#//api/name/login">login</a>, thus, in most cases,
-  you do not need to call this method yourself. Users can create additional keychains, or change the default,
-  by using the Keychain Access application. However, a missing default keychain is not recreated automatically,
-  and you may receive an error from other methods if a default keychain does not exist.
-  In that case, you can use this class method with a <code>YES</code> value for <code>_WillBecomeDefault</code> parameter, to create a new default keychain.
-  You can also call this method to create a private temporary keychain for your application’s use,
-  in cases where no user interaction can occur.</p>
-	</div>
-	
-	
-	
-	
-	
-	<div class="method-subsection see-also-section">
-		<h4 class="method-subtitle">See Also</h4>
-		<ul>
-			
-			<li><code><p><a href="#//api/name/keychainWithURL:passphrase:initialAccess:becomesDefault:error:">+ keychainWithURL:passphrase:initialAccess:becomesDefault:error:</a></p></code></li>
-			
-			<li><code><p><a href="#//api/name/keychainWithSecKeychainRef:">+ keychainWithSecKeychainRef:</a></p></code></li>
-			
-			<li><code><p><a href="#//api/name/keychainWithContentsOfURL:error:">+ keychainWithContentsOfURL:error:</a></p></code></li>
-			
-		</ul>
-	</div>
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">WSCKeychain.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/keychainWithContentsOfURL:error:" title="keychainWithContentsOfURL:error:"></a>
-	<h3 class="subsubtitle method-title">keychainWithContentsOfURL:error:</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Opens a keychain from the location specified by a given <a href="#//api/name/URL">URL</a>.</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>+ (instancetype)keychainWithContentsOfURL:(NSURL *)<em>_URLOfKeychain</em> error:(NSError **)<em>_Error</em></code></div>
-
-    
-	
-	<div class="method-subsection arguments-section parameters">
-		<h4 class="method-subtitle parameter-title">Parameters</h4>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>_URLOfKeychain</em></dt>
-			<dd><p>The file <a href="#//api/name/URL">URL</a> that identifies the keychain file you want to open.
-                         The <a href="#//api/name/URL">URL</a> in this parameter must not be a file reference <a href="#//api/name/URL">URL</a>.
-                         This parameter must not be <code>nil</code>.</p></dd>
-		</dl>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>_Error</em></dt>
-			<dd><p>On input, a pointer to an error object.
-                If an error occurs, this pointer is set to an actual error object containing the error information.
-                You may specify <code>nil</code> for this parameter if you don&rsquo;t want the error information.</p></dd>
-		</dl>
-		
-	</div>
-	
-	
-	
-	<div class="method-subsection return">
-		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>A <code>WSCKeychain</code> object represented a keychain located at the given <a href="#//api/name/URL">URL</a>.</p>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection see-also-section">
-		<h4 class="method-subtitle">See Also</h4>
-		<ul>
-			
-			<li><code><p><a href="#//api/name/keychainWithURL:passphrase:initialAccess:becomesDefault:error:">+ keychainWithURL:passphrase:initialAccess:becomesDefault:error:</a></p></code></li>
-			
-			<li><code><p><a href="#//api/name/keychainWhosePassphraseWillBeObtainedFromUserWithURL:initialAccess:becomesDefault:error:">+ keychainWhosePassphraseWillBeObtainedFromUserWithURL:initialAccess:becomesDefault:error:</a></p></code></li>
-			
-			<li><code><p><a href="#//api/name/keychainWithSecKeychainRef:">+ keychainWithSecKeychainRef:</a></p></code></li>
-			
-		</ul>
-	</div>
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">WSCKeychain.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
 	<a name="//api/name/keychainWithSecKeychainRef:" title="keychainWithSecKeychainRef:"></a>
 	<h3 class="subsubtitle method-title">keychainWithSecKeychainRef:</h3>
 	
@@ -928,9 +724,9 @@
 <p>  Instead of invoking this method, you should construct a <code>WSCKeychain</code> object by invoking:</p>
 
 <ul>
-<li><a href="#//api/name/keychainWithURL:passphrase:initialAccess:becomesDefault:error:">+ keychainWithURL:passphrase:initialAccess:becomesDefault:error:</a></li>
-<li><a href="#//api/name/keychainWhosePassphraseWillBeObtainedFromUserWithURL:initialAccess:becomesDefault:error:">+ keychainWhosePassphraseWillBeObtainedFromUserWithURL:initialAccess:becomesDefault:error:</a></li>
-<li><a href="#//api/name/keychainWithContentsOfURL:error:">+ keychainWithContentsOfURL:error:</a></li>
+<li><a href="../Classes/WSCKeychainManager.html#//api/name/createKeychainWithURL:permittedOperations:passphrase:becomesDefault:error:">+ createKeychainWithURL:permittedOperations:passphrase:becomesDefault:error:</a></li>
+<li><a href="../Classes/WSCKeychainManager.html#//api/name/createKeychainWhosePassphraseWillBeObtainedFromUserWithURL:permittedOperations:becomesDefault:error:">+ createKeychainWhosePassphraseWillBeObtainedFromUserWithURL:permittedOperations:becomesDefault:error:</a></li>
+<li><a href="../Classes/WSCKeychainManager.html#//api/name/openExistingKeychainAtURL:error:">+ openExistingKeychainAtURL:error:</a></li>
 </ul>
 </div>
 	</div>
@@ -938,124 +734,6 @@
 	
 	
 	
-	
-	<div class="method-subsection see-also-section">
-		<h4 class="method-subtitle">See Also</h4>
-		<ul>
-			
-			<li><code><p><a href="#//api/name/keychainWithURL:passphrase:initialAccess:becomesDefault:error:">+ keychainWithURL:passphrase:initialAccess:becomesDefault:error:</a></p></code></li>
-			
-			<li><code><p><a href="#//api/name/keychainWhosePassphraseWillBeObtainedFromUserWithURL:initialAccess:becomesDefault:error:">+ keychainWhosePassphraseWillBeObtainedFromUserWithURL:initialAccess:becomesDefault:error:</a></p></code></li>
-			
-			<li><code><p><a href="#//api/name/keychainWithContentsOfURL:error:">+ keychainWithContentsOfURL:error:</a></p></code></li>
-			
-		</ul>
-	</div>
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">WSCKeychain.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/keychainWithURL:passphrase:initialAccess:becomesDefault:error:" title="keychainWithURL:passphrase:initialAccess:becomesDefault:error:"></a>
-	<h3 class="subsubtitle method-title">keychainWithURL:passphrase:initialAccess:becomesDefault:error:</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Creates and returns a <code>WSCKeychain</code> object using the given <a href="#//api/name/URL">URL</a>, passphrase, and inital access rights.</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>+ (instancetype)keychainWithURL:(NSURL *)<em>_URL</em> passphrase:(NSString *)<em>_Passphrase</em> initialAccess:(WSCAccessPermission *)<em>_InitalAccess</em> becomesDefault:(BOOL)<em>_WillBecomeDefault</em> error:(NSError **)<em>_Error</em></code></div>
-
-    
-	
-	<div class="method-subsection arguments-section parameters">
-		<h4 class="method-subtitle parameter-title">Parameters</h4>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>_URL</em></dt>
-			<dd><p>Specify the <a href="#//api/name/URL">URL</a> in which the new keychain should be sotred.
-              The <a href="#//api/name/URL">URL</a> in this parameter must not be a file reference <a href="#//api/name/URL">URL</a> or an <a href="#//api/name/URL">URL</a> other than file scheme
-              This parameter must not be <code>nil</code>.</p></dd>
-		</dl>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>_Passphrase</em></dt>
-			<dd><p>A NSString object containing the passphrase which is used to protect the new keychain.
-                     This parameter must not be <code>nil</code>.</p></dd>
-		</dl>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>_InitalAccess</em></dt>
-			<dd><p>An WSCAccessPermission object indicating the initial access rights for the new keychain,
-                       A keychain&rsquo;s access rights determine which application have permission to user the keychain.
-                       You may pass <code>nil</code> for the standard access rights.</p></dd>
-		</dl>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>_WillBecomeDefault</em></dt>
-			<dd><p>A <code>BOOL</code> value representing whether to set the new keychain as default keychain.</p></dd>
-		</dl>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>_Error</em></dt>
-			<dd><p>On input, a pointer to an error object.
-                If an error occurs, this pointer is set to an actual error object containing the error information.
-                You may specify <code>nil</code> for this parameter if you don&rsquo;t want the error information.</p></dd>
-		</dl>
-		
-	</div>
-	
-	
-	
-	<div class="method-subsection return">
-		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>A <code>WSCKeychain</code> object initialized with above parameters.</p>
-	</div>
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>  This class method creates an empty keychain. The <code>_Passphrase</code> parameter is required, and <code>_InitialAccess</code> parameter is optional.
-  If user interaction to create a keychain is posted, the newly-created keychain is automatically unlocked after creation.</p>
-
-<p>  The <a href="#//api/name/system">system</a> ensures that a default keychain is created for the user at <a href="#//api/name/login">login</a>, thus, in most cases,
-  you do not need to call this method yourself. Users can create additional keychains, or change the default,
-  by using the Keychain Access application. However, a missing default keychain is not recreated automatically,
-  and you may receive an error from other methods if a default keychain does not exist.
-  In that case, you can use this class method with a <code>YES</code> value for <code>_WillBecomeDefault</code> parameter, to create a new default keychain.
-  You can also call this method to create a private temporary keychain for your application’s use,
-  in cases where no user interaction can occur.</p>
-	</div>
-	
-	
-	
-	
-	
-	<div class="method-subsection see-also-section">
-		<h4 class="method-subtitle">See Also</h4>
-		<ul>
-			
-			<li><code><p><a href="#//api/name/keychainWhosePassphraseWillBeObtainedFromUserWithURL:initialAccess:becomesDefault:error:">+ keychainWhosePassphraseWillBeObtainedFromUserWithURL:initialAccess:becomesDefault:error:</a></p></code></li>
-			
-			<li><code><p><a href="#//api/name/keychainWithSecKeychainRef:">+ keychainWithSecKeychainRef:</a></p></code></li>
-			
-			<li><code><p><a href="#//api/name/keychainWithContentsOfURL:error:">+ keychainWithContentsOfURL:error:</a></p></code></li>
-			
-		</ul>
-	</div>
 	
 	
 	
@@ -1843,7 +1521,7 @@ For example, &ldquo;WaxSeal&rdquo;. This search key is unique to the application
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2015  Tong Guo. All rights reserved. (Last updated: 2015-02-21)</span><br />
+						<p><span class="copyright">&copy; 2015  Tong Guo. All rights reserved. (Last updated: 2015-02-26)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
 						
