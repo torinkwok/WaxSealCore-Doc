@@ -232,7 +232,13 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/WSCKeychainManager/setDefaultKeychain:error:</TokenIdentifier>
-			<Abstract type="html">Sets the specified keychain as default keychain.</Abstract>
+			<Abstract type="html">Sets the specified keychain as default keychain.
+  
+  In most cases, your application should not need to set the default keychain, 
+  because this is a choice normally made by the user. You may call this method to change where a
+  passphrase or other keychain items are added, but since this is a user choice, 
+  you should set the default keychain back to the user specified keychain when you are done.
+  </Abstract>
 			<DeclaredIn>WSCKeychainManager.h</DeclaredIn>
 			
 	<RelatedTokens>

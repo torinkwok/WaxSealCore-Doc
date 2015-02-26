@@ -1366,6 +1366,11 @@
 	
 	<div class="method-subsection brief-description">
 		<p>Sets the specified keychain as default keychain.</p>
+
+<p>  In most cases, your application should not need to set the default keychain,
+  because this is a choice normally made by the user. You may call this method to change where a
+  passphrase or other keychain items are added, but since this is a user choice,
+  you should set the default keychain back to the user specified keychain when you are done.</p>
 	</div>		
 	
     
@@ -1404,21 +1409,6 @@
 	
 	
 	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>  Prior to making the keychain default, the keychain manager asks its <a href="#//api/name/delegate">delegate</a> if it should actually do so.
-  It does this by calling the <a href="../Protocols/WSCKeychainManagerDelegate.html#//api/name/keychainManager:shouldSetKeychainAsDefault:">keychainManager:shouldSetKeychainAsDefault:</a> method;
-  If the <a href="#//api/name/delegate">delegate</a> method returns <code>YES</code>, or if the <a href="#//api/name/delegate">delegate</a> does not implement the appropriate methods,
-  the keychain manager proceeds to make the specified keychain default.
-  If there is an error making a keychain default, the keychain manager may also call the delegate&rsquo;s
-  <a href="../Protocols/WSCKeychainManagerDelegate.html#//api/name/keychainManager:shouldProceedAfterError:settingKeychainAsDefault:">keychainManager:shouldProceedAfterError:settingKeychainAsDefault:</a> method to determine how to proceed.</p>
-
-<p>  In most cases, your application should not need to set the default keychain,
-  because this is a choice normally made by the user. You may call this method to change where a
-  passphrase or other keychain items are added, but since this is a user choice,
-  you should set the default keychain back to the user specified keychain when you are done.</p>
-	</div>
 	
 	
 	
@@ -1582,14 +1572,7 @@
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>  Prior to unlocking the specified keychain with the specified passphrase, the keychain manager asks its <a href="#//api/name/delegate">delegate</a> if it should actually do so.
-  It does this by calling the <a href="../Protocols/WSCKeychainManagerDelegate.html#//api/name/keychainManager:shouldUnlockKeychain:withPassphrase:">keychainManager:shouldUnlockKeychain:withPassphrase:</a> method;
-  If the <a href="#//api/name/delegate">delegate</a> method returns <code>YES</code>, or if the <a href="#//api/name/delegate">delegate</a> does not implement the appropriate methods,
-  the keychain manager proceeds to unlock the specified keychain with the specified passphrase.
-  If there is an error unlocking a keychain, the keychain manager may also call the delegate&rsquo;s
-  <a href="../Protocols/WSCKeychainManagerDelegate.html#//api/name/keychainManager:shouldProceedAfterError:unlockingKeychain:withPassphrase:">keychainManager:shouldProceedAfterError:unlockingKeychain:withPassphrase:</a> method to determine how to proceed.</p>
-
-<p>  In most cases, your application does not need to invoke this method directly,
+		<p>  In most cases, your application does not need to invoke this method directly,
   since most <em>WaxSealCore</em> API and the underlying <em>Keychain Services</em> functions that require an unlocked keychain do so for you.
   If your application needs to verify that a keychain is unlocked, inspect the <a href="../Classes/WSCKeychain.html#//api/name/isLocked">isLocked</a> property.</p>
 	</div>
@@ -1658,13 +1641,6 @@
 		<p>  This method will display an Unlock Keychain dialog box.
   If the specified keychain is currently unlocked, the Unlock Keychain dialog won&rsquo;t be displayed.</p>
 
-<p>  Prior to unlocking the specified keychain with user interaction, the keychain manager asks its <a href="#//api/name/delegate">delegate</a> if it should actually do so.
-  It does this by calling the <a href="../Protocols/WSCKeychainManagerDelegate.html#//api/name/keychainManager:shouldUnlockKeychainWithUserInteraction:">keychainManager:shouldUnlockKeychainWithUserInteraction:</a> method;
-  If the <a href="#//api/name/delegate">delegate</a> method returns <code>YES</code>, or if the <a href="#//api/name/delegate">delegate</a> does not implement the appropriate methods,
-  the keychain manager proceeds to unlock the specified keychain with user interaction.
-  If there is an error unlocking a keychain, the keychain manager may also call the delegate&rsquo;s
-  <a href="../Protocols/WSCKeychainManagerDelegate.html#//api/name/keychainManager:shouldUnlockKeychainWithUserInteraction:">keychainManager:shouldUnlockKeychainWithUserInteraction:</a> method to determine how to proceed.</p>
-
 <p>  In most cases, your application does not need to invoke this method directly,
   since most <em>WaxSealCore</em> API and underlying <em>Keychain Services</em> functions that require an unlocked keychain do so for you.
   If your application needs to verify that a keychain is unlocked, inspect the <a href="../Classes/WSCKeychain.html#//api/name/isLocked">isLocked</a> property.</p>
@@ -1699,7 +1675,7 @@
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2015  Tong Guo. All rights reserved. (Last updated: 2015-02-26)</span><br />
+						<p><span class="copyright">&copy; 2015  Tong Guo. All rights reserved. (Last updated: 2015-02-27)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
 						

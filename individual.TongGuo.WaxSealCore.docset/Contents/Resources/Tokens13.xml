@@ -35,16 +35,6 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WSCKeychainItemClassAppleSharePassphraseItem</TokenIdentifier>
-            <Abstract type="html">Indicates that the item is an AppleShare passphrase.</Abstract>
-            <Declaration>WSCKeychainItemClassAppleSharePassphraseItem</Declaration>
-            
-            <DeclaredIn>WSCKeychain.h</DeclaredIn>
-            
-            <NodeRef refid="13"/>
-        </Token>
-        
-        <Token>
             <TokenIdentifier>//apple_ref/c/econst/WSCKeychainItemClassCertificateItem</TokenIdentifier>
             <Abstract type="html">Indicates that the item is an X509 certificate.</Abstract>
             <Declaration>WSCKeychainItemClassCertificateItem</Declaration>
