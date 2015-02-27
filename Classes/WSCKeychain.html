@@ -724,8 +724,8 @@
 <p>  Instead of invoking this method, you should construct a <code>WSCKeychain</code> object by invoking:</p>
 
 <ul>
-<li><a href="../Classes/WSCKeychainManager.html#//api/name/createKeychainWithURL:permittedOperations:passphrase:becomesDefault:error:">+ createKeychainWithURL:permittedOperations:passphrase:becomesDefault:error:</a></li>
-<li><a href="../Classes/WSCKeychainManager.html#//api/name/createKeychainWhosePassphraseWillBeObtainedFromUserWithURL:permittedOperations:becomesDefault:error:">+ createKeychainWhosePassphraseWillBeObtainedFromUserWithURL:permittedOperations:becomesDefault:error:</a></li>
+<li><a href="../Classes/WSCKeychainManager.html#//api/name/createKeychainWithURL:passphrase:becomesDefault:error:">+ createKeychainWithURL:passphrase:becomesDefault:error:</a></li>
+<li><a href="../Classes/WSCKeychainManager.html#//api/name/createKeychainWhosePassphraseWillBeObtainedFromUserWithURL:becomesDefault:error:">+ createKeychainWhosePassphraseWillBeObtainedFromUserWithURL:becomesDefault:error:</a></li>
 <li><a href="../Classes/WSCKeychainManager.html#//api/name/openExistingKeychainAtURL:error:">+ openExistingKeychainAtURL:error:</a></li>
 </ul>
 </div>
@@ -1484,8 +1484,9 @@ For example, &ldquo;WaxSeal&rdquo;. This search key is unique to the application
 		<p><code>YES</code> if <em>_AnotherKeychain</em> is equivalent to receiver (if they have the same <a href="#//api/name/URL">URL</a>);
           otherwise <em>NO</em>.</p>
 
-<p>  <strong>One more thing</strong>
-   When you know both objects are keychains, this method is a faster way to check equality than method <a href="#//api/name/isEqual:"><code>isEqual:</code></a>.</p>
+<p>  <strong>One more thing</strong></p>
+
+<p>   When you know both objects are keychains, this method is a faster way to check equality than method <a href="#//api/name/isEqual:"><code>isEqual:</code></a>.</p>
 	</div>
 	
 	
