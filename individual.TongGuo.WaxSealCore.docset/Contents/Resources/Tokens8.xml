@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/WSCTrustedApplication.html">
+	<File path="Categories/NSURL+WSCKeychainURL.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/WSCTrustedApplication</TokenIdentifier>
-			<Abstract type="html">Identifies the trusted application in an access permission.
+			<TokenIdentifier>//apple_ref/occ/cat/NSURL(WSCKeychainURL)</TokenIdentifier>
+			<Abstract type="html">A collection of useful and convenient additions for NSURL to deal with keychains.
   </Abstract>
-			<DeclaredIn>WSCTrustedApplication.h</DeclaredIn>
+			<DeclaredIn>NSURL+WSCKeychainURL.h</DeclaredIn>
             
 			
 			<NodeRef refid="8"/>
@@ -14,149 +14,81 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WSCTrustedApplication/setUniqueIdentification:</TokenIdentifier>
-			<Abstract type="html">Retrieves and sets the unique identification of the trusted application represented by receiver.
-    </Abstract>
-			<DeclaredIn>WSCTrustedApplication.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/NSURL/sharedURLForCurrentUserKeychainsDirectory</TokenIdentifier>
+			<Abstract type="html">Returns the URL of the current user&apos;s keychain directory: ~/Library/Keychains.</Abstract>
+			<DeclaredIn>NSURL+WSCKeychainURL.h</DeclaredIn>
 			
-			<Declaration>@property (retain, readwrite) NSData *uniqueIdentification</Declaration>
+			<Declaration>+ (NSURL *)sharedURLForCurrentUserKeychainsDirectory</Declaration>
 			
-			
-			<Anchor>//api/name/uniqueIdentification</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WSCTrustedApplication/uniqueIdentification</TokenIdentifier>
-			<Abstract type="html">Retrieves and sets the unique identification of the trusted application represented by receiver.
-    </Abstract>
-			<DeclaredIn>WSCTrustedApplication.h</DeclaredIn>
-			
-			<Declaration>@property (retain, readwrite) NSData *uniqueIdentification</Declaration>
-			
-			
-			<Anchor>//api/name/uniqueIdentification</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WSCTrustedApplication/uniqueIdentification</TokenIdentifier>
-			<Abstract type="html">Retrieves and sets the unique identification of the trusted application represented by receiver.
-    </Abstract>
-			<DeclaredIn>WSCTrustedApplication.h</DeclaredIn>
-			
-			<Declaration>@property (retain, readwrite) NSData *uniqueIdentification</Declaration>
-			
-			
-			<Anchor>//api/name/uniqueIdentification</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/WSCTrustedApplication/trustedApplicationWithContentsOfURL:error:</TokenIdentifier>
-			<Abstract type="html">Creates a trusted application object based on the application specified by an URL.</Abstract>
-			<DeclaredIn>WSCTrustedApplication.h</DeclaredIn>
-			
-			<Declaration>+ (instancetype)trustedApplicationWithContentsOfURL:(NSURL *)_ApplicationURL error:(NSError **)_Error</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>_ApplicationURL</Name>
-					<Abstract type="html">The URL to the application or tool to trust. 
-                         For application bundles, use the URL to the bundle directory. 
-                         Pass nil to refer to the application or tool making this call.
-                         </Abstract>
-				</Parameter><Parameter>
-					<Name>_Error</Name>
-					<Abstract type="html">On input, a pointer to an error object.
-                If an error occurs, this pointer is set to an actual error object containing the error information.
-                You may specify nil for this parameter if you don&apos;t want the error information.
-                </Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">Newly created trusted application object. Returns nil if an error occurs.
+			<ReturnValue><Abstract type="html">An URL of the current user&apos;s keychain directory: ~/Library/Keychains.
   </Abstract></ReturnValue>
-			<Anchor>//api/name/trustedApplicationWithContentsOfURL:error:</Anchor>
+			<Anchor>//api/name/sharedURLForCurrentUserKeychainsDirectory</Anchor>
             <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WSCTrustedApplication/isEqualToTrustedApplication:</TokenIdentifier>
-			<Abstract type="html">Returns a Boolean value that indicates whether a given trusted application is equal to receiver.</Abstract>
-			<DeclaredIn>WSCTrustedApplication.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/NSURL/sharedURLForSystemKeychainsDirectory</TokenIdentifier>
+			<Abstract type="html">Returns the URL of the system directory: /Library/Keychains.</Abstract>
+			<DeclaredIn>NSURL+WSCKeychainURL.h</DeclaredIn>
 			
-			<Declaration>- (BOOL)isEqualToTrustedApplication:(WSCTrustedApplication *)_AnotherTrustedApplication</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>_AnotherTrustedApplication</Name>
-					<Abstract type="html">The trusted application with which to compare the receiver.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">YES if _AnotherTrustedApplication is equivalent to receiver (if they have the same unique identification);
-          otherwise NO.
-
-  One more thing
-   When you know both objects are keychains, this method is a faster way to check equality than method isEqual:.
+			<Declaration>+ (NSURL *)sharedURLForSystemKeychainsDirectory</Declaration>
+			
+			<ReturnValue><Abstract type="html">An URL of the system keychain directory: /Library/Keychains.
   </Abstract></ReturnValue>
-			<Anchor>//api/name/isEqualToTrustedApplication:</Anchor>
+			<Anchor>//api/name/sharedURLForSystemKeychainsDirectory</Anchor>
             <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WSCTrustedApplication/setSecTrustedApplication:</TokenIdentifier>
-			<Abstract type="html">The reference of the secTrustedApplication opaque object, which wrapped by WSCTrustedApplication object.
-  </Abstract>
-			<DeclaredIn>WSCTrustedApplication.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/NSURL/sharedURLForLoginKeychain</TokenIdentifier>
+			<Abstract type="html">Returns an NSURL object specifying the location of login.keychain for current user.</Abstract>
+			<DeclaredIn>NSURL+WSCKeychainURL.h</DeclaredIn>
 			
-			<Declaration>@property (unsafe_unretained, readonly) SecTrustedApplicationRef secTrustedApplication</Declaration>
+			<Declaration>+ (NSURL *)sharedURLForLoginKeychain</Declaration>
 			
-			
-			<Anchor>//api/name/secTrustedApplication</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WSCTrustedApplication/secTrustedApplication</TokenIdentifier>
-			<Abstract type="html">The reference of the secTrustedApplication opaque object, which wrapped by WSCTrustedApplication object.
-  </Abstract>
-			<DeclaredIn>WSCTrustedApplication.h</DeclaredIn>
-			
-			<Declaration>@property (unsafe_unretained, readonly) SecTrustedApplicationRef secTrustedApplication</Declaration>
-			
-			
-			<Anchor>//api/name/secTrustedApplication</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WSCTrustedApplication/secTrustedApplication</TokenIdentifier>
-			<Abstract type="html">The reference of the secTrustedApplication opaque object, which wrapped by WSCTrustedApplication object.
-  </Abstract>
-			<DeclaredIn>WSCTrustedApplication.h</DeclaredIn>
-			
-			<Declaration>@property (unsafe_unretained, readonly) SecTrustedApplicationRef secTrustedApplication</Declaration>
-			
-			
-			<Anchor>//api/name/secTrustedApplication</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/WSCTrustedApplication/trustedApplicationWithSecTrustedApplicationRef:</TokenIdentifier>
-			<Abstract type="html">Creates and returns a WSCTrustedApplication object using the given reference to the instance of SecTrustedApplication opaque type.</Abstract>
-			<DeclaredIn>WSCTrustedApplication.h</DeclaredIn>
-			
-			<Declaration>+ (instancetype)trustedApplicationWithSecTrustedApplicationRef:(SecTrustedApplicationRef)_SecTrustedAppRef</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>_SecTrustedAppRef</Name>
-					<Abstract type="html">A reference to the instance of SecTrustedApplication opaque type.
-  </Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">A WSCTrustedApplication object initialized with the givent reference to the instance of SecTrustedApplication opaque type.
-          Return nil if _SecTrustedAppRef is nil.
+			<ReturnValue><Abstract type="html">An NSURL object specifying the location of login.keychain for current user.
   </Abstract></ReturnValue>
-			<Anchor>//api/name/trustedApplicationWithSecTrustedApplicationRef:</Anchor>
+			<Anchor>//api/name/sharedURLForLoginKeychain</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSURL/sharedURLForSystemKeychain</TokenIdentifier>
+			<Abstract type="html">Returns an NSURL object specifying the location of System.keychain.</Abstract>
+			<DeclaredIn>NSURL+WSCKeychainURL.h</DeclaredIn>
+			
+			<Declaration>+ (NSURL *)sharedURLForSystemKeychain</Declaration>
+			
+			<ReturnValue><Abstract type="html">An NSURL object specifying the location of System.keychain.
+  </Abstract></ReturnValue>
+			<Anchor>//api/name/sharedURLForSystemKeychain</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSURL/URLForTemporaryDirectory</TokenIdentifier>
+			<Abstract type="html">Returns the URL of the temporary directory for current user.</Abstract>
+			<DeclaredIn>NSURL+WSCKeychainURL.h</DeclaredIn>
+			
+			<Declaration>+ (NSURL *)URLForTemporaryDirectory</Declaration>
+			
+			<ReturnValue><Abstract type="html">An URL specifing the location of temporary directory for current user. 
+          If no such directory is currently available, returns nil.
+  </Abstract></ReturnValue>
+			<Anchor>//api/name/URLForTemporaryDirectory</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSURL/URLForHomeDirectory</TokenIdentifier>
+			<Abstract type="html">Returns the URL of the current user&apos;s or application&apos;s home directory, depending on the platform.</Abstract>
+			<DeclaredIn>NSURL+WSCKeychainURL.h</DeclaredIn>
+			
+			<Declaration>+ (NSURL *)URLForHomeDirectory</Declaration>
+			
+			<ReturnValue><Abstract type="html">An URL specifing the location of home directory for current user.
+  </Abstract></ReturnValue>
+			<Anchor>//api/name/URLForHomeDirectory</Anchor>
             <NodeRef refid="8"/>
 		</Token>
 		

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/WSCInternetProtocolType.html">
+	<File path="Constants/WSCKeychainItemClass.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/WSCInternetProtocolType</TokenIdentifier>
-			<Abstract type="html">Defines the protocol type associated with an Internet passphrase.
+			<TokenIdentifier>//apple_ref/c/tdef/WSCKeychainItemClass</TokenIdentifier>
+			<Abstract type="html">Specifies a keychain item’s class code.
   </Abstract>
 			<DeclaredIn>WSCKeychain.h</DeclaredIn>
             
@@ -15,9 +15,9 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WSCInternetProtocolTypeFTP</TokenIdentifier>
-            <Abstract type="html">Indicates FTP.</Abstract>
-            <Declaration>WSCInternetProtocolTypeFTP</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/WSCKeychainItemClassInternetPassphraseItem</TokenIdentifier>
+            <Abstract type="html">Indicates that the item is an Internet passphrase.</Abstract>
+            <Declaration>WSCKeychainItemClassInternetPassphraseItem</Declaration>
             
             <DeclaredIn>WSCKeychain.h</DeclaredIn>
             
@@ -25,9 +25,9 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WSCInternetProtocolTypeFTPAccount</TokenIdentifier>
-            <Abstract type="html">Indicates a client side FTP account. The usage of this constant is deprecated as of OS X v10.3.</Abstract>
-            <Declaration>WSCInternetProtocolTypeFTPAccount</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/WSCKeychainItemClassApplicationPassphraseItem</TokenIdentifier>
+            <Abstract type="html">Indicates that the item is an application passphrase.</Abstract>
+            <Declaration>WSCKeychainItemClassApplicationPassphraseItem</Declaration>
             
             <DeclaredIn>WSCKeychain.h</DeclaredIn>
             
@@ -35,9 +35,9 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WSCInternetProtocolTypeHTTP</TokenIdentifier>
-            <Abstract type="html">Indicates HTTP.</Abstract>
-            <Declaration>WSCInternetProtocolTypeHTTP</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/WSCKeychainItemClassCertificateItem</TokenIdentifier>
+            <Abstract type="html">Indicates that the item is an X509 certificate.</Abstract>
+            <Declaration>WSCKeychainItemClassCertificateItem</Declaration>
             
             <DeclaredIn>WSCKeychain.h</DeclaredIn>
             
@@ -45,9 +45,9 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WSCInternetProtocolTypeIRC</TokenIdentifier>
-            <Abstract type="html">Indicates IRC.</Abstract>
-            <Declaration>WSCInternetProtocolTypeIRC</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/WSCKeychainItemClassPublicKeyItem</TokenIdentifier>
+            <Abstract type="html">Indicates that the item is a public key of a public-private pair.</Abstract>
+            <Declaration>WSCKeychainItemClassPublicKeyItem</Declaration>
             
             <DeclaredIn>WSCKeychain.h</DeclaredIn>
             
@@ -55,9 +55,9 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WSCInternetProtocolTypeNNTP</TokenIdentifier>
-            <Abstract type="html">Indicates NNTP.</Abstract>
-            <Declaration>WSCInternetProtocolTypeNNTP</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/WSCKeychainItemClassPrivateKeyItem</TokenIdentifier>
+            <Abstract type="html">Indicates that the item is a private key of a public-private pair.</Abstract>
+            <Declaration>WSCKeychainItemClassPrivateKeyItem</Declaration>
             
             <DeclaredIn>WSCKeychain.h</DeclaredIn>
             
@@ -65,9 +65,9 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WSCInternetProtocolTypePOP3</TokenIdentifier>
-            <Abstract type="html">Indicates POP3.</Abstract>
-            <Declaration>WSCInternetProtocolTypePOP3</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/WSCKeychainItemClassSymmetricKeyItem</TokenIdentifier>
+            <Abstract type="html">Indicates that the item is a private key used for symmetric-key encryption.</Abstract>
+            <Declaration>WSCKeychainItemClassSymmetricKeyItem</Declaration>
             
             <DeclaredIn>WSCKeychain.h</DeclaredIn>
             
@@ -75,290 +75,9 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WSCInternetProtocolTypeSMTP</TokenIdentifier>
-            <Abstract type="html">Indicates SMTP.</Abstract>
-            <Declaration>WSCInternetProtocolTypeSMTP</Declaration>
-            
-            <DeclaredIn>WSCKeychain.h</DeclaredIn>
-            
-            <NodeRef refid="12"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WSCInternetProtocolTypeSOCKS</TokenIdentifier>
-            <Abstract type="html">Indicates SOCKS.</Abstract>
-            <Declaration>WSCInternetProtocolTypeSOCKS</Declaration>
-            
-            <DeclaredIn>WSCKeychain.h</DeclaredIn>
-            
-            <NodeRef refid="12"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WSCInternetProtocolTypeIMAP</TokenIdentifier>
-            <Abstract type="html">Indicates IMAP.</Abstract>
-            <Declaration>WSCInternetProtocolTypeIMAP</Declaration>
-            
-            <DeclaredIn>WSCKeychain.h</DeclaredIn>
-            
-            <NodeRef refid="12"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WSCInternetProtocolTypeLDAP</TokenIdentifier>
-            <Abstract type="html">Indicates LDAP.</Abstract>
-            <Declaration>WSCInternetProtocolTypeLDAP</Declaration>
-            
-            <DeclaredIn>WSCKeychain.h</DeclaredIn>
-            
-            <NodeRef refid="12"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WSCInternetProtocolTypeAppleTalk</TokenIdentifier>
-            <Abstract type="html">Indicates AFP over AppleTalk.</Abstract>
-            <Declaration>WSCInternetProtocolTypeAppleTalk</Declaration>
-            
-            <DeclaredIn>WSCKeychain.h</DeclaredIn>
-            
-            <NodeRef refid="12"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WSCInternetProtocolTypeAFP</TokenIdentifier>
-            <Abstract type="html">Indicates AFP over TCP.</Abstract>
-            <Declaration>WSCInternetProtocolTypeAFP</Declaration>
-            
-            <DeclaredIn>WSCKeychain.h</DeclaredIn>
-            
-            <NodeRef refid="12"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WSCInternetProtocolTypeTelnet</TokenIdentifier>
-            <Abstract type="html">Indicates Telnet.</Abstract>
-            <Declaration>WSCInternetProtocolTypeTelnet</Declaration>
-            
-            <DeclaredIn>WSCKeychain.h</DeclaredIn>
-            
-            <NodeRef refid="12"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WSCInternetProtocolTypeSSH</TokenIdentifier>
-            <Abstract type="html">Indicates SSH.</Abstract>
-            <Declaration>WSCInternetProtocolTypeSSH</Declaration>
-            
-            <DeclaredIn>WSCKeychain.h</DeclaredIn>
-            
-            <NodeRef refid="12"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WSCInternetProtocolTypeFTPS</TokenIdentifier>
-            <Abstract type="html">Indicates FTP over TLS/SSL.</Abstract>
-            <Declaration>WSCInternetProtocolTypeFTPS</Declaration>
-            
-            <DeclaredIn>WSCKeychain.h</DeclaredIn>
-            
-            <NodeRef refid="12"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WSCInternetProtocolTypeHTTPS</TokenIdentifier>
-            <Abstract type="html">Indicates HTTP over TLS/SSL.</Abstract>
-            <Declaration>WSCInternetProtocolTypeHTTPS</Declaration>
-            
-            <DeclaredIn>WSCKeychain.h</DeclaredIn>
-            
-            <NodeRef refid="12"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WSCInternetProtocolTypeHTTPProxy</TokenIdentifier>
-            <Abstract type="html">Indicates HTTP proxy.</Abstract>
-            <Declaration>WSCInternetProtocolTypeHTTPProxy</Declaration>
-            
-            <DeclaredIn>WSCKeychain.h</DeclaredIn>
-            
-            <NodeRef refid="12"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WSCInternetProtocolTypeHTTPSProxy</TokenIdentifier>
-            <Abstract type="html">Indicates HTTPS proxy.</Abstract>
-            <Declaration>WSCInternetProtocolTypeHTTPSProxy</Declaration>
-            
-            <DeclaredIn>WSCKeychain.h</DeclaredIn>
-            
-            <NodeRef refid="12"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WSCInternetProtocolTypeFTPProxy</TokenIdentifier>
-            <Abstract type="html">Indicates FTP proxy.</Abstract>
-            <Declaration>WSCInternetProtocolTypeFTPProxy</Declaration>
-            
-            <DeclaredIn>WSCKeychain.h</DeclaredIn>
-            
-            <NodeRef refid="12"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WSCInternetProtocolTypeCIFS</TokenIdentifier>
-            <Abstract type="html">Indicates CIFS.</Abstract>
-            <Declaration>WSCInternetProtocolTypeCIFS</Declaration>
-            
-            <DeclaredIn>WSCKeychain.h</DeclaredIn>
-            
-            <NodeRef refid="12"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WSCInternetProtocolTypeSMB</TokenIdentifier>
-            <Abstract type="html">Indicates SMB.</Abstract>
-            <Declaration>WSCInternetProtocolTypeSMB</Declaration>
-            
-            <DeclaredIn>WSCKeychain.h</DeclaredIn>
-            
-            <NodeRef refid="12"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WSCInternetProtocolTypeRTSP</TokenIdentifier>
-            <Abstract type="html">Indicates RTSP.</Abstract>
-            <Declaration>WSCInternetProtocolTypeRTSP</Declaration>
-            
-            <DeclaredIn>WSCKeychain.h</DeclaredIn>
-            
-            <NodeRef refid="12"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WSCInternetProtocolTypeRTSPProxy</TokenIdentifier>
-            <Abstract type="html">Indicates RTSP proxy.</Abstract>
-            <Declaration>WSCInternetProtocolTypeRTSPProxy</Declaration>
-            
-            <DeclaredIn>WSCKeychain.h</DeclaredIn>
-            
-            <NodeRef refid="12"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WSCInternetProtocolTypeDAAP</TokenIdentifier>
-            <Abstract type="html">Indicates DAAP.</Abstract>
-            <Declaration>WSCInternetProtocolTypeDAAP</Declaration>
-            
-            <DeclaredIn>WSCKeychain.h</DeclaredIn>
-            
-            <NodeRef refid="12"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WSCInternetProtocolTypeEPPC</TokenIdentifier>
-            <Abstract type="html">Indicates Remote Apple Events.</Abstract>
-            <Declaration>WSCInternetProtocolTypeEPPC</Declaration>
-            
-            <DeclaredIn>WSCKeychain.h</DeclaredIn>
-            
-            <NodeRef refid="12"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WSCInternetProtocolTypeIPP</TokenIdentifier>
-            <Abstract type="html">Indicates IPP.</Abstract>
-            <Declaration>WSCInternetProtocolTypeIPP</Declaration>
-            
-            <DeclaredIn>WSCKeychain.h</DeclaredIn>
-            
-            <NodeRef refid="12"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WSCInternetProtocolTypeNNTPS</TokenIdentifier>
-            <Abstract type="html">Indicates NNTP over TLS/SSL.</Abstract>
-            <Declaration>WSCInternetProtocolTypeNNTPS</Declaration>
-            
-            <DeclaredIn>WSCKeychain.h</DeclaredIn>
-            
-            <NodeRef refid="12"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WSCInternetProtocolTypeLDAPS</TokenIdentifier>
-            <Abstract type="html">Indicates LDAP over TLS/SSL.</Abstract>
-            <Declaration>WSCInternetProtocolTypeLDAPS</Declaration>
-            
-            <DeclaredIn>WSCKeychain.h</DeclaredIn>
-            
-            <NodeRef refid="12"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WSCInternetProtocolTypeTelnetS</TokenIdentifier>
-            <Abstract type="html">Indicates Telnet over TLS/SSL.</Abstract>
-            <Declaration>WSCInternetProtocolTypeTelnetS</Declaration>
-            
-            <DeclaredIn>WSCKeychain.h</DeclaredIn>
-            
-            <NodeRef refid="12"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WSCInternetProtocolTypeIMAPS</TokenIdentifier>
-            <Abstract type="html">Indicates IMAP4 over TLS/SSL.</Abstract>
-            <Declaration>WSCInternetProtocolTypeIMAPS</Declaration>
-            
-            <DeclaredIn>WSCKeychain.h</DeclaredIn>
-            
-            <NodeRef refid="12"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WSCInternetProtocolTypeIRCS</TokenIdentifier>
-            <Abstract type="html">Indicates IRC over TLS/SSL.</Abstract>
-            <Declaration>WSCInternetProtocolTypeIRCS</Declaration>
-            
-            <DeclaredIn>WSCKeychain.h</DeclaredIn>
-            
-            <NodeRef refid="12"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WSCInternetProtocolTypePOP3S</TokenIdentifier>
-            <Abstract type="html">Indicates POP3 over TLS/SSL.</Abstract>
-            <Declaration>WSCInternetProtocolTypePOP3S</Declaration>
-            
-            <DeclaredIn>WSCKeychain.h</DeclaredIn>
-            
-            <NodeRef refid="12"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WSCInternetProtocolTypeCVSpserver</TokenIdentifier>
-            <Abstract type="html">Indicates CVS pserver.</Abstract>
-            <Declaration>WSCInternetProtocolTypeCVSpserver</Declaration>
-            
-            <DeclaredIn>WSCKeychain.h</DeclaredIn>
-            
-            <NodeRef refid="12"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WSCInternetProtocolTypeSVN</TokenIdentifier>
-            <Abstract type="html">Indicates Subversion.</Abstract>
-            <Declaration>WSCInternetProtocolTypeSVN</Declaration>
-            
-            <DeclaredIn>WSCKeychain.h</DeclaredIn>
-            
-            <NodeRef refid="12"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WSCInternetProtocolTypeAny</TokenIdentifier>
-            <Abstract type="html">Indicates that any protocol is acceptable.
-When performing a search, use this constant to avoid constraining your search results to a particular protocol.</Abstract>
-            <Declaration>WSCInternetProtocolTypeAny</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/WSCKeychainItemClassAllKeys</TokenIdentifier>
+            <Abstract type="html">The item can be any type of key; used for searches only.</Abstract>
+            <Declaration>WSCKeychainItemClassAllKeys</Declaration>
             
             <DeclaredIn>WSCKeychain.h</DeclaredIn>
             

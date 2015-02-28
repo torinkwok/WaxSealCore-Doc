@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Categories/NSURL+WSCKeychainURL.html">
+	<File path="Protocols/WSCKeychainManagerDelegate.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cat/NSURL(WSCKeychainURL)</TokenIdentifier>
-			<Abstract type="html">A collection of useful and convenient additions for NSURL to deal with keychains.
-  </Abstract>
-			<DeclaredIn>NSURL+WSCKeychainURL.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/intf/WSCKeychainManagerDelegate</TokenIdentifier>
+			<Abstract type="html">The WSCKeychainManagerDelegate protocol defines optional methods for managing
+    operations involving the deleting, setting, searching, etc. of keychains.
+    When you use an WSCKeychainManager object to initiate a delete, set, search operations,
+    the keychain manager asks its delegate whether the operation should begin at all
+    and whether it should proceed when an error occurs.</Abstract>
+			<DeclaredIn>WSCKeychainManager.h</DeclaredIn>
             
 			
 			<NodeRef refid="9"/>
@@ -14,81 +17,184 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/NSURL/sharedURLForCurrentUserKeychainsDirectory</TokenIdentifier>
-			<Abstract type="html">Returns the URL of the current user&apos;s keychain directory: ~/Library/Keychains.</Abstract>
-			<DeclaredIn>NSURL+WSCKeychainURL.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/intfm/WSCKeychainManagerDelegate/keychainManager:shouldDeleteKeychain:</TokenIdentifier>
+			<Abstract type="html">Asks the delegate whether the specified keychain should be deleted.</Abstract>
+			<DeclaredIn>WSCKeychainManager.h</DeclaredIn>
 			
-			<Declaration>+ (NSURL *)sharedURLForCurrentUserKeychainsDirectory</Declaration>
-			
-			<ReturnValue><Abstract type="html">An URL of the current user&apos;s keychain directory: ~/Library/Keychains.
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/WSCKeychainManager/deleteKeychain:error:</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/instm/WSCKeychainManager/deleteKeychains:error:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (BOOL)keychainManager:(WSCKeychainManager *)_KeychainManager shouldDeleteKeychain:(WSCKeychain *)_Keychain</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>_KeychainManager</Name>
+					<Abstract type="html">The keychain manager that attempted to delete the specified keychain.
+  </Abstract>
+				</Parameter><Parameter>
+					<Name>_Keychain</Name>
+					<Abstract type="html">The keychain that the keychain manager tried to delete.
+  </Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES if the specified keychain should be deleted or NO if it should not be deleted.
   </Abstract></ReturnValue>
-			<Anchor>//api/name/sharedURLForCurrentUserKeychainsDirectory</Anchor>
+			<Anchor>//api/name/keychainManager:shouldDeleteKeychain:</Anchor>
             <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/NSURL/sharedURLForSystemKeychainsDirectory</TokenIdentifier>
-			<Abstract type="html">Returns the URL of the system directory: /Library/Keychains.</Abstract>
-			<DeclaredIn>NSURL+WSCKeychainURL.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/intfm/WSCKeychainManagerDelegate/keychainManager:shouldProceedAfterError:deletingKeychain:</TokenIdentifier>
+			<Abstract type="html">Asks the delegate if the operation should continue after an error occurs while deleting the specified keychain.</Abstract>
+			<DeclaredIn>WSCKeychainManager.h</DeclaredIn>
 			
-			<Declaration>+ (NSURL *)sharedURLForSystemKeychainsDirectory</Declaration>
-			
-			<ReturnValue><Abstract type="html">An URL of the system keychain directory: /Library/Keychains.
-  </Abstract></ReturnValue>
-			<Anchor>//api/name/sharedURLForSystemKeychainsDirectory</Anchor>
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/WSCKeychainManager/deleteKeychain:error:</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/instm/WSCKeychainManager/deleteKeychains:error:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (BOOL)keychainManager:(WSCKeychainManager *)_KeychainManager shouldProceedAfterError:(NSError *)_Error deletingKeychain:(WSCKeychain *)_Keychain</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>_KeychainManager</Name>
+					<Abstract type="html">The keychain manager that attempted to delete the specified keychain.
+  </Abstract>
+				</Parameter><Parameter>
+					<Name>_Error</Name>
+					<Abstract type="html">The error that occurred while attempting to delete the specified keychain.
+  </Abstract>
+				</Parameter><Parameter>
+					<Name>_Keychain</Name>
+					<Abstract type="html">The keychain that the keychain manager tried to delete.
+  </Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES if the operation should proceed or NO if it should be aborted. 
+          If you do not implement this method, the keychain manager assumes a response of NO.
+          </Abstract></ReturnValue>
+			<Anchor>//api/name/keychainManager:shouldProceedAfterError:deletingKeychain:</Anchor>
             <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/NSURL/sharedURLForLoginKeychain</TokenIdentifier>
-			<Abstract type="html">Returns an NSURL object specifying the location of login.keychain for current user.</Abstract>
-			<DeclaredIn>NSURL+WSCKeychainURL.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/intfm/WSCKeychainManagerDelegate/keychainManager:shouldLockKeychain:</TokenIdentifier>
+			<Abstract type="html">Asks the delegate whether the specified keychain should be locked.</Abstract>
+			<DeclaredIn>WSCKeychainManager.h</DeclaredIn>
 			
-			<Declaration>+ (NSURL *)sharedURLForLoginKeychain</Declaration>
-			
-			<ReturnValue><Abstract type="html">An NSURL object specifying the location of login.keychain for current user.
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/WSCKeychainManager/lockKeychain:error:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (BOOL)keychainManager:(WSCKeychainManager *)_KeychainManager shouldLockKeychain:(WSCKeychain *)_Keychain</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>_KeychainManager</Name>
+					<Abstract type="html">The keychain manager that attempted to lock the specified keychain.
+  </Abstract>
+				</Parameter><Parameter>
+					<Name>_Keychain</Name>
+					<Abstract type="html">The keychain that the keychain manager tried to lock.
+  </Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES if the specified keychain should be locked or NO if it should not be locked.
   </Abstract></ReturnValue>
-			<Anchor>//api/name/sharedURLForLoginKeychain</Anchor>
+			<Anchor>//api/name/keychainManager:shouldLockKeychain:</Anchor>
             <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/NSURL/sharedURLForSystemKeychain</TokenIdentifier>
-			<Abstract type="html">Returns an NSURL object specifying the location of System.keychain.</Abstract>
-			<DeclaredIn>NSURL+WSCKeychainURL.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/intfm/WSCKeychainManagerDelegate/keychainManager:shouldProceedAfterError:lockingKeychain:</TokenIdentifier>
+			<Abstract type="html">Asks the delegate if the operation should continue after an error occurs while locking the specified keychain.</Abstract>
+			<DeclaredIn>WSCKeychainManager.h</DeclaredIn>
 			
-			<Declaration>+ (NSURL *)sharedURLForSystemKeychain</Declaration>
-			
-			<ReturnValue><Abstract type="html">An NSURL object specifying the location of System.keychain.
-  </Abstract></ReturnValue>
-			<Anchor>//api/name/sharedURLForSystemKeychain</Anchor>
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/WSCKeychainManager/lockKeychain:error:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (BOOL)keychainManager:(WSCKeychainManager *)_KeychainManager shouldProceedAfterError:(NSError *)_Error lockingKeychain:(WSCKeychain *)_Keychain</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>_KeychainManager</Name>
+					<Abstract type="html">The keychain manager that attempted to lock the specified keychain.
+  </Abstract>
+				</Parameter><Parameter>
+					<Name>_Error</Name>
+					<Abstract type="html">The error that occurred while attempting to lock the specified keychain.</Abstract>
+				</Parameter><Parameter>
+					<Name>_Keychain</Name>
+					<Abstract type="html">The keychain that the keychain manager tried to lock.
+  </Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES if the operation should proceed or NO if it should be aborted. 
+          If you do not implement this method, the keychain manager assumes a response of NO.
+          </Abstract></ReturnValue>
+			<Anchor>//api/name/keychainManager:shouldProceedAfterError:lockingKeychain:</Anchor>
             <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/NSURL/URLForTemporaryDirectory</TokenIdentifier>
-			<Abstract type="html">Returns the URL of the temporary directory for current user.</Abstract>
-			<DeclaredIn>NSURL+WSCKeychainURL.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/intfm/WSCKeychainManagerDelegate/keychainManager:shouldUpdateKeychainSearchList:</TokenIdentifier>
+			<Abstract type="html">Asks the delegate whether the current default keychain search list should be changed.</Abstract>
+			<DeclaredIn>WSCKeychainManager.h</DeclaredIn>
 			
-			<Declaration>+ (NSURL *)URLForTemporaryDirectory</Declaration>
-			
-			<ReturnValue><Abstract type="html">An URL specifing the location of temporary directory for current user. 
-          If no such directory is currently available, returns nil.
-  </Abstract></ReturnValue>
-			<Anchor>//api/name/URLForTemporaryDirectory</Anchor>
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intfm/WSCKeychainManagerDelegate/keychainManager:shouldProceedAfterError:updatingKeychainSearchList:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (BOOL)keychainManager:(WSCKeychainManager *)_KeychainManager shouldUpdateKeychainSearchList:(NSSet *)_SearchList</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>_KeychainManager</Name>
+					<Abstract type="html">The keychain manager that attempted to change the current default keychain search list.
+  </Abstract>
+				</Parameter><Parameter>
+					<Name>_SearchList</Name>
+					<Abstract type="html">A set of keychain objects (of class WSCKeychain specifying the list of keychains to use in the new default keychain search list.
+  </Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES if the current default keychain search list should be updated or NO if it should not be updated.</Abstract></ReturnValue>
+			<Anchor>//api/name/keychainManager:shouldUpdateKeychainSearchList:</Anchor>
             <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/NSURL/URLForHomeDirectory</TokenIdentifier>
-			<Abstract type="html">Returns the URL of the current user&apos;s or application&apos;s home directory, depending on the platform.</Abstract>
-			<DeclaredIn>NSURL+WSCKeychainURL.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/intfm/WSCKeychainManagerDelegate/keychainManager:shouldProceedAfterError:updatingKeychainSearchList:</TokenIdentifier>
+			<Abstract type="html">Asks the delegate if the operation should continue after an error occurs while updating the current default keychain search list.</Abstract>
+			<DeclaredIn>WSCKeychainManager.h</DeclaredIn>
 			
-			<Declaration>+ (NSURL *)URLForHomeDirectory</Declaration>
-			
-			<ReturnValue><Abstract type="html">An URL specifing the location of home directory for current user.
-  </Abstract></ReturnValue>
-			<Anchor>//api/name/URLForHomeDirectory</Anchor>
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intfm/WSCKeychainManagerDelegate/keychainManager:shouldUpdateKeychainSearchList:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (BOOL)keychainManager:(WSCKeychainManager *)_KeychainManager shouldProceedAfterError:(NSError *)_Error updatingKeychainSearchList:(NSSet *)_SearchList</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>_KeychainManager</Name>
+					<Abstract type="html">The keychain manager that attempted to change the current default keychain search list.
+  </Abstract>
+				</Parameter><Parameter>
+					<Name>_Error</Name>
+					<Abstract type="html">The error that occurred while attempting to update the current default keychain search list.</Abstract>
+				</Parameter><Parameter>
+					<Name>_SearchList</Name>
+					<Abstract type="html">A set of keychain objects (of class WSCKeychain specifying the list of keychains to use in the new default keychain search list.
+  </Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES if the operation should proceed or NO if it should be aborted. 
+          If you do not implement this method, the keychain manager assumes a response of NO.
+          </Abstract></ReturnValue>
+			<Anchor>//api/name/keychainManager:shouldProceedAfterError:updatingKeychainSearchList:</Anchor>
             <NodeRef refid="9"/>
 		</Token>
 		

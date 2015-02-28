@@ -1,342 +1,109 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Protocols/WSCKeychainManagerDelegate.html">
+	<File path="Constants/WSCInternetAuthenticationType.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intf/WSCKeychainManagerDelegate</TokenIdentifier>
-			<Abstract type="html">The WSCKeychainManagerDelegate protocol defines optional methods for managing
-    operations involving the deleting, setting, searching, etc. of keychains.
-    When you use an WSCKeychainManager object to initiate a delete, set, search operations,
-    the keychain manager asks its delegate whether the operation should begin at all
-    and whether it should proceed when an error occurs.</Abstract>
-			<DeclaredIn>WSCKeychainManager.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/c/tdef/WSCInternetAuthenticationType</TokenIdentifier>
+			<Abstract type="html">Defines constants you can use to identify the type of authentication to use for an Internet passphrase.
+  </Abstract>
+			<DeclaredIn>WSCKeychain.h</DeclaredIn>
             
 			
 			<NodeRef refid="10"/>
 		</Token>
 		
 		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/WSCKeychainManagerDelegate/keychainManager:shouldDeleteKeychain:</TokenIdentifier>
-			<Abstract type="html">Asks the delegate whether the specified keychain should be deleted.</Abstract>
-			<DeclaredIn>WSCKeychainManager.h</DeclaredIn>
-			
-	<RelatedTokens>
-		<TokenIdentifier>//apple_ref/occ/instm/WSCKeychainManager/deleteKeychain:error:</TokenIdentifier>
-		<TokenIdentifier>//apple_ref/occ/instm/WSCKeychainManager/deleteKeychains:error:</TokenIdentifier>
-		
-	</RelatedTokens>
-	
-			<Declaration>- (BOOL)keychainManager:(WSCKeychainManager *)_KeychainManager shouldDeleteKeychain:(WSCKeychain *)_Keychain</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>_KeychainManager</Name>
-					<Abstract type="html">The keychain manager that attempted to delete the specified keychain.
-  </Abstract>
-				</Parameter><Parameter>
-					<Name>_Keychain</Name>
-					<Abstract type="html">The keychain that the keychain manager tried to delete.
-  </Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">YES if the specified keychain should be deleted or NO if it should not be deleted.
-  </Abstract></ReturnValue>
-			<Anchor>//api/name/keychainManager:shouldDeleteKeychain:</Anchor>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCInternetAuthenticationTypeNTLM</TokenIdentifier>
+            <Abstract type="html">Specifies Windows NT LAN Manager authentication.</Abstract>
+            <Declaration>WSCInternetAuthenticationTypeNTLM</Declaration>
+            
+            <DeclaredIn>WSCKeychain.h</DeclaredIn>
+            
             <NodeRef refid="10"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/WSCKeychainManagerDelegate/keychainManager:shouldProceedAfterError:deletingKeychain:</TokenIdentifier>
-			<Abstract type="html">Asks the delegate if the operation should continue after an error occurs while deleting the specified keychain.</Abstract>
-			<DeclaredIn>WSCKeychainManager.h</DeclaredIn>
-			
-	<RelatedTokens>
-		<TokenIdentifier>//apple_ref/occ/instm/WSCKeychainManager/deleteKeychain:error:</TokenIdentifier>
-		<TokenIdentifier>//apple_ref/occ/instm/WSCKeychainManager/deleteKeychains:error:</TokenIdentifier>
-		
-	</RelatedTokens>
-	
-			<Declaration>- (BOOL)keychainManager:(WSCKeychainManager *)_KeychainManager shouldProceedAfterError:(NSError *)_Error deletingKeychain:(WSCKeychain *)_Keychain</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>_KeychainManager</Name>
-					<Abstract type="html">The keychain manager that attempted to delete the specified keychain.
-  </Abstract>
-				</Parameter><Parameter>
-					<Name>_Error</Name>
-					<Abstract type="html">The error that occurred while attempting to delete the specified keychain.
-  </Abstract>
-				</Parameter><Parameter>
-					<Name>_Keychain</Name>
-					<Abstract type="html">The keychain that the keychain manager tried to delete.
-  </Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">YES if the operation should proceed or NO if it should be aborted. 
-          If you do not implement this method, the keychain manager assumes a response of NO.
-          </Abstract></ReturnValue>
-			<Anchor>//api/name/keychainManager:shouldProceedAfterError:deletingKeychain:</Anchor>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCInternetAuthenticationTypeMSN</TokenIdentifier>
+            <Abstract type="html">Specifies Microsoft Network default authentication.</Abstract>
+            <Declaration>WSCInternetAuthenticationTypeMSN</Declaration>
+            
+            <DeclaredIn>WSCKeychain.h</DeclaredIn>
+            
             <NodeRef refid="10"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/WSCKeychainManagerDelegate/keychainManager:shouldLockKeychain:</TokenIdentifier>
-			<Abstract type="html">Asks the delegate whether the specified keychain should be locked.</Abstract>
-			<DeclaredIn>WSCKeychainManager.h</DeclaredIn>
-			
-	<RelatedTokens>
-		<TokenIdentifier>//apple_ref/occ/instm/WSCKeychainManager/lockKeychain:error:</TokenIdentifier>
-		
-	</RelatedTokens>
-	
-			<Declaration>- (BOOL)keychainManager:(WSCKeychainManager *)_KeychainManager shouldLockKeychain:(WSCKeychain *)_Keychain</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>_KeychainManager</Name>
-					<Abstract type="html">The keychain manager that attempted to lock the specified keychain.
-  </Abstract>
-				</Parameter><Parameter>
-					<Name>_Keychain</Name>
-					<Abstract type="html">The keychain that the keychain manager tried to lock.
-  </Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">YES if the specified keychain should be locked or NO if it should not be locked.
-  </Abstract></ReturnValue>
-			<Anchor>//api/name/keychainManager:shouldLockKeychain:</Anchor>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCInternetAuthenticationTypeDPA</TokenIdentifier>
+            <Abstract type="html">Specifies Distributed Passphrase authentication.</Abstract>
+            <Declaration>WSCInternetAuthenticationTypeDPA</Declaration>
+            
+            <DeclaredIn>WSCKeychain.h</DeclaredIn>
+            
             <NodeRef refid="10"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/WSCKeychainManagerDelegate/keychainManager:shouldProceedAfterError:lockingKeychain:</TokenIdentifier>
-			<Abstract type="html">Asks the delegate if the operation should continue after an error occurs while locking the specified keychain.</Abstract>
-			<DeclaredIn>WSCKeychainManager.h</DeclaredIn>
-			
-	<RelatedTokens>
-		<TokenIdentifier>//apple_ref/occ/instm/WSCKeychainManager/lockKeychain:error:</TokenIdentifier>
-		
-	</RelatedTokens>
-	
-			<Declaration>- (BOOL)keychainManager:(WSCKeychainManager *)_KeychainManager shouldProceedAfterError:(NSError *)_Error lockingKeychain:(WSCKeychain *)_Keychain</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>_KeychainManager</Name>
-					<Abstract type="html">The keychain manager that attempted to lock the specified keychain.
-  </Abstract>
-				</Parameter><Parameter>
-					<Name>_Error</Name>
-					<Abstract type="html">The error that occurred while attempting to lock the specified keychain.</Abstract>
-				</Parameter><Parameter>
-					<Name>_Keychain</Name>
-					<Abstract type="html">The keychain that the keychain manager tried to lock.
-  </Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">YES if the operation should proceed or NO if it should be aborted. 
-          If you do not implement this method, the keychain manager assumes a response of NO.
-          </Abstract></ReturnValue>
-			<Anchor>//api/name/keychainManager:shouldProceedAfterError:lockingKeychain:</Anchor>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCInternetAuthenticationTypeRPA</TokenIdentifier>
+            <Abstract type="html">Specifies Remote Passphrase authentication.</Abstract>
+            <Declaration>WSCInternetAuthenticationTypeRPA</Declaration>
+            
+            <DeclaredIn>WSCKeychain.h</DeclaredIn>
+            
             <NodeRef refid="10"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/WSCKeychainManagerDelegate/keychainManager:shouldUpdateKeychainSearchList:</TokenIdentifier>
-			<Abstract type="html">Asks the delegate whether the current default keychain search list should be changed.</Abstract>
-			<DeclaredIn>WSCKeychainManager.h</DeclaredIn>
-			
-	<RelatedTokens>
-		<TokenIdentifier>//apple_ref/occ/intfm/WSCKeychainManagerDelegate/keychainManager:shouldProceedAfterError:updatingKeychainSearchList:</TokenIdentifier>
-		
-	</RelatedTokens>
-	
-			<Declaration>- (BOOL)keychainManager:(WSCKeychainManager *)_KeychainManager shouldUpdateKeychainSearchList:(NSArray *)_SearchList</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>_KeychainManager</Name>
-					<Abstract type="html">The keychain manager that attempted to change the current default keychain search list.
-  </Abstract>
-				</Parameter><Parameter>
-					<Name>_SearchList</Name>
-					<Abstract type="html">An array of keychain objects (of class WSCKeychain specifying the list of keychains to use in the new default keychain search list.
-  </Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">YES if the current default keychain search list should be updated or NO if it should not be updated.</Abstract></ReturnValue>
-			<Anchor>//api/name/keychainManager:shouldUpdateKeychainSearchList:</Anchor>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCInternetAuthenticationTypeHTTPBasic</TokenIdentifier>
+            <Abstract type="html">Specifies HTTP Basic authentication.</Abstract>
+            <Declaration>WSCInternetAuthenticationTypeHTTPBasic</Declaration>
+            
+            <DeclaredIn>WSCKeychain.h</DeclaredIn>
+            
             <NodeRef refid="10"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/WSCKeychainManagerDelegate/keychainManager:shouldProceedAfterError:updatingKeychainSearchList:</TokenIdentifier>
-			<Abstract type="html">Asks the delegate if the operation should continue after an error occurs while updating the current default keychain search list.</Abstract>
-			<DeclaredIn>WSCKeychainManager.h</DeclaredIn>
-			
-	<RelatedTokens>
-		<TokenIdentifier>//apple_ref/occ/intfm/WSCKeychainManagerDelegate/keychainManager:shouldUpdateKeychainSearchList:</TokenIdentifier>
-		
-	</RelatedTokens>
-	
-			<Declaration>- (BOOL)keychainManager:(WSCKeychainManager *)_KeychainManager shouldProceedAfterError:(NSError *)_Error updatingKeychainSearchList:(NSArray *)_SearchList</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>_KeychainManager</Name>
-					<Abstract type="html">The keychain manager that attempted to change the current default keychain search list.
-  </Abstract>
-				</Parameter><Parameter>
-					<Name>_Error</Name>
-					<Abstract type="html">The error that occurred while attempting to update the current default keychain search list.</Abstract>
-				</Parameter><Parameter>
-					<Name>_SearchList</Name>
-					<Abstract type="html">An array of keychain objects (of class WSCKeychain specifying the list of keychains to use in the new default keychain search list.
-  </Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">YES if the operation should proceed or NO if it should be aborted. 
-          If you do not implement this method, the keychain manager assumes a response of NO.
-          </Abstract></ReturnValue>
-			<Anchor>//api/name/keychainManager:shouldProceedAfterError:updatingKeychainSearchList:</Anchor>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCInternetAuthenticationTypeHTTPDigest</TokenIdentifier>
+            <Abstract type="html">Specifies HTTP Digest Access authentication.</Abstract>
+            <Declaration>WSCInternetAuthenticationTypeHTTPDigest</Declaration>
+            
+            <DeclaredIn>WSCKeychain.h</DeclaredIn>
+            
             <NodeRef refid="10"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/WSCKeychainManagerDelegate/keychainManager:shouldAddKeychain:toSearchList:</TokenIdentifier>
-			<Abstract type="html">Asks the delegate whether the specified keychain should be added to the current default search list.</Abstract>
-			<DeclaredIn>WSCKeychainManager.h</DeclaredIn>
-			
-	<RelatedTokens>
-		<TokenIdentifier>//apple_ref/occ/intfm/WSCKeychainManagerDelegate/keychainManager:shouldProceedAfterError:addingKeychain:toSearchList:</TokenIdentifier>
-		
-	</RelatedTokens>
-	
-			<Declaration>- (BOOL)keychainManager:(WSCKeychainManager *)_KeychainManager shouldAddKeychain:(WSCKeychain *)_Keychain toSearchList:(NSArray *)_SearchList</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>_KeychainManager</Name>
-					<Abstract type="html">The keychain manager that attempted to add the specified keychain to default search lsit.
-  </Abstract>
-				</Parameter><Parameter>
-					<Name>_Keychain</Name>
-					<Abstract type="html">The keychain that the keychain manager tried to add.
-  </Abstract>
-				</Parameter><Parameter>
-					<Name>_SearchList</Name>
-					<Abstract type="html">An array of keychain objects (of class WSCKeychain 
-                     specifying the list of keychains to which you want to add the specified keychain.
-  </Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">YES if the current specified keychain should be added or NO if it should not be added.
-  </Abstract></ReturnValue>
-			<Anchor>//api/name/keychainManager:shouldAddKeychain:toSearchList:</Anchor>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCInternetAuthenticationTypeHTMLForm</TokenIdentifier>
+            <Abstract type="html">Specifies HTML form based authentication.</Abstract>
+            <Declaration>WSCInternetAuthenticationTypeHTMLForm</Declaration>
+            
+            <DeclaredIn>WSCKeychain.h</DeclaredIn>
+            
             <NodeRef refid="10"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/WSCKeychainManagerDelegate/keychainManager:shouldProceedAfterError:addingKeychain:toSearchList:</TokenIdentifier>
-			<Abstract type="html">Asks the delegate if the operation should continue after an error occurs while adding the specified keychain to default keychain search list.</Abstract>
-			<DeclaredIn>WSCKeychainManager.h</DeclaredIn>
-			
-	<RelatedTokens>
-		<TokenIdentifier>//apple_ref/occ/intfm/WSCKeychainManagerDelegate/keychainManager:shouldAddKeychain:toSearchList:</TokenIdentifier>
-		
-	</RelatedTokens>
-	
-			<Declaration>- (BOOL)keychainManager:(WSCKeychainManager *)_KeychainManager shouldProceedAfterError:(NSError *)_Error addingKeychain:(WSCKeychain *)_Keychain toSearchList:(NSArray *)_SearchList</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>_KeychainManager</Name>
-					<Abstract type="html">The keychain manager that attempted to add the specified keychain to default search lsit.
-  </Abstract>
-				</Parameter><Parameter>
-					<Name>_Error</Name>
-					<Abstract type="html">The error that occurred while attempting to add the specified keychain to the default keychain search list.</Abstract>
-				</Parameter><Parameter>
-					<Name>_Keychain</Name>
-					<Abstract type="html">The keychain that the keychain manager tried to add.
-  </Abstract>
-				</Parameter><Parameter>
-					<Name>_SearchList</Name>
-					<Abstract type="html">An array of keychain objects (of class WSCKeychain 
-                     specifying the list of keychains to which you want to add the specified keychain.
-  </Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">YES if the operation should proceed or NO if it should be aborted. 
-          If you do not implement this method, the keychain manager assumes a response of NO.
-          </Abstract></ReturnValue>
-			<Anchor>//api/name/keychainManager:shouldProceedAfterError:addingKeychain:toSearchList:</Anchor>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCInternetAuthenticationTypeDefault</TokenIdentifier>
+            <Abstract type="html">Specifies the default authentication type.</Abstract>
+            <Declaration>WSCInternetAuthenticationTypeDefault</Declaration>
+            
+            <DeclaredIn>WSCKeychain.h</DeclaredIn>
+            
             <NodeRef refid="10"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/WSCKeychainManagerDelegate/keychainManager:shouldRemoveKeychain:fromSearchList:</TokenIdentifier>
-			<Abstract type="html">Asks the delegate whether the specified keychain should be removed from the current default search list.</Abstract>
-			<DeclaredIn>WSCKeychainManager.h</DeclaredIn>
-			
-	<RelatedTokens>
-		<TokenIdentifier>//apple_ref/occ/intfm/WSCKeychainManagerDelegate/keychainManager:shouldProceedAfterError:removingKeychain:fromSearchList:</TokenIdentifier>
-		
-	</RelatedTokens>
-	
-			<Declaration>- (BOOL)keychainManager:(WSCKeychainManager *)_KeychainManager shouldRemoveKeychain:(WSCKeychain *)_Keychain fromSearchList:(NSArray *)_SearchList</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>_KeychainManager</Name>
-					<Abstract type="html">The keychain manager that attempted to remove the specified keychain from default search lsit.
-  </Abstract>
-				</Parameter><Parameter>
-					<Name>_Keychain</Name>
-					<Abstract type="html">The keychain that the keychain manager tried to remove.
-  </Abstract>
-				</Parameter><Parameter>
-					<Name>_SearchList</Name>
-					<Abstract type="html">An array of keychain objects (of class WSCKeychain 
-                     specifying the list of keychains from which you want to remove the specified keychain.
-  </Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">YES if the current specified keychain should be removed or NO if it should not be removed.
-  </Abstract></ReturnValue>
-			<Anchor>//api/name/keychainManager:shouldRemoveKeychain:fromSearchList:</Anchor>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCInternetAuthenticationTypeAny</TokenIdentifier>
+            <Abstract type="html">Specifies that any authentication type is acceptable.
+When performing a search, use this value to avoid constraining your search results to a particular authentication type.</Abstract>
+            <Declaration>WSCInternetAuthenticationTypeAny</Declaration>
+            
+            <DeclaredIn>WSCKeychain.h</DeclaredIn>
+            
             <NodeRef refid="10"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/WSCKeychainManagerDelegate/keychainManager:shouldProceedAfterError:removingKeychain:fromSearchList:</TokenIdentifier>
-			<Abstract type="html">Asks the delegate if the operation should continue after an error occurs while removing the specified keychain from default keychain search list.</Abstract>
-			<DeclaredIn>WSCKeychainManager.h</DeclaredIn>
-			
-	<RelatedTokens>
-		<TokenIdentifier>//apple_ref/occ/intfm/WSCKeychainManagerDelegate/keychainManager:shouldRemoveKeychain:fromSearchList:</TokenIdentifier>
-		
-	</RelatedTokens>
-	
-			<Declaration>- (BOOL)keychainManager:(WSCKeychainManager *)_KeychainManager shouldProceedAfterError:(NSError *)_Error removingKeychain:(WSCKeychain *)_Keychain fromSearchList:(NSArray *)_SearchList</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>_KeychainManager</Name>
-					<Abstract type="html">The keychain manager that attempted to remove the specified keychain from default search lsit.
-  </Abstract>
-				</Parameter><Parameter>
-					<Name>_Error</Name>
-					<Abstract type="html">The error that occurred while attempting to remove the specified keychain from the default keychain search list.</Abstract>
-				</Parameter><Parameter>
-					<Name>_Keychain</Name>
-					<Abstract type="html">The keychain that the keychain manager tried to remove.
-  </Abstract>
-				</Parameter><Parameter>
-					<Name>_SearchList</Name>
-					<Abstract type="html">An array of keychain objects (of class WSCKeychain 
-                     specifying the list of keychains from which you want to remove the specified keychain.
-  </Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">YES if the operation should proceed or NO if it should be aborted. 
-          If you do not implement this method, the keychain manager assumes a response of NO.</Abstract></ReturnValue>
-			<Anchor>//api/name/keychainManager:shouldProceedAfterError:removingKeychain:fromSearchList:</Anchor>
-            <NodeRef refid="10"/>
-		</Token>
-		
+        </Token>
         
 	</File>
 </Tokens>

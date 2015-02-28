@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/WSCPassphraseItem.html">
+	<File path="Classes/WSCPermittedOperation.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/WSCPassphraseItem</TokenIdentifier>
-			<Abstract type="html">The WSCPassphraseItem class is a subclass of WSCProtectedKeychainItem
-    that contains information about application passphrase and Internet passphrase.
-  </Abstract>
-			<DeclaredIn>WSCPassphraseItem.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/WSCPermittedOperation</TokenIdentifier>
+			<Abstract type="html">The WSCPermittedOperation represents information about an permitted operation of a protected keychain item.</Abstract>
+			<DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
             
 			
 			<NodeRef refid="5"/>
@@ -15,437 +13,260 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WSCPassphraseItem/setAccount:</TokenIdentifier>
-			<Abstract type="html">The NSString object that identifies the account of the keychain item represented by receiver.
+			<TokenIdentifier>//apple_ref/occ/instm/WSCPermittedOperation/setDescriptor:</TokenIdentifier>
+			<Abstract type="html">The descriptor of the permitted operation represented by receiver.</Abstract>
+			<DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
+			
+			<Declaration>@property (copy, readwrite) NSString *descriptor</Declaration>
+			
+			
+			<Anchor>//api/name/descriptor</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCPermittedOperation/descriptor</TokenIdentifier>
+			<Abstract type="html">The descriptor of the permitted operation represented by receiver.</Abstract>
+			<DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
+			
+			<Declaration>@property (copy, readwrite) NSString *descriptor</Declaration>
+			
+			
+			<Anchor>//api/name/descriptor</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WSCPermittedOperation/descriptor</TokenIdentifier>
+			<Abstract type="html">The descriptor of the permitted operation represented by receiver.</Abstract>
+			<DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
+			
+			<Declaration>@property (copy, readwrite) NSString *descriptor</Declaration>
+			
+			
+			<Anchor>//api/name/descriptor</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCPermittedOperation/setTrustedApplications:</TokenIdentifier>
+			<Abstract type="html">A set of trusted application objects (that is, WSCTrustedApplication instances)
+    identifying applications that are allowed access to the keychain item without user confirmation. </Abstract>
+			<DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
+			
+			<Declaration>@property (retain, readwrite) NSSet *trustedApplications</Declaration>
+			
+			
+			<Anchor>//api/name/trustedApplications</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCPermittedOperation/trustedApplications</TokenIdentifier>
+			<Abstract type="html">A set of trusted application objects (that is, WSCTrustedApplication instances)
+    identifying applications that are allowed access to the keychain item without user confirmation. </Abstract>
+			<DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
+			
+			<Declaration>@property (retain, readwrite) NSSet *trustedApplications</Declaration>
+			
+			
+			<Anchor>//api/name/trustedApplications</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WSCPermittedOperation/trustedApplications</TokenIdentifier>
+			<Abstract type="html">A set of trusted application objects (that is, WSCTrustedApplication instances)
+    identifying applications that are allowed access to the keychain item without user confirmation. </Abstract>
+			<DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
+			
+			<Declaration>@property (retain, readwrite) NSSet *trustedApplications</Declaration>
+			
+			
+			<Anchor>//api/name/trustedApplications</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCPermittedOperation/setPromptContext:</TokenIdentifier>
+			<Abstract type="html">Masks that define when using a keychain or a protected keychain item should require a passphrase.</Abstract>
+			<DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
+			
+			<Declaration>@property (assign, readwrite) WSCPermittedOperationPromptContext promptContext</Declaration>
+			
+			
+			<Anchor>//api/name/promptContext</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCPermittedOperation/promptContext</TokenIdentifier>
+			<Abstract type="html">Masks that define when using a keychain or a protected keychain item should require a passphrase.</Abstract>
+			<DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
+			
+			<Declaration>@property (assign, readwrite) WSCPermittedOperationPromptContext promptContext</Declaration>
+			
+			
+			<Anchor>//api/name/promptContext</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WSCPermittedOperation/promptContext</TokenIdentifier>
+			<Abstract type="html">Masks that define when using a keychain or a protected keychain item should require a passphrase.</Abstract>
+			<DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
+			
+			<Declaration>@property (assign, readwrite) WSCPermittedOperationPromptContext promptContext</Declaration>
+			
+			
+			<Anchor>//api/name/promptContext</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCPermittedOperation/setOperations:</TokenIdentifier>
+			<Abstract type="html">An unsigned integer bit field containing any of the operation tag masks.
+    </Abstract>
+			<DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
+			
+			<Declaration>@property (assign, readwrite) WSCPermittedOperationTag operations</Declaration>
+			
+			
+			<Anchor>//api/name/operations</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCPermittedOperation/operations</TokenIdentifier>
+			<Abstract type="html">An unsigned integer bit field containing any of the operation tag masks.
+    </Abstract>
+			<DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
+			
+			<Declaration>@property (assign, readwrite) WSCPermittedOperationTag operations</Declaration>
+			
+			
+			<Anchor>//api/name/operations</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WSCPermittedOperation/operations</TokenIdentifier>
+			<Abstract type="html">An unsigned integer bit field containing any of the operation tag masks.
+    </Abstract>
+			<DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
+			
+			<Declaration>@property (assign, readwrite) WSCPermittedOperationTag operations</Declaration>
+			
+			
+			<Anchor>//api/name/operations</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCPermittedOperation/setHostProtectedKeychainItem:</TokenIdentifier>
+			<Abstract type="html">The protected keychain item that the permitted operation represented by receiver applying to.
   </Abstract>
-			<DeclaredIn>WSCPassphraseItem.h</DeclaredIn>
+			<DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
 			
-			<Declaration>@property (copy, readwrite) NSString *account</Declaration>
+			<Declaration>@property (unsafe_unretained, readonly) WSCProtectedKeychainItem *hostProtectedKeychainItem</Declaration>
 			
 			
-			<Anchor>//api/name/account</Anchor>
+			<Anchor>//api/name/hostProtectedKeychainItem</Anchor>
             <NodeRef refid="5"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WSCPassphraseItem/account</TokenIdentifier>
-			<Abstract type="html">The NSString object that identifies the account of the keychain item represented by receiver.
+			<TokenIdentifier>//apple_ref/occ/instm/WSCPermittedOperation/hostProtectedKeychainItem</TokenIdentifier>
+			<Abstract type="html">The protected keychain item that the permitted operation represented by receiver applying to.
   </Abstract>
-			<DeclaredIn>WSCPassphraseItem.h</DeclaredIn>
+			<DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
 			
-			<Declaration>@property (copy, readwrite) NSString *account</Declaration>
+			<Declaration>@property (unsafe_unretained, readonly) WSCProtectedKeychainItem *hostProtectedKeychainItem</Declaration>
 			
 			
-			<Anchor>//api/name/account</Anchor>
+			<Anchor>//api/name/hostProtectedKeychainItem</Anchor>
             <NodeRef refid="5"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WSCPassphraseItem/account</TokenIdentifier>
-			<Abstract type="html">The NSString object that identifies the account of the keychain item represented by receiver.
+			<TokenIdentifier>//apple_ref/occ/instp/WSCPermittedOperation/hostProtectedKeychainItem</TokenIdentifier>
+			<Abstract type="html">The protected keychain item that the permitted operation represented by receiver applying to.
   </Abstract>
-			<DeclaredIn>WSCPassphraseItem.h</DeclaredIn>
+			<DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
 			
-			<Declaration>@property (copy, readwrite) NSString *account</Declaration>
+			<Declaration>@property (unsafe_unretained, readonly) WSCProtectedKeychainItem *hostProtectedKeychainItem</Declaration>
 			
 			
-			<Anchor>//api/name/account</Anchor>
+			<Anchor>//api/name/hostProtectedKeychainItem</Anchor>
             <NodeRef refid="5"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WSCPassphraseItem/setComment:</TokenIdentifier>
-			<Abstract type="html">The NSString object that identifies the comment of the keychain item represented by receiver.
+			<TokenIdentifier>//apple_ref/occ/instm/WSCPermittedOperation/setSecACL:</TokenIdentifier>
+			<Abstract type="html">The reference of the SecACL opaque object, which wrapped by WSCPermittedOperation object. (read-only)
   </Abstract>
-			<DeclaredIn>WSCPassphraseItem.h</DeclaredIn>
+			<DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
 			
-			<Declaration>@property (copy, readwrite) NSString *comment</Declaration>
+			<Declaration>@property (unsafe_unretained, readonly) SecACLRef secACL</Declaration>
 			
 			
-			<Anchor>//api/name/comment</Anchor>
+			<Anchor>//api/name/secACL</Anchor>
             <NodeRef refid="5"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WSCPassphraseItem/comment</TokenIdentifier>
-			<Abstract type="html">The NSString object that identifies the comment of the keychain item represented by receiver.
+			<TokenIdentifier>//apple_ref/occ/instm/WSCPermittedOperation/secACL</TokenIdentifier>
+			<Abstract type="html">The reference of the SecACL opaque object, which wrapped by WSCPermittedOperation object. (read-only)
   </Abstract>
-			<DeclaredIn>WSCPassphraseItem.h</DeclaredIn>
+			<DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
 			
-			<Declaration>@property (copy, readwrite) NSString *comment</Declaration>
+			<Declaration>@property (unsafe_unretained, readonly) SecACLRef secACL</Declaration>
 			
 			
-			<Anchor>//api/name/comment</Anchor>
+			<Anchor>//api/name/secACL</Anchor>
             <NodeRef refid="5"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WSCPassphraseItem/comment</TokenIdentifier>
-			<Abstract type="html">The NSString object that identifies the comment of the keychain item represented by receiver.
+			<TokenIdentifier>//apple_ref/occ/instp/WSCPermittedOperation/secACL</TokenIdentifier>
+			<Abstract type="html">The reference of the SecACL opaque object, which wrapped by WSCPermittedOperation object. (read-only)
   </Abstract>
-			<DeclaredIn>WSCPassphraseItem.h</DeclaredIn>
+			<DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
 			
-			<Declaration>@property (copy, readwrite) NSString *comment</Declaration>
+			<Declaration>@property (unsafe_unretained, readonly) SecACLRef secACL</Declaration>
 			
 			
-			<Anchor>//api/name/comment</Anchor>
+			<Anchor>//api/name/secACL</Anchor>
             <NodeRef refid="5"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WSCPassphraseItem/setKindDescription:</TokenIdentifier>
-			<Abstract type="html">The NSString object that identifies the kind description of the keychain item represented by receiver.
+			<TokenIdentifier>//apple_ref/occ/clm/WSCPermittedOperation/permittedOperationWithSecACLRef:appliesTo:error:</TokenIdentifier>
+			<Abstract type="html">Creates and returns a WSCPermittedOperation object using the given reference to the instance of SecACL opaque type.</Abstract>
+			<DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
+			
+			<Declaration>+ (instancetype)permittedOperationWithSecACLRef:(SecACLRef)_SecACLRef appliesTo:(WSCProtectedKeychainItem *)_ProtectedKeychainItem error:(NSError **)_Error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>_SecACLRef</Name>
+					<Abstract type="html">A reference to the instance of SecACL opaque type.
   </Abstract>
-			<DeclaredIn>WSCPassphraseItem.h</DeclaredIn>
-			
-			<Declaration>@property (copy, readwrite) NSString *kindDescription</Declaration>
-			
-			
-			<Anchor>//api/name/kindDescription</Anchor>
-            <NodeRef refid="5"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WSCPassphraseItem/kindDescription</TokenIdentifier>
-			<Abstract type="html">The NSString object that identifies the kind description of the keychain item represented by receiver.
-  </Abstract>
-			<DeclaredIn>WSCPassphraseItem.h</DeclaredIn>
-			
-			<Declaration>@property (copy, readwrite) NSString *kindDescription</Declaration>
-			
-			
-			<Anchor>//api/name/kindDescription</Anchor>
-            <NodeRef refid="5"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WSCPassphraseItem/kindDescription</TokenIdentifier>
-			<Abstract type="html">The NSString object that identifies the kind description of the keychain item represented by receiver.
-  </Abstract>
-			<DeclaredIn>WSCPassphraseItem.h</DeclaredIn>
-			
-			<Declaration>@property (copy, readwrite) NSString *kindDescription</Declaration>
-			
-			
-			<Anchor>//api/name/kindDescription</Anchor>
-            <NodeRef refid="5"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WSCPassphraseItem/setPassphrase:</TokenIdentifier>
-			<Abstract type="html">The NSData object that contains the passphrase data of the keychain item represented by receiver.</Abstract>
-			<DeclaredIn>WSCPassphraseItem.h</DeclaredIn>
-			
-			<Declaration>@property (retain, readwrite) NSData *passphrase</Declaration>
-			
-			
-			<Anchor>//api/name/passphrase</Anchor>
-            <NodeRef refid="5"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WSCPassphraseItem/passphrase</TokenIdentifier>
-			<Abstract type="html">The NSData object that contains the passphrase data of the keychain item represented by receiver.</Abstract>
-			<DeclaredIn>WSCPassphraseItem.h</DeclaredIn>
-			
-			<Declaration>@property (retain, readwrite) NSData *passphrase</Declaration>
-			
-			
-			<Anchor>//api/name/passphrase</Anchor>
-            <NodeRef refid="5"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WSCPassphraseItem/passphrase</TokenIdentifier>
-			<Abstract type="html">The NSData object that contains the passphrase data of the keychain item represented by receiver.</Abstract>
-			<DeclaredIn>WSCPassphraseItem.h</DeclaredIn>
-			
-			<Declaration>@property (retain, readwrite) NSData *passphrase</Declaration>
-			
-			
-			<Anchor>//api/name/passphrase</Anchor>
-            <NodeRef refid="5"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WSCPassphraseItem/setURL:</TokenIdentifier>
-			<Abstract type="html">The URL for the an Internet passphrase represented by receiver. (read-only)</Abstract>
-			<DeclaredIn>WSCPassphraseItem.h</DeclaredIn>
-			
-	<RelatedTokens>
-		<TokenIdentifier>//apple_ref/occ/instp/WSCPassphraseItem/protocol</TokenIdentifier>
-		<TokenIdentifier>//apple_ref/occ/instp/WSCPassphraseItem/hostName</TokenIdentifier>
-		<TokenIdentifier>//apple_ref/occ/instp/WSCPassphraseItem/relativePath</TokenIdentifier>
-		<TokenIdentifier>//apple_ref/occ/instp/WSCPassphraseItem/port</TokenIdentifier>
-		
-	</RelatedTokens>
-	
-			<Declaration>@property (retain, readonly) NSURL *URL</Declaration>
-			
-			
-			<Anchor>//api/name/URL</Anchor>
-            <NodeRef refid="5"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WSCPassphraseItem/URL</TokenIdentifier>
-			<Abstract type="html">The URL for the an Internet passphrase represented by receiver. (read-only)</Abstract>
-			<DeclaredIn>WSCPassphraseItem.h</DeclaredIn>
-			
-	<RelatedTokens>
-		<TokenIdentifier>//apple_ref/occ/instp/WSCPassphraseItem/protocol</TokenIdentifier>
-		<TokenIdentifier>//apple_ref/occ/instp/WSCPassphraseItem/hostName</TokenIdentifier>
-		<TokenIdentifier>//apple_ref/occ/instp/WSCPassphraseItem/relativePath</TokenIdentifier>
-		<TokenIdentifier>//apple_ref/occ/instp/WSCPassphraseItem/port</TokenIdentifier>
-		
-	</RelatedTokens>
-	
-			<Declaration>@property (retain, readonly) NSURL *URL</Declaration>
-			
-			
-			<Anchor>//api/name/URL</Anchor>
-            <NodeRef refid="5"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WSCPassphraseItem/URL</TokenIdentifier>
-			<Abstract type="html">The URL for the an Internet passphrase represented by receiver. (read-only)</Abstract>
-			<DeclaredIn>WSCPassphraseItem.h</DeclaredIn>
-			
-	<RelatedTokens>
-		<TokenIdentifier>//apple_ref/occ/instp/WSCPassphraseItem/protocol</TokenIdentifier>
-		<TokenIdentifier>//apple_ref/occ/instp/WSCPassphraseItem/hostName</TokenIdentifier>
-		<TokenIdentifier>//apple_ref/occ/instp/WSCPassphraseItem/relativePath</TokenIdentifier>
-		<TokenIdentifier>//apple_ref/occ/instp/WSCPassphraseItem/port</TokenIdentifier>
-		
-	</RelatedTokens>
-	
-			<Declaration>@property (retain, readonly) NSURL *URL</Declaration>
-			
-			
-			<Anchor>//api/name/URL</Anchor>
-            <NodeRef refid="5"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WSCPassphraseItem/setHostName:</TokenIdentifier>
-			<Abstract type="html">The NSString object that identifies the the host of a URL conforming to RFC 1808
-    of an Internet passphrase item represented by receiver.</Abstract>
-			<DeclaredIn>WSCPassphraseItem.h</DeclaredIn>
-			
-			<Declaration>@property (copy, readwrite) NSString *hostName</Declaration>
-			
-			
-			<Anchor>//api/name/hostName</Anchor>
-            <NodeRef refid="5"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WSCPassphraseItem/hostName</TokenIdentifier>
-			<Abstract type="html">The NSString object that identifies the the host of a URL conforming to RFC 1808
-    of an Internet passphrase item represented by receiver.</Abstract>
-			<DeclaredIn>WSCPassphraseItem.h</DeclaredIn>
-			
-			<Declaration>@property (copy, readwrite) NSString *hostName</Declaration>
-			
-			
-			<Anchor>//api/name/hostName</Anchor>
-            <NodeRef refid="5"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WSCPassphraseItem/hostName</TokenIdentifier>
-			<Abstract type="html">The NSString object that identifies the the host of a URL conforming to RFC 1808
-    of an Internet passphrase item represented by receiver.</Abstract>
-			<DeclaredIn>WSCPassphraseItem.h</DeclaredIn>
-			
-			<Declaration>@property (copy, readwrite) NSString *hostName</Declaration>
-			
-			
-			<Anchor>//api/name/hostName</Anchor>
-            <NodeRef refid="5"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WSCPassphraseItem/setRelativePath:</TokenIdentifier>
-			<Abstract type="html">The NSString object that identifies the relative path of a URL conforming to RFC 1808
-    of an Internet passphrase item represented by receiver.</Abstract>
-			<DeclaredIn>WSCPassphraseItem.h</DeclaredIn>
-			
-			<Declaration>@property (copy, readwrite) NSString *relativePath</Declaration>
-			
-			
-			<Anchor>//api/name/relativePath</Anchor>
-            <NodeRef refid="5"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WSCPassphraseItem/relativePath</TokenIdentifier>
-			<Abstract type="html">The NSString object that identifies the relative path of a URL conforming to RFC 1808
-    of an Internet passphrase item represented by receiver.</Abstract>
-			<DeclaredIn>WSCPassphraseItem.h</DeclaredIn>
-			
-			<Declaration>@property (copy, readwrite) NSString *relativePath</Declaration>
-			
-			
-			<Anchor>//api/name/relativePath</Anchor>
-            <NodeRef refid="5"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WSCPassphraseItem/relativePath</TokenIdentifier>
-			<Abstract type="html">The NSString object that identifies the relative path of a URL conforming to RFC 1808
-    of an Internet passphrase item represented by receiver.</Abstract>
-			<DeclaredIn>WSCPassphraseItem.h</DeclaredIn>
-			
-			<Declaration>@property (copy, readwrite) NSString *relativePath</Declaration>
-			
-			
-			<Anchor>//api/name/relativePath</Anchor>
-            <NodeRef refid="5"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WSCPassphraseItem/setAuthenticationType:</TokenIdentifier>
-			<Abstract type="html">The value of type WSCInternetAuthenticationType that identifies the authentication type of an internet passphrase item represented by receiver.</Abstract>
-			<DeclaredIn>WSCPassphraseItem.h</DeclaredIn>
-			
-			<Declaration>@property (assign, readwrite) WSCInternetAuthenticationType authenticationType</Declaration>
-			
-			
-			<Anchor>//api/name/authenticationType</Anchor>
-            <NodeRef refid="5"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WSCPassphraseItem/authenticationType</TokenIdentifier>
-			<Abstract type="html">The value of type WSCInternetAuthenticationType that identifies the authentication type of an internet passphrase item represented by receiver.</Abstract>
-			<DeclaredIn>WSCPassphraseItem.h</DeclaredIn>
-			
-			<Declaration>@property (assign, readwrite) WSCInternetAuthenticationType authenticationType</Declaration>
-			
-			
-			<Anchor>//api/name/authenticationType</Anchor>
-            <NodeRef refid="5"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WSCPassphraseItem/authenticationType</TokenIdentifier>
-			<Abstract type="html">The value of type WSCInternetAuthenticationType that identifies the authentication type of an internet passphrase item represented by receiver.</Abstract>
-			<DeclaredIn>WSCPassphraseItem.h</DeclaredIn>
-			
-			<Declaration>@property (assign, readwrite) WSCInternetAuthenticationType authenticationType</Declaration>
-			
-			
-			<Anchor>//api/name/authenticationType</Anchor>
-            <NodeRef refid="5"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WSCPassphraseItem/setProtocol:</TokenIdentifier>
-			<Abstract type="html">The value of type WSCInternetProtocolType that identifies the Internet protocol of an internet passphrase item represented by receiver.</Abstract>
-			<DeclaredIn>WSCPassphraseItem.h</DeclaredIn>
-			
-			<Declaration>@property (assign, readwrite) WSCInternetProtocolType protocol</Declaration>
-			
-			
-			<Anchor>//api/name/protocol</Anchor>
-            <NodeRef refid="5"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WSCPassphraseItem/protocol</TokenIdentifier>
-			<Abstract type="html">The value of type WSCInternetProtocolType that identifies the Internet protocol of an internet passphrase item represented by receiver.</Abstract>
-			<DeclaredIn>WSCPassphraseItem.h</DeclaredIn>
-			
-			<Declaration>@property (assign, readwrite) WSCInternetProtocolType protocol</Declaration>
-			
-			
-			<Anchor>//api/name/protocol</Anchor>
-            <NodeRef refid="5"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WSCPassphraseItem/protocol</TokenIdentifier>
-			<Abstract type="html">The value of type WSCInternetProtocolType that identifies the Internet protocol of an internet passphrase item represented by receiver.</Abstract>
-			<DeclaredIn>WSCPassphraseItem.h</DeclaredIn>
-			
-			<Declaration>@property (assign, readwrite) WSCInternetProtocolType protocol</Declaration>
-			
-			
-			<Anchor>//api/name/protocol</Anchor>
-            <NodeRef refid="5"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WSCPassphraseItem/setPort:</TokenIdentifier>
-			<Abstract type="html">The value that identifies the Internet port of an internet passphrase item represented by receiver.</Abstract>
-			<DeclaredIn>WSCPassphraseItem.h</DeclaredIn>
-			
-			<Declaration>@property (assign, readwrite) NSUInteger port</Declaration>
-			
-			
-			<Anchor>//api/name/port</Anchor>
-            <NodeRef refid="5"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WSCPassphraseItem/port</TokenIdentifier>
-			<Abstract type="html">The value that identifies the Internet port of an internet passphrase item represented by receiver.</Abstract>
-			<DeclaredIn>WSCPassphraseItem.h</DeclaredIn>
-			
-			<Declaration>@property (assign, readwrite) NSUInteger port</Declaration>
-			
-			
-			<Anchor>//api/name/port</Anchor>
-            <NodeRef refid="5"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WSCPassphraseItem/port</TokenIdentifier>
-			<Abstract type="html">The value that identifies the Internet port of an internet passphrase item represented by receiver.</Abstract>
-			<DeclaredIn>WSCPassphraseItem.h</DeclaredIn>
-			
-			<Declaration>@property (assign, readwrite) NSUInteger port</Declaration>
-			
-			
-			<Anchor>//api/name/port</Anchor>
-            <NodeRef refid="5"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WSCPassphraseItem/setServiceName:</TokenIdentifier>
-			<Abstract type="html">The NSString object that identifies the service name of an application passphrase item represented by receiver.</Abstract>
-			<DeclaredIn>WSCPassphraseItem.h</DeclaredIn>
-			
-			<Declaration>@property (copy, readwrite) NSString *serviceName</Declaration>
-			
-			
-			<Anchor>//api/name/serviceName</Anchor>
-            <NodeRef refid="5"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WSCPassphraseItem/serviceName</TokenIdentifier>
-			<Abstract type="html">The NSString object that identifies the service name of an application passphrase item represented by receiver.</Abstract>
-			<DeclaredIn>WSCPassphraseItem.h</DeclaredIn>
-			
-			<Declaration>@property (copy, readwrite) NSString *serviceName</Declaration>
-			
-			
-			<Anchor>//api/name/serviceName</Anchor>
-            <NodeRef refid="5"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WSCPassphraseItem/serviceName</TokenIdentifier>
-			<Abstract type="html">The NSString object that identifies the service name of an application passphrase item represented by receiver.</Abstract>
-			<DeclaredIn>WSCPassphraseItem.h</DeclaredIn>
-			
-			<Declaration>@property (copy, readwrite) NSString *serviceName</Declaration>
-			
-			
-			<Anchor>//api/name/serviceName</Anchor>
+				</Parameter><Parameter>
+					<Name>_ProtectedKeychainItem</Name>
+					<Abstract type="html">The protected keychain item that the permitted operation represented by receiver applying to.
+                                You can get it with hostProtectedKeychainItem read-only property.
+                                </Abstract>
+				</Parameter><Parameter>
+					<Name>_Error</Name>
+					<Abstract type="html">On input, a pointer to an error object.
+                If an error occurs, this pointer is set to an actual error object containing the error information.
+                You may specify nil for this parameter if you don&apos;t want the error information.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A WSCPermittedOperation object initialized with the givent reference to the instance of SecACL opaque type.
+          Return nil if _SecACLRef is nil.
+  </Abstract></ReturnValue>
+			<Anchor>//api/name/permittedOperationWithSecACLRef:appliesTo:error:</Anchor>
             <NodeRef refid="5"/>
 		</Token>
 		

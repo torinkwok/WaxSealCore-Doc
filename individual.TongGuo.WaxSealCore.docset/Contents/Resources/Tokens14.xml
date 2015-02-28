@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/WSCPermittedOperationPromptContext.html">
+	<File path="Constants/WSCPermittedOperationTag.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/WSCPermittedOperationPromptContext</TokenIdentifier>
-			<Abstract type="html">Masks that define when using a keychain or a protected keychain item should require a passphrase.
+			<TokenIdentifier>//apple_ref/c/tdef/WSCPermittedOperationTag</TokenIdentifier>
+			<Abstract type="html">Defines constants that specify operations that can be done with that protected item,
+    such as decrypting, encrypting, sign or authenticating.
   </Abstract>
 			<DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
             
@@ -15,9 +16,9 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WSCPermittedOperationPromptContextNone</TokenIdentifier>
-            <Abstract type="html">Indicates that prompt selector bit is not set, this is default.</Abstract>
-            <Declaration>WSCPermittedOperationPromptContextNone</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/WSCPermittedOperationTagLogin</TokenIdentifier>
+            <Abstract type="html">Use for a CSP (smart card) login.</Abstract>
+            <Declaration>WSCPermittedOperationTagLogin</Declaration>
             
             <DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
             
@@ -25,9 +26,9 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WSCPermittedOperationPromptContextRequirePassphraseEveryAccess</TokenIdentifier>
-            <Abstract type="html">Indicates that a passphrase should be required for every access action.</Abstract>
-            <Declaration>WSCPermittedOperationPromptContextRequirePassphraseEveryAccess</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/WSCPermittedOperationTagGenerateKey</TokenIdentifier>
+            <Abstract type="html">Use for generating a key.</Abstract>
+            <Declaration>WSCPermittedOperationTagGenerateKey</Declaration>
             
             <DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
             
@@ -35,11 +36,9 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WSCPermittedOperationPromptContextWhenUnsigned</TokenIdentifier>
-            <Abstract type="html">Indicates that a passphrase should be required
-when an unsigned application attempts to use a keychain or a protected keychain item,
-overriding the system default.</Abstract>
-            <Declaration>WSCPermittedOperationPromptContextWhenUnsigned</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/WSCPermittedOperationTagDelete</TokenIdentifier>
+            <Abstract type="html">Use for deleting this protected keychain item.</Abstract>
+            <Declaration>WSCPermittedOperationTagDelete</Declaration>
             
             <DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
             
@@ -47,10 +46,9 @@ overriding the system default.</Abstract>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WSCPermittedOperationPromptContextWhenUnsignedAct</TokenIdentifier>
-            <Abstract type="html">Indicates that a passphrase should be required
-when an unsigned application attempts to use a keychain or a protected keychain item.</Abstract>
-            <Declaration>WSCPermittedOperationPromptContextWhenUnsignedAct</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/WSCPermittedOperationTagEncrypt</TokenIdentifier>
+            <Abstract type="html">Use for encrypting data.</Abstract>
+            <Declaration>WSCPermittedOperationTagEncrypt</Declaration>
             
             <DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
             
@@ -58,11 +56,9 @@ when an unsigned application attempts to use a keychain or a protected keychain 
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WSCPermittedOperationPromptContextInvalidSigned</TokenIdentifier>
-            <Abstract type="html">Indicates that a passphrase should be required
-when an application with an invalid signature attempts to use a the keychain or a protected keychain item,
-overriding the system default.</Abstract>
-            <Declaration>WSCPermittedOperationPromptContextInvalidSigned</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/WSCPermittedOperationTagDecrypt</TokenIdentifier>
+            <Abstract type="html">Use for decrypting data.</Abstract>
+            <Declaration>WSCPermittedOperationTagDecrypt</Declaration>
             
             <DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
             
@@ -70,10 +66,104 @@ overriding the system default.</Abstract>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WSCPermittedOperationPromptContextInvalidSignedAct</TokenIdentifier>
-            <Abstract type="html">Indicates that a passphrase should be required
-when an application with an invalid signature attempts to use a the keychain or a protected keychain item.</Abstract>
-            <Declaration>WSCPermittedOperationPromptContextInvalidSignedAct</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/WSCPermittedOperationTagExportEncryptedKey</TokenIdentifier>
+            <Abstract type="html">Use for exporting an encrypted key.
+This tag is checked on the key being exported;
+in addition, the WSCPermittedOperationTagEncrypt tag is checked for any key used in the encrypting operation.</Abstract>
+            <Declaration>WSCPermittedOperationTagExportEncryptedKey</Declaration>
+            
+            <DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
+            
+            <NodeRef refid="14"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCPermittedOperationTagExportUnencryptedKey</TokenIdentifier>
+            <Abstract type="html">Use for exporting an unencrypted key.</Abstract>
+            <Declaration>WSCPermittedOperationTagExportUnencryptedKey</Declaration>
+            
+            <DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
+            
+            <NodeRef refid="14"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCPermittedOperationTagImportEncryptedKey</TokenIdentifier>
+            <Abstract type="html">Import an encrypted key.
+This tag is checked on the key being imported;
+in addition, the WSCPermittedOperationTagDecrypt tag is checked for any key used in the decrypting operation.</Abstract>
+            <Declaration>WSCPermittedOperationTagImportEncryptedKey</Declaration>
+            
+            <DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
+            
+            <NodeRef refid="14"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCPermittedOperationTagImportUnencryptedKey</TokenIdentifier>
+            <Abstract type="html">Use for importing an unencrypted key.</Abstract>
+            <Declaration>WSCPermittedOperationTagImportUnencryptedKey</Declaration>
+            
+            <DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
+            
+            <NodeRef refid="14"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCPermittedOperationTagSign</TokenIdentifier>
+            <Abstract type="html">Use for digitally signing data.</Abstract>
+            <Declaration>WSCPermittedOperationTagSign</Declaration>
+            
+            <DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
+            
+            <NodeRef refid="14"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCPermittedOperationTagCreateOrVerifyMessageAuthCode</TokenIdentifier>
+            <Abstract type="html">Use for creating or verifying a message authentication code.</Abstract>
+            <Declaration>WSCPermittedOperationTagCreateOrVerifyMessageAuthCode</Declaration>
+            
+            <DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
+            
+            <NodeRef refid="14"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCPermittedOperationTagDerive</TokenIdentifier>
+            <Abstract type="html">Use for deriving a new key from another key.</Abstract>
+            <Declaration>WSCPermittedOperationTagDerive</Declaration>
+            
+            <DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
+            
+            <NodeRef refid="14"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCPermittedOperationTagChangePermittedOperationItself</TokenIdentifier>
+            <Abstract type="html">Use for changing the permitted operation itself.</Abstract>
+            <Declaration>WSCPermittedOperationTagChangePermittedOperationItself</Declaration>
+            
+            <DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
+            
+            <NodeRef refid="14"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCPermittedOperationTagChangeOwner</TokenIdentifier>
+            <Abstract type="html">For internal system use only.
+Use the WSCPermittedOperationTagChangePermittedOperationItself tag for changes to owner permitted operation entries.</Abstract>
+            <Declaration>WSCPermittedOperationTagChangeOwner</Declaration>
+            
+            <DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
+            
+            <NodeRef refid="14"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCPermittedOperationTagAnyOperation</TokenIdentifier>
+            <Abstract type="html">No restrictions. This permitted operation entry applies to all operations available to the caller.</Abstract>
+            <Declaration>WSCPermittedOperationTagAnyOperation</Declaration>
             
             <DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
             

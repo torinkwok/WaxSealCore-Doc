@@ -41,6 +41,8 @@
 	
 	<option value="//api/name/URL">&nbsp;&nbsp;&nbsp;&nbsp;URL</option>
 	
+	<option value="//api/name/enableLockOnSleep">&nbsp;&nbsp;&nbsp;&nbsp;enableLockOnSleep</option>
+	
 	<option value="//api/name/isDefault">&nbsp;&nbsp;&nbsp;&nbsp;isDefault</option>
 	
 	<option value="//api/name/isLocked">&nbsp;&nbsp;&nbsp;&nbsp;isLocked</option>
@@ -120,6 +122,8 @@
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/URL">URL</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/enableLockOnSleep">enableLockOnSleep</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isDefault">isDefault</a></span></li>
 	
@@ -259,6 +263,12 @@
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/isWritable">&nbsp;&nbsp;isWritable</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/enableLockOnSleep">&nbsp;&nbsp;enableLockOnSleep</a></code>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
@@ -421,6 +431,48 @@
 </div>
 						
 						<div class="section-method">
+	<a name="//api/name/enableLockOnSleep" title="enableLockOnSleep"></a>
+	<h3 class="subsubtitle method-title">enableLockOnSleep</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A <code>BOOL</code> value indicating whether the keychain locks when the <a href="#//api/name/system">system</a> sleeps.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (assign, readwrite) BOOL enableLockOnSleep</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<div class="bug"><p><strong>Bug:</strong> So far this API doesn&rsquo;t work properly due to the bug of underlying <em>Keychain Services</em>
+       or my mistake, <strong>FIGHT ON!</strong></p></div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WSCKeychain.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
 	<a name="//api/name/isDefault" title="isDefault"></a>
 	<h3 class="subsubtitle method-title">isDefault</h3>
 	
@@ -471,7 +523,7 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Boolean value that indicates whether the receiver is currently locked. (read-only)</p>
+		<p><code>BOOL</code> value that indicates whether the receiver is currently locked. (read-only)</p>
 	</div>		
 	
     
@@ -512,7 +564,7 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Boolean value that indicates whether the receiver is readable. (read-only)</p>
+		<p><code>BOOL</code> value that indicates whether the receiver is readable. (read-only)</p>
 	</div>		
 	
     
@@ -553,7 +605,7 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Boolean value that indicates whether the receiver is currently valid. (read-only)</p>
+		<p><code>BOOL</code> value that indicates whether the receiver is currently valid. (read-only)</p>
 	</div>		
 	
     
@@ -594,7 +646,7 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Boolean value that indicates whether the receiver is writable. (read-only)</p>
+		<p><code>BOOL</code> value that indicates whether the receiver is writable. (read-only)</p>
 	</div>		
 	
     
@@ -724,8 +776,8 @@
 <p>  Instead of invoking this method, you should construct a <code>WSCKeychain</code> object by invoking:</p>
 
 <ul>
-<li><a href="../Classes/WSCKeychainManager.html#//api/name/createKeychainWithURL:permittedOperations:passphrase:becomesDefault:error:">+ createKeychainWithURL:permittedOperations:passphrase:becomesDefault:error:</a></li>
-<li><a href="../Classes/WSCKeychainManager.html#//api/name/createKeychainWhosePassphraseWillBeObtainedFromUserWithURL:permittedOperations:becomesDefault:error:">+ createKeychainWhosePassphraseWillBeObtainedFromUserWithURL:permittedOperations:becomesDefault:error:</a></li>
+<li><a href="../Classes/WSCKeychainManager.html#//api/name/createKeychainWithURL:passphrase:becomesDefault:error:">+ createKeychainWithURL:passphrase:becomesDefault:error:</a></li>
+<li><a href="../Classes/WSCKeychainManager.html#//api/name/createKeychainWhosePassphraseWillBeObtainedFromUserWithURL:becomesDefault:error:">+ createKeychainWhosePassphraseWillBeObtainedFromUserWithURL:becomesDefault:error:</a></li>
 <li><a href="../Classes/WSCKeychainManager.html#//api/name/openExistingKeychainAtURL:error:">+ openExistingKeychainAtURL:error:</a></li>
 </ul>
 </div>
@@ -1365,9 +1417,9 @@ The corresponding value is an <code>NSString</code> object that identifies the k
 <li><p><code>WSCKeychainItemAttributeLabel</code>
 The corresponding value is an <code>NSString</code> object that identifies the label of a keychain item.</p></li>
 <li><p><code>WSCKeychainItemAttributeInvisible</code>
-The corresponding value is an Boolean value that indicates whether the item is invisible.</p></li>
+The corresponding value is a <code>BOOL</code> value that indicates whether the item is invisible.</p></li>
 <li><p><code>WSCKeychainItemAttributeNegative</code>
-The corresponding value is an Boolean value that indicates whether there is a valid passphrase associated with this keychain item.</p></li>
+The corresponding value is a <code>BOOL</code> value that indicates whether there is a valid passphrase associated with this keychain item.</p></li>
 <li><p><code>WSCKeychainItemAttributeAccount</code>
 The corresponding value is an <code>NSString</code> object that identifies the user account of a passphrase item.
 It also applies to application, Internet passphrase items.</p></li>
@@ -1412,17 +1464,6 @@ This search key is unique to the application passphrase item.</p></li>
 The corresponding value is an <code>NSData</code> object that identifies the service name of an application passphrase item.
 For example, &ldquo;WaxSeal&rdquo;. This search key is unique to the application passphrase item.</p></li>
 </ul>
-
-
-<p>  <em>Unique to the Certificate Items:</em></p>
-
-<ul>
-<li><p><code>WSCKeychainItemAttributeCertificateType</code></p></li>
-<li><p><code>WSCKeychainItemAttributeCertificateEncoding</code></p></li>
-<li><p><code>WSCKeychainItemAttributeCRLType</code></p></li>
-<li><p><code>WSCKeychainItemAttributeCRLEncoding</code></p></li>
-<li><p><code>WSCKeychainItemAttributeAlias</code></p></li>
-</ul>
 <div class="warning"><p><strong>Warning:</strong> After invoking this method, the passphrase item returned by this method may become invalid
            (perhaps it has been deleted or modified by user or by other applications),
            you should check the validity of it before using it.</p></div>
@@ -1458,7 +1499,7 @@ For example, &ldquo;WaxSeal&rdquo;. This search key is unique to the application
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Returns a Boolean value that indicates whether a given keychain is equal to receiver using an <a href="#//api/name/URL">URL</a> comparision.</p>
+		<p>Returns a <code>BOOL</code> value that indicates whether a given keychain is equal to receiver using an <a href="#//api/name/URL">URL</a> comparision.</p>
 	</div>		
 	
     
@@ -1484,8 +1525,9 @@ For example, &ldquo;WaxSeal&rdquo;. This search key is unique to the application
 		<p><code>YES</code> if <em>_AnotherKeychain</em> is equivalent to receiver (if they have the same <a href="#//api/name/URL">URL</a>);
           otherwise <em>NO</em>.</p>
 
-<p>  <strong>One more thing</strong>
-   When you know both objects are keychains, this method is a faster way to check equality than method <a href="#//api/name/isEqual:"><code>isEqual:</code></a>.</p>
+<p>  <strong>One more thing</strong></p>
+
+<p>   When you know both objects are keychains, this method is a faster way to check equality than method <a href="#//api/name/isEqual:"><code>isEqual:</code></a>.</p>
 	</div>
 	
 	
@@ -1521,7 +1563,7 @@ For example, &ldquo;WaxSeal&rdquo;. This search key is unique to the application
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2015  Tong Guo. All rights reserved. (Last updated: 2015-02-27)</span><br />
+						<p><span class="copyright">&copy; 2015  Tong Guo. All rights reserved. (Last updated: 2015-02-28)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
 						
