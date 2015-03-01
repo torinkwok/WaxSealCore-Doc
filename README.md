@@ -20,3 +20,6 @@ hit this menu item to open the Xcode Documentation Viewer:
 
 ### Dash
 
+Navigate to `Preferences` -> `Docsets`, hit the `Rescan` button at bottom right corner:
+
+![dash-rescan](http://i.imgbox.com/rSiGFVHH.png)
