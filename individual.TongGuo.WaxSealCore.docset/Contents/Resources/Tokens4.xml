@@ -168,6 +168,84 @@
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCPassphraseItem/setInvisible:</TokenIdentifier>
+			<Abstract type="html">BOOL value that indicates whether this passphrase item is invisible (that is, should not be displayed).
+  </Abstract>
+			<DeclaredIn>WSCPassphraseItem.h</DeclaredIn>
+			
+			<Declaration>@property (assign, readwrite, setter=setInvisible:) BOOL isInvisible</Declaration>
+			
+			
+			<Anchor>//api/name/isInvisible</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCPassphraseItem/isInvisible</TokenIdentifier>
+			<Abstract type="html">BOOL value that indicates whether this passphrase item is invisible (that is, should not be displayed).
+  </Abstract>
+			<DeclaredIn>WSCPassphraseItem.h</DeclaredIn>
+			
+			<Declaration>@property (assign, readwrite, setter=setInvisible:) BOOL isInvisible</Declaration>
+			
+			
+			<Anchor>//api/name/isInvisible</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WSCPassphraseItem/isInvisible</TokenIdentifier>
+			<Abstract type="html">BOOL value that indicates whether this passphrase item is invisible (that is, should not be displayed).
+  </Abstract>
+			<DeclaredIn>WSCPassphraseItem.h</DeclaredIn>
+			
+			<Declaration>@property (assign, readwrite, setter=setInvisible:) BOOL isInvisible</Declaration>
+			
+			
+			<Anchor>//api/name/isInvisible</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCPassphraseItem/setNegative:</TokenIdentifier>
+			<Abstract type="html">BOOL value that indicates whether there is a valid password associated with this passphrase item.
+     </Abstract>
+			<DeclaredIn>WSCPassphraseItem.h</DeclaredIn>
+			
+			<Declaration>@property (assign, readwrite, setter=setNegative:) BOOL isNegative</Declaration>
+			
+			
+			<Anchor>//api/name/isNegative</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCPassphraseItem/isNegative</TokenIdentifier>
+			<Abstract type="html">BOOL value that indicates whether there is a valid password associated with this passphrase item.
+     </Abstract>
+			<DeclaredIn>WSCPassphraseItem.h</DeclaredIn>
+			
+			<Declaration>@property (assign, readwrite, setter=setNegative:) BOOL isNegative</Declaration>
+			
+			
+			<Anchor>//api/name/isNegative</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WSCPassphraseItem/isNegative</TokenIdentifier>
+			<Abstract type="html">BOOL value that indicates whether there is a valid password associated with this passphrase item.
+     </Abstract>
+			<DeclaredIn>WSCPassphraseItem.h</DeclaredIn>
+			
+			<Declaration>@property (assign, readwrite, setter=setNegative:) BOOL isNegative</Declaration>
+			
+			
+			<Anchor>//api/name/isNegative</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/WSCPassphraseItem/setURL:</TokenIdentifier>
 			<Abstract type="html">The URL for the an Internet passphrase represented by receiver. (read-only)</Abstract>
 			<DeclaredIn>WSCPassphraseItem.h</DeclaredIn>
@@ -446,6 +524,42 @@
 			
 			
 			<Anchor>//api/name/serviceName</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCPassphraseItem/setUserDefinedData:</TokenIdentifier>
+			<Abstract type="html">The NSData object that contains a user-defined attribute.</Abstract>
+			<DeclaredIn>WSCPassphraseItem.h</DeclaredIn>
+			
+			<Declaration>@property (retain, readwrite) NSData *userDefinedData</Declaration>
+			
+			
+			<Anchor>//api/name/userDefinedData</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCPassphraseItem/userDefinedData</TokenIdentifier>
+			<Abstract type="html">The NSData object that contains a user-defined attribute.</Abstract>
+			<DeclaredIn>WSCPassphraseItem.h</DeclaredIn>
+			
+			<Declaration>@property (retain, readwrite) NSData *userDefinedData</Declaration>
+			
+			
+			<Anchor>//api/name/userDefinedData</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WSCPassphraseItem/userDefinedData</TokenIdentifier>
+			<Abstract type="html">The NSData object that contains a user-defined attribute.</Abstract>
+			<DeclaredIn>WSCPassphraseItem.h</DeclaredIn>
+			
+			<Declaration>@property (retain, readwrite) NSData *userDefinedData</Declaration>
+			
+			
+			<Anchor>//api/name/userDefinedData</Anchor>
             <NodeRef refid="4"/>
 		</Token>
 		
