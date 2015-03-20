@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Protocols/WSCKeychainManagerDelegate.html">
+	<File path="Classes/WSCTrustedApplication.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intf/WSCKeychainManagerDelegate</TokenIdentifier>
-			<Abstract type="html">The WSCKeychainManagerDelegate protocol defines optional methods for managing
-    operations involving the deleting, setting, searching, etc. of keychains.
-    When you use an WSCKeychainManager object to initiate a delete, set, search operations,
-    the keychain manager asks its delegate whether the operation should begin at all
-    and whether it should proceed when an error occurs.</Abstract>
-			<DeclaredIn>WSCKeychainManager.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/WSCTrustedApplication</TokenIdentifier>
+			<Abstract type="html">Identifies the trusted application in an access permission.
+  </Abstract>
+			<DeclaredIn>WSCTrustedApplication.h</DeclaredIn>
             
 			
 			<NodeRef refid="9"/>
@@ -17,184 +14,150 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/WSCKeychainManagerDelegate/keychainManager:shouldDeleteKeychain:</TokenIdentifier>
-			<Abstract type="html">Asks the delegate whether the specified keychain should be deleted.</Abstract>
-			<DeclaredIn>WSCKeychainManager.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCTrustedApplication/setUniqueIdentification:</TokenIdentifier>
+			<Abstract type="html">Retrieves and sets the unique identification of the trusted application represented by receiver.
+    </Abstract>
+			<DeclaredIn>WSCTrustedApplication.h</DeclaredIn>
 			
-	<RelatedTokens>
-		<TokenIdentifier>//apple_ref/occ/instm/WSCKeychainManager/deleteKeychain:error:</TokenIdentifier>
-		<TokenIdentifier>//apple_ref/occ/instm/WSCKeychainManager/deleteKeychains:error:</TokenIdentifier>
+			<Declaration>@property (retain, readwrite) NSData *uniqueIdentification</Declaration>
+			
+			
+			<Anchor>//api/name/uniqueIdentification</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
 		
-	</RelatedTokens>
-	
-			<Declaration>- (BOOL)keychainManager:(WSCKeychainManager *)_KeychainManager shouldDeleteKeychain:(WSCKeychain *)_Keychain</Declaration>
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCTrustedApplication/uniqueIdentification</TokenIdentifier>
+			<Abstract type="html">Retrieves and sets the unique identification of the trusted application represented by receiver.
+    </Abstract>
+			<DeclaredIn>WSCTrustedApplication.h</DeclaredIn>
+			
+			<Declaration>@property (retain, readwrite) NSData *uniqueIdentification</Declaration>
+			
+			
+			<Anchor>//api/name/uniqueIdentification</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WSCTrustedApplication/uniqueIdentification</TokenIdentifier>
+			<Abstract type="html">Retrieves and sets the unique identification of the trusted application represented by receiver.
+    </Abstract>
+			<DeclaredIn>WSCTrustedApplication.h</DeclaredIn>
+			
+			<Declaration>@property (retain, readwrite) NSData *uniqueIdentification</Declaration>
+			
+			
+			<Anchor>//api/name/uniqueIdentification</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/WSCTrustedApplication/trustedApplicationWithContentsOfURL:error:</TokenIdentifier>
+			<Abstract type="html">Creates a trusted application object based on the application specified by an URL.</Abstract>
+			<DeclaredIn>WSCTrustedApplication.h</DeclaredIn>
+			
+			<Declaration>+ (instancetype)trustedApplicationWithContentsOfURL:(NSURL *)_ApplicationURL error:(NSError **)_Error</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>_KeychainManager</Name>
-					<Abstract type="html">The keychain manager that attempted to delete the specified keychain.
-  </Abstract>
+					<Name>_ApplicationURL</Name>
+					<Abstract type="html">The URL to the application or tool to trust. 
+                         For application bundles, use the URL to the bundle directory. 
+                         Pass nil to refer to the application or tool making this call.
+                         </Abstract>
 				</Parameter><Parameter>
-					<Name>_Keychain</Name>
-					<Abstract type="html">The keychain that the keychain manager tried to delete.
-  </Abstract>
+					<Name>_Error</Name>
+					<Abstract type="html">On input, a pointer to an error object.
+                If an error occurs, this pointer is set to an actual error object containing the error information.
+                You may specify nil for this parameter if you don&apos;t want the error information.
+                </Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">YES if the specified keychain should be deleted or NO if it should not be deleted.
+			<ReturnValue><Abstract type="html">Newly created trusted application object. Returns nil if an error occurs.
   </Abstract></ReturnValue>
-			<Anchor>//api/name/keychainManager:shouldDeleteKeychain:</Anchor>
+			<Anchor>//api/name/trustedApplicationWithContentsOfURL:error:</Anchor>
             <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/WSCKeychainManagerDelegate/keychainManager:shouldProceedAfterError:deletingKeychain:</TokenIdentifier>
-			<Abstract type="html">Asks the delegate if the operation should continue after an error occurs while deleting the specified keychain.</Abstract>
-			<DeclaredIn>WSCKeychainManager.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCTrustedApplication/isEqualToTrustedApplication:</TokenIdentifier>
+			<Abstract type="html">Returns a BOOL value that indicates whether a given trusted application is equal to receiver.</Abstract>
+			<DeclaredIn>WSCTrustedApplication.h</DeclaredIn>
 			
-	<RelatedTokens>
-		<TokenIdentifier>//apple_ref/occ/instm/WSCKeychainManager/deleteKeychain:error:</TokenIdentifier>
-		<TokenIdentifier>//apple_ref/occ/instm/WSCKeychainManager/deleteKeychains:error:</TokenIdentifier>
-		
-	</RelatedTokens>
-	
-			<Declaration>- (BOOL)keychainManager:(WSCKeychainManager *)_KeychainManager shouldProceedAfterError:(NSError *)_Error deletingKeychain:(WSCKeychain *)_Keychain</Declaration>
+			<Declaration>- (BOOL)isEqualToTrustedApplication:(WSCTrustedApplication *)_AnotherTrustedApplication</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>_KeychainManager</Name>
-					<Abstract type="html">The keychain manager that attempted to delete the specified keychain.
-  </Abstract>
-				</Parameter><Parameter>
-					<Name>_Error</Name>
-					<Abstract type="html">The error that occurred while attempting to delete the specified keychain.
-  </Abstract>
-				</Parameter><Parameter>
-					<Name>_Keychain</Name>
-					<Abstract type="html">The keychain that the keychain manager tried to delete.
-  </Abstract>
+					<Name>_AnotherTrustedApplication</Name>
+					<Abstract type="html">The trusted application with which to compare the receiver.</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">YES if the operation should proceed or NO if it should be aborted. 
-          If you do not implement this method, the keychain manager assumes a response of NO.
-          </Abstract></ReturnValue>
-			<Anchor>//api/name/keychainManager:shouldProceedAfterError:deletingKeychain:</Anchor>
-            <NodeRef refid="9"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/WSCKeychainManagerDelegate/keychainManager:shouldLockKeychain:</TokenIdentifier>
-			<Abstract type="html">Asks the delegate whether the specified keychain should be locked.</Abstract>
-			<DeclaredIn>WSCKeychainManager.h</DeclaredIn>
-			
-	<RelatedTokens>
-		<TokenIdentifier>//apple_ref/occ/instm/WSCKeychainManager/lockKeychain:error:</TokenIdentifier>
-		
-	</RelatedTokens>
-	
-			<Declaration>- (BOOL)keychainManager:(WSCKeychainManager *)_KeychainManager shouldLockKeychain:(WSCKeychain *)_Keychain</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>_KeychainManager</Name>
-					<Abstract type="html">The keychain manager that attempted to lock the specified keychain.
-  </Abstract>
-				</Parameter><Parameter>
-					<Name>_Keychain</Name>
-					<Abstract type="html">The keychain that the keychain manager tried to lock.
-  </Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">YES if the specified keychain should be locked or NO if it should not be locked.
+			<ReturnValue><Abstract type="html">YES if _AnotherTrustedApplication is equivalent to receiver (if they have the same unique identification);
+          otherwise NO.
+
+  One more thing
+
+   When you know both objects are keychains, this method is a faster way to check equality than method isEqual:.
   </Abstract></ReturnValue>
-			<Anchor>//api/name/keychainManager:shouldLockKeychain:</Anchor>
+			<Anchor>//api/name/isEqualToTrustedApplication:</Anchor>
             <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/WSCKeychainManagerDelegate/keychainManager:shouldProceedAfterError:lockingKeychain:</TokenIdentifier>
-			<Abstract type="html">Asks the delegate if the operation should continue after an error occurs while locking the specified keychain.</Abstract>
-			<DeclaredIn>WSCKeychainManager.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCTrustedApplication/setSecTrustedApplication:</TokenIdentifier>
+			<Abstract type="html">The reference of the secTrustedApplication opaque object, which wrapped by WSCTrustedApplication object.
+  </Abstract>
+			<DeclaredIn>WSCTrustedApplication.h</DeclaredIn>
 			
-	<RelatedTokens>
-		<TokenIdentifier>//apple_ref/occ/instm/WSCKeychainManager/lockKeychain:error:</TokenIdentifier>
-		
-	</RelatedTokens>
-	
-			<Declaration>- (BOOL)keychainManager:(WSCKeychainManager *)_KeychainManager shouldProceedAfterError:(NSError *)_Error lockingKeychain:(WSCKeychain *)_Keychain</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>_KeychainManager</Name>
-					<Abstract type="html">The keychain manager that attempted to lock the specified keychain.
-  </Abstract>
-				</Parameter><Parameter>
-					<Name>_Error</Name>
-					<Abstract type="html">The error that occurred while attempting to lock the specified keychain.</Abstract>
-				</Parameter><Parameter>
-					<Name>_Keychain</Name>
-					<Abstract type="html">The keychain that the keychain manager tried to lock.
-  </Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">YES if the operation should proceed or NO if it should be aborted. 
-          If you do not implement this method, the keychain manager assumes a response of NO.
-          </Abstract></ReturnValue>
-			<Anchor>//api/name/keychainManager:shouldProceedAfterError:lockingKeychain:</Anchor>
+			<Declaration>@property (unsafe_unretained, readonly) SecTrustedApplicationRef secTrustedApplication</Declaration>
+			
+			
+			<Anchor>//api/name/secTrustedApplication</Anchor>
             <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/WSCKeychainManagerDelegate/keychainManager:shouldUpdateKeychainSearchList:</TokenIdentifier>
-			<Abstract type="html">Asks the delegate whether the current default keychain search list should be changed.</Abstract>
-			<DeclaredIn>WSCKeychainManager.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCTrustedApplication/secTrustedApplication</TokenIdentifier>
+			<Abstract type="html">The reference of the secTrustedApplication opaque object, which wrapped by WSCTrustedApplication object.
+  </Abstract>
+			<DeclaredIn>WSCTrustedApplication.h</DeclaredIn>
 			
-	<RelatedTokens>
-		<TokenIdentifier>//apple_ref/occ/intfm/WSCKeychainManagerDelegate/keychainManager:shouldProceedAfterError:updatingKeychainSearchList:</TokenIdentifier>
-		
-	</RelatedTokens>
-	
-			<Declaration>- (BOOL)keychainManager:(WSCKeychainManager *)_KeychainManager shouldUpdateKeychainSearchList:(NSSet *)_SearchList</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>_KeychainManager</Name>
-					<Abstract type="html">The keychain manager that attempted to change the current default keychain search list.
-  </Abstract>
-				</Parameter><Parameter>
-					<Name>_SearchList</Name>
-					<Abstract type="html">A set of keychain objects (of class WSCKeychain specifying the list of keychains to use in the new default keychain search list.
-  </Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">YES if the current default keychain search list should be updated or NO if it should not be updated.</Abstract></ReturnValue>
-			<Anchor>//api/name/keychainManager:shouldUpdateKeychainSearchList:</Anchor>
+			<Declaration>@property (unsafe_unretained, readonly) SecTrustedApplicationRef secTrustedApplication</Declaration>
+			
+			
+			<Anchor>//api/name/secTrustedApplication</Anchor>
             <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/WSCKeychainManagerDelegate/keychainManager:shouldProceedAfterError:updatingKeychainSearchList:</TokenIdentifier>
-			<Abstract type="html">Asks the delegate if the operation should continue after an error occurs while updating the current default keychain search list.</Abstract>
-			<DeclaredIn>WSCKeychainManager.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/WSCTrustedApplication/secTrustedApplication</TokenIdentifier>
+			<Abstract type="html">The reference of the secTrustedApplication opaque object, which wrapped by WSCTrustedApplication object.
+  </Abstract>
+			<DeclaredIn>WSCTrustedApplication.h</DeclaredIn>
 			
-	<RelatedTokens>
-		<TokenIdentifier>//apple_ref/occ/intfm/WSCKeychainManagerDelegate/keychainManager:shouldUpdateKeychainSearchList:</TokenIdentifier>
+			<Declaration>@property (unsafe_unretained, readonly) SecTrustedApplicationRef secTrustedApplication</Declaration>
+			
+			
+			<Anchor>//api/name/secTrustedApplication</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
 		
-	</RelatedTokens>
-	
-			<Declaration>- (BOOL)keychainManager:(WSCKeychainManager *)_KeychainManager shouldProceedAfterError:(NSError *)_Error updatingKeychainSearchList:(NSSet *)_SearchList</Declaration>
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/WSCTrustedApplication/trustedApplicationWithSecTrustedApplicationRef:</TokenIdentifier>
+			<Abstract type="html">Creates and returns a WSCTrustedApplication object using the given reference to the instance of SecTrustedApplication opaque type.</Abstract>
+			<DeclaredIn>WSCTrustedApplication.h</DeclaredIn>
+			
+			<Declaration>+ (instancetype)trustedApplicationWithSecTrustedApplicationRef:(SecTrustedApplicationRef)_SecTrustedAppRef</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>_KeychainManager</Name>
-					<Abstract type="html">The keychain manager that attempted to change the current default keychain search list.
-  </Abstract>
-				</Parameter><Parameter>
-					<Name>_Error</Name>
-					<Abstract type="html">The error that occurred while attempting to update the current default keychain search list.</Abstract>
-				</Parameter><Parameter>
-					<Name>_SearchList</Name>
-					<Abstract type="html">A set of keychain objects (of class WSCKeychain specifying the list of keychains to use in the new default keychain search list.
+					<Name>_SecTrustedAppRef</Name>
+					<Abstract type="html">A reference to the instance of SecTrustedApplication opaque type.
   </Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">YES if the operation should proceed or NO if it should be aborted. 
-          If you do not implement this method, the keychain manager assumes a response of NO.
-          </Abstract></ReturnValue>
-			<Anchor>//api/name/keychainManager:shouldProceedAfterError:updatingKeychainSearchList:</Anchor>
+			<ReturnValue><Abstract type="html">A WSCTrustedApplication object initialized with the givent reference to the instance of SecTrustedApplication opaque type.
+          Return nil if _SecTrustedAppRef is nil.
+  </Abstract></ReturnValue>
+			<Anchor>//api/name/trustedApplicationWithSecTrustedApplicationRef:</Anchor>
             <NodeRef refid="9"/>
 		</Token>
 		

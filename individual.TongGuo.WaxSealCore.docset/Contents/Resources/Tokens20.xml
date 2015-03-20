@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/WSCSignatureAlgorithmType.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/WSCSignatureAlgorithmType</TokenIdentifier>
+			<Abstract type="html">Defines constants that represent the signature algorithm used by an X.509 certificate.
+  </Abstract>
+			<DeclaredIn>WSCCertificateItem.h</DeclaredIn>
+            
+			
+			<NodeRef refid="20"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCSignatureAlgorithmUnknown</TokenIdentifier>
+            <Abstract type="html">Indicates unknown signature algorithm type.</Abstract>
+            <Declaration>WSCSignatureAlgorithmUnknown</Declaration>
+            
+            <DeclaredIn>WSCCertificateItem.h</DeclaredIn>
+            
+            <NodeRef refid="20"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCSignatureAlgorithmSHAWithRSA</TokenIdentifier>
+            <Abstract type="html">Indicates SHA with RSA.</Abstract>
+            <Declaration>WSCSignatureAlgorithmSHAWithRSA</Declaration>
+            
+            <DeclaredIn>WSCCertificateItem.h</DeclaredIn>
+            
+            <NodeRef refid="20"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCSignatureAlgorithmSHA1WithRSA</TokenIdentifier>
+            <Abstract type="html">Indicates SHA-1 with RSA.</Abstract>
+            <Declaration>WSCSignatureAlgorithmSHA1WithRSA</Declaration>
+            
+            <DeclaredIn>WSCCertificateItem.h</DeclaredIn>
+            
+            <NodeRef refid="20"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCSignatureAlgorithmSHA224WithRSA</TokenIdentifier>
+            <Abstract type="html">Indicates SHA-224 with RSA.</Abstract>
+            <Declaration>WSCSignatureAlgorithmSHA224WithRSA</Declaration>
+            
+            <DeclaredIn>WSCCertificateItem.h</DeclaredIn>
+            
+            <NodeRef refid="20"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCSignatureAlgorithmSHA256WithRSA</TokenIdentifier>
+            <Abstract type="html">Indicates SHA-256 with RSA.</Abstract>
+            <Declaration>WSCSignatureAlgorithmSHA256WithRSA</Declaration>
+            
+            <DeclaredIn>WSCCertificateItem.h</DeclaredIn>
+            
+            <NodeRef refid="20"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCSignatureAlgorithmSHA384WithRSA</TokenIdentifier>
+            <Abstract type="html">Indicates SHA-384 with RSA.</Abstract>
+            <Declaration>WSCSignatureAlgorithmSHA384WithRSA</Declaration>
+            
+            <DeclaredIn>WSCCertificateItem.h</DeclaredIn>
+            
+            <NodeRef refid="20"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCSignatureAlgorithmSHA512WithRSA</TokenIdentifier>
+            <Abstract type="html">Indicates SHA-512 with RSA.</Abstract>
+            <Declaration>WSCSignatureAlgorithmSHA512WithRSA</Declaration>
+            
+            <DeclaredIn>WSCCertificateItem.h</DeclaredIn>
+            
+            <NodeRef refid="20"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCSignatureAlgorithmMD2WithRSA</TokenIdentifier>
+            <Abstract type="html">Indicates MD2 with RSA.</Abstract>
+            <Declaration>WSCSignatureAlgorithmMD2WithRSA</Declaration>
+            
+            <DeclaredIn>WSCCertificateItem.h</DeclaredIn>
+            
+            <NodeRef refid="20"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCSignatureAlgorithmMD4WithRSA</TokenIdentifier>
+            <Abstract type="html">Indicates MD4 with RSA.</Abstract>
+            <Declaration>WSCSignatureAlgorithmMD4WithRSA</Declaration>
+            
+            <DeclaredIn>WSCCertificateItem.h</DeclaredIn>
+            
+            <NodeRef refid="20"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCSignatureAlgorithmMD5WithRSA</TokenIdentifier>
+            <Abstract type="html">Indicates MD5 with RSA.</Abstract>
+            <Declaration>WSCSignatureAlgorithmMD5WithRSA</Declaration>
+            
+            <DeclaredIn>WSCCertificateItem.h</DeclaredIn>
+            
+            <NodeRef refid="20"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCSignatureAlgorithmDSAWithSHA1</TokenIdentifier>
+            <Abstract type="html">Indicates DSA with SHA-1.</Abstract>
+            <Declaration>WSCSignatureAlgorithmDSAWithSHA1</Declaration>
+            
+            <DeclaredIn>WSCCertificateItem.h</DeclaredIn>
+            
+            <NodeRef refid="20"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCSignatureAlgorithmDSAWithSHA224</TokenIdentifier>
+            <Abstract type="html">Indicates DSA with SHA-224.</Abstract>
+            <Declaration>WSCSignatureAlgorithmDSAWithSHA224</Declaration>
+            
+            <DeclaredIn>WSCCertificateItem.h</DeclaredIn>
+            
+            <NodeRef refid="20"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCSignatureAlgorithmDSAWithSHA256</TokenIdentifier>
+            <Abstract type="html">Indicates DSA with SHA-256.</Abstract>
+            <Declaration>WSCSignatureAlgorithmDSAWithSHA256</Declaration>
+            
+            <DeclaredIn>WSCCertificateItem.h</DeclaredIn>
+            
+            <NodeRef refid="20"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCSignatureAlgorithmECDSAWithSHA1</TokenIdentifier>
+            <Abstract type="html">Indicates ECDSA with SHA-1.</Abstract>
+            <Declaration>WSCSignatureAlgorithmECDSAWithSHA1</Declaration>
+            
+            <DeclaredIn>WSCCertificateItem.h</DeclaredIn>
+            
+            <NodeRef refid="20"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCSignatureAlgorithmECDSAWithSHA224</TokenIdentifier>
+            <Abstract type="html">Indicates ECDSA with SHA-224.</Abstract>
+            <Declaration>WSCSignatureAlgorithmECDSAWithSHA224</Declaration>
+            
+            <DeclaredIn>WSCCertificateItem.h</DeclaredIn>
+            
+            <NodeRef refid="20"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCSignatureAlgorithmECDSAWithSHA256</TokenIdentifier>
+            <Abstract type="html">Indicates ECDSA with SHA-256.</Abstract>
+            <Declaration>WSCSignatureAlgorithmECDSAWithSHA256</Declaration>
+            
+            <DeclaredIn>WSCCertificateItem.h</DeclaredIn>
+            
+            <NodeRef refid="20"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCSignatureAlgorithmECDSAWithSHA384</TokenIdentifier>
+            <Abstract type="html">Indicates ECDSA with SHA-384.</Abstract>
+            <Declaration>WSCSignatureAlgorithmECDSAWithSHA384</Declaration>
+            
+            <DeclaredIn>WSCCertificateItem.h</DeclaredIn>
+            
+            <NodeRef refid="20"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCSignatureAlgorithmECDSAWithSHA512</TokenIdentifier>
+            <Abstract type="html">Indicates ECDSA with SHA-512.</Abstract>
+            <Declaration>WSCSignatureAlgorithmECDSAWithSHA512</Declaration>
+            
+            <DeclaredIn>WSCCertificateItem.h</DeclaredIn>
+            
+            <NodeRef refid="20"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCSignatureAlgorithmMosaicUpdatedSig</TokenIdentifier>
+            <Abstract type="html">Indicates Mosaic Updated Sig.</Abstract>
+            <Declaration>WSCSignatureAlgorithmMosaicUpdatedSig</Declaration>
+            
+            <DeclaredIn>WSCCertificateItem.h</DeclaredIn>
+            
+            <NodeRef refid="20"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCSignatureAlgorithmRSASSA_PSS</TokenIdentifier>
+            <Abstract type="html">Indicates RSASSA-PSS.</Abstract>
+            <Declaration>WSCSignatureAlgorithmRSASSA_PSS</Declaration>
+            
+            <DeclaredIn>WSCCertificateItem.h</DeclaredIn>
+            
+            <NodeRef refid="20"/>
+        </Token>
+        
+	</File>
+</Tokens>

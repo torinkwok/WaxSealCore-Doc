@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/WSCTrustedApplication.html">
+	<File path="Classes/WSCPermittedOperation.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/WSCTrustedApplication</TokenIdentifier>
-			<Abstract type="html">Identifies the trusted application in an access permission.
-  </Abstract>
-			<DeclaredIn>WSCTrustedApplication.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/WSCPermittedOperation</TokenIdentifier>
+			<Abstract type="html">The WSCPermittedOperation represents information about an permitted operation of a protected keychain item.</Abstract>
+			<DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
             
 			
 			<NodeRef refid="7"/>
@@ -14,150 +13,260 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WSCTrustedApplication/setUniqueIdentification:</TokenIdentifier>
-			<Abstract type="html">Retrieves and sets the unique identification of the trusted application represented by receiver.
-    </Abstract>
-			<DeclaredIn>WSCTrustedApplication.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCPermittedOperation/setDescriptor:</TokenIdentifier>
+			<Abstract type="html">The descriptor of the permitted operation represented by receiver.</Abstract>
+			<DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
 			
-			<Declaration>@property (retain, readwrite) NSData *uniqueIdentification</Declaration>
+			<Declaration>@property (copy, readwrite) NSString *descriptor</Declaration>
 			
 			
-			<Anchor>//api/name/uniqueIdentification</Anchor>
+			<Anchor>//api/name/descriptor</Anchor>
             <NodeRef refid="7"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WSCTrustedApplication/uniqueIdentification</TokenIdentifier>
-			<Abstract type="html">Retrieves and sets the unique identification of the trusted application represented by receiver.
-    </Abstract>
-			<DeclaredIn>WSCTrustedApplication.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCPermittedOperation/descriptor</TokenIdentifier>
+			<Abstract type="html">The descriptor of the permitted operation represented by receiver.</Abstract>
+			<DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
 			
-			<Declaration>@property (retain, readwrite) NSData *uniqueIdentification</Declaration>
+			<Declaration>@property (copy, readwrite) NSString *descriptor</Declaration>
 			
 			
-			<Anchor>//api/name/uniqueIdentification</Anchor>
+			<Anchor>//api/name/descriptor</Anchor>
             <NodeRef refid="7"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WSCTrustedApplication/uniqueIdentification</TokenIdentifier>
-			<Abstract type="html">Retrieves and sets the unique identification of the trusted application represented by receiver.
-    </Abstract>
-			<DeclaredIn>WSCTrustedApplication.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/WSCPermittedOperation/descriptor</TokenIdentifier>
+			<Abstract type="html">The descriptor of the permitted operation represented by receiver.</Abstract>
+			<DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
 			
-			<Declaration>@property (retain, readwrite) NSData *uniqueIdentification</Declaration>
+			<Declaration>@property (copy, readwrite) NSString *descriptor</Declaration>
 			
 			
-			<Anchor>//api/name/uniqueIdentification</Anchor>
+			<Anchor>//api/name/descriptor</Anchor>
             <NodeRef refid="7"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/WSCTrustedApplication/trustedApplicationWithContentsOfURL:error:</TokenIdentifier>
-			<Abstract type="html">Creates a trusted application object based on the application specified by an URL.</Abstract>
-			<DeclaredIn>WSCTrustedApplication.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCPermittedOperation/setTrustedApplications:</TokenIdentifier>
+			<Abstract type="html">A set of trusted application objects (that is, WSCTrustedApplication instances)
+    identifying applications that are allowed access to the keychain item without user confirmation. </Abstract>
+			<DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
 			
-			<Declaration>+ (instancetype)trustedApplicationWithContentsOfURL:(NSURL *)_ApplicationURL error:(NSError **)_Error</Declaration>
+			<Declaration>@property (retain, readwrite) NSSet *trustedApplications</Declaration>
+			
+			
+			<Anchor>//api/name/trustedApplications</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCPermittedOperation/trustedApplications</TokenIdentifier>
+			<Abstract type="html">A set of trusted application objects (that is, WSCTrustedApplication instances)
+    identifying applications that are allowed access to the keychain item without user confirmation. </Abstract>
+			<DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
+			
+			<Declaration>@property (retain, readwrite) NSSet *trustedApplications</Declaration>
+			
+			
+			<Anchor>//api/name/trustedApplications</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WSCPermittedOperation/trustedApplications</TokenIdentifier>
+			<Abstract type="html">A set of trusted application objects (that is, WSCTrustedApplication instances)
+    identifying applications that are allowed access to the keychain item without user confirmation. </Abstract>
+			<DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
+			
+			<Declaration>@property (retain, readwrite) NSSet *trustedApplications</Declaration>
+			
+			
+			<Anchor>//api/name/trustedApplications</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCPermittedOperation/setPromptContext:</TokenIdentifier>
+			<Abstract type="html">Masks that define when using a keychain or a protected keychain item should require a passphrase.</Abstract>
+			<DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
+			
+			<Declaration>@property (assign, readwrite) WSCPermittedOperationPromptContext promptContext</Declaration>
+			
+			
+			<Anchor>//api/name/promptContext</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCPermittedOperation/promptContext</TokenIdentifier>
+			<Abstract type="html">Masks that define when using a keychain or a protected keychain item should require a passphrase.</Abstract>
+			<DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
+			
+			<Declaration>@property (assign, readwrite) WSCPermittedOperationPromptContext promptContext</Declaration>
+			
+			
+			<Anchor>//api/name/promptContext</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WSCPermittedOperation/promptContext</TokenIdentifier>
+			<Abstract type="html">Masks that define when using a keychain or a protected keychain item should require a passphrase.</Abstract>
+			<DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
+			
+			<Declaration>@property (assign, readwrite) WSCPermittedOperationPromptContext promptContext</Declaration>
+			
+			
+			<Anchor>//api/name/promptContext</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCPermittedOperation/setOperations:</TokenIdentifier>
+			<Abstract type="html">An unsigned integer bit field containing any of the operation tag masks.
+    </Abstract>
+			<DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
+			
+			<Declaration>@property (assign, readwrite) WSCPermittedOperationTag operations</Declaration>
+			
+			
+			<Anchor>//api/name/operations</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCPermittedOperation/operations</TokenIdentifier>
+			<Abstract type="html">An unsigned integer bit field containing any of the operation tag masks.
+    </Abstract>
+			<DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
+			
+			<Declaration>@property (assign, readwrite) WSCPermittedOperationTag operations</Declaration>
+			
+			
+			<Anchor>//api/name/operations</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WSCPermittedOperation/operations</TokenIdentifier>
+			<Abstract type="html">An unsigned integer bit field containing any of the operation tag masks.
+    </Abstract>
+			<DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
+			
+			<Declaration>@property (assign, readwrite) WSCPermittedOperationTag operations</Declaration>
+			
+			
+			<Anchor>//api/name/operations</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCPermittedOperation/setHostProtectedKeychainItem:</TokenIdentifier>
+			<Abstract type="html">The protected keychain item that the permitted operation represented by receiver applying to.
+  </Abstract>
+			<DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
+			
+			<Declaration>@property (unsafe_unretained, readonly) WSCProtectedKeychainItem *hostProtectedKeychainItem</Declaration>
+			
+			
+			<Anchor>//api/name/hostProtectedKeychainItem</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCPermittedOperation/hostProtectedKeychainItem</TokenIdentifier>
+			<Abstract type="html">The protected keychain item that the permitted operation represented by receiver applying to.
+  </Abstract>
+			<DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
+			
+			<Declaration>@property (unsafe_unretained, readonly) WSCProtectedKeychainItem *hostProtectedKeychainItem</Declaration>
+			
+			
+			<Anchor>//api/name/hostProtectedKeychainItem</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WSCPermittedOperation/hostProtectedKeychainItem</TokenIdentifier>
+			<Abstract type="html">The protected keychain item that the permitted operation represented by receiver applying to.
+  </Abstract>
+			<DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
+			
+			<Declaration>@property (unsafe_unretained, readonly) WSCProtectedKeychainItem *hostProtectedKeychainItem</Declaration>
+			
+			
+			<Anchor>//api/name/hostProtectedKeychainItem</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCPermittedOperation/setSecACL:</TokenIdentifier>
+			<Abstract type="html">The reference of the SecACL opaque object, which wrapped by WSCPermittedOperation object. (read-only)
+  </Abstract>
+			<DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
+			
+			<Declaration>@property (unsafe_unretained, readonly) SecACLRef secACL</Declaration>
+			
+			
+			<Anchor>//api/name/secACL</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCPermittedOperation/secACL</TokenIdentifier>
+			<Abstract type="html">The reference of the SecACL opaque object, which wrapped by WSCPermittedOperation object. (read-only)
+  </Abstract>
+			<DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
+			
+			<Declaration>@property (unsafe_unretained, readonly) SecACLRef secACL</Declaration>
+			
+			
+			<Anchor>//api/name/secACL</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WSCPermittedOperation/secACL</TokenIdentifier>
+			<Abstract type="html">The reference of the SecACL opaque object, which wrapped by WSCPermittedOperation object. (read-only)
+  </Abstract>
+			<DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
+			
+			<Declaration>@property (unsafe_unretained, readonly) SecACLRef secACL</Declaration>
+			
+			
+			<Anchor>//api/name/secACL</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/WSCPermittedOperation/permittedOperationWithSecACLRef:appliesTo:error:</TokenIdentifier>
+			<Abstract type="html">Creates and returns a WSCPermittedOperation object using the given reference to the instance of SecACL opaque type.</Abstract>
+			<DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
+			
+			<Declaration>+ (instancetype)permittedOperationWithSecACLRef:(SecACLRef)_SecACLRef appliesTo:(WSCProtectedKeychainItem *)_ProtectedKeychainItem error:(NSError **)_Error</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>_ApplicationURL</Name>
-					<Abstract type="html">The URL to the application or tool to trust. 
-                         For application bundles, use the URL to the bundle directory. 
-                         Pass nil to refer to the application or tool making this call.
-                         </Abstract>
+					<Name>_SecACLRef</Name>
+					<Abstract type="html">A reference to the instance of SecACL opaque type.
+  </Abstract>
+				</Parameter><Parameter>
+					<Name>_ProtectedKeychainItem</Name>
+					<Abstract type="html">The protected keychain item that the permitted operation represented by receiver applying to.
+                                You can get it with hostProtectedKeychainItem read-only property.
+                                </Abstract>
 				</Parameter><Parameter>
 					<Name>_Error</Name>
 					<Abstract type="html">On input, a pointer to an error object.
                 If an error occurs, this pointer is set to an actual error object containing the error information.
-                You may specify nil for this parameter if you don&apos;t want the error information.
-                </Abstract>
+                You may specify nil for this parameter if you don&apos;t want the error information.</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">Newly created trusted application object. Returns nil if an error occurs.
+			<ReturnValue><Abstract type="html">A WSCPermittedOperation object initialized with the givent reference to the instance of SecACL opaque type.
+          Return nil if _SecACLRef is nil.
   </Abstract></ReturnValue>
-			<Anchor>//api/name/trustedApplicationWithContentsOfURL:error:</Anchor>
-            <NodeRef refid="7"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WSCTrustedApplication/isEqualToTrustedApplication:</TokenIdentifier>
-			<Abstract type="html">Returns a BOOL value that indicates whether a given trusted application is equal to receiver.</Abstract>
-			<DeclaredIn>WSCTrustedApplication.h</DeclaredIn>
-			
-			<Declaration>- (BOOL)isEqualToTrustedApplication:(WSCTrustedApplication *)_AnotherTrustedApplication</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>_AnotherTrustedApplication</Name>
-					<Abstract type="html">The trusted application with which to compare the receiver.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">YES if _AnotherTrustedApplication is equivalent to receiver (if they have the same unique identification);
-          otherwise NO.
-
-  One more thing
-
-   When you know both objects are keychains, this method is a faster way to check equality than method isEqual:.
-  </Abstract></ReturnValue>
-			<Anchor>//api/name/isEqualToTrustedApplication:</Anchor>
-            <NodeRef refid="7"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WSCTrustedApplication/setSecTrustedApplication:</TokenIdentifier>
-			<Abstract type="html">The reference of the secTrustedApplication opaque object, which wrapped by WSCTrustedApplication object.
-  </Abstract>
-			<DeclaredIn>WSCTrustedApplication.h</DeclaredIn>
-			
-			<Declaration>@property (unsafe_unretained, readonly) SecTrustedApplicationRef secTrustedApplication</Declaration>
-			
-			
-			<Anchor>//api/name/secTrustedApplication</Anchor>
-            <NodeRef refid="7"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WSCTrustedApplication/secTrustedApplication</TokenIdentifier>
-			<Abstract type="html">The reference of the secTrustedApplication opaque object, which wrapped by WSCTrustedApplication object.
-  </Abstract>
-			<DeclaredIn>WSCTrustedApplication.h</DeclaredIn>
-			
-			<Declaration>@property (unsafe_unretained, readonly) SecTrustedApplicationRef secTrustedApplication</Declaration>
-			
-			
-			<Anchor>//api/name/secTrustedApplication</Anchor>
-            <NodeRef refid="7"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WSCTrustedApplication/secTrustedApplication</TokenIdentifier>
-			<Abstract type="html">The reference of the secTrustedApplication opaque object, which wrapped by WSCTrustedApplication object.
-  </Abstract>
-			<DeclaredIn>WSCTrustedApplication.h</DeclaredIn>
-			
-			<Declaration>@property (unsafe_unretained, readonly) SecTrustedApplicationRef secTrustedApplication</Declaration>
-			
-			
-			<Anchor>//api/name/secTrustedApplication</Anchor>
-            <NodeRef refid="7"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/WSCTrustedApplication/trustedApplicationWithSecTrustedApplicationRef:</TokenIdentifier>
-			<Abstract type="html">Creates and returns a WSCTrustedApplication object using the given reference to the instance of SecTrustedApplication opaque type.</Abstract>
-			<DeclaredIn>WSCTrustedApplication.h</DeclaredIn>
-			
-			<Declaration>+ (instancetype)trustedApplicationWithSecTrustedApplicationRef:(SecTrustedApplicationRef)_SecTrustedAppRef</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>_SecTrustedAppRef</Name>
-					<Abstract type="html">A reference to the instance of SecTrustedApplication opaque type.
-  </Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">A WSCTrustedApplication object initialized with the givent reference to the instance of SecTrustedApplication opaque type.
-          Return nil if _SecTrustedAppRef is nil.
-  </Abstract></ReturnValue>
-			<Anchor>//api/name/trustedApplicationWithSecTrustedApplicationRef:</Anchor>
+			<Anchor>//api/name/permittedOperationWithSecACLRef:appliesTo:error:</Anchor>
             <NodeRef refid="7"/>
 		</Token>
 		

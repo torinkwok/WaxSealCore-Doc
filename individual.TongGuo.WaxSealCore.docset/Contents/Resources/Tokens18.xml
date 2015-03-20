@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/WSCPermittedOperationPromptContext.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/WSCPermittedOperationPromptContext</TokenIdentifier>
+			<Abstract type="html">Masks that define when using a keychain or a protected keychain item should require a passphrase.
+  </Abstract>
+			<DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
+            
+			
+			<NodeRef refid="18"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCPermittedOperationPromptContextNone</TokenIdentifier>
+            <Abstract type="html">Indicates that prompt selector bit is not set, this is default.</Abstract>
+            <Declaration>WSCPermittedOperationPromptContextNone</Declaration>
+            
+            <DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
+            
+            <NodeRef refid="18"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCPermittedOperationPromptContextRequirePassphraseEveryAccess</TokenIdentifier>
+            <Abstract type="html">Indicates that a passphrase should be required for every access action.</Abstract>
+            <Declaration>WSCPermittedOperationPromptContextRequirePassphraseEveryAccess</Declaration>
+            
+            <DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
+            
+            <NodeRef refid="18"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCPermittedOperationPromptContextWhenUnsigned</TokenIdentifier>
+            <Abstract type="html">Indicates that a passphrase should be required
+when an unsigned application attempts to use a keychain or a protected keychain item,
+overriding the system default.</Abstract>
+            <Declaration>WSCPermittedOperationPromptContextWhenUnsigned</Declaration>
+            
+            <DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
+            
+            <NodeRef refid="18"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCPermittedOperationPromptContextWhenUnsignedAct</TokenIdentifier>
+            <Abstract type="html">Indicates that a passphrase should be required
+when an unsigned application attempts to use a keychain or a protected keychain item.</Abstract>
+            <Declaration>WSCPermittedOperationPromptContextWhenUnsignedAct</Declaration>
+            
+            <DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
+            
+            <NodeRef refid="18"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCPermittedOperationPromptContextInvalidSigned</TokenIdentifier>
+            <Abstract type="html">Indicates that a passphrase should be required
+when an application with an invalid signature attempts to use a the keychain or a protected keychain item,
+overriding the system default.</Abstract>
+            <Declaration>WSCPermittedOperationPromptContextInvalidSigned</Declaration>
+            
+            <DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
+            
+            <NodeRef refid="18"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCPermittedOperationPromptContextInvalidSignedAct</TokenIdentifier>
+            <Abstract type="html">Indicates that a passphrase should be required
+when an application with an invalid signature attempts to use a the keychain or a protected keychain item.</Abstract>
+            <Declaration>WSCPermittedOperationPromptContextInvalidSignedAct</Declaration>
+            
+            <DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
+            
+            <NodeRef refid="18"/>
+        </Token>
+        
+	</File>
+</Tokens>

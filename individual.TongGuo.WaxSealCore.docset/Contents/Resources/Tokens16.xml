@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/WSCKeyUsage.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/WSCKeyUsage</TokenIdentifier>
+			<Abstract type="html">Defines constants that specify the usage of a key, combined using the C bitwise OR operator.
+  </Abstract>
+			<DeclaredIn>WSCKey.h</DeclaredIn>
+            
+			
+			<NodeRef refid="16"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCKeyUsageAny</TokenIdentifier>
+            <Abstract type="html">No restrictions.</Abstract>
+            <Declaration>WSCKeyUsageAny</Declaration>
+            
+            <DeclaredIn>WSCKey.h</DeclaredIn>
+            
+            <NodeRef refid="16"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCKeyUsageEncrypt</TokenIdentifier>
+            <Abstract type="html">Use for encrypting.</Abstract>
+            <Declaration>WSCKeyUsageEncrypt</Declaration>
+            
+            <DeclaredIn>WSCKey.h</DeclaredIn>
+            
+            <NodeRef refid="16"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCKeyUsageDecrypt</TokenIdentifier>
+            <Abstract type="html">Use for decrypting.</Abstract>
+            <Declaration>WSCKeyUsageDecrypt</Declaration>
+            
+            <DeclaredIn>WSCKey.h</DeclaredIn>
+            
+            <NodeRef refid="16"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCKeyUsageSign</TokenIdentifier>
+            <Abstract type="html">Use for signing.</Abstract>
+            <Declaration>WSCKeyUsageSign</Declaration>
+            
+            <DeclaredIn>WSCKey.h</DeclaredIn>
+            
+            <NodeRef refid="16"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCKeyUsageVerify</TokenIdentifier>
+            <Abstract type="html">Use for verifying.</Abstract>
+            <Declaration>WSCKeyUsageVerify</Declaration>
+            
+            <DeclaredIn>WSCKey.h</DeclaredIn>
+            
+            <NodeRef refid="16"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCKeyUsageSignRecover</TokenIdentifier>
+            <Abstract type="html">Use for sign recover.</Abstract>
+            <Declaration>WSCKeyUsageSignRecover</Declaration>
+            
+            <DeclaredIn>WSCKey.h</DeclaredIn>
+            
+            <NodeRef refid="16"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCKeyUsageVerifyRecover</TokenIdentifier>
+            <Abstract type="html">Use for verify recover.</Abstract>
+            <Declaration>WSCKeyUsageVerifyRecover</Declaration>
+            
+            <DeclaredIn>WSCKey.h</DeclaredIn>
+            
+            <NodeRef refid="16"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCKeyUsageWrap</TokenIdentifier>
+            <Abstract type="html">Use for wrapping.</Abstract>
+            <Declaration>WSCKeyUsageWrap</Declaration>
+            
+            <DeclaredIn>WSCKey.h</DeclaredIn>
+            
+            <NodeRef refid="16"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCKeyUsageUnwrap</TokenIdentifier>
+            <Abstract type="html">Use for unwrapping.</Abstract>
+            <Declaration>WSCKeyUsageUnwrap</Declaration>
+            
+            <DeclaredIn>WSCKey.h</DeclaredIn>
+            
+            <NodeRef refid="16"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCKeyUsageDerive</TokenIdentifier>
+            <Abstract type="html">Use for deriving.</Abstract>
+            <Declaration>WSCKeyUsageDerive</Declaration>
+            
+            <DeclaredIn>WSCKey.h</DeclaredIn>
+            
+            <NodeRef refid="16"/>
+        </Token>
+        
+	</File>
+</Tokens>

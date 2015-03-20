@@ -18,6 +18,8 @@
 						<NodeRef refid="5"/>
 						<NodeRef refid="6"/>
 						<NodeRef refid="7"/>
+						<NodeRef refid="8"/>
+						<NodeRef refid="9"/>
 						
 					</Subnodes>
 				</Node>
@@ -27,7 +29,7 @@
 					<Name>Categories</Name>
 					<Path>index.html</Path>
 					<Subnodes>
-						<NodeRef refid="8"/>
+						<NodeRef refid="10"/>
 						
 					</Subnodes>
 				</Node>
@@ -37,7 +39,7 @@
 					<Name>Protocols</Name>
 					<Path>index.html</Path>
 					<Subnodes>
-						<NodeRef refid="9"/>
+						<NodeRef refid="11"/>
 						
 					</Subnodes>
 				</Node>
@@ -47,12 +49,16 @@
 					<Name>Constants</Name>
 					<Path>index.html</Path>
 					<Subnodes>
-						<NodeRef refid="10"/>
-						<NodeRef refid="11"/>
 						<NodeRef refid="12"/>
 						<NodeRef refid="13"/>
 						<NodeRef refid="14"/>
 						<NodeRef refid="15"/>
+						<NodeRef refid="16"/>
+						<NodeRef refid="17"/>
+						<NodeRef refid="18"/>
+						<NodeRef refid="19"/>
+						<NodeRef refid="20"/>
+						<NodeRef refid="21"/>
 						
 					</Subnodes>
 				</Node>
@@ -63,6 +69,78 @@
 	<Library>
 		
 		<Node id="1" type="file" documentType="reference">
+            <Name>WSCCertificateItem</Name>
+            <Path>Classes/WSCCertificateItem.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/WSCCertificateItem.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/WSCCertificateItem.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/WSCCertificateItem.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/WSCCertificateItem.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="2" type="file" documentType="reference">
+            <Name>WSCKey</Name>
+            <Path>Classes/WSCKey.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/WSCKey.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/WSCKey.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/WSCKey.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/WSCKey.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/WSCKey.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="3" type="file" documentType="reference">
             <Name>WSCKeychain</Name>
             <Path>Classes/WSCKeychain.html</Path>
             
@@ -101,7 +179,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="2" type="file" documentType="reference">
+		<Node id="4" type="file" documentType="reference">
             <Name>WSCKeychainItem</Name>
             <Path>Classes/WSCKeychainItem.html</Path>
             
@@ -134,7 +212,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="3" type="file" documentType="reference">
+		<Node id="5" type="file" documentType="reference">
             <Name>WSCKeychainManager</Name>
             <Path>Classes/WSCKeychainManager.html</Path>
             
@@ -173,7 +251,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="4" type="file" documentType="reference">
+		<Node id="6" type="file" documentType="reference">
             <Name>WSCPassphraseItem</Name>
             <Path>Classes/WSCPassphraseItem.html</Path>
             
@@ -200,7 +278,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="5" type="file" documentType="reference">
+		<Node id="7" type="file" documentType="reference">
             <Name>WSCPermittedOperation</Name>
             <Path>Classes/WSCPermittedOperation.html</Path>
             
@@ -233,7 +311,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="6" type="file" documentType="reference">
+		<Node id="8" type="file" documentType="reference">
             <Name>WSCProtectedKeychainItem</Name>
             <Path>Classes/WSCProtectedKeychainItem.html</Path>
             
@@ -266,7 +344,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="7" type="file" documentType="reference">
+		<Node id="9" type="file" documentType="reference">
             <Name>WSCTrustedApplication</Name>
             <Path>Classes/WSCTrustedApplication.html</Path>
             
@@ -306,7 +384,7 @@
             
         </Node>
 		
-		<Node id="8" type="file" documentType="reference">
+		<Node id="10" type="file" documentType="reference">
             <Name>NSURL(WSCKeychainURL)</Name>
             <Path>Categories/NSURL+WSCKeychainURL.html</Path>
             
@@ -334,7 +412,7 @@
             
         </Node>
 		
-        <Node id="9" type="file" documentType="reference">
+        <Node id="11" type="file" documentType="reference">
             <Name>WSCKeychainManagerDelegate</Name>
             <Path>Protocols/WSCKeychainManagerDelegate.html</Path>
             
@@ -362,32 +440,52 @@
             
         </Node>
 		
-        <Node id="10" type="file" documentType="reference">
+        <Node id="12" type="file" documentType="reference">
             <Name>WSCInternetAuthenticationType</Name>
             <Path>Constants/WSCInternetAuthenticationType.html</Path>
             
         </Node>
-		<Node id="11" type="file" documentType="reference">
+		<Node id="13" type="file" documentType="reference">
             <Name>WSCInternetProtocolType</Name>
             <Path>Constants/WSCInternetProtocolType.html</Path>
             
         </Node>
-		<Node id="12" type="file" documentType="reference">
+		<Node id="14" type="file" documentType="reference">
+            <Name>WSCKeyAlgorithmType</Name>
+            <Path>Constants/WSCKeyAlgorithmType.html</Path>
+            
+        </Node>
+		<Node id="15" type="file" documentType="reference">
+            <Name>WSCKeyClass</Name>
+            <Path>Constants/WSCKeyClass.html</Path>
+            
+        </Node>
+		<Node id="16" type="file" documentType="reference">
+            <Name>WSCKeyUsage</Name>
+            <Path>Constants/WSCKeyUsage.html</Path>
+            
+        </Node>
+		<Node id="17" type="file" documentType="reference">
             <Name>WSCKeychainItemClass</Name>
             <Path>Constants/WSCKeychainItemClass.html</Path>
             
         </Node>
-		<Node id="13" type="file" documentType="reference">
+		<Node id="18" type="file" documentType="reference">
             <Name>WSCPermittedOperationPromptContext</Name>
             <Path>Constants/WSCPermittedOperationPromptContext.html</Path>
             
         </Node>
-		<Node id="14" type="file" documentType="reference">
+		<Node id="19" type="file" documentType="reference">
             <Name>WSCPermittedOperationTag</Name>
             <Path>Constants/WSCPermittedOperationTag.html</Path>
             
         </Node>
-		<Node id="15" type="file" documentType="reference">
+		<Node id="20" type="file" documentType="reference">
+            <Name>WSCSignatureAlgorithmType</Name>
+            <Path>Constants/WSCSignatureAlgorithmType.html</Path>
+            
+        </Node>
+		<Node id="21" type="file" documentType="reference">
             <Name>WaxSealCoreErrorCode</Name>
             <Path>Constants/WaxSealCoreErrorCode.html</Path>
             

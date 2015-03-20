@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/WSCPermittedOperation.html">
+	<File path="Classes/WSCKeychainManager.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/WSCPermittedOperation</TokenIdentifier>
-			<Abstract type="html">The WSCPermittedOperation represents information about an permitted operation of a protected keychain item.</Abstract>
-			<DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/WSCKeychainManager</TokenIdentifier>
+			<Abstract type="html">The WSCKeychainManager class enables you to perform many generic keychain operations and insulates an app from the underlying Keychain Services.</Abstract>
+			<DeclaredIn>WSCKeychainManager.h</DeclaredIn>
             
 			
 			<NodeRef refid="5"/>
@@ -13,249 +13,136 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WSCPermittedOperation/setDescriptor:</TokenIdentifier>
-			<Abstract type="html">The descriptor of the permitted operation represented by receiver.</Abstract>
-			<DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCKeychainManager/setDelegate:</TokenIdentifier>
+			<Abstract type="html">The WSCKeychainManager object&apos;s delegate.</Abstract>
+			<DeclaredIn>WSCKeychainManager.h</DeclaredIn>
 			
-			<Declaration>@property (copy, readwrite) NSString *descriptor</Declaration>
+			<Declaration>@property (nonatomic, unsafe_unretained) id&lt;WSCKeychainManagerDelegate&gt; delegate</Declaration>
 			
 			
-			<Anchor>//api/name/descriptor</Anchor>
+			<Anchor>//api/name/delegate</Anchor>
             <NodeRef refid="5"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WSCPermittedOperation/descriptor</TokenIdentifier>
-			<Abstract type="html">The descriptor of the permitted operation represented by receiver.</Abstract>
-			<DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCKeychainManager/delegate</TokenIdentifier>
+			<Abstract type="html">The WSCKeychainManager object&apos;s delegate.</Abstract>
+			<DeclaredIn>WSCKeychainManager.h</DeclaredIn>
 			
-			<Declaration>@property (copy, readwrite) NSString *descriptor</Declaration>
+			<Declaration>@property (nonatomic, unsafe_unretained) id&lt;WSCKeychainManagerDelegate&gt; delegate</Declaration>
 			
 			
-			<Anchor>//api/name/descriptor</Anchor>
+			<Anchor>//api/name/delegate</Anchor>
             <NodeRef refid="5"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WSCPermittedOperation/descriptor</TokenIdentifier>
-			<Abstract type="html">The descriptor of the permitted operation represented by receiver.</Abstract>
-			<DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/WSCKeychainManager/delegate</TokenIdentifier>
+			<Abstract type="html">The WSCKeychainManager object&apos;s delegate.</Abstract>
+			<DeclaredIn>WSCKeychainManager.h</DeclaredIn>
 			
-			<Declaration>@property (copy, readwrite) NSString *descriptor</Declaration>
+			<Declaration>@property (nonatomic, unsafe_unretained) id&lt;WSCKeychainManagerDelegate&gt; delegate</Declaration>
 			
 			
-			<Anchor>//api/name/descriptor</Anchor>
+			<Anchor>//api/name/delegate</Anchor>
             <NodeRef refid="5"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WSCPermittedOperation/setTrustedApplications:</TokenIdentifier>
-			<Abstract type="html">A set of trusted application objects (that is, WSCTrustedApplication instances)
-    identifying applications that are allowed access to the keychain item without user confirmation. </Abstract>
-			<DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/clm/WSCKeychainManager/defaultManager</TokenIdentifier>
+			<Abstract type="html">Returns the shared keychain manager object for the process.
+  
+  This method always returns the same keychain manager object.
+  If you plan to use a delegate with keychain manager to receive notifications
+  about the completion of keychain operations, you should create a new instance of WSCKeychainManager (using the init method )
+  rather than using the shared object.</Abstract>
+			<DeclaredIn>WSCKeychainManager.h</DeclaredIn>
 			
-			<Declaration>@property (retain, readwrite) NSSet *trustedApplications</Declaration>
+			<Declaration>+ (instancetype)defaultManager</Declaration>
 			
-			
-			<Anchor>//api/name/trustedApplications</Anchor>
+			<ReturnValue><Abstract type="html">The default WSCKeychainManager object for the keychain services.
+  </Abstract></ReturnValue>
+			<Anchor>//api/name/defaultManager</Anchor>
             <NodeRef refid="5"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WSCPermittedOperation/trustedApplications</TokenIdentifier>
-			<Abstract type="html">A set of trusted application objects (that is, WSCTrustedApplication instances)
-    identifying applications that are allowed access to the keychain item without user confirmation. </Abstract>
-			<DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCKeychainManager/createKeychainWithURL:passphrase:becomesDefault:error:</TokenIdentifier>
+			<Abstract type="html">Creates and returns a WSCKeychain object using the given URL and passphrase.</Abstract>
+			<DeclaredIn>WSCKeychainManager.h</DeclaredIn>
 			
-			<Declaration>@property (retain, readwrite) NSSet *trustedApplications</Declaration>
-			
-			
-			<Anchor>//api/name/trustedApplications</Anchor>
-            <NodeRef refid="5"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WSCPermittedOperation/trustedApplications</TokenIdentifier>
-			<Abstract type="html">A set of trusted application objects (that is, WSCTrustedApplication instances)
-    identifying applications that are allowed access to the keychain item without user confirmation. </Abstract>
-			<DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
-			
-			<Declaration>@property (retain, readwrite) NSSet *trustedApplications</Declaration>
-			
-			
-			<Anchor>//api/name/trustedApplications</Anchor>
-            <NodeRef refid="5"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WSCPermittedOperation/setPromptContext:</TokenIdentifier>
-			<Abstract type="html">Masks that define when using a keychain or a protected keychain item should require a passphrase.</Abstract>
-			<DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
-			
-			<Declaration>@property (assign, readwrite) WSCPermittedOperationPromptContext promptContext</Declaration>
-			
-			
-			<Anchor>//api/name/promptContext</Anchor>
-            <NodeRef refid="5"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WSCPermittedOperation/promptContext</TokenIdentifier>
-			<Abstract type="html">Masks that define when using a keychain or a protected keychain item should require a passphrase.</Abstract>
-			<DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
-			
-			<Declaration>@property (assign, readwrite) WSCPermittedOperationPromptContext promptContext</Declaration>
-			
-			
-			<Anchor>//api/name/promptContext</Anchor>
-            <NodeRef refid="5"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WSCPermittedOperation/promptContext</TokenIdentifier>
-			<Abstract type="html">Masks that define when using a keychain or a protected keychain item should require a passphrase.</Abstract>
-			<DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
-			
-			<Declaration>@property (assign, readwrite) WSCPermittedOperationPromptContext promptContext</Declaration>
-			
-			
-			<Anchor>//api/name/promptContext</Anchor>
-            <NodeRef refid="5"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WSCPermittedOperation/setOperations:</TokenIdentifier>
-			<Abstract type="html">An unsigned integer bit field containing any of the operation tag masks.
-    </Abstract>
-			<DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
-			
-			<Declaration>@property (assign, readwrite) WSCPermittedOperationTag operations</Declaration>
-			
-			
-			<Anchor>//api/name/operations</Anchor>
-            <NodeRef refid="5"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WSCPermittedOperation/operations</TokenIdentifier>
-			<Abstract type="html">An unsigned integer bit field containing any of the operation tag masks.
-    </Abstract>
-			<DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
-			
-			<Declaration>@property (assign, readwrite) WSCPermittedOperationTag operations</Declaration>
-			
-			
-			<Anchor>//api/name/operations</Anchor>
-            <NodeRef refid="5"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WSCPermittedOperation/operations</TokenIdentifier>
-			<Abstract type="html">An unsigned integer bit field containing any of the operation tag masks.
-    </Abstract>
-			<DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
-			
-			<Declaration>@property (assign, readwrite) WSCPermittedOperationTag operations</Declaration>
-			
-			
-			<Anchor>//api/name/operations</Anchor>
-            <NodeRef refid="5"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WSCPermittedOperation/setHostProtectedKeychainItem:</TokenIdentifier>
-			<Abstract type="html">The protected keychain item that the permitted operation represented by receiver applying to.
-  </Abstract>
-			<DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
-			
-			<Declaration>@property (unsafe_unretained, readonly) WSCProtectedKeychainItem *hostProtectedKeychainItem</Declaration>
-			
-			
-			<Anchor>//api/name/hostProtectedKeychainItem</Anchor>
-            <NodeRef refid="5"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WSCPermittedOperation/hostProtectedKeychainItem</TokenIdentifier>
-			<Abstract type="html">The protected keychain item that the permitted operation represented by receiver applying to.
-  </Abstract>
-			<DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
-			
-			<Declaration>@property (unsafe_unretained, readonly) WSCProtectedKeychainItem *hostProtectedKeychainItem</Declaration>
-			
-			
-			<Anchor>//api/name/hostProtectedKeychainItem</Anchor>
-            <NodeRef refid="5"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WSCPermittedOperation/hostProtectedKeychainItem</TokenIdentifier>
-			<Abstract type="html">The protected keychain item that the permitted operation represented by receiver applying to.
-  </Abstract>
-			<DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
-			
-			<Declaration>@property (unsafe_unretained, readonly) WSCProtectedKeychainItem *hostProtectedKeychainItem</Declaration>
-			
-			
-			<Anchor>//api/name/hostProtectedKeychainItem</Anchor>
-            <NodeRef refid="5"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WSCPermittedOperation/setSecACL:</TokenIdentifier>
-			<Abstract type="html">The reference of the SecACL opaque object, which wrapped by WSCPermittedOperation object. (read-only)
-  </Abstract>
-			<DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
-			
-			<Declaration>@property (unsafe_unretained, readonly) SecACLRef secACL</Declaration>
-			
-			
-			<Anchor>//api/name/secACL</Anchor>
-            <NodeRef refid="5"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WSCPermittedOperation/secACL</TokenIdentifier>
-			<Abstract type="html">The reference of the SecACL opaque object, which wrapped by WSCPermittedOperation object. (read-only)
-  </Abstract>
-			<DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
-			
-			<Declaration>@property (unsafe_unretained, readonly) SecACLRef secACL</Declaration>
-			
-			
-			<Anchor>//api/name/secACL</Anchor>
-            <NodeRef refid="5"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WSCPermittedOperation/secACL</TokenIdentifier>
-			<Abstract type="html">The reference of the SecACL opaque object, which wrapped by WSCPermittedOperation object. (read-only)
-  </Abstract>
-			<DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
-			
-			<Declaration>@property (unsafe_unretained, readonly) SecACLRef secACL</Declaration>
-			
-			
-			<Anchor>//api/name/secACL</Anchor>
-            <NodeRef refid="5"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/WSCPermittedOperation/permittedOperationWithSecACLRef:appliesTo:error:</TokenIdentifier>
-			<Abstract type="html">Creates and returns a WSCPermittedOperation object using the given reference to the instance of SecACL opaque type.</Abstract>
-			<DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
-			
-			<Declaration>+ (instancetype)permittedOperationWithSecACLRef:(SecACLRef)_SecACLRef appliesTo:(WSCProtectedKeychainItem *)_ProtectedKeychainItem error:(NSError **)_Error</Declaration>
+			<Declaration>- (WSCKeychain *)createKeychainWithURL:(NSURL *)_URL passphrase:(NSString *)_Passphrase becomesDefault:(BOOL)_WillBecomeDefault error:(NSError **)_Error</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>_SecACLRef</Name>
-					<Abstract type="html">A reference to the instance of SecACL opaque type.
-  </Abstract>
+					<Name>_URL</Name>
+					<Abstract type="html">Specify the URL in which the new keychain should be sotred.
+              The URL in this parameter must not be a file reference URL or an URL other than file scheme
+              This parameter must not be nil.
+                              </Abstract>
 				</Parameter><Parameter>
-					<Name>_ProtectedKeychainItem</Name>
-					<Abstract type="html">The protected keychain item that the permitted operation represented by receiver applying to.
-                                You can get it with hostProtectedKeychainItem read-only property.
-                                </Abstract>
+					<Name>_Passphrase</Name>
+					<Abstract type="html">A NSString object containing the passphrase which is used to protect the new keychain.
+                     This parameter must not be nil.</Abstract>
+				</Parameter><Parameter>
+					<Name>_WillBecomeDefault</Name>
+					<Abstract type="html">A BOOL value representing whether to set the new keychain as default keychain.</Abstract>
+				</Parameter><Parameter>
+					<Name>_Error</Name>
+					<Abstract type="html">On input, a pointer to an error object. 
+                If an error occurs, this pointer is set to an actual error object containing the error information.
+                You may specify nil for this parameter if you don&apos;t want the error information.
+                </Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A WSCKeychain object initialized with above parameters.
+  </Abstract></ReturnValue>
+			<Anchor>//api/name/createKeychainWithURL:passphrase:becomesDefault:error:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCKeychainManager/createKeychainWhosePassphraseWillBeObtainedFromUserWithURL:becomesDefault:error:</TokenIdentifier>
+			<Abstract type="html">Creates and returns a WSCKeychain object using the given URL and interaction prompt.</Abstract>
+			<DeclaredIn>WSCKeychainManager.h</DeclaredIn>
+			
+			<Declaration>- (WSCKeychain *)createKeychainWhosePassphraseWillBeObtainedFromUserWithURL:(NSURL *)_URL becomesDefault:(BOOL)_WillBecomeDefault error:(NSError **)_Error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>_URL</Name>
+					<Abstract type="html">Specify the URL in which the new keychain should be sotred.
+              The URL in this parameter must not be a file reference URL or an URL other than file scheme
+              This parameter must not be nil.
+                       </Abstract>
+				</Parameter><Parameter>
+					<Name>_WillBecomeDefault</Name>
+					<Abstract type="html">A BOOL value representing whether to set the new keychain as default keychain.</Abstract>
+				</Parameter><Parameter>
+					<Name>_Error</Name>
+					<Abstract type="html">On input, a pointer to an error object. 
+                If an error occurs, this pointer is set to an actual error object containing the error information.
+                You may specify nil for this parameter if you don&apos;t want the error information.
+                </Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A WSCKeychain object initialized with above parameters as well as a passphrase, 
+          which is obtained from the passphrase dialog.
+  </Abstract></ReturnValue>
+			<Anchor>//api/name/createKeychainWhosePassphraseWillBeObtainedFromUserWithURL:becomesDefault:error:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCKeychainManager/openExistingKeychainAtURL:error:</TokenIdentifier>
+			<Abstract type="html">Opens an existing keychain from the location specified by a given URL.</Abstract>
+			<DeclaredIn>WSCKeychainManager.h</DeclaredIn>
+			
+			<Declaration>- (WSCKeychain *)openExistingKeychainAtURL:(NSURL *)_URLOfExistingKeychain error:(NSError **)_Error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>_URLOfExistingKeychain</Name>
+					<Abstract type="html">The file URL that identifies the keychain file you want to open.
+                                The URL in this parameter must be a file reference URL.
+                                This parameter must not be nil.</Abstract>
 				</Parameter><Parameter>
 					<Name>_Error</Name>
 					<Abstract type="html">On input, a pointer to an error object.
@@ -263,10 +150,340 @@
                 You may specify nil for this parameter if you don&apos;t want the error information.</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">A WSCPermittedOperation object initialized with the givent reference to the instance of SecACL opaque type.
-          Return nil if _SecACLRef is nil.
+			<ReturnValue><Abstract type="html">A WSCKeychain object represented an existing keychain located at the given URL.
   </Abstract></ReturnValue>
-			<Anchor>//api/name/permittedOperationWithSecACLRef:appliesTo:error:</Anchor>
+			<Anchor>//api/name/openExistingKeychainAtURL:error:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCKeychainManager/deleteKeychain:error:</TokenIdentifier>
+			<Abstract type="html">Deletes the specified keychains from the default keychain search list, and removes the keychain itself if it is a keychain file stored locally.</Abstract>
+			<DeclaredIn>WSCKeychainManager.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/WSCKeychainManager/deleteKeychains:error:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (BOOL)deleteKeychain:(WSCKeychain *)_Keychain error:(NSError **)_Error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>_Keychain</Name>
+					<Abstract type="html">A single keychain object you wish to delete. 
+                   To delete more than one keychain, please use deleteKeychains:error:  method.
+                   Passing nil to this parameter returns an NSError object which encapsulated WSCCommonInvalidParametersError error code.
+                   </Abstract>
+				</Parameter><Parameter>
+					<Name>_Error</Name>
+					<Abstract type="html">On input, a pointer to an error object.
+                If an error occurs, this pointer is set to an actual error object containing the error information.
+                You may specify nil for this parameter if you don&apos;t want the error information.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES if the keychain was deleted successfully or if _Keychain was nil. Returns NO if an error occured. 
+          If the delegate aborts the operation for a keychain, this method returns YES.</Abstract></ReturnValue>
+			<Anchor>//api/name/deleteKeychain:error:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCKeychainManager/deleteKeychains:error:</TokenIdentifier>
+			<Abstract type="html">Deletes one or more keychains specified in an array from the default keychain search list, and removes the keychain itself if it is a file stored locally.</Abstract>
+			<DeclaredIn>WSCKeychainManager.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/WSCKeychainManager/deleteKeychain:error:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (BOOL)deleteKeychains:(NSArray *)_Keychains error:(NSError **)_Error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>_Keychains</Name>
+					<Abstract type="html">An array of keychains you wish to delete. 
+                    To delete keychain one by one, please use deleteKeychain:error: method.
+                    This parameter must NOT be nil, passing nil to this parameter
+                    just returns an NSError object which encapsulated WSCCommonInvalidParametersError error code directly
+                    instead of calling any delegate method in WSCKeychainManagerDelegate delegate protocol.</Abstract>
+				</Parameter><Parameter>
+					<Name>_Error</Name>
+					<Abstract type="html">On input, a pointer to an error object.
+                If an error occurs, this pointer is set to an actual error object containing the error information.
+                You may specify nil for this parameter if you don&apos;t want the error information.
+                    </Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES if the keychain was deleted successfully or if _Keychain was nil. Returns NO if an error occured.
+          If the delegate aborts the operation for a keychain, this method returns YES.</Abstract></ReturnValue>
+			<Anchor>//api/name/deleteKeychains:error:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCKeychainManager/setDefaultKeychain:error:</TokenIdentifier>
+			<Abstract type="html">Sets the specified keychain as default keychain.
+  
+  In most cases, your application should not need to set the default keychain, 
+  because this is a choice normally made by the user. You may call this method to change where a
+  passphrase or other keychain items are added, but since this is a user choice, 
+  you should set the default keychain back to the user specified keychain when you are done.
+  </Abstract>
+			<DeclaredIn>WSCKeychainManager.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/WSCKeychainManager/currentDefaultKeychain:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (WSCKeychain *)setDefaultKeychain:(WSCKeychain *)_Keychain error:(NSError **)_Error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>_Keychain</Name>
+					<Abstract type="html">The keychain you wish to make the default.</Abstract>
+				</Parameter><Parameter>
+					<Name>_Error</Name>
+					<Abstract type="html">On input, a pointer to an error object.
+                If an error occurs, this pointer is set to an actual error object containing the error information.
+                You may specify nil for this parameter if you don&apos;t want the error information.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The older default keychain if the specified keychain was made default successfully.
+          If there is not an older default keychain (perhaps the older default keychain has been deleted, moved or renamed), returns nil.
+          Returns nil if an error occured.
+          If the delegate aborts the operation for the keychain, this method returns nil.</Abstract></ReturnValue>
+			<Anchor>//api/name/setDefaultKeychain:error:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCKeychainManager/currentDefaultKeychain:</TokenIdentifier>
+			<Abstract type="html">Retrieves a WSCKeychain object represented the current default keychain.</Abstract>
+			<DeclaredIn>WSCKeychainManager.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/WSCKeychainManager/setDefaultKeychain:error:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (WSCKeychain *)currentDefaultKeychain:(NSError **)_Error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>_Error</Name>
+					<Abstract type="html">On input, a pointer to an error object.
+                If an error occurs, this pointer is set to an actual error object containing the error information.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A WSCKeychain object represented the current default keychain.
+  </Abstract></ReturnValue>
+			<Anchor>//api/name/currentDefaultKeychain:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCKeychainManager/lockKeychain:error:</TokenIdentifier>
+			<Abstract type="html">Lock the specified keychain.</Abstract>
+			<DeclaredIn>WSCKeychainManager.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)lockKeychain:(WSCKeychain *)_Keychain error:(NSError **)_Error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>_Keychain</Name>
+					<Abstract type="html">The keychain you wish to lock. 
+                   Passing nil to this parameter returns an NSError object which encapsulated WSCCommonInvalidParametersError error code.
+                   And passing an invalid keychain to this parameter returns an NSError object which encapsulated WSCKeychainIsInvalidError error code.
+    </Abstract>
+				</Parameter><Parameter>
+					<Name>_Error</Name>
+					<Abstract type="html">On input, a pointer to an error object.
+                If an error occurs, this pointer is set to an actual error object containing the error information.
+                </Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES if the specified keychain was locked successfully; otherwise, NO.
+  </Abstract></ReturnValue>
+			<Anchor>//api/name/lockKeychain:error:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCKeychainManager/lockAllKeychains:</TokenIdentifier>
+			<Abstract type="html">Locks all keychains lying in the current default search list belonging to the current user.</Abstract>
+			<DeclaredIn>WSCKeychainManager.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)lockAllKeychains:(NSError **)_Error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>_Error</Name>
+					<Abstract type="html">On input, a pointer to an error object.
+                If an error occurs, this pointer is set to an actual error object containing the error information.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES if all the keychains were locked successfully; otherwise, NO.
+  </Abstract></ReturnValue>
+			<Anchor>//api/name/lockAllKeychains:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCKeychainManager/unlockKeychain:withPassphrase:error:</TokenIdentifier>
+			<Abstract type="html">Unlocks a keychain with an explicitly provided passphrase.</Abstract>
+			<DeclaredIn>WSCKeychainManager.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)unlockKeychain:(WSCKeychain *)_Keychain withPassphrase:(NSString *)_Passphrase error:(NSError **)_Error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>_Keychain</Name>
+					<Abstract type="html">The keychain you wish to unlock.
+                   Passing nil to this parameter returns an NSError object which encapsulated WSCCommonInvalidParametersError error code.
+                   And passing an invalid keychain to this parameter returns an NSError object which encapsulated WSCKeychainIsInvalidError error code.</Abstract>
+				</Parameter><Parameter>
+					<Name>_Passphrase</Name>
+					<Abstract type="html">A string containing the passphrase for the specified keychain.
+                   This parameter must NOT be nil.</Abstract>
+				</Parameter><Parameter>
+					<Name>_Error</Name>
+					<Abstract type="html">On input, a pointer to an error object.
+                If an error occurs, this pointer is set to an actual error object containing the error information.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES if the specified keychain was unlocked successfully; otherwise, NO.
+  </Abstract></ReturnValue>
+			<Anchor>//api/name/unlockKeychain:withPassphrase:error:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCKeychainManager/unlockKeychainWithUserInteraction:error:</TokenIdentifier>
+			<Abstract type="html">Unlocks a keychain with the user interaction which is used to retrieve passphrase from the user.</Abstract>
+			<DeclaredIn>WSCKeychainManager.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)unlockKeychainWithUserInteraction:(WSCKeychain *)_Keychain error:(NSError **)_Error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>_Keychain</Name>
+					<Abstract type="html">The keychain you wish to unlock.
+                   Passing nil to this parameter returns an NSError object which encapsulated WSCCommonInvalidParametersError error code.
+                   And passing an invalid keychain to this parameter returns an NSError object which encapsulated WSCKeychainIsInvalidError error code.
+                   </Abstract>
+				</Parameter><Parameter>
+					<Name>_Error</Name>
+					<Abstract type="html">On input, a pointer to an error object.
+                If an error occurs, this pointer is set to an actual error object containing the error information.
+                </Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES if the specified keychain was unlocked successfully; otherwise, NO.
+  </Abstract></ReturnValue>
+			<Anchor>//api/name/unlockKeychainWithUserInteraction:error:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCKeychainManager/keychainSearchList</TokenIdentifier>
+			<Abstract type="html">Retrieves a keychain search list.</Abstract>
+			<DeclaredIn>WSCKeychainManager.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/WSCKeychainManager/setKeychainSearchList:error:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (NSSet *)keychainSearchList</Declaration>
+			
+			<ReturnValue><Abstract type="html">The keychain search list for current user. 
+          Returns nil if an error occurs.
+          Returns an empty set if the current keychain search list is empty.
+  </Abstract></ReturnValue>
+			<Anchor>//api/name/keychainSearchList</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCKeychainManager/setKeychainSearchList:error:</TokenIdentifier>
+			<Abstract type="html">Specifies the list of keychains to use in the default keychain search list.</Abstract>
+			<DeclaredIn>WSCKeychainManager.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/WSCKeychainManager/keychainSearchList</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (NSSet *)setKeychainSearchList:(NSSet *)_SearchList error:(NSError **)_Error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>_SearchList</Name>
+					<Abstract type="html">A set of keychain objects (of class WSCKeychain specifying the list of keychains to use in the new default keychain search list.
+                     Passing an empty set clears the search list.
+                     This parameter must NOT be nil.</Abstract>
+				</Parameter><Parameter>
+					<Name>_Error</Name>
+					<Abstract type="html">On input, a pointer to an error object.
+                If an error occurs, this pointer is set to an actual error object containing the error information.
+                    </Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The older default keychain search list if the current keychain search list was updated successfully.
+          Returns nil if an error occured.
+          If the delegate aborts the operation for the keychain, this method returns nil.
+  </Abstract></ReturnValue>
+			<Anchor>//api/name/setKeychainSearchList:error:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCKeychainManager/addKeychainToDefaultSearchList:error:</TokenIdentifier>
+			<Abstract type="html">Addes the specified keychain to the current default search list.
+  </Abstract>
+			<DeclaredIn>WSCKeychainManager.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)addKeychainToDefaultSearchList:(WSCKeychain *)_Keychain error:(NSError **)_Error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>_Keychain</Name>
+					<Abstract type="html">The keychain you wish to add to default search list.
+                   Passing nil to this parameter returns an NSError object which encapsulated WSCCommonInvalidParametersError error code.
+                   And passing an invalid keychain to this parameter returns an NSError object which encapsulated WSCKeychainIsInvalidError error code.
+                   </Abstract>
+				</Parameter><Parameter>
+					<Name>_Error</Name>
+					<Abstract type="html">On input, a pointer to an error object.
+                If an error occurs, this pointer is set to an actual error object containing the error information.
+                   </Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES if the specified keychain was added to current default search list successfully;
+           otherwise, NO.
+  </Abstract></ReturnValue>
+			<Anchor>//api/name/addKeychainToDefaultSearchList:error:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCKeychainManager/removeKeychainFromDefaultSearchList:error:</TokenIdentifier>
+			<Abstract type="html">Removes the specified keychain from the current default search list.
+  </Abstract>
+			<DeclaredIn>WSCKeychainManager.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)removeKeychainFromDefaultSearchList:(WSCKeychain *)_Keychain error:(NSError **)_Error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>_Keychain</Name>
+					<Abstract type="html">The keychain you wish to remvoe from search list.
+                   Passing nil to this parameter returns an NSError object which encapsulated WSCCommonInvalidParametersError error code.
+                   And passing an invalid keychain to this parameter returns an NSError object which encapsulated WSCKeychainIsInvalidError error code.
+                   </Abstract>
+				</Parameter><Parameter>
+					<Name>_Error</Name>
+					<Abstract type="html">On input, a pointer to an error object.
+                If an error occurs, this pointer is set to an actual error object containing the error information.
+                   </Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES if the specified keychain was removed from current default search list successfully; 
+           otherwise, NO.
+  </Abstract></ReturnValue>
+			<Anchor>//api/name/removeKeychainFromDefaultSearchList:error:</Anchor>
             <NodeRef refid="5"/>
 		</Token>
 		

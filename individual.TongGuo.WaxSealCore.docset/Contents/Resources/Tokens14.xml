@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/WSCPermittedOperationTag.html">
+	<File path="Constants/WSCKeyAlgorithmType.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/WSCPermittedOperationTag</TokenIdentifier>
-			<Abstract type="html">Defines constants that specify operations that can be done with that protected item,
-    such as decrypting, encrypting, sign or authenticating.
+			<TokenIdentifier>//apple_ref/c/tdef/WSCKeyAlgorithmType</TokenIdentifier>
+			<Abstract type="html">Defines constants that specify algorithm that was used that key.
   </Abstract>
-			<DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
+			<DeclaredIn>WSCKey.h</DeclaredIn>
             
 			
 			<NodeRef refid="14"/>
@@ -16,156 +15,821 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WSCPermittedOperationTagLogin</TokenIdentifier>
-            <Abstract type="html">Use for a CSP (smart card) login.</Abstract>
-            <Declaration>WSCPermittedOperationTagLogin</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/WSCKeyAlgorithmNone</TokenIdentifier>
+            <Abstract type="html">No Algorithm.</Abstract>
+            <Declaration>WSCKeyAlgorithmNone</Declaration>
             
-            <DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
-            
-            <NodeRef refid="14"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WSCPermittedOperationTagGenerateKey</TokenIdentifier>
-            <Abstract type="html">Use for generating a key.</Abstract>
-            <Declaration>WSCPermittedOperationTagGenerateKey</Declaration>
-            
-            <DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
+            <DeclaredIn>WSCKey.h</DeclaredIn>
             
             <NodeRef refid="14"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WSCPermittedOperationTagDelete</TokenIdentifier>
-            <Abstract type="html">Use for deleting this protected keychain item.</Abstract>
-            <Declaration>WSCPermittedOperationTagDelete</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/WSCKeyAlgorithmCustom</TokenIdentifier>
+            <Abstract type="html">Custom Algorithm.</Abstract>
+            <Declaration>WSCKeyAlgorithmCustom</Declaration>
             
-            <DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
-            
-            <NodeRef refid="14"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WSCPermittedOperationTagEncrypt</TokenIdentifier>
-            <Abstract type="html">Use for encrypting data.</Abstract>
-            <Declaration>WSCPermittedOperationTagEncrypt</Declaration>
-            
-            <DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
+            <DeclaredIn>WSCKey.h</DeclaredIn>
             
             <NodeRef refid="14"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WSCPermittedOperationTagDecrypt</TokenIdentifier>
-            <Abstract type="html">Use for decrypting data.</Abstract>
-            <Declaration>WSCPermittedOperationTagDecrypt</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/WSCKeyAlgorithmDH</TokenIdentifier>
+            <Abstract type="html">Diffie–Hellman key exchange algorithm.</Abstract>
+            <Declaration>WSCKeyAlgorithmDH</Declaration>
             
-            <DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
-            
-            <NodeRef refid="14"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WSCPermittedOperationTagExportEncryptedKey</TokenIdentifier>
-            <Abstract type="html">Use for exporting an encrypted key.
-This tag is checked on the key being exported;
-in addition, the WSCPermittedOperationTagEncrypt tag is checked for any key used in the encrypting operation.</Abstract>
-            <Declaration>WSCPermittedOperationTagExportEncryptedKey</Declaration>
-            
-            <DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
+            <DeclaredIn>WSCKey.h</DeclaredIn>
             
             <NodeRef refid="14"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WSCPermittedOperationTagExportUnencryptedKey</TokenIdentifier>
-            <Abstract type="html">Use for exporting an unencrypted key.</Abstract>
-            <Declaration>WSCPermittedOperationTagExportUnencryptedKey</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/WSCKeyAlgorithmPH</TokenIdentifier>
+            <Abstract type="html">Pohlig-Hellman key exchange algorithm.</Abstract>
+            <Declaration>WSCKeyAlgorithmPH</Declaration>
             
-            <DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
-            
-            <NodeRef refid="14"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WSCPermittedOperationTagImportEncryptedKey</TokenIdentifier>
-            <Abstract type="html">Import an encrypted key.
-This tag is checked on the key being imported;
-in addition, the WSCPermittedOperationTagDecrypt tag is checked for any key used in the decrypting operation.</Abstract>
-            <Declaration>WSCPermittedOperationTagImportEncryptedKey</Declaration>
-            
-            <DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
+            <DeclaredIn>WSCKey.h</DeclaredIn>
             
             <NodeRef refid="14"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WSCPermittedOperationTagImportUnencryptedKey</TokenIdentifier>
-            <Abstract type="html">Use for importing an unencrypted key.</Abstract>
-            <Declaration>WSCPermittedOperationTagImportUnencryptedKey</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/WSCKeyAlgorithmKEA</TokenIdentifier>
+            <Abstract type="html">Key Exchange algorithm.</Abstract>
+            <Declaration>WSCKeyAlgorithmKEA</Declaration>
             
-            <DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
-            
-            <NodeRef refid="14"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WSCPermittedOperationTagSign</TokenIdentifier>
-            <Abstract type="html">Use for digitally signing data.</Abstract>
-            <Declaration>WSCPermittedOperationTagSign</Declaration>
-            
-            <DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
+            <DeclaredIn>WSCKey.h</DeclaredIn>
             
             <NodeRef refid="14"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WSCPermittedOperationTagCreateOrVerifyMessageAuthCode</TokenIdentifier>
-            <Abstract type="html">Use for creating or verifying a message authentication code.</Abstract>
-            <Declaration>WSCPermittedOperationTagCreateOrVerifyMessageAuthCode</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/WSCKeyAlgorithmMD2</TokenIdentifier>
+            <Abstract type="html">MD2hash algorithm.</Abstract>
+            <Declaration>WSCKeyAlgorithmMD2</Declaration>
             
-            <DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
-            
-            <NodeRef refid="14"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WSCPermittedOperationTagDerive</TokenIdentifier>
-            <Abstract type="html">Use for deriving a new key from another key.</Abstract>
-            <Declaration>WSCPermittedOperationTagDerive</Declaration>
-            
-            <DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
+            <DeclaredIn>WSCKey.h</DeclaredIn>
             
             <NodeRef refid="14"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WSCPermittedOperationTagChangePermittedOperationItself</TokenIdentifier>
-            <Abstract type="html">Use for changing the permitted operation itself.</Abstract>
-            <Declaration>WSCPermittedOperationTagChangePermittedOperationItself</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/WSCKeyAlgorithmMD4</TokenIdentifier>
+            <Abstract type="html">MD4hash algorithm.</Abstract>
+            <Declaration>WSCKeyAlgorithmMD4</Declaration>
             
-            <DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
-            
-            <NodeRef refid="14"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WSCPermittedOperationTagChangeOwner</TokenIdentifier>
-            <Abstract type="html">For internal system use only.
-Use the WSCPermittedOperationTagChangePermittedOperationItself tag for changes to owner permitted operation entries.</Abstract>
-            <Declaration>WSCPermittedOperationTagChangeOwner</Declaration>
-            
-            <DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
+            <DeclaredIn>WSCKey.h</DeclaredIn>
             
             <NodeRef refid="14"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WSCPermittedOperationTagAnyOperation</TokenIdentifier>
-            <Abstract type="html">No restrictions. This permitted operation entry applies to all operations available to the caller.</Abstract>
-            <Declaration>WSCPermittedOperationTagAnyOperation</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/WSCKeyAlgorithmMD5</TokenIdentifier>
+            <Abstract type="html">MD5hash algorithm.</Abstract>
+            <Declaration>WSCKeyAlgorithmMD5</Declaration>
             
-            <DeclaredIn>WSCPermittedOperation.h</DeclaredIn>
+            <DeclaredIn>WSCKey.h</DeclaredIn>
+            
+            <NodeRef refid="14"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCKeyAlgorithmSHA1</TokenIdentifier>
+            <Abstract type="html">Secure Hash algorithm.</Abstract>
+            <Declaration>WSCKeyAlgorithmSHA1</Declaration>
+            
+            <DeclaredIn>WSCKey.h</DeclaredIn>
+            
+            <NodeRef refid="14"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCKeyAlgorithmNHASH</TokenIdentifier>
+            <Abstract type="html">N-Hash algorithm.</Abstract>
+            <Declaration>WSCKeyAlgorithmNHASH</Declaration>
+            
+            <DeclaredIn>WSCKey.h</DeclaredIn>
+            
+            <NodeRef refid="14"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCKeyAlgorithmHAVAL</TokenIdentifier>
+            <Abstract type="html">HAVAL hash algorithm (MD5 variant).</Abstract>
+            <Declaration>WSCKeyAlgorithmHAVAL</Declaration>
+            
+            <DeclaredIn>WSCKey.h</DeclaredIn>
+            
+            <NodeRef refid="14"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCKeyAlgorithmRIPEMD</TokenIdentifier>
+            <Abstract type="html">RIPE-MD hash algorithm (MD4 variant - developed for the European Community&apos;s RIPE project).</Abstract>
+            <Declaration>WSCKeyAlgorithmRIPEMD</Declaration>
+            
+            <DeclaredIn>WSCKey.h</DeclaredIn>
+            
+            <NodeRef refid="14"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCKeyAlgorithmIBCHASH</TokenIdentifier>
+            <Abstract type="html">IBC-Hash (keyed hash algorithm or MAC).</Abstract>
+            <Declaration>WSCKeyAlgorithmIBCHASH</Declaration>
+            
+            <DeclaredIn>WSCKey.h</DeclaredIn>
+            
+            <NodeRef refid="14"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCKeyAlgorithmRIPEMAC</TokenIdentifier>
+            <Abstract type="html">RIPE-MAC.</Abstract>
+            <Declaration>WSCKeyAlgorithmRIPEMAC</Declaration>
+            
+            <DeclaredIn>WSCKey.h</DeclaredIn>
+            
+            <NodeRef refid="14"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCKeyAlgorithmDES</TokenIdentifier>
+            <Abstract type="html">Data Encryption Standard block cipher.</Abstract>
+            <Declaration>WSCKeyAlgorithmDES</Declaration>
+            
+            <DeclaredIn>WSCKey.h</DeclaredIn>
+            
+            <NodeRef refid="14"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCKeyAlgorithmDESX</TokenIdentifier>
+            <Abstract type="html">DESX block cipher (DES variant from RSA).</Abstract>
+            <Declaration>WSCKeyAlgorithmDESX</Declaration>
+            
+            <DeclaredIn>WSCKey.h</DeclaredIn>
+            
+            <NodeRef refid="14"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCKeyAlgorithmRDES</TokenIdentifier>
+            <Abstract type="html">RDES block cipher (DES variant).</Abstract>
+            <Declaration>WSCKeyAlgorithmRDES</Declaration>
+            
+            <DeclaredIn>WSCKey.h</DeclaredIn>
+            
+            <NodeRef refid="14"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCKeyAlgorithm3DESWith3Keys</TokenIdentifier>
+            <Abstract type="html">Triple-DES block cipher (with 3 keys).</Abstract>
+            <Declaration>WSCKeyAlgorithm3DESWith3Keys</Declaration>
+            
+            <DeclaredIn>WSCKey.h</DeclaredIn>
+            
+            <NodeRef refid="14"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCKeyAlgorithm3DESWith2Keys</TokenIdentifier>
+            <Abstract type="html">Triple-DES block cipher (with 2 keys).</Abstract>
+            <Declaration>WSCKeyAlgorithm3DESWith2Keys</Declaration>
+            
+            <DeclaredIn>WSCKey.h</DeclaredIn>
+            
+            <NodeRef refid="14"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCKeyAlgorithm3DESWith1Key</TokenIdentifier>
+            <Abstract type="html">Triple-DES block cipher (with 1 key) Lucifer block cipher.</Abstract>
+            <Declaration>WSCKeyAlgorithm3DESWith1Key</Declaration>
+            
+            <DeclaredIn>WSCKey.h</DeclaredIn>
+            
+            <NodeRef refid="14"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCKeyAlgorithmIDEA</TokenIdentifier>
+            <Abstract type="html">International Data Encryption Algorithm (IDEA) block cipher.</Abstract>
+            <Declaration>WSCKeyAlgorithmIDEA</Declaration>
+            
+            <DeclaredIn>WSCKey.h</DeclaredIn>
+            
+            <NodeRef refid="14"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCKeyAlgorithmRC2</TokenIdentifier>
+            <Abstract type="html">RC2 block cipher.</Abstract>
+            <Declaration>WSCKeyAlgorithmRC2</Declaration>
+            
+            <DeclaredIn>WSCKey.h</DeclaredIn>
+            
+            <NodeRef refid="14"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCKeyAlgorithmRC5</TokenIdentifier>
+            <Abstract type="html">RC5 block cipher.</Abstract>
+            <Declaration>WSCKeyAlgorithmRC5</Declaration>
+            
+            <DeclaredIn>WSCKey.h</DeclaredIn>
+            
+            <NodeRef refid="14"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCKeyAlgorithmRC4</TokenIdentifier>
+            <Abstract type="html">RC4 stream cipher.</Abstract>
+            <Declaration>WSCKeyAlgorithmRC4</Declaration>
+            
+            <DeclaredIn>WSCKey.h</DeclaredIn>
+            
+            <NodeRef refid="14"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCKeyAlgorithmSEAL</TokenIdentifier>
+            <Abstract type="html">SEAL stream cipher.</Abstract>
+            <Declaration>WSCKeyAlgorithmSEAL</Declaration>
+            
+            <DeclaredIn>WSCKey.h</DeclaredIn>
+            
+            <NodeRef refid="14"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCKeyAlgorithmCAST</TokenIdentifier>
+            <Abstract type="html">CAST block cipher.</Abstract>
+            <Declaration>WSCKeyAlgorithmCAST</Declaration>
+            
+            <DeclaredIn>WSCKey.h</DeclaredIn>
+            
+            <NodeRef refid="14"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCKeyAlgorithmBlowfish</TokenIdentifier>
+            <Abstract type="html">Blowfish block cipher.</Abstract>
+            <Declaration>WSCKeyAlgorithmBlowfish</Declaration>
+            
+            <DeclaredIn>WSCKey.h</DeclaredIn>
+            
+            <NodeRef refid="14"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCKeyAlgorithmSkipjack</TokenIdentifier>
+            <Abstract type="html">Skipjack block cipher.</Abstract>
+            <Declaration>WSCKeyAlgorithmSkipjack</Declaration>
+            
+            <DeclaredIn>WSCKey.h</DeclaredIn>
+            
+            <NodeRef refid="14"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCKeyAlgorithmLucifer</TokenIdentifier>
+            <Abstract type="html">Lucifer block cipher.</Abstract>
+            <Declaration>WSCKeyAlgorithmLucifer</Declaration>
+            
+            <DeclaredIn>WSCKey.h</DeclaredIn>
+            
+            <NodeRef refid="14"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCKeyAlgorithmMadryga</TokenIdentifier>
+            <Abstract type="html">Madryga block cipher.</Abstract>
+            <Declaration>WSCKeyAlgorithmMadryga</Declaration>
+            
+            <DeclaredIn>WSCKey.h</DeclaredIn>
+            
+            <NodeRef refid="14"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCKeyAlgorithmFEAL</TokenIdentifier>
+            <Abstract type="html">FEAL (the Fast data Encipherment ALgorithm) block cipher.</Abstract>
+            <Declaration>WSCKeyAlgorithmFEAL</Declaration>
+            
+            <DeclaredIn>WSCKey.h</DeclaredIn>
+            
+            <NodeRef refid="14"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCKeyAlgorithmREDOC</TokenIdentifier>
+            <Abstract type="html">REDOC II block cipher.</Abstract>
+            <Declaration>WSCKeyAlgorithmREDOC</Declaration>
+            
+            <DeclaredIn>WSCKey.h</DeclaredIn>
+            
+            <NodeRef refid="14"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCKeyAlgorithmREDOC3</TokenIdentifier>
+            <Abstract type="html">REDOC III block cipher.</Abstract>
+            <Declaration>WSCKeyAlgorithmREDOC3</Declaration>
+            
+            <DeclaredIn>WSCKey.h</DeclaredIn>
+            
+            <NodeRef refid="14"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCKeyAlgorithmLOKI</TokenIdentifier>
+            <Abstract type="html">LOKI block cipher.</Abstract>
+            <Declaration>WSCKeyAlgorithmLOKI</Declaration>
+            
+            <DeclaredIn>WSCKey.h</DeclaredIn>
+            
+            <NodeRef refid="14"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCKeyAlgorithmKhufu</TokenIdentifier>
+            <Abstract type="html">Khufu block cipher.</Abstract>
+            <Declaration>WSCKeyAlgorithmKhufu</Declaration>
+            
+            <DeclaredIn>WSCKey.h</DeclaredIn>
+            
+            <NodeRef refid="14"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCKeyAlgorithmKhafre</TokenIdentifier>
+            <Abstract type="html">Khafre block cipher.</Abstract>
+            <Declaration>WSCKeyAlgorithmKhafre</Declaration>
+            
+            <DeclaredIn>WSCKey.h</DeclaredIn>
+            
+            <NodeRef refid="14"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCKeyAlgorithmMMB</TokenIdentifier>
+            <Abstract type="html">MMB block cipher (IDEA variant).</Abstract>
+            <Declaration>WSCKeyAlgorithmMMB</Declaration>
+            
+            <DeclaredIn>WSCKey.h</DeclaredIn>
+            
+            <NodeRef refid="14"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCKeyAlgorithmGOST</TokenIdentifier>
+            <Abstract type="html">GOST block cipher.</Abstract>
+            <Declaration>WSCKeyAlgorithmGOST</Declaration>
+            
+            <DeclaredIn>WSCKey.h</DeclaredIn>
+            
+            <NodeRef refid="14"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCKeyAlgorithmSAFER</TokenIdentifier>
+            <Abstract type="html">SAFER (Secure And Fast Encryption Routine) K-40, K-64, K-128 block cipher</Abstract>
+            <Declaration>WSCKeyAlgorithmSAFER</Declaration>
+            
+            <DeclaredIn>WSCKey.h</DeclaredIn>
+            
+            <NodeRef refid="14"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCKeyAlgorithmCRAB</TokenIdentifier>
+            <Abstract type="html">CRAB block cipher.</Abstract>
+            <Declaration>WSCKeyAlgorithmCRAB</Declaration>
+            
+            <DeclaredIn>WSCKey.h</DeclaredIn>
+            
+            <NodeRef refid="14"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCKeyAlgorithmRSA</TokenIdentifier>
+            <Abstract type="html">RSA public key cipher.</Abstract>
+            <Declaration>WSCKeyAlgorithmRSA</Declaration>
+            
+            <DeclaredIn>WSCKey.h</DeclaredIn>
+            
+            <NodeRef refid="14"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCKeyAlgorithmDSA</TokenIdentifier>
+            <Abstract type="html">DSA (Digital Signature algorithm).</Abstract>
+            <Declaration>WSCKeyAlgorithmDSA</Declaration>
+            
+            <DeclaredIn>WSCKey.h</DeclaredIn>
+            
+            <NodeRef refid="14"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCKeyAlgorithmMD5WithRSA</TokenIdentifier>
+            <Abstract type="html">MD5/RSA signature algorithm.</Abstract>
+            <Declaration>WSCKeyAlgorithmMD5WithRSA</Declaration>
+            
+            <DeclaredIn>WSCKey.h</DeclaredIn>
+            
+            <NodeRef refid="14"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCKeyAlgorithmMD2WithRSA</TokenIdentifier>
+            <Abstract type="html">MD2/RSA signature algorithm.</Abstract>
+            <Declaration>WSCKeyAlgorithmMD2WithRSA</Declaration>
+            
+            <DeclaredIn>WSCKey.h</DeclaredIn>
+            
+            <NodeRef refid="14"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCKeyAlgorithmElGamal</TokenIdentifier>
+            <Abstract type="html">ElGamal signature algorithm.</Abstract>
+            <Declaration>WSCKeyAlgorithmElGamal</Declaration>
+            
+            <DeclaredIn>WSCKey.h</DeclaredIn>
+            
+            <NodeRef refid="14"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCKeyAlgorithmMD2Random</TokenIdentifier>
+            <Abstract type="html">MD2-based random numbers.</Abstract>
+            <Declaration>WSCKeyAlgorithmMD2Random</Declaration>
+            
+            <DeclaredIn>WSCKey.h</DeclaredIn>
+            
+            <NodeRef refid="14"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCKeyAlgorithmMD5Random</TokenIdentifier>
+            <Abstract type="html">MD5-based random numbers.</Abstract>
+            <Declaration>WSCKeyAlgorithmMD5Random</Declaration>
+            
+            <DeclaredIn>WSCKey.h</DeclaredIn>
+            
+            <NodeRef refid="14"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCKeyAlgorithmSHARandom</TokenIdentifier>
+            <Abstract type="html">SHA-based random numbers.</Abstract>
+            <Declaration>WSCKeyAlgorithmSHARandom</Declaration>
+            
+            <DeclaredIn>WSCKey.h</DeclaredIn>
+            
+            <NodeRef refid="14"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCKeyAlgorithmDESRandom</TokenIdentifier>
+            <Abstract type="html">DES-based random numbers.</Abstract>
+            <Declaration>WSCKeyAlgorithmDESRandom</Declaration>
+            
+            <DeclaredIn>WSCKey.h</DeclaredIn>
+            
+            <NodeRef refid="14"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCKeyAlgorithmSHA1WithRSA</TokenIdentifier>
+            <Abstract type="html">SHA-1/RSA signature algorithm.</Abstract>
+            <Declaration>WSCKeyAlgorithmSHA1WithRSA</Declaration>
+            
+            <DeclaredIn>WSCKey.h</DeclaredIn>
+            
+            <NodeRef refid="14"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCKeyAlgorithmCDMF</TokenIdentifier>
+            <Abstract type="html">CDMF (Commercial Data Masking Facility) block cipher.</Abstract>
+            <Declaration>WSCKeyAlgorithmCDMF</Declaration>
+            
+            <DeclaredIn>WSCKey.h</DeclaredIn>
+            
+            <NodeRef refid="14"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCKeyAlgorithmCAST3</TokenIdentifier>
+            <Abstract type="html">Entrust&apos;s CAST3 block cipher.</Abstract>
+            <Declaration>WSCKeyAlgorithmCAST3</Declaration>
+            
+            <DeclaredIn>WSCKey.h</DeclaredIn>
+            
+            <NodeRef refid="14"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCKeyAlgorithmCAST5</TokenIdentifier>
+            <Abstract type="html">Entrust&apos;s CAST5 block cipher.</Abstract>
+            <Declaration>WSCKeyAlgorithmCAST5</Declaration>
+            
+            <DeclaredIn>WSCKey.h</DeclaredIn>
+            
+            <NodeRef refid="14"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCKeyAlgorithmGenericSecret</TokenIdentifier>
+            <Abstract type="html">Generic secret operations.</Abstract>
+            <Declaration>WSCKeyAlgorithmGenericSecret</Declaration>
+            
+            <DeclaredIn>WSCKey.h</DeclaredIn>
+            
+            <NodeRef refid="14"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCKeyAlgorithmConcatBaseAndKey</TokenIdentifier>
+            <Abstract type="html">Concatenate two keys, base key first.</Abstract>
+            <Declaration>WSCKeyAlgorithmConcatBaseAndKey</Declaration>
+            
+            <DeclaredIn>WSCKey.h</DeclaredIn>
+            
+            <NodeRef refid="14"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCKeyAlgorithmConcatKeyAndBase</TokenIdentifier>
+            <Abstract type="html">Concatenate two keys, base key last.</Abstract>
+            <Declaration>WSCKeyAlgorithmConcatKeyAndBase</Declaration>
+            
+            <DeclaredIn>WSCKey.h</DeclaredIn>
+            
+            <NodeRef refid="14"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCKeyAlgorithmConcatBaseAndData</TokenIdentifier>
+            <Abstract type="html">Concatenate base key and random data, key first.</Abstract>
+            <Declaration>WSCKeyAlgorithmConcatBaseAndData</Declaration>
+            
+            <DeclaredIn>WSCKey.h</DeclaredIn>
+            
+            <NodeRef refid="14"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCKeyAlgorithmConcatDataAndBase</TokenIdentifier>
+            <Abstract type="html">Concatenate base key and data, data first.</Abstract>
+            <Declaration>WSCKeyAlgorithmConcatDataAndBase</Declaration>
+            
+            <DeclaredIn>WSCKey.h</DeclaredIn>
+            
+            <NodeRef refid="14"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCKeyAlgorithmXORBaseAndData</TokenIdentifier>
+            <Abstract type="html">XOR a byte string with the base key.</Abstract>
+            <Declaration>WSCKeyAlgorithmXORBaseAndData</Declaration>
+            
+            <DeclaredIn>WSCKey.h</DeclaredIn>
+            
+            <NodeRef refid="14"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCKeyAlgorithmExtractFromKey</TokenIdentifier>
+            <Abstract type="html">Extract a key from base key, starting at arbitrary bit position.</Abstract>
+            <Declaration>WSCKeyAlgorithmExtractFromKey</Declaration>
+            
+            <DeclaredIn>WSCKey.h</DeclaredIn>
+            
+            <NodeRef refid="14"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCKeyAlgorithmSSL3PreMasterGen</TokenIdentifier>
+            <Abstract type="html">Generate a 48-byte SSL 3 premaster key.</Abstract>
+            <Declaration>WSCKeyAlgorithmSSL3PreMasterGen</Declaration>
+            
+            <DeclaredIn>WSCKey.h</DeclaredIn>
+            
+            <NodeRef refid="14"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCKeyAlgorithmSSL3MasterDerive</TokenIdentifier>
+            <Abstract type="html">Derive an SSL 3 key from a premaster key.</Abstract>
+            <Declaration>WSCKeyAlgorithmSSL3MasterDerive</Declaration>
+            
+            <DeclaredIn>WSCKey.h</DeclaredIn>
+            
+            <NodeRef refid="14"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCKeyAlgorithmSSL3KeyAndMacDerive</TokenIdentifier>
+            <Abstract type="html">Derive the keys and MACing keys for the SSL cipher suite.</Abstract>
+            <Declaration>WSCKeyAlgorithmSSL3KeyAndMacDerive</Declaration>
+            
+            <DeclaredIn>WSCKey.h</DeclaredIn>
+            
+            <NodeRef refid="14"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCKeyAlgorithmSSL3MD5_MAC</TokenIdentifier>
+            <Abstract type="html">Performs SSL 3 MD5 MACing.</Abstract>
+            <Declaration>WSCKeyAlgorithmSSL3MD5_MAC</Declaration>
+            
+            <DeclaredIn>WSCKey.h</DeclaredIn>
+            
+            <NodeRef refid="14"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCKeyAlgorithmSSL3SHA1_MAC</TokenIdentifier>
+            <Abstract type="html">Performs SSL 3 SHA-1 MACing.</Abstract>
+            <Declaration>WSCKeyAlgorithmSSL3SHA1_MAC</Declaration>
+            
+            <DeclaredIn>WSCKey.h</DeclaredIn>
+            
+            <NodeRef refid="14"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCKeyAlgorithmPKCS5_PBKDF1_MD5</TokenIdentifier>
+            <Abstract type="html">PKCS5 PBKDF1 MD5 algorithm.</Abstract>
+            <Declaration>WSCKeyAlgorithmPKCS5_PBKDF1_MD5</Declaration>
+            
+            <DeclaredIn>WSCKey.h</DeclaredIn>
+            
+            <NodeRef refid="14"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCKeyAlgorithmPKCS5_PBKDF1_MD2</TokenIdentifier>
+            <Abstract type="html">PKCS5 PBKDF1 MD2 algorithm.</Abstract>
+            <Declaration>WSCKeyAlgorithmPKCS5_PBKDF1_MD2</Declaration>
+            
+            <DeclaredIn>WSCKey.h</DeclaredIn>
+            
+            <NodeRef refid="14"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCKeyAlgorithmPKCS5_PBKDF1_SHA1</TokenIdentifier>
+            <Abstract type="html">PKCS5 PBKDF1 SHA1 algorithm.</Abstract>
+            <Declaration>WSCKeyAlgorithmPKCS5_PBKDF1_SHA1</Declaration>
+            
+            <DeclaredIn>WSCKey.h</DeclaredIn>
+            
+            <NodeRef refid="14"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCKeyAlgorithmWrapLynks</TokenIdentifier>
+            <Abstract type="html">Spyrus LYNKS DES based wrapping scheme w/checksum.</Abstract>
+            <Declaration>WSCKeyAlgorithmWrapLynks</Declaration>
+            
+            <DeclaredIn>WSCKey.h</DeclaredIn>
+            
+            <NodeRef refid="14"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCKeyAlgorithmWrapSET_OAEP</TokenIdentifier>
+            <Abstract type="html">SET key wrapping.</Abstract>
+            <Declaration>WSCKeyAlgorithmWrapSET_OAEP</Declaration>
+            
+            <DeclaredIn>WSCKey.h</DeclaredIn>
+            
+            <NodeRef refid="14"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCKeyAlgorithmBATON</TokenIdentifier>
+            <Abstract type="html">Fortezza BATON cipher.</Abstract>
+            <Declaration>WSCKeyAlgorithmBATON</Declaration>
+            
+            <DeclaredIn>WSCKey.h</DeclaredIn>
+            
+            <NodeRef refid="14"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCKeyAlgorithmECDSA</TokenIdentifier>
+            <Abstract type="html">Elliptic Curve DSA.</Abstract>
+            <Declaration>WSCKeyAlgorithmECDSA</Declaration>
+            
+            <DeclaredIn>WSCKey.h</DeclaredIn>
+            
+            <NodeRef refid="14"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCKeyAlgorithmMayfly</TokenIdentifier>
+            <Abstract type="html">Fortezza Mayfly cipher.</Abstract>
+            <Declaration>WSCKeyAlgorithmMayfly</Declaration>
+            
+            <DeclaredIn>WSCKey.h</DeclaredIn>
+            
+            <NodeRef refid="14"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCKeyAlgorithmJuniper</TokenIdentifier>
+            <Abstract type="html">Fortezza Juniper cipher.</Abstract>
+            <Declaration>WSCKeyAlgorithmJuniper</Declaration>
+            
+            <DeclaredIn>WSCKey.h</DeclaredIn>
+            
+            <NodeRef refid="14"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCKeyAlgorithmFasthash</TokenIdentifier>
+            <Abstract type="html">Fortezza Fasthash.</Abstract>
+            <Declaration>WSCKeyAlgorithmFasthash</Declaration>
+            
+            <DeclaredIn>WSCKey.h</DeclaredIn>
+            
+            <NodeRef refid="14"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCKeyAlgorithm3DES</TokenIdentifier>
+            <Abstract type="html">Generic TripleDES.</Abstract>
+            <Declaration>WSCKeyAlgorithm3DES</Declaration>
+            
+            <DeclaredIn>WSCKey.h</DeclaredIn>
+            
+            <NodeRef refid="14"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCKeyAlgorithmSSL3MD5</TokenIdentifier>
+            <Abstract type="html">SSL3MD5.</Abstract>
+            <Declaration>WSCKeyAlgorithmSSL3MD5</Declaration>
+            
+            <DeclaredIn>WSCKey.h</DeclaredIn>
+            
+            <NodeRef refid="14"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCKeyAlgorithmSSL3SHA1</TokenIdentifier>
+            <Abstract type="html">SSL3SHA1.</Abstract>
+            <Declaration>WSCKeyAlgorithmSSL3SHA1</Declaration>
+            
+            <DeclaredIn>WSCKey.h</DeclaredIn>
+            
+            <NodeRef refid="14"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCKeyAlgorithmFortezzaTimestamp</TokenIdentifier>
+            <Abstract type="html">Fortezza Timestamp.</Abstract>
+            <Declaration>WSCKeyAlgorithmFortezzaTimestamp</Declaration>
+            
+            <DeclaredIn>WSCKey.h</DeclaredIn>
+            
+            <NodeRef refid="14"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCKeyAlgorithmSHA1WithDSA</TokenIdentifier>
+            <Abstract type="html">SHA1 with DSA.</Abstract>
+            <Declaration>WSCKeyAlgorithmSHA1WithDSA</Declaration>
+            
+            <DeclaredIn>WSCKey.h</DeclaredIn>
+            
+            <NodeRef refid="14"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCKeyAlgorithmSHA1WithECDSA</TokenIdentifier>
+            <Abstract type="html">SHA1 with ECDSA.</Abstract>
+            <Declaration>WSCKeyAlgorithmSHA1WithECDSA</Declaration>
+            
+            <DeclaredIn>WSCKey.h</DeclaredIn>
+            
+            <NodeRef refid="14"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCKeyAlgorithmDSA_BSAFE</TokenIdentifier>
+            <Abstract type="html">DSA Bsafe</Abstract>
+            <Declaration>WSCKeyAlgorithmDSA_BSAFE</Declaration>
+            
+            <DeclaredIn>WSCKey.h</DeclaredIn>
             
             <NodeRef refid="14"/>
         </Token>

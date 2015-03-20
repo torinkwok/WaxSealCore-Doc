@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/WSCKeychain.html">
+	<File path="Classes/WSCCertificateItem.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/WSCKeychain</TokenIdentifier>
-			<Abstract type="html">A keychain is an encrypted container that holds passphrases for multiple applications and secure services.</Abstract>
-			<DeclaredIn>WSCKeychain.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/WSCCertificateItem</TokenIdentifier>
+			<Abstract type="html">The WSCCertificateItem class is a subclass of WSCKeychainItem representing an X.509 certificate.
+    
+  A digital certificate is a collection of data used to verify the identity of the holder 
+  or sender of the certificate. For example, a certificate contains such information as:</Abstract>
+			<DeclaredIn>WSCCertificateItem.h</DeclaredIn>
             
 			
 			<NodeRef refid="1"/>
@@ -13,579 +16,837 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WSCKeychain/setURL:</TokenIdentifier>
-			<Abstract type="html">The URL for the receiver. (read-only)
+			<TokenIdentifier>//apple_ref/occ/instm/WSCCertificateItem/setSubjectEmailAddress:</TokenIdentifier>
+			<Abstract type="html">The Email address of the subject of a certificate. (read-only)
   </Abstract>
-			<DeclaredIn>WSCKeychain.h</DeclaredIn>
+			<DeclaredIn>WSCCertificateItem.h</DeclaredIn>
 			
-			<Declaration>@property (retain, readonly) NSURL *URL</Declaration>
+			<Declaration>@property (copy, readonly) NSString *subjectEmailAddress</Declaration>
 			
-			<ReturnValue><Abstract type="html">The URL for the receiver.
-  </Abstract></ReturnValue>
-			<Anchor>//api/name/URL</Anchor>
+			
+			<Anchor>//api/name/subjectEmailAddress</Anchor>
             <NodeRef refid="1"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WSCKeychain/URL</TokenIdentifier>
-			<Abstract type="html">The URL for the receiver. (read-only)
+			<TokenIdentifier>//apple_ref/occ/instm/WSCCertificateItem/subjectEmailAddress</TokenIdentifier>
+			<Abstract type="html">The Email address of the subject of a certificate. (read-only)
   </Abstract>
-			<DeclaredIn>WSCKeychain.h</DeclaredIn>
+			<DeclaredIn>WSCCertificateItem.h</DeclaredIn>
 			
-			<Declaration>@property (retain, readonly) NSURL *URL</Declaration>
+			<Declaration>@property (copy, readonly) NSString *subjectEmailAddress</Declaration>
 			
-			<ReturnValue><Abstract type="html">The URL for the receiver.
-  </Abstract></ReturnValue>
-			<Anchor>//api/name/URL</Anchor>
+			
+			<Anchor>//api/name/subjectEmailAddress</Anchor>
             <NodeRef refid="1"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WSCKeychain/URL</TokenIdentifier>
-			<Abstract type="html">The URL for the receiver. (read-only)
+			<TokenIdentifier>//apple_ref/occ/instp/WSCCertificateItem/subjectEmailAddress</TokenIdentifier>
+			<Abstract type="html">The Email address of the subject of a certificate. (read-only)
   </Abstract>
-			<DeclaredIn>WSCKeychain.h</DeclaredIn>
+			<DeclaredIn>WSCCertificateItem.h</DeclaredIn>
 			
-			<Declaration>@property (retain, readonly) NSURL *URL</Declaration>
+			<Declaration>@property (copy, readonly) NSString *subjectEmailAddress</Declaration>
 			
-			<ReturnValue><Abstract type="html">The URL for the receiver.
-  </Abstract></ReturnValue>
-			<Anchor>//api/name/URL</Anchor>
+			
+			<Anchor>//api/name/subjectEmailAddress</Anchor>
             <NodeRef refid="1"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WSCKeychain/setIsDefault:</TokenIdentifier>
-			<Abstract type="html">Default state of receiver. (read-only)</Abstract>
-			<DeclaredIn>WSCKeychain.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCCertificateItem/setSubjectCommonName:</TokenIdentifier>
+			<Abstract type="html">The common name of the subject of a certificate. (read-only)</Abstract>
+			<DeclaredIn>WSCCertificateItem.h</DeclaredIn>
 			
-			<Declaration>@property (assign, readonly) BOOL isDefault</Declaration>
+			<Declaration>@property (copy, readonly) NSString *subjectCommonName</Declaration>
 			
 			
-			<Anchor>//api/name/isDefault</Anchor>
+			<Anchor>//api/name/subjectCommonName</Anchor>
             <NodeRef refid="1"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WSCKeychain/isDefault</TokenIdentifier>
-			<Abstract type="html">Default state of receiver. (read-only)</Abstract>
-			<DeclaredIn>WSCKeychain.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCCertificateItem/subjectCommonName</TokenIdentifier>
+			<Abstract type="html">The common name of the subject of a certificate. (read-only)</Abstract>
+			<DeclaredIn>WSCCertificateItem.h</DeclaredIn>
 			
-			<Declaration>@property (assign, readonly) BOOL isDefault</Declaration>
+			<Declaration>@property (copy, readonly) NSString *subjectCommonName</Declaration>
 			
 			
-			<Anchor>//api/name/isDefault</Anchor>
+			<Anchor>//api/name/subjectCommonName</Anchor>
             <NodeRef refid="1"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WSCKeychain/isDefault</TokenIdentifier>
-			<Abstract type="html">Default state of receiver. (read-only)</Abstract>
-			<DeclaredIn>WSCKeychain.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/WSCCertificateItem/subjectCommonName</TokenIdentifier>
+			<Abstract type="html">The common name of the subject of a certificate. (read-only)</Abstract>
+			<DeclaredIn>WSCCertificateItem.h</DeclaredIn>
 			
-			<Declaration>@property (assign, readonly) BOOL isDefault</Declaration>
+			<Declaration>@property (copy, readonly) NSString *subjectCommonName</Declaration>
 			
 			
-			<Anchor>//api/name/isDefault</Anchor>
+			<Anchor>//api/name/subjectCommonName</Anchor>
             <NodeRef refid="1"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WSCKeychain/setIsValid:</TokenIdentifier>
-			<Abstract type="html">BOOL value that indicates whether the receiver is currently valid. (read-only)</Abstract>
-			<DeclaredIn>WSCKeychain.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCCertificateItem/setSubjectOrganization:</TokenIdentifier>
+			<Abstract type="html">The organization name of the subject of a certificate. (read-only)
+  </Abstract>
+			<DeclaredIn>WSCCertificateItem.h</DeclaredIn>
 			
-			<Declaration>@property (assign, readonly) BOOL isValid</Declaration>
+			<Declaration>@property (copy, readonly) NSString *subjectOrganization</Declaration>
 			
 			
-			<Anchor>//api/name/isValid</Anchor>
+			<Anchor>//api/name/subjectOrganization</Anchor>
             <NodeRef refid="1"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WSCKeychain/isValid</TokenIdentifier>
-			<Abstract type="html">BOOL value that indicates whether the receiver is currently valid. (read-only)</Abstract>
-			<DeclaredIn>WSCKeychain.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCCertificateItem/subjectOrganization</TokenIdentifier>
+			<Abstract type="html">The organization name of the subject of a certificate. (read-only)
+  </Abstract>
+			<DeclaredIn>WSCCertificateItem.h</DeclaredIn>
 			
-			<Declaration>@property (assign, readonly) BOOL isValid</Declaration>
+			<Declaration>@property (copy, readonly) NSString *subjectOrganization</Declaration>
 			
 			
-			<Anchor>//api/name/isValid</Anchor>
+			<Anchor>//api/name/subjectOrganization</Anchor>
             <NodeRef refid="1"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WSCKeychain/isValid</TokenIdentifier>
-			<Abstract type="html">BOOL value that indicates whether the receiver is currently valid. (read-only)</Abstract>
-			<DeclaredIn>WSCKeychain.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/WSCCertificateItem/subjectOrganization</TokenIdentifier>
+			<Abstract type="html">The organization name of the subject of a certificate. (read-only)
+  </Abstract>
+			<DeclaredIn>WSCCertificateItem.h</DeclaredIn>
 			
-			<Declaration>@property (assign, readonly) BOOL isValid</Declaration>
+			<Declaration>@property (copy, readonly) NSString *subjectOrganization</Declaration>
 			
 			
-			<Anchor>//api/name/isValid</Anchor>
+			<Anchor>//api/name/subjectOrganization</Anchor>
             <NodeRef refid="1"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WSCKeychain/setIsLocked:</TokenIdentifier>
-			<Abstract type="html">BOOL value that indicates whether the receiver is currently locked. (read-only)</Abstract>
-			<DeclaredIn>WSCKeychain.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCCertificateItem/setSubjectOrganizationalUnit:</TokenIdentifier>
+			<Abstract type="html">The organizational unit name of the subject of a certificate. (read-only)
+  </Abstract>
+			<DeclaredIn>WSCCertificateItem.h</DeclaredIn>
 			
-			<Declaration>@property (assign, readonly) BOOL isLocked</Declaration>
+			<Declaration>@property (copy, readonly) NSString *subjectOrganizationalUnit</Declaration>
 			
 			
-			<Anchor>//api/name/isLocked</Anchor>
+			<Anchor>//api/name/subjectOrganizationalUnit</Anchor>
             <NodeRef refid="1"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WSCKeychain/isLocked</TokenIdentifier>
-			<Abstract type="html">BOOL value that indicates whether the receiver is currently locked. (read-only)</Abstract>
-			<DeclaredIn>WSCKeychain.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCCertificateItem/subjectOrganizationalUnit</TokenIdentifier>
+			<Abstract type="html">The organizational unit name of the subject of a certificate. (read-only)
+  </Abstract>
+			<DeclaredIn>WSCCertificateItem.h</DeclaredIn>
 			
-			<Declaration>@property (assign, readonly) BOOL isLocked</Declaration>
+			<Declaration>@property (copy, readonly) NSString *subjectOrganizationalUnit</Declaration>
 			
 			
-			<Anchor>//api/name/isLocked</Anchor>
+			<Anchor>//api/name/subjectOrganizationalUnit</Anchor>
             <NodeRef refid="1"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WSCKeychain/isLocked</TokenIdentifier>
-			<Abstract type="html">BOOL value that indicates whether the receiver is currently locked. (read-only)</Abstract>
-			<DeclaredIn>WSCKeychain.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/WSCCertificateItem/subjectOrganizationalUnit</TokenIdentifier>
+			<Abstract type="html">The organizational unit name of the subject of a certificate. (read-only)
+  </Abstract>
+			<DeclaredIn>WSCCertificateItem.h</DeclaredIn>
 			
-			<Declaration>@property (assign, readonly) BOOL isLocked</Declaration>
+			<Declaration>@property (copy, readonly) NSString *subjectOrganizationalUnit</Declaration>
 			
 			
-			<Anchor>//api/name/isLocked</Anchor>
+			<Anchor>//api/name/subjectOrganizationalUnit</Anchor>
             <NodeRef refid="1"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WSCKeychain/setIsReadable:</TokenIdentifier>
-			<Abstract type="html">BOOL value that indicates whether the receiver is readable. (read-only)</Abstract>
-			<DeclaredIn>WSCKeychain.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCCertificateItem/setSubjectCountryAbbreviation:</TokenIdentifier>
+			<Abstract type="html">The country abbreviation of the subject of a certificate. (read-only)
+  </Abstract>
+			<DeclaredIn>WSCCertificateItem.h</DeclaredIn>
 			
-			<Declaration>@property (assign, readonly) BOOL isReadable</Declaration>
+			<Declaration>@property (copy, readonly) NSString *subjectCountryAbbreviation</Declaration>
 			
 			
-			<Anchor>//api/name/isReadable</Anchor>
+			<Anchor>//api/name/subjectCountryAbbreviation</Anchor>
             <NodeRef refid="1"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WSCKeychain/isReadable</TokenIdentifier>
-			<Abstract type="html">BOOL value that indicates whether the receiver is readable. (read-only)</Abstract>
-			<DeclaredIn>WSCKeychain.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCCertificateItem/subjectCountryAbbreviation</TokenIdentifier>
+			<Abstract type="html">The country abbreviation of the subject of a certificate. (read-only)
+  </Abstract>
+			<DeclaredIn>WSCCertificateItem.h</DeclaredIn>
 			
-			<Declaration>@property (assign, readonly) BOOL isReadable</Declaration>
+			<Declaration>@property (copy, readonly) NSString *subjectCountryAbbreviation</Declaration>
 			
 			
-			<Anchor>//api/name/isReadable</Anchor>
+			<Anchor>//api/name/subjectCountryAbbreviation</Anchor>
             <NodeRef refid="1"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WSCKeychain/isReadable</TokenIdentifier>
-			<Abstract type="html">BOOL value that indicates whether the receiver is readable. (read-only)</Abstract>
-			<DeclaredIn>WSCKeychain.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/WSCCertificateItem/subjectCountryAbbreviation</TokenIdentifier>
+			<Abstract type="html">The country abbreviation of the subject of a certificate. (read-only)
+  </Abstract>
+			<DeclaredIn>WSCCertificateItem.h</DeclaredIn>
 			
-			<Declaration>@property (assign, readonly) BOOL isReadable</Declaration>
+			<Declaration>@property (copy, readonly) NSString *subjectCountryAbbreviation</Declaration>
 			
 			
-			<Anchor>//api/name/isReadable</Anchor>
+			<Anchor>//api/name/subjectCountryAbbreviation</Anchor>
             <NodeRef refid="1"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WSCKeychain/setIsWritable:</TokenIdentifier>
-			<Abstract type="html">BOOL value that indicates whether the receiver is writable. (read-only)</Abstract>
-			<DeclaredIn>WSCKeychain.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCCertificateItem/setSubjectStateOrProvince:</TokenIdentifier>
+			<Abstract type="html">The state or province name of the subject of a certificate. (read-only)
+  </Abstract>
+			<DeclaredIn>WSCCertificateItem.h</DeclaredIn>
 			
-			<Declaration>@property (assign, readonly) BOOL isWritable</Declaration>
+			<Declaration>@property (copy, readonly) NSString *subjectStateOrProvince</Declaration>
 			
 			
-			<Anchor>//api/name/isWritable</Anchor>
+			<Anchor>//api/name/subjectStateOrProvince</Anchor>
             <NodeRef refid="1"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WSCKeychain/isWritable</TokenIdentifier>
-			<Abstract type="html">BOOL value that indicates whether the receiver is writable. (read-only)</Abstract>
-			<DeclaredIn>WSCKeychain.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCCertificateItem/subjectStateOrProvince</TokenIdentifier>
+			<Abstract type="html">The state or province name of the subject of a certificate. (read-only)
+  </Abstract>
+			<DeclaredIn>WSCCertificateItem.h</DeclaredIn>
 			
-			<Declaration>@property (assign, readonly) BOOL isWritable</Declaration>
+			<Declaration>@property (copy, readonly) NSString *subjectStateOrProvince</Declaration>
 			
 			
-			<Anchor>//api/name/isWritable</Anchor>
+			<Anchor>//api/name/subjectStateOrProvince</Anchor>
             <NodeRef refid="1"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WSCKeychain/isWritable</TokenIdentifier>
-			<Abstract type="html">BOOL value that indicates whether the receiver is writable. (read-only)</Abstract>
-			<DeclaredIn>WSCKeychain.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/WSCCertificateItem/subjectStateOrProvince</TokenIdentifier>
+			<Abstract type="html">The state or province name of the subject of a certificate. (read-only)
+  </Abstract>
+			<DeclaredIn>WSCCertificateItem.h</DeclaredIn>
 			
-			<Declaration>@property (assign, readonly) BOOL isWritable</Declaration>
+			<Declaration>@property (copy, readonly) NSString *subjectStateOrProvince</Declaration>
 			
 			
-			<Anchor>//api/name/isWritable</Anchor>
+			<Anchor>//api/name/subjectStateOrProvince</Anchor>
             <NodeRef refid="1"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WSCKeychain/setEnableLockOnSleep:</TokenIdentifier>
-			<Abstract type="html">A BOOL value indicating whether the keychain locks when the system sleeps.</Abstract>
-			<DeclaredIn>WSCKeychain.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCCertificateItem/setSubjectLocality:</TokenIdentifier>
+			<Abstract type="html">The locality name of the subject of a certificate. (read-only)
+  </Abstract>
+			<DeclaredIn>WSCCertificateItem.h</DeclaredIn>
 			
-			<Declaration>@property (assign, readwrite) BOOL enableLockOnSleep</Declaration>
+			<Declaration>@property (copy, readonly) NSString *subjectLocality</Declaration>
 			
 			
-			<Anchor>//api/name/enableLockOnSleep</Anchor>
+			<Anchor>//api/name/subjectLocality</Anchor>
             <NodeRef refid="1"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WSCKeychain/enableLockOnSleep</TokenIdentifier>
-			<Abstract type="html">A BOOL value indicating whether the keychain locks when the system sleeps.</Abstract>
-			<DeclaredIn>WSCKeychain.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCCertificateItem/subjectLocality</TokenIdentifier>
+			<Abstract type="html">The locality name of the subject of a certificate. (read-only)
+  </Abstract>
+			<DeclaredIn>WSCCertificateItem.h</DeclaredIn>
 			
-			<Declaration>@property (assign, readwrite) BOOL enableLockOnSleep</Declaration>
+			<Declaration>@property (copy, readonly) NSString *subjectLocality</Declaration>
 			
 			
-			<Anchor>//api/name/enableLockOnSleep</Anchor>
+			<Anchor>//api/name/subjectLocality</Anchor>
             <NodeRef refid="1"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WSCKeychain/enableLockOnSleep</TokenIdentifier>
-			<Abstract type="html">A BOOL value indicating whether the keychain locks when the system sleeps.</Abstract>
-			<DeclaredIn>WSCKeychain.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/WSCCertificateItem/subjectLocality</TokenIdentifier>
+			<Abstract type="html">The locality name of the subject of a certificate. (read-only)
+  </Abstract>
+			<DeclaredIn>WSCCertificateItem.h</DeclaredIn>
 			
-			<Declaration>@property (assign, readwrite) BOOL enableLockOnSleep</Declaration>
+			<Declaration>@property (copy, readonly) NSString *subjectLocality</Declaration>
 			
 			
-			<Anchor>//api/name/enableLockOnSleep</Anchor>
+			<Anchor>//api/name/subjectLocality</Anchor>
             <NodeRef refid="1"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/WSCKeychain/login</TokenIdentifier>
-			<Abstract type="html">Opens and returns a WSCKeychain object representing the login.keychain for current user.</Abstract>
-			<DeclaredIn>WSCKeychain.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCCertificateItem/setIssuerEmailAddress:</TokenIdentifier>
+			<Abstract type="html">The Email address of the issuer of a certificate. (read-only)
+  </Abstract>
+			<DeclaredIn>WSCCertificateItem.h</DeclaredIn>
 			
-	<RelatedTokens>
-		<TokenIdentifier>//apple_ref/occ/clm/WSCKeychain/system</TokenIdentifier>
-		
-	</RelatedTokens>
-	
-			<Declaration>+ (instancetype)login</Declaration>
+			<Declaration>@property (copy, readonly) NSString *issuerEmailAddress</Declaration>
 			
-			<ReturnValue><Abstract type="html">A WSCKeychain object representing the login.keychain for current user
-  </Abstract></ReturnValue>
-			<Anchor>//api/name/login</Anchor>
+			
+			<Anchor>//api/name/issuerEmailAddress</Anchor>
             <NodeRef refid="1"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/WSCKeychain/system</TokenIdentifier>
-			<Abstract type="html">Opens and returns a WSCKeychain object representing the System.keychain for current user.</Abstract>
-			<DeclaredIn>WSCKeychain.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCCertificateItem/issuerEmailAddress</TokenIdentifier>
+			<Abstract type="html">The Email address of the issuer of a certificate. (read-only)
+  </Abstract>
+			<DeclaredIn>WSCCertificateItem.h</DeclaredIn>
 			
-	<RelatedTokens>
-		<TokenIdentifier>//apple_ref/occ/clm/WSCKeychain/login</TokenIdentifier>
-		
-	</RelatedTokens>
-	
-			<Declaration>+ (instancetype)system</Declaration>
+			<Declaration>@property (copy, readonly) NSString *issuerEmailAddress</Declaration>
 			
-			<ReturnValue><Abstract type="html">A WSCKeychain object representing the System.keychain.
-  </Abstract></ReturnValue>
-			<Anchor>//api/name/system</Anchor>
+			
+			<Anchor>//api/name/issuerEmailAddress</Anchor>
             <NodeRef refid="1"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WSCKeychain/isEqualToKeychain:</TokenIdentifier>
-			<Abstract type="html">Returns a BOOL value that indicates whether a given keychain is equal to receiver using an URL comparision.</Abstract>
-			<DeclaredIn>WSCKeychain.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/WSCCertificateItem/issuerEmailAddress</TokenIdentifier>
+			<Abstract type="html">The Email address of the issuer of a certificate. (read-only)
+  </Abstract>
+			<DeclaredIn>WSCCertificateItem.h</DeclaredIn>
 			
-			<Declaration>- (BOOL)isEqualToKeychain:(WSCKeychain *)_AnotherKeychain</Declaration>
+			<Declaration>@property (copy, readonly) NSString *issuerEmailAddress</Declaration>
+			
+			
+			<Anchor>//api/name/issuerEmailAddress</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCCertificateItem/setIssuerCommonName:</TokenIdentifier>
+			<Abstract type="html">The common name of the issuer of a certificate. (read-only)</Abstract>
+			<DeclaredIn>WSCCertificateItem.h</DeclaredIn>
+			
+			<Declaration>@property (copy, readonly) NSString *issuerCommonName</Declaration>
+			
+			
+			<Anchor>//api/name/issuerCommonName</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCCertificateItem/issuerCommonName</TokenIdentifier>
+			<Abstract type="html">The common name of the issuer of a certificate. (read-only)</Abstract>
+			<DeclaredIn>WSCCertificateItem.h</DeclaredIn>
+			
+			<Declaration>@property (copy, readonly) NSString *issuerCommonName</Declaration>
+			
+			
+			<Anchor>//api/name/issuerCommonName</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WSCCertificateItem/issuerCommonName</TokenIdentifier>
+			<Abstract type="html">The common name of the issuer of a certificate. (read-only)</Abstract>
+			<DeclaredIn>WSCCertificateItem.h</DeclaredIn>
+			
+			<Declaration>@property (copy, readonly) NSString *issuerCommonName</Declaration>
+			
+			
+			<Anchor>//api/name/issuerCommonName</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCCertificateItem/setIssuerOrganization:</TokenIdentifier>
+			<Abstract type="html">The organization name of the issuer of a certificate. (read-only)
+  </Abstract>
+			<DeclaredIn>WSCCertificateItem.h</DeclaredIn>
+			
+			<Declaration>@property (copy, readonly) NSString *issuerOrganization</Declaration>
+			
+			
+			<Anchor>//api/name/issuerOrganization</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCCertificateItem/issuerOrganization</TokenIdentifier>
+			<Abstract type="html">The organization name of the issuer of a certificate. (read-only)
+  </Abstract>
+			<DeclaredIn>WSCCertificateItem.h</DeclaredIn>
+			
+			<Declaration>@property (copy, readonly) NSString *issuerOrganization</Declaration>
+			
+			
+			<Anchor>//api/name/issuerOrganization</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WSCCertificateItem/issuerOrganization</TokenIdentifier>
+			<Abstract type="html">The organization name of the issuer of a certificate. (read-only)
+  </Abstract>
+			<DeclaredIn>WSCCertificateItem.h</DeclaredIn>
+			
+			<Declaration>@property (copy, readonly) NSString *issuerOrganization</Declaration>
+			
+			
+			<Anchor>//api/name/issuerOrganization</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCCertificateItem/setIssuerOrganizationalUnit:</TokenIdentifier>
+			<Abstract type="html">The organizational unit name of the issuer of a certificate. (read-only)
+  </Abstract>
+			<DeclaredIn>WSCCertificateItem.h</DeclaredIn>
+			
+			<Declaration>@property (copy, readonly) NSString *issuerOrganizationalUnit</Declaration>
+			
+			
+			<Anchor>//api/name/issuerOrganizationalUnit</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCCertificateItem/issuerOrganizationalUnit</TokenIdentifier>
+			<Abstract type="html">The organizational unit name of the issuer of a certificate. (read-only)
+  </Abstract>
+			<DeclaredIn>WSCCertificateItem.h</DeclaredIn>
+			
+			<Declaration>@property (copy, readonly) NSString *issuerOrganizationalUnit</Declaration>
+			
+			
+			<Anchor>//api/name/issuerOrganizationalUnit</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WSCCertificateItem/issuerOrganizationalUnit</TokenIdentifier>
+			<Abstract type="html">The organizational unit name of the issuer of a certificate. (read-only)
+  </Abstract>
+			<DeclaredIn>WSCCertificateItem.h</DeclaredIn>
+			
+			<Declaration>@property (copy, readonly) NSString *issuerOrganizationalUnit</Declaration>
+			
+			
+			<Anchor>//api/name/issuerOrganizationalUnit</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCCertificateItem/setIssuerCountryAbbreviation:</TokenIdentifier>
+			<Abstract type="html">The country abbreviation of the issuer of a certificate. (read-only)
+  </Abstract>
+			<DeclaredIn>WSCCertificateItem.h</DeclaredIn>
+			
+			<Declaration>@property (copy, readonly) NSString *issuerCountryAbbreviation</Declaration>
+			
+			
+			<Anchor>//api/name/issuerCountryAbbreviation</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCCertificateItem/issuerCountryAbbreviation</TokenIdentifier>
+			<Abstract type="html">The country abbreviation of the issuer of a certificate. (read-only)
+  </Abstract>
+			<DeclaredIn>WSCCertificateItem.h</DeclaredIn>
+			
+			<Declaration>@property (copy, readonly) NSString *issuerCountryAbbreviation</Declaration>
+			
+			
+			<Anchor>//api/name/issuerCountryAbbreviation</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WSCCertificateItem/issuerCountryAbbreviation</TokenIdentifier>
+			<Abstract type="html">The country abbreviation of the issuer of a certificate. (read-only)
+  </Abstract>
+			<DeclaredIn>WSCCertificateItem.h</DeclaredIn>
+			
+			<Declaration>@property (copy, readonly) NSString *issuerCountryAbbreviation</Declaration>
+			
+			
+			<Anchor>//api/name/issuerCountryAbbreviation</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCCertificateItem/setIssuerStateOrProvince:</TokenIdentifier>
+			<Abstract type="html">The state or province name of the issuer of a certificate. (read-only)
+  </Abstract>
+			<DeclaredIn>WSCCertificateItem.h</DeclaredIn>
+			
+			<Declaration>@property (copy, readonly) NSString *issuerStateOrProvince</Declaration>
+			
+			
+			<Anchor>//api/name/issuerStateOrProvince</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCCertificateItem/issuerStateOrProvince</TokenIdentifier>
+			<Abstract type="html">The state or province name of the issuer of a certificate. (read-only)
+  </Abstract>
+			<DeclaredIn>WSCCertificateItem.h</DeclaredIn>
+			
+			<Declaration>@property (copy, readonly) NSString *issuerStateOrProvince</Declaration>
+			
+			
+			<Anchor>//api/name/issuerStateOrProvince</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WSCCertificateItem/issuerStateOrProvince</TokenIdentifier>
+			<Abstract type="html">The state or province name of the issuer of a certificate. (read-only)
+  </Abstract>
+			<DeclaredIn>WSCCertificateItem.h</DeclaredIn>
+			
+			<Declaration>@property (copy, readonly) NSString *issuerStateOrProvince</Declaration>
+			
+			
+			<Anchor>//api/name/issuerStateOrProvince</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCCertificateItem/setIssuerLocality:</TokenIdentifier>
+			<Abstract type="html">The locality name of the issuer of a certificate. (read-only)
+  </Abstract>
+			<DeclaredIn>WSCCertificateItem.h</DeclaredIn>
+			
+			<Declaration>@property (copy, readonly) NSString *issuerLocality</Declaration>
+			
+			
+			<Anchor>//api/name/issuerLocality</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCCertificateItem/issuerLocality</TokenIdentifier>
+			<Abstract type="html">The locality name of the issuer of a certificate. (read-only)
+  </Abstract>
+			<DeclaredIn>WSCCertificateItem.h</DeclaredIn>
+			
+			<Declaration>@property (copy, readonly) NSString *issuerLocality</Declaration>
+			
+			
+			<Anchor>//api/name/issuerLocality</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WSCCertificateItem/issuerLocality</TokenIdentifier>
+			<Abstract type="html">The locality name of the issuer of a certificate. (read-only)
+  </Abstract>
+			<DeclaredIn>WSCCertificateItem.h</DeclaredIn>
+			
+			<Declaration>@property (copy, readonly) NSString *issuerLocality</Declaration>
+			
+			
+			<Anchor>//api/name/issuerLocality</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCCertificateItem/setSerialNumber:</TokenIdentifier>
+			<Abstract type="html">The serial number of a certificate. (read-only)
+  </Abstract>
+			<DeclaredIn>WSCCertificateItem.h</DeclaredIn>
+			
+			<Declaration>@property (copy, readonly) NSString *serialNumber</Declaration>
+			
+			
+			<Anchor>//api/name/serialNumber</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCCertificateItem/serialNumber</TokenIdentifier>
+			<Abstract type="html">The serial number of a certificate. (read-only)
+  </Abstract>
+			<DeclaredIn>WSCCertificateItem.h</DeclaredIn>
+			
+			<Declaration>@property (copy, readonly) NSString *serialNumber</Declaration>
+			
+			
+			<Anchor>//api/name/serialNumber</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WSCCertificateItem/serialNumber</TokenIdentifier>
+			<Abstract type="html">The serial number of a certificate. (read-only)
+  </Abstract>
+			<DeclaredIn>WSCCertificateItem.h</DeclaredIn>
+			
+			<Declaration>@property (copy, readonly) NSString *serialNumber</Declaration>
+			
+			
+			<Anchor>//api/name/serialNumber</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCCertificateItem/setEffectiveDate:</TokenIdentifier>
+			<Abstract type="html">The effective date of a certificate represented by receiver.
+  </Abstract>
+			<DeclaredIn>WSCCertificateItem.h</DeclaredIn>
+			
+			<Declaration>@property (retain, readonly) NSDate *effectiveDate</Declaration>
+			
+			
+			<Anchor>//api/name/effectiveDate</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCCertificateItem/effectiveDate</TokenIdentifier>
+			<Abstract type="html">The effective date of a certificate represented by receiver.
+  </Abstract>
+			<DeclaredIn>WSCCertificateItem.h</DeclaredIn>
+			
+			<Declaration>@property (retain, readonly) NSDate *effectiveDate</Declaration>
+			
+			
+			<Anchor>//api/name/effectiveDate</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WSCCertificateItem/effectiveDate</TokenIdentifier>
+			<Abstract type="html">The effective date of a certificate represented by receiver.
+  </Abstract>
+			<DeclaredIn>WSCCertificateItem.h</DeclaredIn>
+			
+			<Declaration>@property (retain, readonly) NSDate *effectiveDate</Declaration>
+			
+			
+			<Anchor>//api/name/effectiveDate</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCCertificateItem/setExpirationDate:</TokenIdentifier>
+			<Abstract type="html">The expiration date of a certificate represented by receiver.
+  </Abstract>
+			<DeclaredIn>WSCCertificateItem.h</DeclaredIn>
+			
+			<Declaration>@property (retain, readonly) NSDate *expirationDate</Declaration>
+			
+			
+			<Anchor>//api/name/expirationDate</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCCertificateItem/expirationDate</TokenIdentifier>
+			<Abstract type="html">The expiration date of a certificate represented by receiver.
+  </Abstract>
+			<DeclaredIn>WSCCertificateItem.h</DeclaredIn>
+			
+			<Declaration>@property (retain, readonly) NSDate *expirationDate</Declaration>
+			
+			
+			<Anchor>//api/name/expirationDate</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WSCCertificateItem/expirationDate</TokenIdentifier>
+			<Abstract type="html">The expiration date of a certificate represented by receiver.
+  </Abstract>
+			<DeclaredIn>WSCCertificateItem.h</DeclaredIn>
+			
+			<Declaration>@property (retain, readonly) NSDate *expirationDate</Declaration>
+			
+			
+			<Anchor>//api/name/expirationDate</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCCertificateItem/setPublicKey:</TokenIdentifier>
+			<Abstract type="html">The public key that was wrapped in the certificate represented by receiver.
+  </Abstract>
+			<DeclaredIn>WSCCertificateItem.h</DeclaredIn>
+			
+			<Declaration>@property (retain, readonly) WSCKey *publicKey</Declaration>
+			
+			
+			<Anchor>//api/name/publicKey</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCCertificateItem/publicKey</TokenIdentifier>
+			<Abstract type="html">The public key that was wrapped in the certificate represented by receiver.
+  </Abstract>
+			<DeclaredIn>WSCCertificateItem.h</DeclaredIn>
+			
+			<Declaration>@property (retain, readonly) WSCKey *publicKey</Declaration>
+			
+			
+			<Anchor>//api/name/publicKey</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WSCCertificateItem/publicKey</TokenIdentifier>
+			<Abstract type="html">The public key that was wrapped in the certificate represented by receiver.
+  </Abstract>
+			<DeclaredIn>WSCCertificateItem.h</DeclaredIn>
+			
+			<Declaration>@property (retain, readonly) WSCKey *publicKey</Declaration>
+			
+			
+			<Anchor>//api/name/publicKey</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCCertificateItem/setPublicKeySignature:</TokenIdentifier>
+			<Abstract type="html">The signature (calculating by using the signature algorithm represented by publicKeySignatureAlgorithm ) of public key
+    that was wrapped in the certificate. (read-only)
+  </Abstract>
+			<DeclaredIn>WSCCertificateItem.h</DeclaredIn>
+			
+			<Declaration>@property (retain, readonly) NSData *publicKeySignature</Declaration>
+			
+			
+			<Anchor>//api/name/publicKeySignature</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCCertificateItem/publicKeySignature</TokenIdentifier>
+			<Abstract type="html">The signature (calculating by using the signature algorithm represented by publicKeySignatureAlgorithm ) of public key
+    that was wrapped in the certificate. (read-only)
+  </Abstract>
+			<DeclaredIn>WSCCertificateItem.h</DeclaredIn>
+			
+			<Declaration>@property (retain, readonly) NSData *publicKeySignature</Declaration>
+			
+			
+			<Anchor>//api/name/publicKeySignature</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WSCCertificateItem/publicKeySignature</TokenIdentifier>
+			<Abstract type="html">The signature (calculating by using the signature algorithm represented by publicKeySignatureAlgorithm ) of public key
+    that was wrapped in the certificate. (read-only)
+  </Abstract>
+			<DeclaredIn>WSCCertificateItem.h</DeclaredIn>
+			
+			<Declaration>@property (retain, readonly) NSData *publicKeySignature</Declaration>
+			
+			
+			<Anchor>//api/name/publicKeySignature</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCCertificateItem/setPublicKeySignatureAlgorithm:</TokenIdentifier>
+			<Abstract type="html">The signature algorithm used for signing the public key that was wrapped in a certificate. (read-only)</Abstract>
+			<DeclaredIn>WSCCertificateItem.h</DeclaredIn>
+			
+			<Declaration>@property (assign, readonly) WSCSignatureAlgorithmType publicKeySignatureAlgorithm</Declaration>
+			
+			
+			<Anchor>//api/name/publicKeySignatureAlgorithm</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCCertificateItem/publicKeySignatureAlgorithm</TokenIdentifier>
+			<Abstract type="html">The signature algorithm used for signing the public key that was wrapped in a certificate. (read-only)</Abstract>
+			<DeclaredIn>WSCCertificateItem.h</DeclaredIn>
+			
+			<Declaration>@property (assign, readonly) WSCSignatureAlgorithmType publicKeySignatureAlgorithm</Declaration>
+			
+			
+			<Anchor>//api/name/publicKeySignatureAlgorithm</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WSCCertificateItem/publicKeySignatureAlgorithm</TokenIdentifier>
+			<Abstract type="html">The signature algorithm used for signing the public key that was wrapped in a certificate. (read-only)</Abstract>
+			<DeclaredIn>WSCCertificateItem.h</DeclaredIn>
+			
+			<Declaration>@property (assign, readonly) WSCSignatureAlgorithmType publicKeySignatureAlgorithm</Declaration>
+			
+			
+			<Anchor>//api/name/publicKeySignatureAlgorithm</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCCertificateItem/isEqualToCertificate:</TokenIdentifier>
+			<Abstract type="html">Returns a BOOL value that indicates whether a given certificate is equal to receiver.</Abstract>
+			<DeclaredIn>WSCCertificateItem.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)isEqualToCertificate:(WSCCertificateItem *)_AnotherCertificate</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>_AnotherKeychain</Name>
-					<Abstract type="html">The keychain with which to compare the receiver.</Abstract>
+					<Name>_AnotherCertificate</Name>
+					<Abstract type="html">The certificate with which to compare the receiver.</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">YES if _AnotherKeychain is equivalent to receiver (if they have the same URL;
-          otherwise NO.
+			<ReturnValue><Abstract type="html">YES if _AnotherCertificate is equivalent to receiver; otherwise NO.
 
   One more thing
 
    When you know both objects are keychains, this method is a faster way to check equality than method isEqual:.
   </Abstract></ReturnValue>
-			<Anchor>//api/name/isEqualToKeychain:</Anchor>
+			<Anchor>//api/name/isEqualToCertificate:</Anchor>
             <NodeRef refid="1"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WSCKeychain/addApplicationPassphraseWithServiceName:accountName:passphrase:error:</TokenIdentifier>
-			<Abstract type="html">Adds a new application passphrase to the keychain represented by receiver.</Abstract>
-			<DeclaredIn>WSCKeychain.h</DeclaredIn>
-			
-			<Declaration>- (WSCPassphraseItem *)addApplicationPassphraseWithServiceName:(NSString *)_ServiceName accountName:(NSString *)_AccountName passphrase:(NSString *)_Passphrase error:(NSError **)_Error</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>_ServiceName</Name>
-					<Abstract type="html">An NSString object representing the service name.</Abstract>
-				</Parameter><Parameter>
-					<Name>_AccountName</Name>
-					<Abstract type="html">An NSString object representing the account name.</Abstract>
-				</Parameter><Parameter>
-					<Name>_Passphrase</Name>
-					<Abstract type="html">An NSString object representing the passphrase.
+			<TokenIdentifier>//apple_ref/occ/instm/WSCCertificateItem/setSecCertificateItem:</TokenIdentifier>
+			<Abstract type="html">The reference of the SecCertificate opaque object, which wrapped by WSCCertificateItem object. (read-only)
   </Abstract>
-				</Parameter><Parameter>
-					<Name>_Error</Name>
-					<Abstract type="html">On input, a pointer to an error object.
-                If an error occurs, this pointer is set to an actual error object containing the error information.
-                You may specify nil for this parameter if you don&apos;t want the error information.
-
+			<DeclaredIn>WSCCertificateItem.h</DeclaredIn>
+			
+			<Declaration>@property (unsafe_unretained, readonly) SecCertificateRef secCertificateItem</Declaration>
+			
+			
+			<Anchor>//api/name/secCertificateItem</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WSCCertificateItem/secCertificateItem</TokenIdentifier>
+			<Abstract type="html">The reference of the SecCertificate opaque object, which wrapped by WSCCertificateItem object. (read-only)
   </Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">A WSCPassphraseItem object representing the new keychain item.
-          Returns nil if an error occurs.
-  </Abstract></ReturnValue>
-			<Anchor>//api/name/addApplicationPassphraseWithServiceName:accountName:passphrase:error:</Anchor>
+			<DeclaredIn>WSCCertificateItem.h</DeclaredIn>
+			
+			<Declaration>@property (unsafe_unretained, readonly) SecCertificateRef secCertificateItem</Declaration>
+			
+			
+			<Anchor>//api/name/secCertificateItem</Anchor>
             <NodeRef refid="1"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WSCKeychain/addInternetPassphraseWithServerName:URLRelativePath:accountName:protocol:passphrase:error:</TokenIdentifier>
-			<Abstract type="html">Adds a new Internet passphrase to the keychain represented by receiver.</Abstract>
-			<DeclaredIn>WSCKeychain.h</DeclaredIn>
-			
-			<Declaration>- (WSCPassphraseItem *)addInternetPassphraseWithServerName:(NSString *)_ServerName URLRelativePath:(NSString *)_URLRelativePath accountName:(NSString *)_AccountName protocol:(WSCInternetProtocolType)_Protocol passphrase:(NSString *)_Passphrase error:(NSError **)_Error</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>_ServerName</Name>
-					<Abstract type="html">An NSString object representing the server name.
+			<TokenIdentifier>//apple_ref/occ/instp/WSCCertificateItem/secCertificateItem</TokenIdentifier>
+			<Abstract type="html">The reference of the SecCertificate opaque object, which wrapped by WSCCertificateItem object. (read-only)
   </Abstract>
-				</Parameter><Parameter>
-					<Name>_URLRelativePath</Name>
-					<Abstract type="html">An NSString object representing the the path.
-                         </Abstract>
-				</Parameter><Parameter>
-					<Name>_AccountName</Name>
-					<Abstract type="html">An NSString object representing the account name.
-  </Abstract>
-				</Parameter><Parameter>
-					<Name>_Protocol</Name>
-					<Abstract type="html">The protocol associated with this passphrase. 
-                   See &quot;WaxSealCore Internet Protocol Type Constants&quot; for a description of possible values.
-                   </Abstract>
-				</Parameter><Parameter>
-					<Name>_Passphrase</Name>
-					<Abstract type="html">An NSString object containing the passphrase.
-  </Abstract>
-				</Parameter><Parameter>
-					<Name>_Error</Name>
-					<Abstract type="html">On input, a pointer to an error object.
-                If an error occurs, this pointer is set to an actual error object containing the error information.
-                You may specify nil for this parameter if you don&apos;t want the error information.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">A WSCPassphraseItem object representing the new keychain item.
-          Returns nil if an error occurs.
-  </Abstract></ReturnValue>
-			<Anchor>//api/name/addInternetPassphraseWithServerName:URLRelativePath:accountName:protocol:passphrase:error:</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WSCKeychain/allApplicationPassphraseItems</TokenIdentifier>
-			<Abstract type="html">Retrieve all the application passphrase items stored in the keychain represented by receiver.</Abstract>
-			<DeclaredIn>WSCKeychain.h</DeclaredIn>
+			<DeclaredIn>WSCCertificateItem.h</DeclaredIn>
 			
-			<Declaration>- (NSArray *)allApplicationPassphraseItems</Declaration>
-			
-			<ReturnValue><Abstract type="html">An NSArray object containing all the application passphrase items stored in the keychain represented by receiver.
-          Returns an empty array if there is not any application passphrase item in the keychain.
-          Returns nil if an error occured.
-  </Abstract></ReturnValue>
-			<Anchor>//api/name/allApplicationPassphraseItems</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WSCKeychain/allInternetPassphraseItems</TokenIdentifier>
-			<Abstract type="html">Retrieve all the Internet passphrase items stored in the keychain represented by receiver.</Abstract>
-			<DeclaredIn>WSCKeychain.h</DeclaredIn>
-			
-			<Declaration>- (NSArray *)allInternetPassphraseItems</Declaration>
-			
-			<ReturnValue><Abstract type="html">An NSArray object containing all the Internet passphrase items stored in the keychain represented by receiver.
-          Returns an empty array if there is not any Internet passphrase item in the keychain.
-          Returns nil if an error occured.
-  </Abstract></ReturnValue>
-			<Anchor>//api/name/allInternetPassphraseItems</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WSCKeychain/findFirstKeychainItemSatisfyingSearchCriteria:itemClass:error:</TokenIdentifier>
-			<Abstract type="html">Find the first keychain item which satisfies the given search criteria contained in _SearchCriteriaDict dictionary.</Abstract>
-			<DeclaredIn>WSCKeychain.h</DeclaredIn>
-			
-	<RelatedTokens>
-		<TokenIdentifier>//apple_ref/occ/instm/WSCKeychain/findAllKeychainItemsSatisfyingSearchCriteria:itemClass:error:</TokenIdentifier>
-		
-	</RelatedTokens>
-	
-			<Declaration>- (WSCKeychainItem *)findFirstKeychainItemSatisfyingSearchCriteria:(NSDictionary *)_SearchCriteriaDict itemClass:(WSCKeychainItemClass)_ItemClass error:(NSError **)_Error</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>_SearchCriteriaDict</Name>
-					<Abstract type="html">The NSDictionary object containing the search criteria. 
-                             For the valid search keys, see the discussion section.
-  </Abstract>
-				</Parameter><Parameter>
-					<Name>_ItemClass</Name>
-					<Abstract type="html">The value of type WSCKeychainItemClass, 
-         it identifies the type of keychain item we want to find.</Abstract>
-				</Parameter><Parameter>
-					<Name>_Error</Name>
-					<Abstract type="html">On input, a pointer to an error object.
-                If an error occurs, this pointer is set to an actual error object containing the error information.
-                You may specify nil for this parameter if you don&apos;t want the error information.
-                </Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">A WSCKeychainItem object representing the keychain item satisfying the given search criteria.
-          Returns nil if an error occurs or there is not any keychan item satisfying the given search criteria.</Abstract></ReturnValue>
-			<Anchor>//api/name/findFirstKeychainItemSatisfyingSearchCriteria:itemClass:error:</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WSCKeychain/findAllKeychainItemsSatisfyingSearchCriteria:itemClass:error:</TokenIdentifier>
-			<Abstract type="html">Find all the keychain items satisfying the given search criteria contained in _SearchCriteriaDict dictionary.</Abstract>
-			<DeclaredIn>WSCKeychain.h</DeclaredIn>
-			
-	<RelatedTokens>
-		<TokenIdentifier>//apple_ref/occ/instm/WSCKeychain/findFirstKeychainItemSatisfyingSearchCriteria:itemClass:error:</TokenIdentifier>
-		
-	</RelatedTokens>
-	
-			<Declaration>- (NSArray *)findAllKeychainItemsSatisfyingSearchCriteria:(NSDictionary *)_SearchCriteriaDict itemClass:(WSCKeychainItemClass)_ItemClass error:(NSError **)_Error</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>_SearchCriteriaDict</Name>
-					<Abstract type="html">The NSDictionary object containing the search criteria.
-                             For the valid search keys, please see the discussion section of findFirstKeychainItemSatisfyingSearchCriteria:itemClass:error: method.
-                             </Abstract>
-				</Parameter><Parameter>
-					<Name>_ItemClass</Name>
-					<Abstract type="html">The value of type WSCKeychainItemClass,
-                    it identifies the type of keychain item we want to find.</Abstract>
-				</Parameter><Parameter>
-					<Name>_Error</Name>
-					<Abstract type="html">On input, a pointer to an error object.
-                If an error occurs, this pointer is set to an actual error object containing the error information.
-                You may specify nil for this parameter if you don&apos;t want the error information.
-                </Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">An NSArray object containing the keychain items satisfying the given search criteria.
-          Returns an empty array if there is not any keychan item satisfying the given search criteria.
-          Returns nil if an error occurs.</Abstract></ReturnValue>
-			<Anchor>//api/name/findAllKeychainItemsSatisfyingSearchCriteria:itemClass:error:</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WSCKeychain/deleteKeychainItem:error:</TokenIdentifier>
-			<Abstract type="html">Deletes a keychain item from the permanent data store of the keychain represented by receiver.</Abstract>
-			<DeclaredIn>WSCKeychain.h</DeclaredIn>
-			
-			<Declaration>- (BOOL)deleteKeychainItem:(WSCKeychainItem *)_KeychainItem error:(NSError **)_Error</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>_KeychainItem</Name>
-					<Abstract type="html">The keychain item to be deleted. 
-                       After the delete operation, this keychain item will become invalid.
-                       </Abstract>
-				</Parameter><Parameter>
-					<Name>_Error</Name>
-					<Abstract type="html">On input, a pointer to an error object.
-                If an error occurs, this pointer is set to an actual error object containing the error information.
-                You may specify nil for this parameter if you don&apos;t want the error information.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">YES if the delete operation is successful; otherwise, NO.
-  </Abstract></ReturnValue>
-			<Anchor>//api/name/deleteKeychainItem:error:</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WSCKeychain/setSecKeychain:</TokenIdentifier>
-			<Abstract type="html">The reference of the SecKeychain opaque object, which wrapped by WSCKeychain object.
-  </Abstract>
-			<DeclaredIn>WSCKeychain.h</DeclaredIn>
-			
-			<Declaration>@property (unsafe_unretained, readonly) SecKeychainRef secKeychain</Declaration>
+			<Declaration>@property (unsafe_unretained, readonly) SecCertificateRef secCertificateItem</Declaration>
 			
 			
-			<Anchor>//api/name/secKeychain</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WSCKeychain/secKeychain</TokenIdentifier>
-			<Abstract type="html">The reference of the SecKeychain opaque object, which wrapped by WSCKeychain object.
-  </Abstract>
-			<DeclaredIn>WSCKeychain.h</DeclaredIn>
-			
-			<Declaration>@property (unsafe_unretained, readonly) SecKeychainRef secKeychain</Declaration>
-			
-			
-			<Anchor>//api/name/secKeychain</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WSCKeychain/secKeychain</TokenIdentifier>
-			<Abstract type="html">The reference of the SecKeychain opaque object, which wrapped by WSCKeychain object.
-  </Abstract>
-			<DeclaredIn>WSCKeychain.h</DeclaredIn>
-			
-			<Declaration>@property (unsafe_unretained, readonly) SecKeychainRef secKeychain</Declaration>
-			
-			
-			<Anchor>//api/name/secKeychain</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/WSCKeychain/keychainWithSecKeychainRef:</TokenIdentifier>
-			<Abstract type="html">Creates and returns a WSCKeychain object using the given reference to the instance of SecKeychain opaque type.</Abstract>
-			<DeclaredIn>WSCKeychain.h</DeclaredIn>
-			
-			<Declaration>+ (instancetype)keychainWithSecKeychainRef:(SecKeychainRef)_SecKeychainRef</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>_SecKeychainRef</Name>
-					<Abstract type="html">A reference to the instance of SecKeychain opaque type.
-  </Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">A WSCKeychain object initialized with the given reference to the instance of SecKeychain opaque type.
-          Return nil if _SecKeychainRef is nil or an error occured.
-  </Abstract></ReturnValue>
-			<Anchor>//api/name/keychainWithSecKeychainRef:</Anchor>
+			<Anchor>//api/name/secCertificateItem</Anchor>
             <NodeRef refid="1"/>
 		</Token>
 		

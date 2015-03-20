@@ -77,6 +77,8 @@
 	
 	<option value="//api/name/allApplicationPassphraseItems">&nbsp;&nbsp;&nbsp;&nbsp;- allApplicationPassphraseItems</option>
 	
+	<option value="//api/name/allCertificateItems">&nbsp;&nbsp;&nbsp;&nbsp;- allCertificateItems</option>
+	
 	<option value="//api/name/allInternetPassphraseItems">&nbsp;&nbsp;&nbsp;&nbsp;- allInternetPassphraseItems</option>
 	
 	<option value="//api/name/deleteKeychainItem:error:">&nbsp;&nbsp;&nbsp;&nbsp;- deleteKeychainItem:error:</option>
@@ -160,6 +162,8 @@
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addInternetPassphraseWithServerName:URLRelativePath:accountName:protocol:passphrase:error:">addInternetPassphraseWithServerName:URLRelativePath:accountName:protocol:passphrase:error:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/allApplicationPassphraseItems">allApplicationPassphraseItems</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/allCertificateItems">allCertificateItems</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/allInternetPassphraseItems">allInternetPassphraseItems</a></span></li>
 	
@@ -335,6 +339,12 @@
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/allInternetPassphraseItems">&ndash;&nbsp;allInternetPassphraseItems</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/allCertificateItems">&ndash;&nbsp;allCertificateItems</a></code>
 	</span>
 	
 	
@@ -1107,7 +1117,7 @@
 	
     
 
-	<div class="method-subsection method-declaration"><code>- (NSArray *)allApplicationPassphraseItems</code></div>
+	<div class="method-subsection method-declaration"><code>- (NSSet *)allApplicationPassphraseItems</code></div>
 
     
 	
@@ -1115,8 +1125,8 @@
 	
 	<div class="method-subsection return">
 		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>An <code>NSArray</code> object containing all the application passphrase items stored in the keychain represented by receiver.
-          Returns an empty array if there is not any application passphrase item in the keychain.
+		<p>An <code>NSSet</code> object containing all the application passphrase items stored in the keychain represented by receiver.
+          Returns an empty set if there is not any application passphrase item in the keychain.
           Returns <code>nil</code> if an error occured.</p>
 	</div>
 	
@@ -1126,7 +1136,57 @@
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<div class="warning"><p><strong>Warning:</strong> After invoking this method, the passphrase item stored in the returned array may become invalid
+		<div class="warning"><p><strong>Warning:</strong> After invoking this method, the passphrase item stored in the returned set may become invalid
+          (perhaps it has been deleted or modified by user or by other applications),
+           you should check the validity of each passphrase item before using it.</p></div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WSCKeychain.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/allCertificateItems" title="allCertificateItems"></a>
+	<h3 class="subsubtitle method-title">allCertificateItems</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Retrieve all the X.509 certificates stored in the keychain represented by receiver.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSSet *)allCertificateItems</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>An <code>NSSet</code> object containing all the certificate items stored in the keychain represented by receiver.
+          Returns an empty set if there is not any certificate item in the keychain.
+          Returns <code>nil</code> if an error occured.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<div class="warning"><p><strong>Warning:</strong> After invoking this method, the certificate item stored in the returned set may become invalid
           (perhaps it has been deleted or modified by user or by other applications),
            you should check the validity of each passphrase item before using it.</p></div>
 	</div>
@@ -1157,7 +1217,7 @@
 	
     
 
-	<div class="method-subsection method-declaration"><code>- (NSArray *)allInternetPassphraseItems</code></div>
+	<div class="method-subsection method-declaration"><code>- (NSSet *)allInternetPassphraseItems</code></div>
 
     
 	
@@ -1165,8 +1225,8 @@
 	
 	<div class="method-subsection return">
 		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>An <code>NSArray</code> object containing all the Internet passphrase items stored in the keychain represented by receiver.
-          Returns an empty array if there is not any Internet passphrase item in the keychain.
+		<p>An <code>NSSet</code> object containing all the Internet passphrase items stored in the keychain represented by receiver.
+          Returns an empty set if there is not any Internet passphrase item in the keychain.
           Returns <code>nil</code> if an error occured.</p>
 	</div>
 	
@@ -1176,7 +1236,7 @@
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<div class="warning"><p><strong>Warning:</strong> After invoking this method, the passphrase item stored in the returned array may become invalid
+		<div class="warning"><p><strong>Warning:</strong> After invoking this method, the passphrase item stored in the returned set may become invalid
           (perhaps it has been deleted or modified by user or by other applications),
            you should check the validity of each passphrase item before using it.</p></div>
 	</div>
@@ -1276,7 +1336,7 @@
 	
     
 
-	<div class="method-subsection method-declaration"><code>- (NSArray *)findAllKeychainItemsSatisfyingSearchCriteria:(NSDictionary *)<em>_SearchCriteriaDict</em> itemClass:(WSCKeychainItemClass)<em>_ItemClass</em> error:(NSError **)<em>_Error</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (NSSet *)findAllKeychainItemsSatisfyingSearchCriteria:(NSDictionary *)<em>_SearchCriteriaDict</em> itemClass:(WSCKeychainItemClass)<em>_ItemClass</em> error:(NSError **)<em>_Error</em></code></div>
 
     
 	
@@ -1308,8 +1368,8 @@
 	
 	<div class="method-subsection return">
 		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>An <code>NSArray</code> object containing the keychain items satisfying the given search criteria.
-          Returns an empty array if there is not any keychan item satisfying the given search criteria.
+		<p>An <code>NSSet</code> object containing the keychain items satisfying the given search criteria.
+          Returns an empty set if there is not any keychan item satisfying the given search criteria.
           Returns <code>nil</code> if an error occurs.</p>
 	</div>
 	
@@ -1319,7 +1379,7 @@
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<div class="warning"><p><strong>Warning:</strong> After invoking this method, the passphrase item stored in the returned array may become invalid
+		<div class="warning"><p><strong>Warning:</strong> After invoking this method, the passphrase item stored in the returned set may become invalid
           (perhaps it has been deleted or modified by user or by other applications),
            you should check the validity of each passphrase item before using it.</p></div>
 	</div>
@@ -1464,6 +1524,13 @@ This search key is unique to the application passphrase item.</p></li>
 The corresponding value is an <code>NSData</code> object that identifies the service name of an application passphrase item.
 For example, &ldquo;WaxSeal&rdquo;. This search key is unique to the application passphrase item.</p></li>
 </ul>
+
+
+<p>  <em>Unique to the Application Passphrase Items:</em></p>
+
+<ul>
+<li><code>WSCKeychainItemAttributeCertificateType</code></li>
+</ul>
 <div class="warning"><p><strong>Warning:</strong> After invoking this method, the passphrase item returned by this method may become invalid
            (perhaps it has been deleted or modified by user or by other applications),
            you should check the validity of it before using it.</p></div>
@@ -1563,7 +1630,7 @@ For example, &ldquo;WaxSeal&rdquo;. This search key is unique to the application
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2015  Tong Guo. All rights reserved. (Last updated: 2015-03-05)</span><br />
+						<p><span class="copyright">&copy; 2015  Tong Guo. All rights reserved. (Last updated: 2015-03-20)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
 						

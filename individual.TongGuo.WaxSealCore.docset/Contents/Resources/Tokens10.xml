@@ -1,109 +1,97 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/WSCInternetAuthenticationType.html">
+	<File path="Categories/NSURL+WSCKeychainURL.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/WSCInternetAuthenticationType</TokenIdentifier>
-			<Abstract type="html">Defines constants you can use to identify the type of authentication to use for an Internet passphrase.
+			<TokenIdentifier>//apple_ref/occ/cat/NSURL(WSCKeychainURL)</TokenIdentifier>
+			<Abstract type="html">A collection of useful and convenient additions for NSURL to deal with keychains.
   </Abstract>
-			<DeclaredIn>WSCKeychain.h</DeclaredIn>
+			<DeclaredIn>NSURL+WSCKeychainURL.h</DeclaredIn>
             
 			
 			<NodeRef refid="10"/>
 		</Token>
 		
 		
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WSCInternetAuthenticationTypeNTLM</TokenIdentifier>
-            <Abstract type="html">Specifies Windows NT LAN Manager authentication.</Abstract>
-            <Declaration>WSCInternetAuthenticationTypeNTLM</Declaration>
-            
-            <DeclaredIn>WSCKeychain.h</DeclaredIn>
-            
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSURL/sharedURLForCurrentUserKeychainsDirectory</TokenIdentifier>
+			<Abstract type="html">Returns the URL of the current user&apos;s keychain directory: ~/Library/Keychains.</Abstract>
+			<DeclaredIn>NSURL+WSCKeychainURL.h</DeclaredIn>
+			
+			<Declaration>+ (NSURL *)sharedURLForCurrentUserKeychainsDirectory</Declaration>
+			
+			<ReturnValue><Abstract type="html">An URL of the current user&apos;s keychain directory: ~/Library/Keychains.
+  </Abstract></ReturnValue>
+			<Anchor>//api/name/sharedURLForCurrentUserKeychainsDirectory</Anchor>
             <NodeRef refid="10"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WSCInternetAuthenticationTypeMSN</TokenIdentifier>
-            <Abstract type="html">Specifies Microsoft Network default authentication.</Abstract>
-            <Declaration>WSCInternetAuthenticationTypeMSN</Declaration>
-            
-            <DeclaredIn>WSCKeychain.h</DeclaredIn>
-            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSURL/sharedURLForSystemKeychainsDirectory</TokenIdentifier>
+			<Abstract type="html">Returns the URL of the system directory: /Library/Keychains.</Abstract>
+			<DeclaredIn>NSURL+WSCKeychainURL.h</DeclaredIn>
+			
+			<Declaration>+ (NSURL *)sharedURLForSystemKeychainsDirectory</Declaration>
+			
+			<ReturnValue><Abstract type="html">An URL of the system keychain directory: /Library/Keychains.
+  </Abstract></ReturnValue>
+			<Anchor>//api/name/sharedURLForSystemKeychainsDirectory</Anchor>
             <NodeRef refid="10"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WSCInternetAuthenticationTypeDPA</TokenIdentifier>
-            <Abstract type="html">Specifies Distributed Passphrase authentication.</Abstract>
-            <Declaration>WSCInternetAuthenticationTypeDPA</Declaration>
-            
-            <DeclaredIn>WSCKeychain.h</DeclaredIn>
-            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSURL/sharedURLForLoginKeychain</TokenIdentifier>
+			<Abstract type="html">Returns an NSURL object specifying the location of login.keychain for current user.</Abstract>
+			<DeclaredIn>NSURL+WSCKeychainURL.h</DeclaredIn>
+			
+			<Declaration>+ (NSURL *)sharedURLForLoginKeychain</Declaration>
+			
+			<ReturnValue><Abstract type="html">An NSURL object specifying the location of login.keychain for current user.
+  </Abstract></ReturnValue>
+			<Anchor>//api/name/sharedURLForLoginKeychain</Anchor>
             <NodeRef refid="10"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WSCInternetAuthenticationTypeRPA</TokenIdentifier>
-            <Abstract type="html">Specifies Remote Passphrase authentication.</Abstract>
-            <Declaration>WSCInternetAuthenticationTypeRPA</Declaration>
-            
-            <DeclaredIn>WSCKeychain.h</DeclaredIn>
-            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSURL/sharedURLForSystemKeychain</TokenIdentifier>
+			<Abstract type="html">Returns an NSURL object specifying the location of System.keychain.</Abstract>
+			<DeclaredIn>NSURL+WSCKeychainURL.h</DeclaredIn>
+			
+			<Declaration>+ (NSURL *)sharedURLForSystemKeychain</Declaration>
+			
+			<ReturnValue><Abstract type="html">An NSURL object specifying the location of System.keychain.
+  </Abstract></ReturnValue>
+			<Anchor>//api/name/sharedURLForSystemKeychain</Anchor>
             <NodeRef refid="10"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WSCInternetAuthenticationTypeHTTPBasic</TokenIdentifier>
-            <Abstract type="html">Specifies HTTP Basic authentication.</Abstract>
-            <Declaration>WSCInternetAuthenticationTypeHTTPBasic</Declaration>
-            
-            <DeclaredIn>WSCKeychain.h</DeclaredIn>
-            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSURL/URLForTemporaryDirectory</TokenIdentifier>
+			<Abstract type="html">Returns the URL of the temporary directory for current user.</Abstract>
+			<DeclaredIn>NSURL+WSCKeychainURL.h</DeclaredIn>
+			
+			<Declaration>+ (NSURL *)URLForTemporaryDirectory</Declaration>
+			
+			<ReturnValue><Abstract type="html">An URL specifing the location of temporary directory for current user. 
+          If no such directory is currently available, returns nil.
+  </Abstract></ReturnValue>
+			<Anchor>//api/name/URLForTemporaryDirectory</Anchor>
             <NodeRef refid="10"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WSCInternetAuthenticationTypeHTTPDigest</TokenIdentifier>
-            <Abstract type="html">Specifies HTTP Digest Access authentication.</Abstract>
-            <Declaration>WSCInternetAuthenticationTypeHTTPDigest</Declaration>
-            
-            <DeclaredIn>WSCKeychain.h</DeclaredIn>
-            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSURL/URLForHomeDirectory</TokenIdentifier>
+			<Abstract type="html">Returns the URL of the current user&apos;s or application&apos;s home directory, depending on the platform.</Abstract>
+			<DeclaredIn>NSURL+WSCKeychainURL.h</DeclaredIn>
+			
+			<Declaration>+ (NSURL *)URLForHomeDirectory</Declaration>
+			
+			<ReturnValue><Abstract type="html">An URL specifing the location of home directory for current user.
+  </Abstract></ReturnValue>
+			<Anchor>//api/name/URLForHomeDirectory</Anchor>
             <NodeRef refid="10"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WSCInternetAuthenticationTypeHTMLForm</TokenIdentifier>
-            <Abstract type="html">Specifies HTML form based authentication.</Abstract>
-            <Declaration>WSCInternetAuthenticationTypeHTMLForm</Declaration>
-            
-            <DeclaredIn>WSCKeychain.h</DeclaredIn>
-            
-            <NodeRef refid="10"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WSCInternetAuthenticationTypeDefault</TokenIdentifier>
-            <Abstract type="html">Specifies the default authentication type.</Abstract>
-            <Declaration>WSCInternetAuthenticationTypeDefault</Declaration>
-            
-            <DeclaredIn>WSCKeychain.h</DeclaredIn>
-            
-            <NodeRef refid="10"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WSCInternetAuthenticationTypeAny</TokenIdentifier>
-            <Abstract type="html">Specifies that any authentication type is acceptable.
-When performing a search, use this value to avoid constraining your search results to a particular authentication type.</Abstract>
-            <Declaration>WSCInternetAuthenticationTypeAny</Declaration>
-            
-            <DeclaredIn>WSCKeychain.h</DeclaredIn>
-            
-            <NodeRef refid="10"/>
-        </Token>
+		</Token>
+		
         
 	</File>
 </Tokens>

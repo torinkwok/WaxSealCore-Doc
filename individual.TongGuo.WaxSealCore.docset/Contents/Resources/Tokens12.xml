@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/WSCKeychainItemClass.html">
+	<File path="Constants/WSCInternetAuthenticationType.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/WSCKeychainItemClass</TokenIdentifier>
-			<Abstract type="html">Specifies a keychain item’s class code.
+			<TokenIdentifier>//apple_ref/c/tdef/WSCInternetAuthenticationType</TokenIdentifier>
+			<Abstract type="html">Defines constants you can use to identify the type of authentication to use for an Internet passphrase.
   </Abstract>
 			<DeclaredIn>WSCKeychain.h</DeclaredIn>
             
@@ -15,9 +15,9 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WSCKeychainItemClassInternetPassphraseItem</TokenIdentifier>
-            <Abstract type="html">Indicates that the item is an Internet passphrase.</Abstract>
-            <Declaration>WSCKeychainItemClassInternetPassphraseItem</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/WSCInternetAuthenticationTypeNTLM</TokenIdentifier>
+            <Abstract type="html">Specifies Windows NT LAN Manager authentication.</Abstract>
+            <Declaration>WSCInternetAuthenticationTypeNTLM</Declaration>
             
             <DeclaredIn>WSCKeychain.h</DeclaredIn>
             
@@ -25,9 +25,9 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WSCKeychainItemClassApplicationPassphraseItem</TokenIdentifier>
-            <Abstract type="html">Indicates that the item is an application passphrase.</Abstract>
-            <Declaration>WSCKeychainItemClassApplicationPassphraseItem</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/WSCInternetAuthenticationTypeMSN</TokenIdentifier>
+            <Abstract type="html">Specifies Microsoft Network default authentication.</Abstract>
+            <Declaration>WSCInternetAuthenticationTypeMSN</Declaration>
             
             <DeclaredIn>WSCKeychain.h</DeclaredIn>
             
@@ -35,9 +35,9 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WSCKeychainItemClassCertificateItem</TokenIdentifier>
-            <Abstract type="html">Indicates that the item is an X509 certificate.</Abstract>
-            <Declaration>WSCKeychainItemClassCertificateItem</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/WSCInternetAuthenticationTypeDPA</TokenIdentifier>
+            <Abstract type="html">Specifies Distributed Passphrase authentication.</Abstract>
+            <Declaration>WSCInternetAuthenticationTypeDPA</Declaration>
             
             <DeclaredIn>WSCKeychain.h</DeclaredIn>
             
@@ -45,9 +45,9 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WSCKeychainItemClassPublicKeyItem</TokenIdentifier>
-            <Abstract type="html">Indicates that the item is a public key of a public-private pair.</Abstract>
-            <Declaration>WSCKeychainItemClassPublicKeyItem</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/WSCInternetAuthenticationTypeRPA</TokenIdentifier>
+            <Abstract type="html">Specifies Remote Passphrase authentication.</Abstract>
+            <Declaration>WSCInternetAuthenticationTypeRPA</Declaration>
             
             <DeclaredIn>WSCKeychain.h</DeclaredIn>
             
@@ -55,9 +55,9 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WSCKeychainItemClassPrivateKeyItem</TokenIdentifier>
-            <Abstract type="html">Indicates that the item is a private key of a public-private pair.</Abstract>
-            <Declaration>WSCKeychainItemClassPrivateKeyItem</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/WSCInternetAuthenticationTypeHTTPBasic</TokenIdentifier>
+            <Abstract type="html">Specifies HTTP Basic authentication.</Abstract>
+            <Declaration>WSCInternetAuthenticationTypeHTTPBasic</Declaration>
             
             <DeclaredIn>WSCKeychain.h</DeclaredIn>
             
@@ -65,9 +65,9 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WSCKeychainItemClassSymmetricKeyItem</TokenIdentifier>
-            <Abstract type="html">Indicates that the item is a private key used for symmetric-key encryption.</Abstract>
-            <Declaration>WSCKeychainItemClassSymmetricKeyItem</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/WSCInternetAuthenticationTypeHTTPDigest</TokenIdentifier>
+            <Abstract type="html">Specifies HTTP Digest Access authentication.</Abstract>
+            <Declaration>WSCInternetAuthenticationTypeHTTPDigest</Declaration>
             
             <DeclaredIn>WSCKeychain.h</DeclaredIn>
             
@@ -75,9 +75,30 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WSCKeychainItemClassAllKeys</TokenIdentifier>
-            <Abstract type="html">The item can be any type of key; used for searches only.</Abstract>
-            <Declaration>WSCKeychainItemClassAllKeys</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/WSCInternetAuthenticationTypeHTMLForm</TokenIdentifier>
+            <Abstract type="html">Specifies HTML form based authentication.</Abstract>
+            <Declaration>WSCInternetAuthenticationTypeHTMLForm</Declaration>
+            
+            <DeclaredIn>WSCKeychain.h</DeclaredIn>
+            
+            <NodeRef refid="12"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCInternetAuthenticationTypeDefault</TokenIdentifier>
+            <Abstract type="html">Specifies the default authentication type.</Abstract>
+            <Declaration>WSCInternetAuthenticationTypeDefault</Declaration>
+            
+            <DeclaredIn>WSCKeychain.h</DeclaredIn>
+            
+            <NodeRef refid="12"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WSCInternetAuthenticationTypeAny</TokenIdentifier>
+            <Abstract type="html">Specifies that any authentication type is acceptable.
+When performing a search, use this value to avoid constraining your search results to a particular authentication type.</Abstract>
+            <Declaration>WSCInternetAuthenticationTypeAny</Declaration>
             
             <DeclaredIn>WSCKeychain.h</DeclaredIn>
             
