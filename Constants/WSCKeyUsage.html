@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
-		<title>WaxSealCoreErrorCode Constants Reference</title>
+		<title>WSCKeyUsage Constants Reference</title>
 		<meta id="xcode-display" name="xcode-display" content="render"/>
 		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
 		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
@@ -16,7 +16,7 @@
 			</div>
 			
 			<div id="title" role="banner">
-				<h1 class="hideInXcode">WaxSealCoreErrorCode Constants Reference</h1>
+				<h1 class="hideInXcode">WSCKeyUsage Constants Reference</h1>
 			</div>
 			<ul id="headerButtons" role="toolbar">
 				<li id="toc_button">
@@ -45,7 +45,7 @@
 		</nav>
 		<article>
 			<div id="contents" class="isShowingTOC" role="main">
-				<a title="WaxSealCoreErrorCode Constants Reference" name="top"></a>
+				<a title="WSCKeyUsage Constants Reference" name="top"></a>
 				<div class="main-navigation navigation-top">
 					<ul>
 	<li><a href="../index.html">Index</a></li>
@@ -54,7 +54,7 @@
 				</div>
 				<div id="header">
 					<div class="section-header">
-						<h1 class="title title-header">WaxSealCoreErrorCode Constants Reference</h1>
+						<h1 class="title title-header">WSCKeyUsage Constants Reference</h1>
 					</div>		
 				</div>
 				<div id="container">	
@@ -62,7 +62,7 @@
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
 	<td class="specification-title">Declared in</td>
-	<td class="specification-value">WSCKeychainError.h</td>
+	<td class="specification-value">WSCKey.h</td>
 </tr>
 						</tbody></table></div>
 					
@@ -74,11 +74,11 @@
 					
                     
                     
-                    <h3 class="subsubtitle method-title">WaxSealCoreErrorCode</h3>
+                    <h3 class="subsubtitle method-title">WSCKeyUsage</h3>
                     
 					
 					<div class="section section-overview">
-                        <p><code>NSError</code> code in <code>WaxSealCoreErrorDomain</code> error domain</p>
+                        <p>Defines constants that specify the usage of a key, combined using the C bitwise <code>OR</code> operator.</p>
 					</div>
 					
 					
@@ -86,27 +86,27 @@
                         <!-- display enum values -->
                         
                         <h4 class="method-subtitle">Definition</h4>
-                        <code>typedef NS_ENUM(NSUInteger, WaxSealCoreErrorCode ) {<br/>
+                        <code>typedef NS_ENUM(CSSM_KEYUSE, WSCKeyUsage ) {<br/>
                             
-                            &nbsp;&nbsp; <a href="">WSCKeychainCannotBeDirectoryError</a> = 1,<br/>
+                            &nbsp;&nbsp; <a href="">WSCKeyUsageAny</a> = ,<br/>
                             
-                            &nbsp;&nbsp; <a href="">WSCKeychainIsInvalidError</a> = 2,<br/>
+                            &nbsp;&nbsp; <a href="">WSCKeyUsageEncrypt</a> = ,<br/>
                             
-                            &nbsp;&nbsp; <a href="">WSCKeychainFileExistsError</a> = 3,<br/>
+                            &nbsp;&nbsp; <a href="">WSCKeyUsageDecrypt</a> = ,<br/>
                             
-                            &nbsp;&nbsp; <a href="">WSCKeychainURLIsInvalidError</a> = 4,<br/>
+                            &nbsp;&nbsp; <a href="">WSCKeyUsageSign</a> = ,<br/>
                             
-                            &nbsp;&nbsp; <a href="">WSCCommonInvalidParametersError</a> = 5,<br/>
+                            &nbsp;&nbsp; <a href="">WSCKeyUsageVerify</a> = ,<br/>
                             
-                            &nbsp;&nbsp; <a href="">WSCKeychainItemIsInvalidError</a> = 6,<br/>
+                            &nbsp;&nbsp; <a href="">WSCKeyUsageSignRecover</a> = ,<br/>
                             
-                            &nbsp;&nbsp; <a href="">WSCKeychainItemAttributeIsUniqueToInternetPassphraseError</a> = 7,<br/>
+                            &nbsp;&nbsp; <a href="">WSCKeyUsageVerifyRecover</a> = ,<br/>
                             
-                            &nbsp;&nbsp; <a href="">WSCKeychainItemAttributeIsUniqueToApplicationPassphraseError</a> = 8,<br/>
+                            &nbsp;&nbsp; <a href="">WSCKeyUsageWrap</a> = ,<br/>
                             
-                            &nbsp;&nbsp; <a href="">WSCKeychainItemPermissionDeniedError</a> = 9,<br/>
+                            &nbsp;&nbsp; <a href="">WSCKeyUsageUnwrap</a> = ,<br/>
                             
-                            &nbsp;&nbsp; <a href="">WSCPermittedOperationFailedToChangeTheOwnerOfPermittedOperationError</a> = 10,<br/>
+                            &nbsp;&nbsp; <a href="">WSCKeyUsageDerive</a> = ,<br/>
                             
                             };</code>
                     
@@ -116,11 +116,11 @@
                         <h4 class="method-subtitle">Constants</h4>
                         <dl class="termdef">
                             
-                            <dt><a name="" title="WSCKeychainCannotBeDirectoryError"></a><code>WSCKeychainCannotBeDirectoryError</code></dt>
+                            <dt><a name="" title="WSCKeyUsageAny"></a><code>WSCKeyUsageAny</code></dt>
 <dd>
 
 
-<p>The URL of a keychain file cannot be a directory.</p>
+<p>No restrictions.</p>
 
     
 
@@ -128,16 +128,16 @@
 
     
 	<p>
-		Declared In <code class="declared-in-ref">WSCKeychainError.h</code>.
+		Declared In <code class="declared-in-ref">WSCKey.h</code>.
 	</p>
 	
 </dd>
                             
-                            <dt><a name="" title="WSCKeychainIsInvalidError"></a><code>WSCKeychainIsInvalidError</code></dt>
+                            <dt><a name="" title="WSCKeyUsageEncrypt"></a><code>WSCKeyUsageEncrypt</code></dt>
 <dd>
 
 
-<p>Current keychain is no longer valid.</p>
+<p>Use for encrypting.</p>
 
     
 
@@ -145,16 +145,16 @@
 
     
 	<p>
-		Declared In <code class="declared-in-ref">WSCKeychainError.h</code>.
+		Declared In <code class="declared-in-ref">WSCKey.h</code>.
 	</p>
 	
 </dd>
                             
-                            <dt><a name="" title="WSCKeychainFileExistsError"></a><code>WSCKeychainFileExistsError</code></dt>
+                            <dt><a name="" title="WSCKeyUsageDecrypt"></a><code>WSCKeyUsageDecrypt</code></dt>
 <dd>
 
 
-<p>The keychain couldn&rsquo;t be created because a file with the same name already exists.</p>
+<p>Use for decrypting.</p>
 
     
 
@@ -162,16 +162,16 @@
 
     
 	<p>
-		Declared In <code class="declared-in-ref">WSCKeychainError.h</code>.
+		Declared In <code class="declared-in-ref">WSCKey.h</code>.
 	</p>
 	
 </dd>
                             
-                            <dt><a name="" title="WSCKeychainURLIsInvalidError"></a><code>WSCKeychainURLIsInvalidError</code></dt>
+                            <dt><a name="" title="WSCKeyUsageSign"></a><code>WSCKeyUsageSign</code></dt>
 <dd>
 
 
-<p>The keychain couldn’t be created because the URL is invalid.</p>
+<p>Use for signing.</p>
 
     
 
@@ -179,16 +179,16 @@
 
     
 	<p>
-		Declared In <code class="declared-in-ref">WSCKeychainError.h</code>.
+		Declared In <code class="declared-in-ref">WSCKey.h</code>.
 	</p>
 	
 </dd>
                             
-                            <dt><a name="" title="WSCCommonInvalidParametersError"></a><code>WSCCommonInvalidParametersError</code></dt>
+                            <dt><a name="" title="WSCKeyUsageVerify"></a><code>WSCKeyUsageVerify</code></dt>
 <dd>
 
 
-<p>One or more parameters passed to the method were not valid.</p>
+<p>Use for verifying.</p>
 
     
 
@@ -196,16 +196,16 @@
 
     
 	<p>
-		Declared In <code class="declared-in-ref">WSCKeychainError.h</code>.
+		Declared In <code class="declared-in-ref">WSCKey.h</code>.
 	</p>
 	
 </dd>
                             
-                            <dt><a name="" title="WSCKeychainItemIsInvalidError"></a><code>WSCKeychainItemIsInvalidError</code></dt>
+                            <dt><a name="" title="WSCKeyUsageSignRecover"></a><code>WSCKeyUsageSignRecover</code></dt>
 <dd>
 
 
-<p>Current keychain item is no longer valid.</p>
+<p>Use for sign recover.</p>
 
     
 
@@ -213,16 +213,16 @@
 
     
 	<p>
-		Declared In <code class="declared-in-ref">WSCKeychainError.h</code>.
+		Declared In <code class="declared-in-ref">WSCKey.h</code>.
 	</p>
 	
 </dd>
                             
-                            <dt><a name="" title="WSCKeychainItemAttributeIsUniqueToInternetPassphraseError"></a><code>WSCKeychainItemAttributeIsUniqueToInternetPassphraseError</code></dt>
+                            <dt><a name="" title="WSCKeyUsageVerifyRecover"></a><code>WSCKeyUsageVerifyRecover</code></dt>
 <dd>
 
 
-<p>The attribute does not exist in an Internet passphrase.</p>
+<p>Use for verify recover.</p>
 
     
 
@@ -230,16 +230,16 @@
 
     
 	<p>
-		Declared In <code class="declared-in-ref">WSCKeychainError.h</code>.
+		Declared In <code class="declared-in-ref">WSCKey.h</code>.
 	</p>
 	
 </dd>
                             
-                            <dt><a name="" title="WSCKeychainItemAttributeIsUniqueToApplicationPassphraseError"></a><code>WSCKeychainItemAttributeIsUniqueToApplicationPassphraseError</code></dt>
+                            <dt><a name="" title="WSCKeyUsageWrap"></a><code>WSCKeyUsageWrap</code></dt>
 <dd>
 
 
-<p>The attribute does not exist in an application passphrase.</p>
+<p>Use for wrapping.</p>
 
     
 
@@ -247,16 +247,16 @@
 
     
 	<p>
-		Declared In <code class="declared-in-ref">WSCKeychainError.h</code>.
+		Declared In <code class="declared-in-ref">WSCKey.h</code>.
 	</p>
 	
 </dd>
                             
-                            <dt><a name="" title="WSCKeychainItemPermissionDeniedError"></a><code>WSCKeychainItemPermissionDeniedError</code></dt>
+                            <dt><a name="" title="WSCKeyUsageUnwrap"></a><code>WSCKeyUsageUnwrap</code></dt>
 <dd>
 
 
-<p>Do not have permission to access the secret data of keychain item.</p>
+<p>Use for unwrapping.</p>
 
     
 
@@ -264,16 +264,16 @@
 
     
 	<p>
-		Declared In <code class="declared-in-ref">WSCKeychainError.h</code>.
+		Declared In <code class="declared-in-ref">WSCKey.h</code>.
 	</p>
 	
 </dd>
                             
-                            <dt><a name="" title="WSCPermittedOperationFailedToChangeTheOwnerOfPermittedOperationError"></a><code>WSCPermittedOperationFailedToChangeTheOwnerOfPermittedOperationError</code></dt>
+                            <dt><a name="" title="WSCKeyUsageDerive"></a><code>WSCKeyUsageDerive</code></dt>
 <dd>
 
 
-<p>An invalid attempt to change the owner of a permitted operation entry.</p>
+<p>Use for deriving.</p>
 
     
 
@@ -281,7 +281,7 @@
 
     
 	<p>
-		Declared In <code class="declared-in-ref">WSCKeychainError.h</code>.
+		Declared In <code class="declared-in-ref">WSCKey.h</code>.
 	</p>
 	
 </dd>
@@ -298,7 +298,7 @@
                     
                     <div class="method-subsection declared-in-section">
                         <h4 class="method-subtitle">Declared In</h4>
-                        <code class="declared-in-ref">WSCKeychainError.h</code><br />
+                        <code class="declared-in-ref">WSCKey.h</code><br />
                     </div>				
                     
                     

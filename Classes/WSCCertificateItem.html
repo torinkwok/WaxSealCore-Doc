@@ -1,0 +1,1426 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>WSCCertificateItem Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2 (build 963)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">WaxSealCore </a></h1>
+				<a id="developerHome" href="../index.html"> Tong Guo</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">WSCCertificateItem Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/effectiveDate">&nbsp;&nbsp;&nbsp;&nbsp;effectiveDate</option>
+	
+	<option value="//api/name/expirationDate">&nbsp;&nbsp;&nbsp;&nbsp;expirationDate</option>
+	
+	<option value="//api/name/issuerCommonName">&nbsp;&nbsp;&nbsp;&nbsp;issuerCommonName</option>
+	
+	<option value="//api/name/issuerCountryAbbreviation">&nbsp;&nbsp;&nbsp;&nbsp;issuerCountryAbbreviation</option>
+	
+	<option value="//api/name/issuerEmailAddress">&nbsp;&nbsp;&nbsp;&nbsp;issuerEmailAddress</option>
+	
+	<option value="//api/name/issuerLocality">&nbsp;&nbsp;&nbsp;&nbsp;issuerLocality</option>
+	
+	<option value="//api/name/issuerOrganization">&nbsp;&nbsp;&nbsp;&nbsp;issuerOrganization</option>
+	
+	<option value="//api/name/issuerOrganizationalUnit">&nbsp;&nbsp;&nbsp;&nbsp;issuerOrganizationalUnit</option>
+	
+	<option value="//api/name/issuerStateOrProvince">&nbsp;&nbsp;&nbsp;&nbsp;issuerStateOrProvince</option>
+	
+	<option value="//api/name/publicKey">&nbsp;&nbsp;&nbsp;&nbsp;publicKey</option>
+	
+	<option value="//api/name/publicKeySignature">&nbsp;&nbsp;&nbsp;&nbsp;publicKeySignature</option>
+	
+	<option value="//api/name/publicKeySignatureAlgorithm">&nbsp;&nbsp;&nbsp;&nbsp;publicKeySignatureAlgorithm</option>
+	
+	<option value="//api/name/secCertificateItem">&nbsp;&nbsp;&nbsp;&nbsp;secCertificateItem</option>
+	
+	<option value="//api/name/serialNumber">&nbsp;&nbsp;&nbsp;&nbsp;serialNumber</option>
+	
+	<option value="//api/name/subjectCommonName">&nbsp;&nbsp;&nbsp;&nbsp;subjectCommonName</option>
+	
+	<option value="//api/name/subjectCountryAbbreviation">&nbsp;&nbsp;&nbsp;&nbsp;subjectCountryAbbreviation</option>
+	
+	<option value="//api/name/subjectEmailAddress">&nbsp;&nbsp;&nbsp;&nbsp;subjectEmailAddress</option>
+	
+	<option value="//api/name/subjectLocality">&nbsp;&nbsp;&nbsp;&nbsp;subjectLocality</option>
+	
+	<option value="//api/name/subjectOrganization">&nbsp;&nbsp;&nbsp;&nbsp;subjectOrganization</option>
+	
+	<option value="//api/name/subjectOrganizationalUnit">&nbsp;&nbsp;&nbsp;&nbsp;subjectOrganizationalUnit</option>
+	
+	<option value="//api/name/subjectStateOrProvince">&nbsp;&nbsp;&nbsp;&nbsp;subjectStateOrProvince</option>
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/isEqualToCertificate:">&nbsp;&nbsp;&nbsp;&nbsp;- isEqualToCertificate:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Subject Attributes of a Certificate">Subject Attributes of a Certificate</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Issuer Attributes of a Certificate">Issuer Attributes of a Certificate</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_General Attributes of a Certificate">General Attributes of a Certificate</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Managing Public Key">Managing Public Key</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Comparing Certificates">Comparing Certificates</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Certificate, Key, and Trust Services Bridge">Certificate, Key, and Trust Services Bridge</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/effectiveDate">effectiveDate</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/expirationDate">expirationDate</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/issuerCommonName">issuerCommonName</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/issuerCountryAbbreviation">issuerCountryAbbreviation</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/issuerEmailAddress">issuerEmailAddress</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/issuerLocality">issuerLocality</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/issuerOrganization">issuerOrganization</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/issuerOrganizationalUnit">issuerOrganizationalUnit</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/issuerStateOrProvince">issuerStateOrProvince</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/publicKey">publicKey</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/publicKeySignature">publicKeySignature</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/publicKeySignatureAlgorithm">publicKeySignatureAlgorithm</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/secCertificateItem">secCertificateItem</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/serialNumber">serialNumber</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/subjectCommonName">subjectCommonName</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/subjectCountryAbbreviation">subjectCountryAbbreviation</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/subjectEmailAddress">subjectEmailAddress</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/subjectLocality">subjectLocality</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/subjectOrganization">subjectOrganization</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/subjectOrganizationalUnit">subjectOrganizationalUnit</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/subjectStateOrProvince">subjectStateOrProvince</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isEqualToCertificate:">isEqualToCertificate:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="WSCCertificateItem Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">WSCCertificateItem Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value"><a href="../Classes/WSCKeychainItem.html">WSCKeychainItem</a> : NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">WSCCertificateItem.h<br />WSCCertificateItem.m</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>The <code>WSCCertificateItem</code> class is a subclass of <a href="../Classes/WSCKeychainItem.html"><code>WSCKeychainItem</code></a> representing an X.509 certificate.</p>
+
+<p>  A digital certificate is a collection of data used to verify the identity of the holder
+  or sender of the certificate. For example, a certificate contains such information as:</p>
+
+<ul>
+<li><p>Certificate issuer</p></li>
+<li><p>Certificate holder</p></li>
+<li><p>Validity period (the certificate is not valid before or after this period)</p></li>
+<li><p>Public key of the owner of the certificate</p></li>
+<li><p><strong>Certificate extensions</strong>, which contain additional information
+such as allowable uses for the private key associated with the certificate</p></li>
+<li><p>Digital signature from the certification authority to ensure that the certificate
+has not been altered and to indicate the identity of the issuer</p></li>
+</ul>
+
+
+<p>  Each certificate is verified through the use of another certificate,
+  creating a chain of certificates that ends with the root certificate.
+  The issuer of a certificate is called a <strong>certification authority (CA)</strong>.
+  The owner of the root certificate is the root certification authority.
+  See <a href="https://developer.apple.com/library/mac/documentation/Security/Conceptual/Security_Overview/Introduction/Introduction.html">Security Overview</a> for more details about the structure and contents of a certificate.</p>
+
+<p>  Every public key is half of a public-private key pair.
+  As implied by the names, the <strong>public</strong> key can be obtained by anyone,
+  but the <strong>private</strong> key is kept secret by the owner of the key.
+  Data encrypted with the private key can be decrypted only with the public key, and <em>vice versa</em>.
+  In order to both encrypt and decrypt data, therefore, a given user must have both a public key
+  (normally embedded in a certificate) and a private key.
+  The combination of a certificate and its associated private key is known as an <strong>identity</strong>.
+  <em>WaxSealCore</em> framework and the underlying <em>Certificate, Key, and Trust Services</em> includes API to find the certificate
+  or key associated with an identity and to find an identity when given search criteria.
+  The search criteria include the permitted uses for the key.</p>
+
+<p>  In OS X, keys and certificates are stored on a <strong>keychain</strong> (represented by the <a href="../Classes/WSCKeychain.html">WSCKeychain</a> in <em>WaxSealCore</em> framework),
+  a database that provides secure (that is, encrypted) storage for private keys and other secrets
+  as well as unencrypted storage for other security-related data.
+  The <em>WaxSealCore</em> API that search for keys, certificates, and identities all use the keychain for this purpose.
+  On an OS X system, you can use the <strong>Keychain Access</strong> utility which has friendly GUI to see the contents of the keychain and
+  to examine the contents of certificates.</p>
+
+<p>  The <code>WSCCertificateItem</code> class worked conjunction with other classes in your application to:</p>
+
+<ul>
+<li>Determine identity by matching a certificate with a private key</li>
+<li>Create and request certificate objects</li>
+<li>Import certificates, keys, and identities</li>
+<li>Create public-private key pairs</li>
+<li>Represent trust policies</li>
+</ul>
+
+
+<p>  <strong>Concurrency Considerations</strong></p>
+
+<p>  On OS X v10.6, some methods can block while waiting for input from the user
+  (for example, when the user is asked to unlock a keychain or give permission to change trust settings).
+  In general, it is safe to use the methods in this class from threads other than your main thread,
+  but you should avoid calling the method from multiple operations, work queues, or threads concurrently.
+  Instead, function calls should be serialized (or confined to a single thread) to prevent any potential problems.
+  Exceptions are noted in the discussions of the relevant methods.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Subject Attributes of a Certificate" name="task_Subject Attributes of a Certificate"></a>
+						<h3 class="subsubtitle task-title">Subject Attributes of a Certificate</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/subjectEmailAddress">&nbsp;&nbsp;subjectEmailAddress</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/subjectCommonName">&nbsp;&nbsp;subjectCommonName</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/subjectOrganization">&nbsp;&nbsp;subjectOrganization</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/subjectOrganizationalUnit">&nbsp;&nbsp;subjectOrganizationalUnit</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/subjectCountryAbbreviation">&nbsp;&nbsp;subjectCountryAbbreviation</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/subjectStateOrProvince">&nbsp;&nbsp;subjectStateOrProvince</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/subjectLocality">&nbsp;&nbsp;subjectLocality</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Issuer Attributes of a Certificate" name="task_Issuer Attributes of a Certificate"></a>
+						<h3 class="subsubtitle task-title">Issuer Attributes of a Certificate</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/issuerEmailAddress">&nbsp;&nbsp;issuerEmailAddress</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/issuerCommonName">&nbsp;&nbsp;issuerCommonName</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/issuerOrganization">&nbsp;&nbsp;issuerOrganization</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/issuerOrganizationalUnit">&nbsp;&nbsp;issuerOrganizationalUnit</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/issuerCountryAbbreviation">&nbsp;&nbsp;issuerCountryAbbreviation</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/issuerStateOrProvince">&nbsp;&nbsp;issuerStateOrProvince</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/issuerLocality">&nbsp;&nbsp;issuerLocality</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="General Attributes of a Certificate" name="task_General Attributes of a Certificate"></a>
+						<h3 class="subsubtitle task-title">General Attributes of a Certificate</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/serialNumber">&nbsp;&nbsp;serialNumber</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/effectiveDate">&nbsp;&nbsp;effectiveDate</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/expirationDate">&nbsp;&nbsp;expirationDate</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Managing Public Key" name="task_Managing Public Key"></a>
+						<h3 class="subsubtitle task-title">Managing Public Key</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/publicKey">&nbsp;&nbsp;publicKey</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/publicKeySignature">&nbsp;&nbsp;publicKeySignature</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/publicKeySignatureAlgorithm">&nbsp;&nbsp;publicKeySignatureAlgorithm</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Comparing Certificates" name="task_Comparing Certificates"></a>
+						<h3 class="subsubtitle task-title">Comparing Certificates</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isEqualToCertificate:">&ndash;&nbsp;isEqualToCertificate:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Certificate, Key, and Trust Services Bridge" name="task_Certificate, Key, and Trust Services Bridge"></a>
+						<h3 class="subsubtitle task-title">Certificate, Key, and Trust Services Bridge</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/secCertificateItem">&nbsp;&nbsp;secCertificateItem</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/effectiveDate" title="effectiveDate"></a>
+	<h3 class="subsubtitle method-title">effectiveDate</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The effective date of a certificate represented by receiver.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (retain, readonly) NSDate *effectiveDate</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WSCCertificateItem.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/expirationDate" title="expirationDate"></a>
+	<h3 class="subsubtitle method-title">expirationDate</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The expiration date of a certificate represented by receiver.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (retain, readonly) NSDate *expirationDate</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WSCCertificateItem.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/issuerCommonName" title="issuerCommonName"></a>
+	<h3 class="subsubtitle method-title">issuerCommonName</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The common name of the issuer of a certificate. (read-only)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (copy, readonly) NSString *issuerCommonName</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WSCCertificateItem.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/issuerCountryAbbreviation" title="issuerCountryAbbreviation"></a>
+	<h3 class="subsubtitle method-title">issuerCountryAbbreviation</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The country abbreviation of the issuer of a certificate. (read-only)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (copy, readonly) NSString *issuerCountryAbbreviation</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WSCCertificateItem.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/issuerEmailAddress" title="issuerEmailAddress"></a>
+	<h3 class="subsubtitle method-title">issuerEmailAddress</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The Email address of the issuer of a certificate. (read-only)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (copy, readonly) NSString *issuerEmailAddress</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WSCCertificateItem.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/issuerLocality" title="issuerLocality"></a>
+	<h3 class="subsubtitle method-title">issuerLocality</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The locality name of the issuer of a certificate. (read-only)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (copy, readonly) NSString *issuerLocality</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WSCCertificateItem.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/issuerOrganization" title="issuerOrganization"></a>
+	<h3 class="subsubtitle method-title">issuerOrganization</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The organization name of the issuer of a certificate. (read-only)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (copy, readonly) NSString *issuerOrganization</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WSCCertificateItem.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/issuerOrganizationalUnit" title="issuerOrganizationalUnit"></a>
+	<h3 class="subsubtitle method-title">issuerOrganizationalUnit</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The organizational unit name of the issuer of a certificate. (read-only)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (copy, readonly) NSString *issuerOrganizationalUnit</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WSCCertificateItem.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/issuerStateOrProvince" title="issuerStateOrProvince"></a>
+	<h3 class="subsubtitle method-title">issuerStateOrProvince</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The state or province name of the issuer of a certificate. (read-only)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (copy, readonly) NSString *issuerStateOrProvince</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WSCCertificateItem.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/publicKey" title="publicKey"></a>
+	<h3 class="subsubtitle method-title">publicKey</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The public key that was wrapped in the certificate represented by receiver.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (retain, readonly) WSCKey *publicKey</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WSCCertificateItem.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/publicKeySignature" title="publicKeySignature"></a>
+	<h3 class="subsubtitle method-title">publicKeySignature</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The signature (calculating by using the signature algorithm represented by <a href="#//api/name/publicKeySignatureAlgorithm"><code>publicKeySignatureAlgorithm</code></a> ) of public key
+    that was wrapped in the certificate. (read-only)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (retain, readonly) NSData *publicKeySignature</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WSCCertificateItem.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/publicKeySignatureAlgorithm" title="publicKeySignatureAlgorithm"></a>
+	<h3 class="subsubtitle method-title">publicKeySignatureAlgorithm</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The signature algorithm used for signing the public key that was wrapped in a certificate. (read-only)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (assign, readonly) WSCSignatureAlgorithmType publicKeySignatureAlgorithm</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>See <a href="../Constants/WSCSignatureAlgorithmType.html">&ldquo;WSCSignatureAlgorithmType&rdquo;</a> for possible values.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WSCCertificateItem.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/secCertificateItem" title="secCertificateItem"></a>
+	<h3 class="subsubtitle method-title">secCertificateItem</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The reference of the <code>SecCertificate</code> opaque object, which wrapped by <code>WSCCertificateItem</code> object. (read-only)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (unsafe_unretained, readonly) SecCertificateRef secCertificateItem</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>If you are familiar with the underlying <em>Certificate, Key, and Trust Services</em> API,
+              you can move freely back and forth between <em>WaxSealCore</em> framework and <em>Certificate, Key, and Trust Services</em> API with this property.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WSCCertificateItem.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/serialNumber" title="serialNumber"></a>
+	<h3 class="subsubtitle method-title">serialNumber</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The serial number of a certificate. (read-only)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (copy, readonly) NSString *serialNumber</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WSCCertificateItem.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/subjectCommonName" title="subjectCommonName"></a>
+	<h3 class="subsubtitle method-title">subjectCommonName</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The common name of the subject of a certificate. (read-only)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (copy, readonly) NSString *subjectCommonName</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WSCCertificateItem.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/subjectCountryAbbreviation" title="subjectCountryAbbreviation"></a>
+	<h3 class="subsubtitle method-title">subjectCountryAbbreviation</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The country abbreviation of the subject of a certificate. (read-only)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (copy, readonly) NSString *subjectCountryAbbreviation</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WSCCertificateItem.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/subjectEmailAddress" title="subjectEmailAddress"></a>
+	<h3 class="subsubtitle method-title">subjectEmailAddress</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The Email address of the subject of a certificate. (read-only)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (copy, readonly) NSString *subjectEmailAddress</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WSCCertificateItem.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/subjectLocality" title="subjectLocality"></a>
+	<h3 class="subsubtitle method-title">subjectLocality</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The locality name of the subject of a certificate. (read-only)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (copy, readonly) NSString *subjectLocality</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WSCCertificateItem.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/subjectOrganization" title="subjectOrganization"></a>
+	<h3 class="subsubtitle method-title">subjectOrganization</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The organization name of the subject of a certificate. (read-only)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (copy, readonly) NSString *subjectOrganization</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WSCCertificateItem.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/subjectOrganizationalUnit" title="subjectOrganizationalUnit"></a>
+	<h3 class="subsubtitle method-title">subjectOrganizationalUnit</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The organizational unit name of the subject of a certificate. (read-only)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (copy, readonly) NSString *subjectOrganizationalUnit</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WSCCertificateItem.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/subjectStateOrProvince" title="subjectStateOrProvince"></a>
+	<h3 class="subsubtitle method-title">subjectStateOrProvince</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The state or province name of the subject of a certificate. (read-only)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (copy, readonly) NSString *subjectStateOrProvince</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WSCCertificateItem.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/isEqualToCertificate:" title="isEqualToCertificate:"></a>
+	<h3 class="subsubtitle method-title">isEqualToCertificate:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a <code>BOOL</code> value that indicates whether a given certificate is equal to receiver.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)isEqualToCertificate:(WSCCertificateItem *)<em>_AnotherCertificate</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>_AnotherCertificate</em></dt>
+			<dd><p>The certificate with which to compare the receiver.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p><code>YES</code> if <em>_AnotherCertificate</em> is equivalent to receiver; otherwise <em>NO</em>.</p>
+
+<p>  <strong>One more thing</strong></p>
+
+<p>   When you know both objects are keychains, this method is a faster way to check equality than method <a href="#//api/name/isEqual:"><code>isEqual:</code></a>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WSCCertificateItem.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+                    
+                    
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2015  Tong Guo. All rights reserved. (Last updated: 2015-03-20)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>
