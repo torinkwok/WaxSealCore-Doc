@@ -1,10 +1,10 @@
 # WaxSealCore-Doc
 
-Documentation of [WaxSealCore framework](https://github.com/TongG/WaxSealCore).
+Documentation of [WaxSealCore framework](https://github.com/TongKuo/WaxSealCore).
 
 # Installation
 
-1. [Download](https://github.com/TongG/WaxSealCore-Doc/releases/tag/v1.0) the DocSet bundle
+1. [Download](https://github.com/TongKuo/WaxSealCore-Doc/releases/tag/v1.0) the DocSet bundle
 2. Decompress the .zip file
 3. Put the `individual.TongGuo.WaxSealCore.docset` bundle in `~/Library/Developer/Shared/Documentation/DocSets`
 
